@@ -93,13 +93,12 @@ public final class GameClient extends MMOClient<MMOConnection<GameClient>> imple
 	public GameClient(MMOConnection<GameClient> con)
 	{
 		super(con);
-		
+
 		_state = GameClientState.CONNECTED;
 		_connectionStartTime = System.currentTimeMillis();
 		_crypt = new GameCrypt();
 		_stats = new ClientStats();
 		_packetQueue = new ArrayBlockingQueue<>(Config.CLIENT_PACKET_QUEUE_SIZE);
-		
 		_autoSaveInDB = ThreadPool.scheduleAtFixedRate(() ->
 		{
 			if (getPlayer() != null && getPlayer().isOnline())

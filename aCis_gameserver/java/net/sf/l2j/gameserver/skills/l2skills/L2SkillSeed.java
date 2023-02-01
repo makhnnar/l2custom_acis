@@ -7,6 +7,7 @@ import net.sf.l2j.gameserver.model.L2Effect;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.WorldObject;
 import net.sf.l2j.gameserver.model.actor.Creature;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 import net.sf.l2j.gameserver.skills.effects.EffectSeed;
 
 public class L2SkillSeed extends L2Skill

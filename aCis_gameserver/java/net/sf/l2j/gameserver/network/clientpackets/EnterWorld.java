@@ -34,6 +34,7 @@ import net.sf.l2j.gameserver.model.holder.IntIntHolder;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.model.pledge.Clan;
 import net.sf.l2j.gameserver.model.pledge.SubPledge;
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.GameClient.GameClientState;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
@@ -209,8 +210,8 @@ public class EnterWorld extends L2GameClientPacket
 		AnnouncementData.getInstance().showAnnouncements(player, false);
 		
 		// if player is DE, check for shadow sense skill at night
-		if (player.getRace() == ClassRace.DARK_ELF && player.hasSkill(L2Skill.SKILL_SHADOW_SENSE))
-			player.sendPacket(SystemMessage.getSystemMessage((GameTimeTaskManager.getInstance().isNight()) ? SystemMessageId.NIGHT_S1_EFFECT_APPLIES : SystemMessageId.DAY_S1_EFFECT_DISAPPEARS).addSkillName(L2Skill.SKILL_SHADOW_SENSE));
+		if (player.getRace() == ClassRace.DARK_ELF && player.hasSkill(CommonSkill.SKILL_SHADOW_SENSE.id))
+			player.sendPacket(SystemMessage.getSystemMessage((GameTimeTaskManager.getInstance().isNight()) ? SystemMessageId.NIGHT_S1_EFFECT_APPLIES : SystemMessageId.DAY_S1_EFFECT_DISAPPEARS).addSkillName(CommonSkill.SKILL_SHADOW_SENSE.id));
 		
 		player.getMacroList().sendUpdate();
 		player.sendPacket(new UserInfo(player));

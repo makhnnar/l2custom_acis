@@ -9,6 +9,7 @@ import net.sf.l2j.commons.data.xml.IXmlReader;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.L2Skill;
 
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 
@@ -44,7 +45,7 @@ public class SpellbookData implements IXmlReader
 	
 	public int getBookForSkill(int skillId, int level)
 	{
-		if (skillId == L2Skill.SKILL_DIVINE_INSPIRATION)
+		if (skillId == CommonSkill.SKILL_DIVINE_INSPIRATION.id)
 		{
 			if (!Config.DIVINE_SP_BOOK_NEEDED)
 				return 0;

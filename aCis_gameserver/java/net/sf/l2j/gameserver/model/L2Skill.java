@@ -38,6 +38,7 @@ import net.sf.l2j.gameserver.model.item.kind.Item;
 import net.sf.l2j.gameserver.model.item.kind.Weapon;
 import net.sf.l2j.gameserver.model.pledge.Clan;
 import net.sf.l2j.gameserver.model.pledge.ClanMember;
+import net.sf.l2j.gameserver.model.skill.SkillOpType;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 import net.sf.l2j.gameserver.skills.Env;
@@ -47,64 +48,14 @@ import net.sf.l2j.gameserver.skills.basefuncs.FuncTemplate;
 import net.sf.l2j.gameserver.skills.conditions.Condition;
 import net.sf.l2j.gameserver.skills.effects.EffectTemplate;
 import net.sf.l2j.gameserver.taskmanager.DecayTaskManager;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 
 public abstract class L2Skill implements IChanceSkillTrigger
 {
 	protected static final Logger _log = Logger.getLogger(L2Skill.class.getName());
 	
 	private static final WorldObject[] _emptyTargetList = new WorldObject[0];
-	
-	public static final int SKILL_LUCKY = 194;
-	public static final int SKILL_EXPERTISE = 239;
-	public static final int SKILL_SHADOW_SENSE = 294;
-	public static final int SKILL_CREATE_COMMON = 1320;
-	public static final int SKILL_CREATE_DWARVEN = 172;
-	public static final int SKILL_CRYSTALLIZE = 248;
-	public static final int SKILL_DIVINE_INSPIRATION = 1405;
-	public static final int SKILL_NPC_RACE = 4416;
-	
-	public static enum SkillOpType
-	{
-		OP_PASSIVE,
-		OP_ACTIVE,
-		OP_TOGGLE
-	}
-	
-	/** Target types of skills : SELF, PARTY, CLAN, PET... */
-	public static enum SkillTargetType
-	{
-		TARGET_NONE,
-		TARGET_SELF,
-		TARGET_ONE,
-		TARGET_PARTY,
-		TARGET_ALLY,
-		TARGET_CLAN,
-		TARGET_PET,
-		TARGET_AREA,
-		TARGET_FRONT_AREA,
-		TARGET_BEHIND_AREA,
-		TARGET_AURA,
-		TARGET_FRONT_AURA,
-		TARGET_BEHIND_AURA,
-		TARGET_CORPSE,
-		TARGET_UNDEAD,
-		TARGET_AURA_UNDEAD,
-		TARGET_CORPSE_ALLY,
-		TARGET_CORPSE_PLAYER,
-		TARGET_CORPSE_PET,
-		TARGET_AREA_CORPSE_MOB,
-		TARGET_CORPSE_MOB,
-		TARGET_UNLOCKABLE,
-		TARGET_HOLY,
-		TARGET_PARTY_MEMBER,
-		TARGET_PARTY_OTHER,
-		TARGET_SUMMON,
-		TARGET_AREA_SUMMON,
-		TARGET_ENEMY_SUMMON,
-		TARGET_OWNER_PET,
-		TARGET_GROUND
-	}
-	
+
 	// conditional values
 	public static final int COND_BEHIND = 0x0008;
 	public static final int COND_CRIT = 0x0010;

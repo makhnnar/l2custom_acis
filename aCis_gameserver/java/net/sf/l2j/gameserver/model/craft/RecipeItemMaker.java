@@ -9,6 +9,7 @@ import net.sf.l2j.gameserver.model.holder.IntIntHolder;
 import net.sf.l2j.gameserver.model.item.Recipe;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.model.itemcontainer.Inventory;
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.ItemList;
@@ -41,7 +42,7 @@ public class RecipeItemMaker implements Runnable
 		_recipe = recipe;
 		
 		_isValid = false;
-		_skillId = (_recipe.isDwarven()) ? L2Skill.SKILL_CREATE_DWARVEN : L2Skill.SKILL_CREATE_COMMON;
+		_skillId = (_recipe.isDwarven()) ? CommonSkill.SKILL_CREATE_DWARVEN.id : CommonSkill.SKILL_CREATE_COMMON.id;
 		_skillLevel = _player.getSkillLevel(_skillId);
 		
 		_manaRequired = _recipe.getMpCost();

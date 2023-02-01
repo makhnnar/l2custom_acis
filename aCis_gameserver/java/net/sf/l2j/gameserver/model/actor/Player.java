@@ -84,7 +84,7 @@ import net.sf.l2j.gameserver.handler.admincommandhandlers.AdminEditChar;
 import net.sf.l2j.gameserver.model.AccessLevel;
 import net.sf.l2j.gameserver.model.L2Effect;
 import net.sf.l2j.gameserver.model.L2Skill;
-import net.sf.l2j.gameserver.model.L2Skill.SkillTargetType;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 import net.sf.l2j.gameserver.model.PetDataEntry;
 import net.sf.l2j.gameserver.model.Shortcut;
 import net.sf.l2j.gameserver.model.World;
@@ -156,6 +156,7 @@ import net.sf.l2j.gameserver.model.partymatching.PartyMatchRoomList;
 import net.sf.l2j.gameserver.model.partymatching.PartyMatchWaitingList;
 import net.sf.l2j.gameserver.model.pledge.Clan;
 import net.sf.l2j.gameserver.model.pledge.ClanMember;
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.model.tradelist.TradeList;
 import net.sf.l2j.gameserver.model.zone.type.BossZone;
 import net.sf.l2j.gameserver.network.GameClient;
@@ -1387,7 +1388,7 @@ public final class Player extends Playable
 	 */
 	public void refreshExpertisePenalty(){
 		if(!Config.NO_GRADE_PENALTY) {
-			final int expertiseLevel = getSkillLevel(L2Skill.SKILL_EXPERTISE);
+			final int expertiseLevel = getSkillLevel(CommonSkill.SKILL_EXPERTISE.id);
 			
 			int armorPenalty = 0;
 			boolean weaponPenalty = false;
@@ -3539,7 +3540,7 @@ public final class Player extends Playable
 					}
 					
 					// Reduce player's xp and karma.
-					if (Config.ALT_GAME_DELEVEL && (!hasSkill(L2Skill.SKILL_LUCKY) || getStat().getLevel() > 9))
+					if (Config.ALT_GAME_DELEVEL && (!hasSkill(CommonSkill.SKILL_LUCKY.id) || getStat().getLevel() > 9))
 						deathPenalty(pk != null && getClan() != null && pk.getClan() != null && (getClan().isAtWarWith(pk.getClanId()) || pk.getClan().isAtWarWith(getClanId())), pk != null, killer instanceof SiegeGuard);
 				}
 			}
@@ -4131,7 +4132,7 @@ public final class Player extends Playable
 	 */
 	public boolean hasDwarvenCraft()
 	{
-		return hasSkill(L2Skill.SKILL_CREATE_DWARVEN);
+		return hasSkill(CommonSkill.SKILL_CREATE_DWARVEN.id);
 	}
 	
 	/**
@@ -4139,7 +4140,7 @@ public final class Player extends Playable
 	 */
 	public boolean hasCommonCraft()
 	{
-		return hasSkill(L2Skill.SKILL_CREATE_COMMON);
+		return hasSkill(CommonSkill.SKILL_CREATE_COMMON.id);
 	}
 	
 	/**
@@ -4157,8 +4158,8 @@ public final class Player extends Playable
 				addSkill(skill.getSkill(), false);
 			
 			// Remove the Lucky skill if level superior to 10.
-			if (getLevel() >= 10 && hasSkill(L2Skill.SKILL_LUCKY))
-				removeSkill(L2Skill.SKILL_LUCKY, false);
+			if (getLevel() >= 10 && hasSkill(CommonSkill.SKILL_LUCKY.id))
+				removeSkill(CommonSkill.SKILL_LUCKY.id, false);
 			
 			// Remove invalid skills.
 			removeInvalidSkills();
@@ -4178,8 +4179,8 @@ public final class Player extends Playable
 			addSkill(skill.getSkill(), skill.getCost() != 0);
 		
 		// Remove the Lucky skill if level superior to 10.
-		if (getLevel() >= 10 && hasSkill(L2Skill.SKILL_LUCKY))
-			removeSkill(L2Skill.SKILL_LUCKY, false);
+		if (getLevel() >= 10 && hasSkill(CommonSkill.SKILL_LUCKY.id))
+			removeSkill(CommonSkill.SKILL_LUCKY.id, false);
 		
 		// Remove invalid skills.
 		removeInvalidSkills();
@@ -4200,7 +4201,7 @@ public final class Player extends Playable
 			return;
 		
 		// Retrieve the player template skills, based on actual level (+9 for regular skills, unchanged for expertise).
-		final Map<Integer, Optional<GeneralSkillNode>> availableSkills = getTemplate().getSkills().stream().filter(s -> s.getMinLvl() <= getLevel() + ((s.getId() == L2Skill.SKILL_EXPERTISE) ? 0 : 9)).collect(Collectors.groupingBy(s -> s.getId(), Collectors.maxBy(COMPARE_SKILLS_BY_LVL)));
+		final Map<Integer, Optional<GeneralSkillNode>> availableSkills = getTemplate().getSkills().stream().filter(s -> s.getMinLvl() <= getLevel() + ((s.getId() == CommonSkill.SKILL_EXPERTISE.id) ? 0 : 9)).collect(Collectors.groupingBy(s -> s.getId(), Collectors.maxBy(COMPARE_SKILLS_BY_LVL)));
 		
 		for (L2Skill skill : getSkills().values())
 		{

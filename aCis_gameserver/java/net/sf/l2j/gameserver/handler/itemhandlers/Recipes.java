@@ -9,6 +9,7 @@ import net.sf.l2j.gameserver.model.actor.Playable;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.Recipe;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.RecipeBookItemList;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
@@ -51,7 +52,7 @@ public class Recipes implements IItemHandler
 				player.sendPacket(SystemMessageId.CANT_REGISTER_NO_ABILITY_TO_CRAFT);
 			else if (player.getStoreType() == StoreType.MANUFACTURE)
 				player.sendPacket(SystemMessageId.CANT_ALTER_RECIPEBOOK_WHILE_CRAFTING);
-			else if (recipe.getLevel() > player.getSkillLevel(L2Skill.SKILL_CREATE_DWARVEN))
+			else if (recipe.getLevel() > player.getSkillLevel(CommonSkill.SKILL_CREATE_DWARVEN.id))
 				player.sendPacket(SystemMessageId.CREATE_LVL_TOO_LOW_TO_REGISTER);
 			else if (player.getDwarvenRecipeBook().size() >= player.getDwarfRecipeLimit())
 				player.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.UP_TO_S1_RECIPES_CAN_REGISTER).addNumber(player.getDwarfRecipeLimit()));
@@ -68,7 +69,7 @@ public class Recipes implements IItemHandler
 				player.sendPacket(SystemMessageId.CANT_REGISTER_NO_ABILITY_TO_CRAFT);
 			else if (player.getStoreType() == StoreType.MANUFACTURE)
 				player.sendPacket(SystemMessageId.CANT_ALTER_RECIPEBOOK_WHILE_CRAFTING);
-			else if (recipe.getLevel() > player.getSkillLevel(L2Skill.SKILL_CREATE_COMMON))
+			else if (recipe.getLevel() > player.getSkillLevel(CommonSkill.SKILL_CREATE_COMMON.id))
 				player.sendPacket(SystemMessageId.CREATE_LVL_TOO_LOW_TO_REGISTER);
 			else if (player.getCommonRecipeBook().size() >= player.getCommonRecipeLimit())
 				player.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.UP_TO_S1_RECIPES_CAN_REGISTER).addNumber(player.getCommonRecipeLimit()));

@@ -4,6 +4,7 @@ import net.sf.l2j.gameserver.enums.items.CrystalType;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.InventoryUpdate;
@@ -41,7 +42,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		}
 		
 		// Player must own Crystallize skill.
-		final int skillLevel = player.getSkillLevel(L2Skill.SKILL_CRYSTALLIZE);
+		final int skillLevel = player.getSkillLevel(CommonSkill.SKILL_CRYSTALLIZE.id);
 		if (skillLevel <= 0)
 		{
 			player.sendPacket(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);

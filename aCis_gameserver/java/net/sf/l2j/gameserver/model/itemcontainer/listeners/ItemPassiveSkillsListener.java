@@ -7,6 +7,7 @@ import net.sf.l2j.gameserver.model.holder.IntIntHolder;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.model.item.kind.Item;
 import net.sf.l2j.gameserver.model.item.kind.Weapon;
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.serverpackets.SkillCoolTime;
 
 public class ItemPassiveSkillsListener implements OnEquipListener
@@ -34,7 +35,7 @@ public class ItemPassiveSkillsListener implements OnEquipListener
 				item.getAugmentation().applyBonus(player);
 			
 			// Verify if the grade penalty is occuring. If yes, then forget +4 dual skills and SA attached to weapon.
-			if (player.getSkillLevel(L2Skill.SKILL_EXPERTISE) < it.getCrystalType().getId())
+			if (player.getSkillLevel(CommonSkill.SKILL_EXPERTISE.id) < it.getCrystalType().getId())
 				return;
 			
 			// Add skills bestowed from +4 Duals

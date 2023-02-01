@@ -11,6 +11,7 @@ import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.instance.EffectPoint;
 import net.sf.l2j.gameserver.model.actor.template.NpcTemplate;
 import net.sf.l2j.gameserver.model.location.Location;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 
 public final class L2SkillSignet extends L2Skill
 {
@@ -36,7 +37,7 @@ public final class L2SkillSignet extends L2Skill
 		effectPoint.setCurrentMp(effectPoint.getMaxMp());
 		
 		Location worldPosition = null;
-		if (caster instanceof Player && getTargetType() == L2Skill.SkillTargetType.TARGET_GROUND)
+		if (caster instanceof Player && getTargetType() == SkillTargetType.TARGET_GROUND)
 			worldPosition = ((Player) caster).getCurrentSkillWorldPosition();
 		
 		getEffects(caster, effectPoint);

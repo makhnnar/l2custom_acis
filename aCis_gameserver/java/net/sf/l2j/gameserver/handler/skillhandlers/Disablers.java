@@ -20,6 +20,7 @@ import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 import net.sf.l2j.gameserver.skills.Env;
 import net.sf.l2j.gameserver.skills.Formulas;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 
 public class Disablers implements ISkillHandler
 {
@@ -208,7 +209,7 @@ public class Disablers implements ISkillHandler
 					{
 						if (Formulas.calcSkillSuccess(activeChar, target, skill, shld, bsps))
 						{
-							if (skill.getTargetType() == L2Skill.SkillTargetType.TARGET_UNDEAD)
+							if (skill.getTargetType() == SkillTargetType.TARGET_UNDEAD)
 							{
 								if (target.isUndead())
 									((Attackable) target).reduceHate(null, ((Attackable) target).getHating(((Attackable) target).getMostHated()));

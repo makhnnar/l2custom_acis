@@ -22,6 +22,7 @@ import net.sf.l2j.gameserver.model.actor.template.PetTemplate;
 import net.sf.l2j.gameserver.model.item.DropCategory;
 import net.sf.l2j.gameserver.model.item.DropData;
 
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 
@@ -150,7 +151,7 @@ public class NpcData implements IXmlReader
 					final NamedNodeMap skillAttrs = skillNode.getAttributes();
 					final int skillId = parseInteger(skillAttrs, "id");
 					final int level = parseInteger(skillAttrs, "level");
-					if (skillId == L2Skill.SKILL_NPC_RACE)
+					if (skillId == CommonSkill.SKILL_NPC_RACE.id)
 					{
 						set.set("raceId", level);
 						return;

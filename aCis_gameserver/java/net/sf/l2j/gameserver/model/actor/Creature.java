@@ -59,6 +59,7 @@ import net.sf.l2j.gameserver.model.item.kind.Weapon;
 import net.sf.l2j.gameserver.model.itemcontainer.Inventory;
 import net.sf.l2j.gameserver.model.location.Location;
 import net.sf.l2j.gameserver.model.location.SpawnLocation;
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.AbstractNpcInfo.NpcInfo;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
@@ -98,6 +99,7 @@ import net.sf.l2j.gameserver.skills.funcs.FuncPAtkSpeed;
 import net.sf.l2j.gameserver.skills.funcs.FuncPDefMod;
 import net.sf.l2j.gameserver.taskmanager.AttackStanceTaskManager;
 import net.sf.l2j.gameserver.taskmanager.MovementTaskManager;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 
 /**
  * An instance type extending {@link WorldObject} which represents the mother class of all character objects of the world such as players, NPCs and monsters.
@@ -5144,7 +5146,7 @@ public abstract class Creature extends WorldObject
 	 */
 	public int getMaxBuffCount()
 	{
-		return Config.MAX_BUFFS_AMOUNT + getSkillLevel(L2Skill.SKILL_DIVINE_INSPIRATION);
+		return Config.MAX_BUFFS_AMOUNT + getSkillLevel(CommonSkill.SKILL_DIVINE_INSPIRATION.id);
 	}
 	
 	/**

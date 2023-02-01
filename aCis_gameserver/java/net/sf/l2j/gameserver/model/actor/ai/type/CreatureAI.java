@@ -20,6 +20,7 @@ import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance.ItemLocation;
 import net.sf.l2j.gameserver.model.location.Location;
 import net.sf.l2j.gameserver.model.location.SpawnLocation;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 
 public class CreatureAI extends AbstractAI
 {
@@ -622,7 +623,7 @@ public class CreatureAI extends AbstractAI
 				if (cancast)
 					return true;
 			}
-			else if (sk.getTargetType() == L2Skill.SkillTargetType.TARGET_AREA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_BEHIND_AREA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_FRONT_AREA)
+			else if (sk.getTargetType() == SkillTargetType.TARGET_AREA || sk.getTargetType() == SkillTargetType.TARGET_BEHIND_AREA || sk.getTargetType() == SkillTargetType.TARGET_FRONT_AREA)
 			{
 				boolean cancast = true;
 				for (Creature target : ((Creature) getTarget()).getKnownTypeInRadius(Creature.class, sk.getSkillRadius()))
@@ -661,7 +662,7 @@ public class CreatureAI extends AbstractAI
 				if (cancast)
 					return true;
 			}
-			else if (sk.getTargetType() == L2Skill.SkillTargetType.TARGET_AREA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_BEHIND_AREA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_FRONT_AREA)
+			else if (sk.getTargetType() == SkillTargetType.TARGET_AREA || sk.getTargetType() == SkillTargetType.TARGET_BEHIND_AREA || sk.getTargetType() == SkillTargetType.TARGET_FRONT_AREA)
 			{
 				boolean cancast = true;
 				for (Creature target : ((Creature) getTarget()).getKnownTypeInRadius(Creature.class, sk.getSkillRadius()))

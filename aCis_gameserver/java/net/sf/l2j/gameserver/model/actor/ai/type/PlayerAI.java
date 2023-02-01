@@ -2,7 +2,7 @@ package net.sf.l2j.gameserver.model.actor.ai.type;
 
 import net.sf.l2j.gameserver.enums.IntentionType;
 import net.sf.l2j.gameserver.model.L2Skill;
-import net.sf.l2j.gameserver.model.L2Skill.SkillTargetType;
+
 import net.sf.l2j.gameserver.model.WorldObject;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Player;
@@ -10,6 +10,7 @@ import net.sf.l2j.gameserver.model.actor.Summon;
 import net.sf.l2j.gameserver.model.actor.ai.Desire;
 import net.sf.l2j.gameserver.model.actor.instance.StaticObject;
 import net.sf.l2j.gameserver.model.location.Location;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.AutoAttackStart;
 import net.sf.l2j.gameserver.taskmanager.AttackStanceTaskManager;

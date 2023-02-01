@@ -12,7 +12,7 @@ import net.sf.l2j.gameserver.geoengine.GeoEngine;
 import net.sf.l2j.gameserver.handler.IItemHandler;
 import net.sf.l2j.gameserver.handler.ItemHandler;
 import net.sf.l2j.gameserver.model.L2Skill;
-import net.sf.l2j.gameserver.model.L2Skill.SkillTargetType;
+
 import net.sf.l2j.gameserver.model.WorldObject;
 import net.sf.l2j.gameserver.model.actor.ai.type.CreatureAI;
 import net.sf.l2j.gameserver.model.actor.ai.type.SummonAI;
@@ -42,6 +42,7 @@ import net.sf.l2j.gameserver.network.serverpackets.PetStatusShow;
 import net.sf.l2j.gameserver.network.serverpackets.PetStatusUpdate;
 import net.sf.l2j.gameserver.network.serverpackets.RelationChanged;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 
 public abstract class Summon extends Playable
 {
@@ -54,7 +55,6 @@ public abstract class Summon extends Playable
 	public Summon(int objectId, NpcTemplate template, Player owner)
 	{
 		super(objectId, template);
-		
 		for (L2Skill skill : template.getSkills(SkillType.PASSIVE))
 			addStatFuncs(skill.getStatFuncs(this));
 		

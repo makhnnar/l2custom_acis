@@ -23,6 +23,7 @@ import net.sf.l2j.gameserver.network.serverpackets.MagicSkillLaunched;
 import net.sf.l2j.gameserver.skills.Env;
 import net.sf.l2j.gameserver.skills.Formulas;
 import net.sf.l2j.gameserver.skills.l2skills.L2SkillSignetCasttime;
+import net.sf.l2j.gameserver.model.skill.SkillTargetType;
 
 public class EffectSignetMDam extends L2Effect
 {
@@ -53,7 +54,7 @@ public class EffectSignetMDam extends L2Effect
 		effectPoint.setCurrentMp(effectPoint.getMaxMp());
 		
 		Location worldPosition = null;
-		if (getEffector() instanceof Player && getSkill().getTargetType() == L2Skill.SkillTargetType.TARGET_GROUND)
+		if (getEffector() instanceof Player && getSkill().getTargetType() == SkillTargetType.TARGET_GROUND)
 			worldPosition = ((Player) getEffector()).getCurrentSkillWorldPosition();
 		
 		effectPoint.setIsInvul(true);

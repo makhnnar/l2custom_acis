@@ -12,6 +12,7 @@ import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.template.NpcTemplate;
 import net.sf.l2j.gameserver.model.buylist.NpcBuyList;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
+import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.serverpackets.BuyList;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.network.serverpackets.SellList;
@@ -146,7 +147,7 @@ public class Merchant extends Folk
 			return;
 		
 		player.tempInventoryDisable();
-		player.sendPacket(new ShopPreviewList(buyList, player.getAdena(), player.getSkillLevel(L2Skill.SKILL_EXPERTISE)));
+		player.sendPacket(new ShopPreviewList(buyList, player.getAdena(), player.getSkillLevel(CommonSkill.SKILL_EXPERTISE.id)));
 	}
 	
 	protected final void showBuyWindow(Player player, int val)
