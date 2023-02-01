@@ -590,7 +590,7 @@ public class CreatureAI extends AbstractAI
 	
 	public boolean canAura(L2Skill sk)
 	{
-		if (sk.getTargetType() == L2Skill.SkillTargetType.TARGET_AURA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_BEHIND_AURA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_FRONT_AURA)
+		if (sk.getTargetType() == SkillTargetType.TARGET_AURA || sk.getTargetType() == SkillTargetType.TARGET_BEHIND_AURA || sk.getTargetType() == SkillTargetType.TARGET_FRONT_AURA)
 		{
 			for (WorldObject target : _actor.getKnownTypeInRadius(Creature.class, sk.getSkillRadius()))
 			{
@@ -605,7 +605,7 @@ public class CreatureAI extends AbstractAI
 	{
 		if (sk.getSkillType() != L2SkillType.NEGATE || sk.getSkillType() != L2SkillType.CANCEL)
 		{
-			if (sk.getTargetType() == L2Skill.SkillTargetType.TARGET_AURA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_BEHIND_AURA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_FRONT_AURA)
+			if (sk.getTargetType() == SkillTargetType.TARGET_AURA || sk.getTargetType() == SkillTargetType.TARGET_BEHIND_AURA || sk.getTargetType() == SkillTargetType.TARGET_FRONT_AURA)
 			{
 				boolean cancast = true;
 				for (Creature target : _actor.getKnownTypeInRadius(Creature.class, sk.getSkillRadius()))
@@ -644,7 +644,7 @@ public class CreatureAI extends AbstractAI
 		}
 		else
 		{
-			if (sk.getTargetType() == L2Skill.SkillTargetType.TARGET_AURA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_BEHIND_AURA || sk.getTargetType() == L2Skill.SkillTargetType.TARGET_FRONT_AURA)
+			if (sk.getTargetType() == SkillTargetType.TARGET_AURA || sk.getTargetType() == SkillTargetType.TARGET_BEHIND_AURA || sk.getTargetType() == SkillTargetType.TARGET_FRONT_AURA)
 			{
 				boolean cancast = false;
 				for (Creature target : _actor.getKnownTypeInRadius(Creature.class, sk.getSkillRadius()))
@@ -686,7 +686,7 @@ public class CreatureAI extends AbstractAI
 	
 	public boolean canParty(L2Skill sk)
 	{
-		if (sk.getTargetType() != L2Skill.SkillTargetType.TARGET_PARTY)
+		if (sk.getTargetType() != SkillTargetType.TARGET_PARTY)
 			return false;
 		
 		int count = 0;

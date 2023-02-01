@@ -5,55 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aCis_gameserver.eml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/GameServer_loop.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/GeoDataConverter.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/GeoDataConverter.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/config/clans.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/config/events.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/config/geoengine.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/config/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/config/npcs.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/config/players.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/config/server.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/config/siege.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/startGameServer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/gameserver/startGameServer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/LoginServer_loop.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/RegisterGameServer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/RegisterGameServer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/config/banned_ips.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/config/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/config/loginserver.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/startLoginServer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/startLoginServer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/startSQLAccountManager.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/build/dist/login/startSQLAccountManager.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/data/xml/NpcData.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/data/xml/NpcData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/data/xml/SpellbookData.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/data/xml/SpellbookData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/handler/itemhandlers/Recipes.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/handler/itemhandlers/Recipes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/handler/skillhandlers/Disablers.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/handler/skillhandlers/Disablers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/ChanceSkillList.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/ChanceSkillList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/L2Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/L2Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/Summon.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/Summon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/ai/type/AttackableAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/ai/type/AttackableAI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/ai/type/CreatureAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/ai/type/CreatureAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/ai/type/PlayerAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/ai/type/PlayerAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/instance/BabyPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/instance/BabyPet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/instance/Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/actor/instance/Merchant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/craft/RecipeItemMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/craft/RecipeItemMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/itemcontainer/listeners/ItemPassiveSkillsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/model/itemcontainer/listeners/ItemPassiveSkillsListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/network/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/network/GameClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/network/clientpackets/EnterWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/network/clientpackets/EnterWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/network/clientpackets/RequestCrystallizeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/network/clientpackets/RequestCrystallizeItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/skills/effects/EffectSignetMDam.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/skills/effects/EffectSignetMDam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/skills/l2skills/L2SkillDrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/skills/l2skills/L2SkillDrain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/skills/l2skills/L2SkillSeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/skills/l2skills/L2SkillSeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/skills/l2skills/L2SkillSignet.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/skills/l2skills/L2SkillSignet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/taskmanager/GameTimeTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/aCis_gameserver/java/net/sf/l2j/gameserver/taskmanager/GameTimeTaskManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +46,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -113,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675263925631</updated>
       <workItem from="1675263926979" duration="395000" />
-      <workItem from="1675264339199" duration="7701000" />
+      <workItem from="1675264339199" duration="8064000" />
     </task>
     <servers />
   </component>
