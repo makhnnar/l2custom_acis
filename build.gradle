@@ -9,10 +9,9 @@ repositories {
     mavenCentral()
 }
 
-
-/*def mainFolder = "l2custom_acis"
-def gameServer = "game"
-def loginServer = "login"*/
+jar {
+    archivesBaseName  = 'l2jserver'
+}
 
 ext {
     mainFolder = "l2custom_acis"
