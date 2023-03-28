@@ -1,0 +1,62 @@
+plugins {
+    id 'java'
+}
+
+group 'net.sf.l2j'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+/*def mainFolder = "l2custom_acis"
+def gameServer = "game"
+def loginServer = "login"*/
+
+ext {
+    mainFolder = "l2custom_acis"
+    gameServer = "game"
+    loginServer = "game"
+    config = "config"
+    logs = "log"
+    data = "data"
+    libs = "libs"
+}
+
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.mchange/c3p0
+    implementation 'com.mchange:c3p0:0.9.5-pre5'
+    // https://mvnrepository.com/artifact/com.mchange/mchange-commons-java
+    implementation 'com.mchange:mchange-commons-java:0.2.6.2'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation 'mysql:mysql-connector-java:8.0.15'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+def filesDirectories() {
+    mkdir layout.buildDirectory.dir("$mainFolder")
+    mkdir layout.buildDirectory.dir("$mainFolder/$loginServer")
+    mkdir layout.buildDirectory.dir("$mainFolder/$loginServer/$logs")
+    mkdir layout.buildDirectory.dir("$mainFolder/$loginServer/$config")
+    mkdir layout.buildDirectory.dir("$mainFolder/$loginServer/$libs")
+    mkdir layout.buildDirectory.dir("$mainFolder/$gameServer")
+    mkdir layout.buildDirectory.dir("$mainFolder/$gameServer/$config")
+    mkdir layout.buildDirectory.dir("$mainFolder/$gameServer/$logs")
+    mkdir layout.buildDirectory.dir("$mainFolder/$gameServer/$data")
+    mkdir layout.buildDirectory.dir("$mainFolder/$gameServer/$libs")
+}
+
+task copyDocs(type: Copy) {
+    doLast {
+        filesDirectories()
+    }
+    from 'src/main/resources'
+    into layout.buildDirectory.dir("$mainFolder")
+}

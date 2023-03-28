@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<component inheritJdk="true">
-	<contentEntry url="file://$MODULE_DIR$/aCis_gameserver"/>
-	<levels>
-		<level name="mchange.commons.java" value="project"/>
-		<level name="mysql.connector.java" value="project"/>
-		<level name="mchange.c3p0" value="project"/>
-	</levels>
-</component>
