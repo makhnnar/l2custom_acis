@@ -104,7 +104,28 @@
       <recent name="C:\Users\pgomez\Documents\examples\l2custom_acis\aCis_gameserver\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.l2custom_acis [copyDocsFiles]">
+  <component name="RunManager" selected="Gradle.l2custom_acis [assembleDist]">
+    <configuration name="l2custom_acis [assembleDist]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assembleDist" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="l2custom_acis [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,6 +225,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.l2custom_acis [assembleDist]" />
         <item itemvalue="Gradle.l2custom_acis [copyDocsFiles]" />
         <item itemvalue="Gradle.l2custom_acis [assemble]" />
         <item itemvalue="Gradle.l2custom_acis [copyDocs]" />
