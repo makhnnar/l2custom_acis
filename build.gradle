@@ -16,7 +16,7 @@ jar {
 ext {
     mainFolder = "l2custom_acis"
     gameServer = "game"
-    loginServer = "game"
+    loginServer = "login"
     config = "config"
     logs = "log"
     data = "data"
@@ -52,10 +52,39 @@ def filesDirectories() {
     mkdir layout.buildDirectory.dir("$mainFolder/$gameServer/$libs")
 }
 
-task copyDocs(type: Copy) {
-    doLast {
+task copyDocs() {
+    doFirst {
         filesDirectories()
     }
-    from 'src/main/resources'
-    into layout.buildDirectory.dir("$mainFolder")
+    doLast {
+        try{
+            println(layout.projectDirectory.dir('main/resources/dist'))
+            println(layout.projectDirectory.dir('main/resources/data'))
+            println(layout.buildDirectory.dir('l2custom_acis/login'))
+            initLoginServer()
+        }catch (e){
+            println(e)
+        }
+    }
+    copy {
+
+    }
+}
+
+def initLoginServer() {
+    copy {
+        println("copying login folder")
+        from('src/main/resources/dist') {
+            include 'startAccountManager.*'
+            include 'startSQLAccountManager.*'
+            include 'LoginServer_loop.sh'
+            include 'startLoginServer.*'
+            include 'RegisterGameServer.*'
+        }
+        from('src/main/resources/data') {
+            include "serverNames.xml"
+        }
+        into layout.buildDirectory.dir('l2custom_acis/login')
+        println("copyed login folder")
+    }
 }
