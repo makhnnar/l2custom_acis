@@ -11,6 +11,12 @@ repositories {
 
 jar {
     archivesBaseName  = 'l2jserver'
+    manifest {
+        attributes(
+            "Main-Class": "net.sf.l2j.Server"
+            //"Class-Path": "${manifest.libs}"
+        )
+    }
 }
 
 ext {
@@ -21,6 +27,8 @@ ext {
     logs = "log"
     data = "data"
     libs = "libs"
+    sql = "sql"
+    tools = "tools"
 }
 
 
@@ -50,28 +58,32 @@ def filesDirectories() {
     mkdir layout.buildDirectory.dir("$mainFolder/$gameServer/$logs")
     mkdir layout.buildDirectory.dir("$mainFolder/$gameServer/$data")
     mkdir layout.buildDirectory.dir("$mainFolder/$gameServer/$libs")
+    mkdir layout.buildDirectory.dir("$mainFolder/$sql")
+    mkdir layout.buildDirectory.dir("$mainFolder/$tools")
 }
 
-task copyDocs() {
+task copyDocsFiles() {
     doFirst {
         filesDirectories()
     }
     doLast {
         try{
-            println(layout.projectDirectory.dir('main/resources/dist'))
-            println(layout.projectDirectory.dir('main/resources/data'))
-            println(layout.buildDirectory.dir('l2custom_acis/login'))
-            initLoginServer()
+            initLoginMainFolder()
+            initLoginConfigFolder()
+            initGameMainFolder()
+            initGameConfigFolder()
+            initGameDataFolder()
+            initSqlFolder()
+            initToolsFolder()
+            initLoginLibsFolder()
+            initGameLibsFolder()
         }catch (e){
             println(e)
         }
     }
-    copy {
-
-    }
 }
 
-def initLoginServer() {
+def initLoginMainFolder() {
     copy {
         println("copying login folder")
         from('src/main/resources/dist') {
@@ -88,3 +100,110 @@ def initLoginServer() {
         println("copyed login folder")
     }
 }
+
+def initLoginConfigFolder() {
+    copy {
+        println("copying login/config folder")
+        from('src/main/resources/config') {
+            include 'banned_ips.properties'
+            include 'logging.properties'
+            include 'loginserver.properties'
+        }
+        into layout.buildDirectory.dir('l2custom_acis/login/config')
+        println("copyed login/config folder")
+    }
+}
+
+def initLoginLibsFolder() {
+    copy {
+        println("copying login/libs folder")
+        from('build/libs') {
+            include 'l2jserver-1.0-SNAPSHOT.jar'
+        }
+        into layout.buildDirectory.dir('l2custom_acis/login/libs')
+        println("copyed login/libs folder")
+    }
+}
+
+def initGameMainFolder() {
+    copy {
+        println("copying game folder")
+        from('src/main/resources/dist') {
+            include 'GameServer_loop.sh'
+            include 'startGameServer.*'
+            include 'GeoDataConverter.*'
+        }
+        into layout.buildDirectory.dir('l2custom_acis/game')
+        println("copyed game folder")
+    }
+}
+
+def initGameConfigFolder() {
+    copy {
+        println("copying game/config folder")
+        from('src/main/resources/config') {
+            include '*.properties'
+            exclude 'banned_ips.properties'
+            exclude 'loginserver.properties'
+        }
+        into layout.buildDirectory.dir('l2custom_acis/game/config')
+        println("copyed game/config folder")
+    }
+}
+
+def initGameDataFolder() {
+    copy {
+        println("copying game/data folder")
+        from('src/main/resources/data') {
+            exclude '.project'
+            exclude 'log/**'
+            exclude 'cachedir/**'
+            exclude 'clans/**'
+            exclude 'crests/**'
+            exclude '**.svn**'
+            exclude '**/*.class'
+            exclude '**/*.jar'
+            include '**/*.*'
+        }
+        into layout.buildDirectory.dir('l2custom_acis/game/data')
+        println("copyed game/data folder")
+    }
+}
+
+def initGameLibsFolder() {
+    copy {
+        println("copying game/libs folder")
+        from('build/libs') {
+            include 'l2jserver-1.0-SNAPSHOT.jar'
+        }
+        into layout.buildDirectory.dir('l2custom_acis/game/libs')
+        println("copyed game/libs folder")
+    }
+}
+
+def initSqlFolder() {
+    copy {
+        println("copying sql folder")
+        from('src/main/resources/sql') {
+            include '*.*'
+        }
+        into layout.buildDirectory.dir('l2custom_acis/sql')
+        println("copyed sql folder")
+    }
+}
+
+def initToolsFolder() {
+    copy {
+        println("copying tools folder")
+        from('src/main/resources/tools') {
+            include '*.*'
+            exclude 'database_installer.rc'
+            exclude '*.txt'
+            exclude '*.log'
+            exclude '*backup.sql'
+        }
+        into layout.buildDirectory.dir('l2custom_acis/tools')
+        println("copyed tools folder")
+    }
+}
+
