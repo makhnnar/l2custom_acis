@@ -3,23 +3,6 @@ plugins {
     id 'application'
 }
 
-group 'net.sf.l2j'
-version '1.1-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
-jar {
-    archivesBaseName  = 'l2jserver'
-    manifest {
-        attributes(
-            "Main-Class": "net.sf.l2j.Server"
-            //"Class-Path": "${manifest.libs}"
-        )
-    }
-}
-
 ext {
     mainFolder = "l2custom_acis"
     gameServer = "game"
@@ -30,19 +13,52 @@ ext {
     libs = "libs"
     sql = "sql"
     tools = "tools"
+    versionName = '1.2'
 }
 
+group 'net.sf.l2j'
+version versionName
+
+configurations {
+    alguinho
+}
+
+repositories {
+    mavenCentral()
+}
 
 dependencies {
     // https://mvnrepository.com/artifact/com.mchange/c3p0
     implementation 'com.mchange:c3p0:0.9.5-pre5'
+
     // https://mvnrepository.com/artifact/com.mchange/mchange-commons-java
     implementation 'com.mchange:mchange-commons-java:0.2.6.2'
+
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     implementation 'mysql:mysql-connector-java:8.0.15'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
+
+jar {
+    archivesBaseName  = 'l2jserver'
+    manifest {
+        attributes(
+            "Main-Class": "net.sf.l2j.Server"
+            //"Class-Path": "${manifest.libs}"
+        )
+    }
+    //to include all in one jar. not necessary
+    /*from {
+        configurations.runtimeClasspath.filter{
+            it.exists()
+        }.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }*/
+}
+
 
 test {
     useJUnitPlatform()
@@ -119,7 +135,7 @@ def initLoginLibsFolder() {
     copy {
         println("copying login/libs folder")
         from('build/libs') {
-            include 'l2jserver-1.0-SNAPSHOT.jar'
+            include "*.jar"
         }
         into layout.buildDirectory.dir('l2custom_acis/login/libs')
         println("copyed login/libs folder")
@@ -175,7 +191,7 @@ def initGameLibsFolder() {
     copy {
         println("copying game/libs folder")
         from('build/libs') {
-            include 'l2jserver-1.0-SNAPSHOT.jar'
+            include "*.jar"
         }
         into layout.buildDirectory.dir('l2custom_acis/game/libs')
         println("copyed game/libs folder")
@@ -206,5 +222,20 @@ def initToolsFolder() {
         into layout.buildDirectory.dir('l2custom_acis/tools')
         println("copyed tools folder")
     }
+}
+
+task copyDependenciesToLibFolder(type: Copy) {
+    from configurations.runtimeClasspath
+    into layout.buildDirectory.dir('libs')
+}
+
+task deleteBuild(type: Delete) {
+    delete layout.buildDirectory.dir("$mainFolder")
+    delete layout.buildDirectory.dir('libs')
+}
+
+build {
+    copyDependenciesToLibFolder
+    copyDocsFiles
 }
 
