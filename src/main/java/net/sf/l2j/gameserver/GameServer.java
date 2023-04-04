@@ -68,9 +68,7 @@ public class GameServer
 		}
 		
 		StringUtil.printSection("aCis");
-		
-		// Initialize config
-		Config.loadGameServer();
+
 		
 		// Factories
 		L2DatabaseFactory.getInstance();
