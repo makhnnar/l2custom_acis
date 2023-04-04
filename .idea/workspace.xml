@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/TestApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/TestApi.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
