@@ -1,0 +1,37 @@
+package net.sf.l2j.cms.models
+
+import net.sf.l2j.Config
+
+data class ClanConfig(
+    val ALT_CLAN_JOIN_DAYS: Int = Config.ALT_CLAN_JOIN_DAYS,
+    val ALT_CLAN_CREATE_DAYS: Int = Config.ALT_CLAN_CREATE_DAYS,
+    val ALT_CLAN_DISSOLVE_DAYS: Int = Config.ALT_CLAN_DISSOLVE_DAYS,
+    val ALT_ALLY_JOIN_DAYS_WHEN_LEAVED: Int = Config.ALT_ALLY_JOIN_DAYS_WHEN_LEAVED,
+    val ALT_ALLY_JOIN_DAYS_WHEN_DISMISSED: Int = Config.ALT_ALLY_JOIN_DAYS_WHEN_DISMISSED,
+    val ALT_ACCEPT_CLAN_DAYS_WHEN_DISMISSED: Int = Config.ALT_ACCEPT_CLAN_DAYS_WHEN_DISMISSED,
+    val ALT_CREATE_ALLY_DAYS_WHEN_DISSOLVED: Int = Config.ALT_CREATE_ALLY_DAYS_WHEN_DISSOLVED,
+    val ALT_MAX_NUM_OF_CLANS_IN_ALLY: Int = Config.ALT_MAX_NUM_OF_CLANS_IN_ALLY,
+    val ALT_CLAN_MEMBERS_FOR_WAR: Int = Config.ALT_CLAN_MEMBERS_FOR_WAR,
+    val ALT_CLAN_WAR_PENALTY_WHEN_ENDED: Int = Config.ALT_CLAN_WAR_PENALTY_WHEN_ENDED,
+    val ALT_MEMBERS_CAN_WITHDRAW_FROM_CLANWH: Boolean = Config.ALT_MEMBERS_CAN_WITHDRAW_FROM_CLANWH
+) {
+    companion object {
+        private val valuesMap = mapOf(
+            "ALT_CLAN_JOIN_DAYS" to Config::ALT_CLAN_JOIN_DAYS,
+            "ALT_CLAN_CREATE_DAYS" to Config::ALT_CLAN_CREATE_DAYS,
+            "ALT_CLAN_DISSOLVE_DAYS" to Config::ALT_CLAN_DISSOLVE_DAYS,
+            "ALT_ALLY_JOIN_DAYS_WHEN_LEAVED" to Config::ALT_ALLY_JOIN_DAYS_WHEN_LEAVED,
+            "ALT_ALLY_JOIN_DAYS_WHEN_DISMISSED" to Config::ALT_ALLY_JOIN_DAYS_WHEN_DISMISSED,
+            "ALT_ACCEPT_CLAN_DAYS_WHEN_DISMISSED" to Config::ALT_ACCEPT_CLAN_DAYS_WHEN_DISMISSED,
+            "ALT_CREATE_ALLY_DAYS_WHEN_DISSOLVED" to Config::ALT_CREATE_ALLY_DAYS_WHEN_DISSOLVED,
+            "ALT_MAX_NUM_OF_CLANS_IN_ALLY" to Config::ALT_MAX_NUM_OF_CLANS_IN_ALLY,
+            "ALT_CLAN_MEMBERS_FOR_WAR" to Config::ALT_CLAN_MEMBERS_FOR_WAR,
+            "ALT_CLAN_WAR_PENALTY_WHEN_ENDED" to Config::ALT_CLAN_WAR_PENALTY_WHEN_ENDED,
+            "ALT_MEMBERS_CAN_WITHDRAW_FROM_CLANWH" to Config::ALT_MEMBERS_CAN_WITHDRAW_FROM_CLANWH
+        )
+
+        fun getField(fieldName: String): Any {
+            return valuesMap[fieldName]?.invoke() ?: throw IllegalArgumentException("Invalid field name")
+        }
+    }
+}
