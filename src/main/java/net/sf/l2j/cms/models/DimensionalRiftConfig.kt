@@ -1,0 +1,35 @@
+package net.sf.l2j.cms.models
+
+import net.sf.l2j.Config
+
+data class DimensionalRiftConfig(
+    var RIFT_MIN_PARTY_SIZE: Int = Config.RIFT_MIN_PARTY_SIZE,
+    var RIFT_SPAWN_DELAY: Int = Config.RIFT_SPAWN_DELAY,
+    var RIFT_MAX_JUMPS: Int = Config.RIFT_MAX_JUMPS,
+    var RIFT_AUTO_JUMPS_TIME_MIN: Int = Config.RIFT_AUTO_JUMPS_TIME_MIN,
+    var RIFT_AUTO_JUMPS_TIME_MAX: Int = Config.RIFT_AUTO_JUMPS_TIME_MAX,
+    var RIFT_ENTER_COST_RECRUIT: Int = Config.RIFT_ENTER_COST_RECRUIT,
+    var RIFT_ENTER_COST_SOLDIER: Int = Config.RIFT_ENTER_COST_SOLDIER,
+    var RIFT_ENTER_COST_OFFICER: Int = Config.RIFT_ENTER_COST_OFFICER,
+    var RIFT_ENTER_COST_CAPTAIN: Int = Config.RIFT_ENTER_COST_CAPTAIN,
+    var RIFT_ENTER_COST_COMMANDER: Int = Config.RIFT_ENTER_COST_COMMANDER,
+    var RIFT_ENTER_COST_HERO: Int = Config.RIFT_ENTER_COST_HERO,
+    var RIFT_BOSS_ROOM_TIME_MUTIPLY: Double = Config.RIFT_BOSS_ROOM_TIME_MUTIPLY
+) {
+    companion object {
+        val fieldMap = mapOf(
+            "RIFT_MIN_PARTY_SIZE" to Config::RIFT_MIN_PARTY_SIZE,
+            "RIFT_SPAWN_DELAY" to Config::RIFT_SPAWN_DELAY,
+            "RIFT_MAX_JUMPS" to Config::RIFT_MAX_JUMPS,
+            "RIFT_AUTO_JUMPS_TIME_MIN" to Config::RIFT_AUTO_JUMPS_TIME_MIN,
+            "RIFT_AUTO_JUMPS_TIME_MAX" to Config::RIFT_AUTO_JUMPS_TIME_MAX,
+            "RIFT_ENTER_COST_RECRUIT" to Config::RIFT_ENTER_COST_RECRUIT,
+            "RIFT_ENTER_COST_SOLDIER" to Config::RIFT_ENTER_COST_SOLDIER,
+            "RIFT_ENTER_COST_OFFICER" to Config::RIFT_ENTER_COST_OFFICER,
+            "RIFT_ENTER_COST_CAPTAIN" to Config::RIFT_ENTER_COST_CAPTAIN,
+            "RIFT_ENTER_COST_COMMANDER" to Config::RIFT_ENTER_COST_COMMANDER,
+            "RIFT_ENTER_COST_HERO" to Config::RIFT_ENTER_COST_HERO,
+            "RIFT_BOSS_ROOM_TIME_MUTIPLY" to Config::RIFT_BOSS_ROOM_TIME_MUTIPLY
+        )
+    }
+}
