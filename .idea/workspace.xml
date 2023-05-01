@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/NpcsConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/NpcsConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/ClanConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/ClanConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/DimensionalRiftConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/EventConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/EventConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/FourSepulchersConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/LoginServerConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/LoginServerConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/ManorConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/OlympiadConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/SevenSignsConfig.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +91,7 @@
       <list>
         <option value="Enum" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
