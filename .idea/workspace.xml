@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/ClanConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/ClanConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/EventConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/EventConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/PlayersConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/PlayersConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/TestApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/TestApi.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/ServerConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/cms/models/ServerConfig.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -255,9 +253,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.l2custom_acis [copyDocsFiles]" />
-        <item itemvalue="Gradle.l2custom_acis [assemble]" />
         <item itemvalue="Gradle.l2custom_acis [copyDependenciesToLibFolder]" />
         <item itemvalue="Gradle.l2custom_acis [build]" />
+        <item itemvalue="Gradle.l2custom_acis [assemble]" />
         <item itemvalue="Gradle.l2custom_acis [copyToLib]" />
       </list>
     </recent_temporary>

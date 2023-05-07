@@ -1,5 +1,6 @@
 package net.sf.l2j.cms.models
 
+import kotlinx.serialization.Serializable
 import net.sf.l2j.Config
 
 val serverConfigMap = mapOf<String, Any>(
@@ -88,6 +89,7 @@ val serverConfigMap = mapOf<String, Any>(
     "DISABLE_TUTORIAL" to Config.DISABLE_TUTORIAL
 )
 
+@Serializable
 data class ServerConfig (
     var configSieges: ConfigSieges = ConfigSieges(),
     var configClients: ConfigClients = ConfigClients(),
@@ -101,6 +103,7 @@ data class ServerConfig (
     var configMisc: ConfigMisc = ConfigMisc()
 )
 
+@Serializable
 data class ConfigSieges(
     var siegeLength: Int = Config.SIEGE_LENGTH,
     var minimumClanLevel: Int = Config.MINIMUM_CLAN_LEVEL,
@@ -109,27 +112,31 @@ data class ConfigSieges(
     var attackersRespawnDelay: Int = Config.ATTACKERS_RESPAWN_DELAY
 )
 
+@Serializable
 data class ConfigClients(
     var deleteDays: Int = Config.DELETE_DAYS,
     var maximumOnlineUsers: Int = Config.MAXIMUM_ONLINE_USERS
 )
 
+@Serializable
 data class ConfigAutoLoot(
     var autoLoot: Boolean = Config.AUTO_LOOT,
     var autoLootHerbs: Boolean = Config.AUTO_LOOT_HERBS,
     var autoLootRaid: Boolean = Config.AUTO_LOOT_RAID
 )
 
+@Serializable
 data class ConfigItemsManagement(
     var allowDiscardItem: Boolean = Config.ALLOW_DISCARDITEM,
     var multipleItemDrop: Boolean = Config.MULTIPLE_ITEM_DROP,
     var herbAutoDestroyTime: Int = Config.HERB_AUTO_DESTROY_TIME,
     var itemAutoDestroyTime: Int = Config.ITEM_AUTO_DESTROY_TIME,
     var equipableItemAutoDestroyTime: Int = Config.EQUIPABLE_ITEM_AUTO_DESTROY_TIME,
-    var specialItemDestroyTime: Map<Int, Int> = Config.SPECIAL_ITEM_DESTROY_TIME,
+    var specialItemDestroyTime: Map<Int, Int>? = Config.SPECIAL_ITEM_DESTROY_TIME,
     var playerDroppedItemMultiplier: Int = Config.PLAYER_DROPPED_ITEM_MULTIPLIER
 )
 
+@Serializable
 data class ConfigRateControl(
     var rateXp: Double = Config.RATE_XP,
     var rateSp: Double = Config.RATE_SP,
@@ -166,6 +173,7 @@ data class ConfigRateControl(
     var rateDropSpecialHerbs: Double = Config.RATE_DROP_SPECIAL_HERBS
 )
 
+@Serializable
 data class ConfigAllowTypes(
     var allowFreight: Boolean = Config.ALLOW_FREIGHT,
     var allowWarehouse: Boolean = Config.ALLOW_WAREHOUSE,
@@ -180,17 +188,20 @@ data class ConfigAllowTypes(
     var enableFallingDamage: Boolean = Config.ENABLE_FALLING_DAMAGE
 )
 
+@Serializable
 data class ConfigLogs(
     var logChat: Boolean = Config.LOG_CHAT,
     var logItems: Boolean = Config.LOG_ITEMS,
     var gmAudit: Boolean = Config.GMAUDIT
 )
 
+@Serializable
 data class ConfigCommunityBoard(
     var enableCommunityBoard: Boolean = Config.ENABLE_COMMUNITY_BOARD,
-    var bbsDefault: String = Config.BBS_DEFAULT
+    var bbsDefault: String? = Config.BBS_DEFAULT
 )
 
+@Serializable
 data class ConfigFloodProtectors(
     var rollDiceTime: Int = Config.ROLL_DICE_TIME,
     var heroVoiceTime: Int = Config.HERO_VOICE_TIME,
@@ -207,6 +218,7 @@ data class ConfigFloodProtectors(
     var socialTime: Int = Config.SOCIAL_TIME
 )
 
+@Serializable
 data class ConfigMisc(
     var l2WalkerProtection: Boolean = Config.L2WALKER_PROTECTION,
     var serverNews: Boolean = Config.SERVER_NEWS,
