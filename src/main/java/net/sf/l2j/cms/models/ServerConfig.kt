@@ -89,16 +89,16 @@ val serverConfigMap = mapOf<String, Any>(
 )
 
 data class ServerConfig (
-    var configSieges: ConfigSieges,
-    var configClients: ConfigClients,
-    var configAutoLoot: ConfigAutoLoot,
-    var configItemsManagement: ConfigItemsManagement,
-    var configRateControl: ConfigRateControl,
-    var configAllowTypes: ConfigAllowTypes,
-    var configLogs: ConfigLogs,
-    var configCommunityBoard: ConfigCommunityBoard,
-    var configFloodProtectors: ConfigFloodProtectors,
-    var configMisc: ConfigMisc
+    var configSieges: ConfigSieges = ConfigSieges(),
+    var configClients: ConfigClients = ConfigClients(),
+    var configAutoLoot: ConfigAutoLoot = ConfigAutoLoot(),
+    var configItemsManagement: ConfigItemsManagement = ConfigItemsManagement(),
+    var configRateControl: ConfigRateControl = ConfigRateControl(),
+    var configAllowTypes: ConfigAllowTypes = ConfigAllowTypes(),
+    var configLogs: ConfigLogs = ConfigLogs(),
+    var configCommunityBoard: ConfigCommunityBoard = ConfigCommunityBoard(),
+    var configFloodProtectors: ConfigFloodProtectors = ConfigFloodProtectors(),
+    var configMisc: ConfigMisc = ConfigMisc()
 )
 
 data class ConfigSieges(

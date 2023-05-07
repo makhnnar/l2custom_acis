@@ -24,6 +24,11 @@ val generalClanConfigMap = mapOf(
 )
 
 data class ClanConfig(
+    val generalClanConfig: GeneralClanConfig = GeneralClanConfig(),
+    val manorConfig: ManorConfig = ManorConfig()
+)
+
+data class GeneralClanConfig(
     val ALT_CLAN_JOIN_DAYS: Int = Config.ALT_CLAN_JOIN_DAYS,
     val ALT_CLAN_CREATE_DAYS: Int = Config.ALT_CLAN_CREATE_DAYS,
     val ALT_CLAN_DISSOLVE_DAYS: Int = Config.ALT_CLAN_DISSOLVE_DAYS,

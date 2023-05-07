@@ -77,12 +77,18 @@ val eventConfigMap = mapOf(
     "RIFT_BOSS_ROOM_TIME_MUTIPLY" to Config::RIFT_BOSS_ROOM_TIME_MUTIPLY
 )
 
+data class EventConfig(
+    val weddingConfig: WeddingConfig = WeddingConfig(),
+    val loterryConfig: LoterryConfig = LoterryConfig(),
+    val fishingConfig: FishingConfig = FishingConfig(),
+    val fourSepulchersConfig: FourSepulchersConfig = FourSepulchersConfig(),
+    val olympiadConfig: OlympiadConfig = OlympiadConfig(),
+    val sevenSignsConfig: SevenSignsConfig = SevenSignsConfig(),
+    val dimensionalRiftConfig: DimensionalRiftConfig = DimensionalRiftConfig()
+)
+
 
 data class WeddingConfig(
-    // --------------------------------------------------
-    // Events settings
-    // --------------------------------------------------
-    /** Wedding system */
     var ALLOW_WEDDING: Boolean = Config.ALLOW_WEDDING,
     var WEDDING_PRICE: Int = Config.WEDDING_PRICE,
     var WEDDING_SAMESEX: Boolean = Config.WEDDING_SAMESEX,
@@ -90,10 +96,6 @@ data class WeddingConfig(
 )
 
 data class LoterryConfig(
-    // --------------------------------------------------
-    // Events settings
-    // --------------------------------------------------
-    /** Lottery */
     var ALT_LOTTERY_PRIZE: Int = Config.ALT_LOTTERY_PRIZE,
     var ALT_LOTTERY_TICKET_PRICE: Int = Config.ALT_LOTTERY_TICKET_PRICE,
     var ALT_LOTTERY_5_NUMBER_RATE: Double = Config.ALT_LOTTERY_5_NUMBER_RATE,
@@ -103,10 +105,6 @@ data class LoterryConfig(
 )
 
 data class FishingConfig(
-    // --------------------------------------------------
-    // Events settings
-    // --------------------------------------------------
-    /** Fishing tournament */
     var ALT_FISH_CHAMPIONSHIP_ENABLED: Boolean = Config.ALT_FISH_CHAMPIONSHIP_ENABLED,
     var ALT_FISH_CHAMPIONSHIP_REWARD_ITEM: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_ITEM,
     var ALT_FISH_CHAMPIONSHIP_REWARD_1: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_1,
@@ -123,7 +121,6 @@ data class FourSepulchersConfig(
 )
 
 data class OlympiadConfig(
-    // Olympiad settings
     var altOlyStartTime: Int = Config.ALT_OLY_START_TIME,
     var altOlyMin: Int = Config.ALT_OLY_MIN,
     var altOlyCPeriod: Long = Config.ALT_OLY_CPERIOD,

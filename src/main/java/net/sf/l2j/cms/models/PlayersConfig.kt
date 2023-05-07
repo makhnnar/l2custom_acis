@@ -93,17 +93,17 @@ val playersConfigMap = mapOf(
 )
 
 data class PlayersConfig(
-    val party: PartyConfig,
-    val gmAdmin: GmAdminConfig,
-    val petition: PetitionConfig,
-    val crafting: CraftingConfig,
-    val skillsClasses: SkillsClassesConfig,
-    val buffs: BuffsConfig,
-    val misc: MiscConfig,
-    val inventory: InventoryConfig,
-    val enchant: EnchantConfig,
-    val augmentation: AugmentationConfig,
-    val karmaPvP: KarmaPvPConfig
+    val party: PartyConfig = PartyConfig(),
+    val gmAdmin: GmAdminConfig = GmAdminConfig(),
+    val petition: PetitionConfig = PetitionConfig(),
+    val crafting: CraftingConfig = CraftingConfig(),
+    val skillsClasses: SkillsClassesConfig = SkillsClassesConfig(),
+    val buffs: BuffsConfig = BuffsConfig(),
+    val misc: MiscConfig = MiscConfig(),
+    val inventory: InventoryConfig = InventoryConfig(),
+    val enchant: EnchantConfig = EnchantConfig(),
+    val augmentation: AugmentationConfig = AugmentationConfig(),
+    val karmaPvP: KarmaPvPConfig = KarmaPvPConfig()
 )
 
 data class MiscConfig(
@@ -181,47 +181,47 @@ data class KarmaPvPConfig(
 )
 
 data class PartyConfig(
-    val xpCutoffMethod: String = Config.PARTY_XP_CUTOFF_METHOD,
-    val xpCutoffLevel: Int = Config.PARTY_XP_CUTOFF_LEVEL,
-    val xpCutoffPercent: Double = Config.PARTY_XP_CUTOFF_PERCENT,
-    val range: Int = Config.PARTY_RANGE
+    val PARTY_XP_CUTOFF_METHOD: String = Config.PARTY_XP_CUTOFF_METHOD,
+    val PARTY_XP_CUTOFF_LEVEL: Int = Config.PARTY_XP_CUTOFF_LEVEL,
+    val PARTY_XP_CUTOFF_PERCENT: Double = Config.PARTY_XP_CUTOFF_PERCENT,
+    val PARTY_RANGE: Int = Config.PARTY_RANGE
 )
 
 data class GmAdminConfig(
-    val defaultAccessLevel: Int = Config.DEFAULT_ACCESS_LEVEL,
-    val gmHeroAura: Boolean = Config.GM_HERO_AURA,
-    val gmStartupInvulnerable: Boolean = Config.GM_STARTUP_INVULNERABLE,
-    val gmStartupInvisible: Boolean = Config.GM_STARTUP_INVISIBLE,
-    val gmStartupSilence: Boolean = Config.GM_STARTUP_SILENCE,
-    val gmStartupAutoList: Boolean = Config.GM_STARTUP_AUTO_LIST
+    val DEFAULT_ACCESS_LEVEL: Int = Config.DEFAULT_ACCESS_LEVEL,
+    val GM_HERO_AURA: Boolean = Config.GM_HERO_AURA,
+    val GM_STARTUP_INVULNERABLE: Boolean = Config.GM_STARTUP_INVULNERABLE,
+    val GM_STARTUP_INVISIBLE: Boolean = Config.GM_STARTUP_INVISIBLE,
+    val GM_STARTUP_SILENCE: Boolean = Config.GM_STARTUP_SILENCE,
+    val GM_STARTUP_AUTO_LIST: Boolean = Config.GM_STARTUP_AUTO_LIST
 )
 
 data class PetitionConfig(
-    val petitioningAllowed: Boolean = Config.PETITIONING_ALLOWED,
-    val maxPetitionsPerPlayer: Int = Config.MAX_PETITIONS_PER_PLAYER,
-    val maxPetitionsPending: Int = Config.MAX_PETITIONS_PENDING
+    val PETITIONING_ALLOWED: Boolean = Config.PETITIONING_ALLOWED,
+    val MAX_PETITIONS_PER_PLAYER: Int = Config.MAX_PETITIONS_PER_PLAYER,
+    val MAX_PETITIONS_PENDING: Int = Config.MAX_PETITIONS_PENDING
 )
 
 data class CraftingConfig(
-    val isCraftingEnabled: Boolean = Config.IS_CRAFTING_ENABLED,
-    val dwarfRecipeLimit: Int = Config.DWARF_RECIPE_LIMIT,
-    val commonRecipeLimit: Int = Config.COMMON_RECIPE_LIMIT,
-    val altBlacksmithUseRecipes: Boolean = Config.ALT_BLACKSMITH_USE_RECIPES
+    val IS_CRAFTING_ENABLED: Boolean = Config.IS_CRAFTING_ENABLED,
+    val DWARF_RECIPE_LIMIT: Int = Config.DWARF_RECIPE_LIMIT,
+    val COMMON_RECIPE_LIMIT: Int = Config.COMMON_RECIPE_LIMIT,
+    val ALT_BLACKSMITH_USE_RECIPES: Boolean = Config.ALT_BLACKSMITH_USE_RECIPES
 )
 
 data class SkillsClassesConfig(
-    val autoLearnSkills: Boolean = Config.AUTO_LEARN_SKILLS,
-    val magicFailures: Boolean = Config.MAGIC_FAILURES,
-    val perfectShieldBlockRate: Int = Config.PERFECT_SHIELD_BLOCK_RATE,
-    val lifeCrystalNeeded: Boolean = Config.LIFE_CRYSTAL_NEEDED,
-    val spBookNeeded: Boolean = Config.SP_BOOK_NEEDED,
-    val esSpBookNeeded: Boolean = Config.ES_SP_BOOK_NEEDED,
-    val divineSpBookNeeded: Boolean = Config.DIVINE_SP_BOOK_NEEDED,
-    val subclassWithoutQuests: Boolean = Config.SUBCLASS_WITHOUT_QUESTS
+    val AUTO_LEARN_SKILLS: Boolean = Config.AUTO_LEARN_SKILLS,
+    val MAGIC_FAILURES: Boolean = Config.MAGIC_FAILURES,
+    val PERFECT_SHIELD_BLOCK_RATE: Int = Config.PERFECT_SHIELD_BLOCK_RATE,
+    val LIFE_CRYSTAL_NEEDED: Boolean = Config.LIFE_CRYSTAL_NEEDED,
+    val SP_BOOK_NEEDED: Boolean = Config.SP_BOOK_NEEDED,
+    val ES_SP_BOOK_NEEDED: Boolean = Config.ES_SP_BOOK_NEEDED,
+    val DIVINE_SP_BOOK_NEEDED: Boolean = Config.DIVINE_SP_BOOK_NEEDED,
+    val SUBCLASS_WITHOUT_QUESTS: Boolean = Config.SUBCLASS_WITHOUT_QUESTS
 )
 
 data class BuffsConfig(
-    val storeSkillCooltime: Boolean = Config.STORE_SKILL_COOLTIME,
-    val maxBuffsAmount: Int = Config.MAX_BUFFS_AMOUNT
+    val STORE_SKILL_COOLTIME: Boolean = Config.STORE_SKILL_COOLTIME,
+    val MAX_BUFFS_AMOUNT: Int = Config.MAX_BUFFS_AMOUNT
 )
 
