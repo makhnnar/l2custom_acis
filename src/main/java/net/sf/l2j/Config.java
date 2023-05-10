@@ -1,5 +1,6 @@
 package net.sf.l2j;
 
+import net.sf.l2j.cms.models.ServerConfig;
 import net.sf.l2j.commons.config.ExProperties;
 import net.sf.l2j.commons.logging.CLogger;
 import net.sf.l2j.commons.math.MathUtil;
@@ -1419,4 +1420,97 @@ public final class Config
 			return _claimItems.get(job);
 		}
 	}
+
+	public static void setConfigFromServer(ServerConfig serverConfig) {
+		// Set sieges config
+		SIEGE_LENGTH = serverConfig.getConfigSieges().getSiegeLength();
+		MINIMUM_CLAN_LEVEL = serverConfig.getConfigSieges().getMinimumClanLevel();
+		MAX_ATTACKERS_NUMBER = serverConfig.getConfigSieges().getMaxAttackersNumber();
+		MAX_DEFENDERS_NUMBER = serverConfig.getConfigSieges().getMaxDefendersNumber();
+		ATTACKERS_RESPAWN_DELAY = serverConfig.getConfigSieges().getAttackersRespawnDelay();
+
+		// Set clients config
+		DELETE_DAYS = serverConfig.getConfigClients().getDeleteDays();
+		MAXIMUM_ONLINE_USERS = serverConfig.getConfigClients().getMaximumOnlineUsers();
+
+		// Set auto-loot config
+		AUTO_LOOT = serverConfig.getConfigAutoLoot().getAutoLoot();
+		AUTO_LOOT_HERBS = serverConfig.getConfigAutoLoot().getAutoLootHerbs();
+		AUTO_LOOT_RAID = serverConfig.getConfigAutoLoot().getAutoLootRaid();
+
+		// Set items management config
+		ALLOW_DISCARDITEM = serverConfig.getConfigItemsManagement().getAllowDiscardItem();
+		MULTIPLE_ITEM_DROP = serverConfig.getConfigItemsManagement().getMultipleItemDrop();
+		HERB_AUTO_DESTROY_TIME = serverConfig.getConfigItemsManagement().getHerbAutoDestroyTime();
+		ITEM_AUTO_DESTROY_TIME = serverConfig.getConfigItemsManagement().getItemAutoDestroyTime();
+		EQUIPABLE_ITEM_AUTO_DESTROY_TIME = serverConfig.getConfigItemsManagement().getEquipableItemAutoDestroyTime();
+		SPECIAL_ITEM_DESTROY_TIME = serverConfig.getConfigItemsManagement().getSpecialItemDestroyTime();
+		PLAYER_DROPPED_ITEM_MULTIPLIER = serverConfig.getConfigItemsManagement().getPlayerDroppedItemMultiplier();
+
+		// Set rate control config
+		RATE_XP = serverConfig.getConfigRateControl().getRateXp();
+		RATE_SP = serverConfig.getConfigRateControl().getRateSp();
+		RATE_PARTY_XP = serverConfig.getConfigRateControl().getRatePartyXp();
+		RATE_PARTY_SP = serverConfig.getConfigRateControl().getRatePartySp();
+		RATE_DROP_ADENA = serverConfig.getConfigRateControl().getRateDropAdena();
+		RATE_DROP_ITEMS = serverConfig.getConfigRateControl().getRateDropItems();
+		RATE_DROP_ITEMS_BY_RAID = serverConfig.getConfigRateControl().getRateDropItemsByRaid();
+		RATE_DROP_SPOIL = serverConfig.getConfigRateControl().getRateDropSpoil();
+		RATE_DROP_MANOR = serverConfig.getConfigRateControl().getRateDropManor();
+		RATE_QUEST_DROP = serverConfig.getConfigRateControl().getRateQuestDrop();
+		RATE_QUEST_REWARD = serverConfig.getConfigRateControl().getRateQuestReward();
+		RATE_QUEST_REWARD_XP = serverConfig.getConfigRateControl().getRateQuestRewardXp();
+		RATE_QUEST_REWARD_SP = serverConfig.getConfigRateControl().getRateQuestRewardSp();
+		RATE_QUEST_REWARD_ADENA = serverConfig.getConfigRateControl().getRateQuestRewardAdena();
+		RATE_KARMA_EXP_LOST = serverConfig.getConfigRateControl().getRateKarmaExpLost();
+		RATE_SIEGE_GUARDS_PRICE = serverConfig.getConfigRateControl().getRateSiegeGuardsPrice();
+		PLAYER_DROP_LIMIT = serverConfig.getConfigRateControl().getPlayerDropLimit();
+		PLAYER_RATE_DROP = serverConfig.getConfigRateControl().getPlayerRateDrop();
+		PLAYER_RATE_DROP_ITEM = serverConfig.getConfigRateControl().getPlayerRateDropItem();
+		PLAYER_RATE_DROP_EQUIP = serverConfig.getConfigRateControl().getPlayerRateDropEquip();
+		PLAYER_RATE_DROP_EQUIP_WEAPON = serverConfig.getConfigRateControl().getPlayerRateDropEquipWeapon();
+		KARMA_DROP_LIMIT = serverConfig.getConfigRateControl().getKarmaDropLimit();
+		KARMA_RATE_DROP = serverConfig.getConfigRateControl().getKarmaRateDrop();
+		KARMA_RATE_DROP_ITEM = serverConfig.getConfigRateControl().getKarmaRateDropItem();
+		KARMA_RATE_DROP_EQUIP = serverConfig.getConfigRateControl().getKarmaRateDropEquip();
+		KARMA_RATE_DROP_EQUIP_WEAPON = serverConfig.getConfigRateControl().getKarmaRateDropEquipWeapon();
+		PET_XP_RATE = serverConfig.getConfigRateControl().getPetXpRate();
+		PET_FOOD_RATE = serverConfig.getConfigRateControl().getPetFoodRate();SINEATER_XP_RATE = serverConfig.getConfigRateControl().getSinEaterXpRate();
+		RATE_DROP_COMMON_HERBS = serverConfig.getConfigRateControl().getRateDropCommonHerbs();
+		RATE_DROP_HP_HERBS = serverConfig.getConfigRateControl().getRateDropHpHerbs();
+		RATE_DROP_MP_HERBS = serverConfig.getConfigRateControl().getRateDropMpHerbs();
+		RATE_DROP_SPECIAL_HERBS = serverConfig.getConfigRateControl().getRateDropSpecialHerbs();
+		ALLOW_FREIGHT = serverConfig.getConfigAllowTypes().getAllowFreight();
+		ALLOW_WAREHOUSE = serverConfig.getConfigAllowTypes().getAllowWarehouse();
+		ALLOW_WEAR = serverConfig.getConfigAllowTypes().getAllowWear();
+		WEAR_DELAY = serverConfig.getConfigAllowTypes().getWearDelay();
+		WEAR_PRICE = serverConfig.getConfigAllowTypes().getWearPrice();
+		ALLOW_LOTTERY = serverConfig.getConfigAllowTypes().getAllowLottery();
+		ALLOW_WATER = serverConfig.getConfigAllowTypes().getAllowWater();
+		ALLOW_BOAT = serverConfig.getConfigAllowTypes().getAllowBoat();
+		ALLOW_CURSED_WEAPONS = serverConfig.getConfigAllowTypes().getAllowCursedWeapons();
+		ALLOW_MANOR = serverConfig.getConfigAllowTypes().getAllowManor();
+		ENABLE_FALLING_DAMAGE = serverConfig.getConfigAllowTypes().getEnableFallingDamage();
+		LOG_CHAT = serverConfig.getConfigLogs().getLogChat();
+		LOG_ITEMS = serverConfig.getConfigLogs().getLogItems();
+		GMAUDIT = serverConfig.getConfigLogs().getGmAudit();
+		ENABLE_COMMUNITY_BOARD = serverConfig.getConfigCommunityBoard().getEnableCommunityBoard();
+		BBS_DEFAULT = serverConfig.getConfigCommunityBoard().getBbsDefault();
+		ROLL_DICE_TIME = serverConfig.getConfigFloodProtectors().getRollDiceTime();
+		HERO_VOICE_TIME = serverConfig.getConfigFloodProtectors().getHeroVoiceTime();
+		SUBCLASS_TIME = serverConfig.getConfigFloodProtectors().getSubclassTime();
+		DROP_ITEM_TIME = serverConfig.getConfigFloodProtectors().getDropItemTime();
+		SERVER_BYPASS_TIME = serverConfig.getConfigFloodProtectors().getServerBypassTime();
+		MULTISELL_TIME = serverConfig.getConfigFloodProtectors().getMultisellTime();
+		SENDMAIL_TIME = serverConfig.getConfigFloodProtectors().getSendMailTime();
+		CHARACTER_SELECT_TIME = serverConfig.getConfigFloodProtectors().getCharacterSelectTime();
+		GLOBAL_CHAT_TIME = serverConfig.getConfigFloodProtectors().getGlobalChatTime();
+		TRADE_CHAT_TIME = serverConfig.getConfigFloodProtectors().getTradeChatTime();
+		SOCIAL_TIME = serverConfig.getConfigFloodProtectors().getSocialTime();
+		L2WALKER_PROTECTION = serverConfig.getConfigMisc().getL2WalkerProtection();
+		SERVER_NEWS = serverConfig.getConfigMisc().getServerNews();
+		ZONE_TOWN = serverConfig.getConfigMisc().getZoneTown();
+		DISABLE_TUTORIAL = serverConfig.getConfigMisc().getDisableTutorial();
+	}
+
 }

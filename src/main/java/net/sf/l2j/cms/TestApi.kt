@@ -46,39 +46,22 @@ fun Application.configureSerialization() {
     }
 }
 
-//todo: buscar una forma de manejar los tipos de forma dinamica. 1 usar directamente el objeto de consulta, o
-// retornar un json con un campo de tipo, o detectar el tipo a travez del map
+//todo: buscar una forma de manejar los tipos de forma dinamica. 1 usar directamente el objeto de consulta
 
 fun Application.configureRouting() {
     routing {
         route("/serverConfig") {
             val serverConfig = ServerConfig()
-            get("/all") {
+            get {
                 call.respond(serverConfig)
             }
-            post("/{value}") {
-                val configFields = Config::class.java.fields
-                val fieldName = call.parameters["value"]
-                val fieldValue = call.receive<String>()
-                val clazz = Config::class.java
-                val field = clazz.getDeclaredField(fieldName)
-                println("$fieldName : ${field.type.cast(fieldValue)}")
-                field.isAccessible = true
-                field.set(null, field.type.cast(fieldValue))
-                configFields.find {
-                    it.name == fieldName
-                }?.let {
-                    call.respond(
-                        mapOf(
-                            "fieldName" to "it.get(Config::class)",
-                            fieldName to it.get(Config::class)
-                        )
-                    )
-                }
+            post {
+                val body = call.receive<ServerConfig>()
+                println("received : $body")
+                Config.setConfigFromServer(body)
                 call.respond(
                     mapOf(
-                        "fieldName" to "fieldValue",
-                        fieldName to fieldValue
+                        "response" to "all the field for server configs were updated",
                     )
                 )
             }
