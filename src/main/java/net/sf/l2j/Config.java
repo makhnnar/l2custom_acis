@@ -1,8 +1,6 @@
 package net.sf.l2j;
 
-import net.sf.l2j.cms.models.NpcsConfig;
-import net.sf.l2j.cms.models.PlayersConfig;
-import net.sf.l2j.cms.models.ServerConfig;
+import net.sf.l2j.cms.models.*;
 import net.sf.l2j.commons.config.ExProperties;
 import net.sf.l2j.commons.logging.CLogger;
 import net.sf.l2j.commons.math.MathUtil;
@@ -1638,6 +1636,42 @@ public final class Config
 		MAX_NPC_ANIMATION = npcsConfig.getAiSettings().getMaxNPCAnimation();
 		MIN_MONSTER_ANIMATION = npcsConfig.getAiSettings().getMinMonsterAnimation();
 		MAX_MONSTER_ANIMATION = npcsConfig.getAiSettings().getMaxMonsterAnimation();
+	}
+
+	public static void setLoginServerConfig(LoginServerConfig loginServerConfig) {
+		LOGIN_BIND_ADDRESS = loginServerConfig.getLOGIN_BIND_ADDRESS();
+		PORT_LOGIN = loginServerConfig.getPORT_LOGIN();
+		LOGIN_TRY_BEFORE_BAN = loginServerConfig.getLOGIN_TRY_BEFORE_BAN();
+		LOGIN_BLOCK_AFTER_BAN = loginServerConfig.getLOGIN_BLOCK_AFTER_BAN();
+		ACCEPT_NEW_GAMESERVER = loginServerConfig.getACCEPT_NEW_GAMESERVER();
+		SHOW_LICENCE = loginServerConfig.getSHOW_LICENCE();
+		AUTO_CREATE_ACCOUNTS = loginServerConfig.getAUTO_CREATE_ACCOUNTS();
+		LOG_LOGIN_CONTROLLER = loginServerConfig.getLOG_LOGIN_CONTROLLER();
+		FLOOD_PROTECTION = loginServerConfig.getFLOOD_PROTECTION();
+		FAST_CONNECTION_LIMIT = loginServerConfig.getFAST_CONNECTION_LIMIT();
+		NORMAL_CONNECTION_TIME = loginServerConfig.getNORMAL_CONNECTION_TIME();
+		FAST_CONNECTION_TIME = loginServerConfig.getFAST_CONNECTION_TIME();
+		MAX_CONNECTION_PER_IP = loginServerConfig.getMAX_CONNECTION_PER_IP();
+	}
+
+	public static void setClanConfig(ClanConfig clanConfig) {
+		ALT_CLAN_JOIN_DAYS = clanConfig.getGeneralClanConfig().getALT_CLAN_JOIN_DAYS();
+		ALT_CLAN_CREATE_DAYS = clanConfig.getGeneralClanConfig().getALT_CLAN_CREATE_DAYS();
+		ALT_CLAN_DISSOLVE_DAYS = clanConfig.getGeneralClanConfig().getALT_CLAN_DISSOLVE_DAYS();
+		ALT_ALLY_JOIN_DAYS_WHEN_LEAVED = clanConfig.getGeneralClanConfig().getALT_ALLY_JOIN_DAYS_WHEN_LEAVED();
+		ALT_ALLY_JOIN_DAYS_WHEN_DISMISSED = clanConfig.getGeneralClanConfig().getALT_ALLY_JOIN_DAYS_WHEN_DISMISSED();
+		ALT_ACCEPT_CLAN_DAYS_WHEN_DISMISSED = clanConfig.getGeneralClanConfig().getALT_ACCEPT_CLAN_DAYS_WHEN_DISMISSED();
+		ALT_CREATE_ALLY_DAYS_WHEN_DISSOLVED = clanConfig.getGeneralClanConfig().getALT_CREATE_ALLY_DAYS_WHEN_DISSOLVED();
+		ALT_MAX_NUM_OF_CLANS_IN_ALLY = clanConfig.getGeneralClanConfig().getALT_MAX_NUM_OF_CLANS_IN_ALLY();
+		ALT_CLAN_MEMBERS_FOR_WAR = clanConfig.getGeneralClanConfig().getALT_CLAN_MEMBERS_FOR_WAR();
+		ALT_CLAN_WAR_PENALTY_WHEN_ENDED = clanConfig.getGeneralClanConfig().getALT_CLAN_WAR_PENALTY_WHEN_ENDED();
+		ALT_MEMBERS_CAN_WITHDRAW_FROM_CLANWH = clanConfig.getGeneralClanConfig().getALT_MEMBERS_CAN_WITHDRAW_FROM_CLANWH();
+		ALT_MANOR_REFRESH_TIME = clanConfig.getManorConfig().getALT_MANOR_REFRESH_TIME();
+		ALT_MANOR_REFRESH_MIN = clanConfig.getManorConfig().getALT_MANOR_REFRESH_MIN();
+		ALT_MANOR_APPROVE_TIME = clanConfig.getManorConfig().getALT_MANOR_APPROVE_TIME();
+		ALT_MANOR_APPROVE_MIN = clanConfig.getManorConfig().getALT_MANOR_APPROVE_MIN();
+		ALT_MANOR_MAINTENANCE_MIN = clanConfig.getManorConfig().getALT_MANOR_MAINTENANCE_MIN();
+		ALT_MANOR_SAVE_PERIOD_RATE = clanConfig.getManorConfig().getALT_MANOR_SAVE_PERIOD_RATE();
 	}
 
 }

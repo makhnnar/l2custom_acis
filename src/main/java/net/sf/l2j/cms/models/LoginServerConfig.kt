@@ -1,23 +1,9 @@
 package net.sf.l2j.cms.models
 
+import kotlinx.serialization.Serializable
 import net.sf.l2j.Config
 
-val loginServerConfigMap = mapOf(
-    "LOGIN_BIND_ADDRESS" to Config::LOGIN_BIND_ADDRESS,
-    "PORT_LOGIN" to Config::PORT_LOGIN,
-    "LOGIN_TRY_BEFORE_BAN" to Config::LOGIN_TRY_BEFORE_BAN,
-    "LOGIN_BLOCK_AFTER_BAN" to Config::LOGIN_BLOCK_AFTER_BAN,
-    "ACCEPT_NEW_GAMESERVER" to Config::ACCEPT_NEW_GAMESERVER,
-    "SHOW_LICENCE" to Config::SHOW_LICENCE,
-    "AUTO_CREATE_ACCOUNTS" to Config::AUTO_CREATE_ACCOUNTS,
-    "LOG_LOGIN_CONTROLLER" to Config::LOG_LOGIN_CONTROLLER,
-    "FLOOD_PROTECTION" to Config::FLOOD_PROTECTION,
-    "FAST_CONNECTION_LIMIT" to Config::FAST_CONNECTION_LIMIT,
-    "NORMAL_CONNECTION_TIME" to Config::NORMAL_CONNECTION_TIME,
-    "FAST_CONNECTION_TIME" to Config::FAST_CONNECTION_TIME,
-    "MAX_CONNECTION_PER_IP" to Config::MAX_CONNECTION_PER_IP
-)
-
+@Serializable
 data class LoginServerConfig(
     var LOGIN_BIND_ADDRESS: String = Config.LOGIN_BIND_ADDRESS,
     var PORT_LOGIN: Int = Config.PORT_LOGIN,

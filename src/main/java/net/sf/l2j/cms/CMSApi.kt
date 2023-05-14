@@ -9,13 +9,11 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import net.sf.l2j.Config
-import net.sf.l2j.cms.models.NpcsConfig
-import net.sf.l2j.cms.models.PlayersConfig
-import net.sf.l2j.cms.models.ServerConfig
+import net.sf.l2j.cms.models.*
 
-lateinit var testApi : TestApi
+lateinit var cmsApi : CMSApi
 
-class TestApi {
+class CMSApi {
 
     init {
         embeddedServer(
@@ -30,7 +28,7 @@ class TestApi {
 
         @JvmStatic
         fun main(args: Array<String>) {
-            testApi = TestApi()
+            cmsApi = CMSApi()
         }
 
     }
@@ -47,8 +45,6 @@ fun Application.configureSerialization() {
         json()
     }
 }
-
-//todo: buscar una forma de manejar los tipos de forma dinamica. 1 usar directamente el objeto de consulta
 
 fun Application.configureRouting() {
     routing {
@@ -100,18 +96,36 @@ fun Application.configureRouting() {
                 )
             }
         }
-        // Routes to set values of Config fields
-        route("/config") {
-            val configFields = Config::class.java.fields
-            configFields.forEach { field ->
-                post("/${field.name}") {
-                    val fieldValue = call.receive<String>()
-                    println("${field.name} : $fieldValue")
-                    field.set(Config::class, fieldValue)
-                    call.respond(
-                        mapOf(field.name to fieldValue)
+        route("/loginServerConfig") {
+            val loginServerConfig = LoginServerConfig()
+            get {
+                call.respond(loginServerConfig)
+            }
+            post {
+                val body = call.receive<LoginServerConfig>()
+                println("received : $body")
+                Config.setLoginServerConfig(body)
+                call.respond(
+                    mapOf(
+                        "response" to "all the field for Login Server configs were updated",
                     )
-                }
+                )
+            }
+        }
+        route("/clanConfig") {
+            val clanConfig = ClanConfig()
+            get {
+                call.respond(clanConfig)
+            }
+            post {
+                val body = call.receive<ClanConfig>()
+                println("received : $body")
+                Config.setClanConfig(body)
+                call.respond(
+                    mapOf(
+                        "response" to "all the field for Login Server configs were updated",
+                    )
+                )
             }
         }
     }
