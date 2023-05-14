@@ -9,6 +9,7 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import net.sf.l2j.Config
+import net.sf.l2j.cms.models.PlayersConfig
 import net.sf.l2j.cms.models.ServerConfig
 
 lateinit var testApi : TestApi
@@ -58,7 +59,7 @@ fun Application.configureRouting() {
             post {
                 val body = call.receive<ServerConfig>()
                 println("received : $body")
-                Config.setConfigFromServer(body)
+                Config.setServerConfig(body)
                 call.respond(
                     mapOf(
                         "response" to "all the field for server configs were updated",
@@ -66,7 +67,22 @@ fun Application.configureRouting() {
                 )
             }
         }
-
+        route("/playersConfig") {
+            val playersConfig = PlayersConfig()
+            get {
+                call.respond(playersConfig)
+            }
+            post {
+                val body = call.receive<PlayersConfig>()
+                println("received : $body")
+                Config.setPlayersConfig(body)
+                call.respond(
+                    mapOf(
+                        "response" to "all the field for server configs were updated",
+                    )
+                )
+            }
+        }
         // Routes to set values of Config fields
         route("/config") {
             val configFields = Config::class.java.fields
