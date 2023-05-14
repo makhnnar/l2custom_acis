@@ -123,7 +123,23 @@ fun Application.configureRouting() {
                 Config.setClanConfig(body)
                 call.respond(
                     mapOf(
-                        "response" to "all the field for Login Server configs were updated",
+                        "response" to "all the field for Clan configs were updated",
+                    )
+                )
+            }
+        }
+        route("/eventConfig") {
+            val eventConfig = EventConfig()
+            get {
+                call.respond(eventConfig)
+            }
+            post {
+                val body = call.receive<EventConfig>()
+                println("received : $body")
+                Config.setEventConfig(body)
+                call.respond(
+                    mapOf(
+                        "response" to "all the field for Event configs were updated",
                     )
                 )
             }

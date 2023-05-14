@@ -1674,4 +1674,76 @@ public final class Config
 		ALT_MANOR_SAVE_PERIOD_RATE = clanConfig.getManorConfig().getALT_MANOR_SAVE_PERIOD_RATE();
 	}
 
+	public static void setEventConfig(EventConfig eventConfig) {
+		ALLOW_WEDDING = eventConfig.getWeddingConfig().getALLOW_WEDDING();
+		WEDDING_PRICE = eventConfig.getWeddingConfig().getWEDDING_PRICE();
+		WEDDING_SAMESEX = eventConfig.getWeddingConfig().getWEDDING_SAMESEX();
+		WEDDING_FORMALWEAR = eventConfig.getWeddingConfig().getWEDDING_FORMALWEAR();
+		ALT_LOTTERY_PRIZE = eventConfig.getLoterryConfig().getALT_LOTTERY_PRIZE();
+		ALT_LOTTERY_TICKET_PRICE = eventConfig.getLoterryConfig().getALT_LOTTERY_TICKET_PRICE();
+		ALT_LOTTERY_5_NUMBER_RATE = eventConfig.getLoterryConfig().getALT_LOTTERY_5_NUMBER_RATE();
+		ALT_LOTTERY_4_NUMBER_RATE = eventConfig.getLoterryConfig().getALT_LOTTERY_4_NUMBER_RATE();
+		ALT_LOTTERY_3_NUMBER_RATE = eventConfig.getLoterryConfig().getALT_LOTTERY_3_NUMBER_RATE();
+		ALT_LOTTERY_2_AND_1_NUMBER_PRIZE = eventConfig.getLoterryConfig().getALT_LOTTERY_2_AND_1_NUMBER_PRIZE();
+		ALT_FISH_CHAMPIONSHIP_REWARD_ITEM = eventConfig.getFishingConfig().getALT_FISH_CHAMPIONSHIP_REWARD_ITEM();
+		ALT_FISH_CHAMPIONSHIP_REWARD_1 = eventConfig.getFishingConfig().getALT_FISH_CHAMPIONSHIP_REWARD_1();
+		ALT_FISH_CHAMPIONSHIP_REWARD_2 = eventConfig.getFishingConfig().getALT_FISH_CHAMPIONSHIP_REWARD_2();
+		ALT_FISH_CHAMPIONSHIP_REWARD_3 = eventConfig.getFishingConfig().getALT_FISH_CHAMPIONSHIP_REWARD_3();
+		ALT_FISH_CHAMPIONSHIP_REWARD_4 = eventConfig.getFishingConfig().getALT_FISH_CHAMPIONSHIP_REWARD_4();
+		ALT_FISH_CHAMPIONSHIP_REWARD_5 = eventConfig.getFishingConfig().getALT_FISH_CHAMPIONSHIP_REWARD_5();
+		RIFT_MIN_PARTY_SIZE = eventConfig.getDimensionalRiftConfig().getRIFT_MIN_PARTY_SIZE();
+		RIFT_SPAWN_DELAY = eventConfig.getDimensionalRiftConfig().getRIFT_SPAWN_DELAY();
+		RIFT_MAX_JUMPS = eventConfig.getDimensionalRiftConfig().getRIFT_MAX_JUMPS();
+		RIFT_AUTO_JUMPS_TIME_MIN = eventConfig.getDimensionalRiftConfig().getRIFT_AUTO_JUMPS_TIME_MIN();
+		RIFT_AUTO_JUMPS_TIME_MAX = eventConfig.getDimensionalRiftConfig().getRIFT_AUTO_JUMPS_TIME_MAX();
+		RIFT_ENTER_COST_RECRUIT = eventConfig.getDimensionalRiftConfig().getRIFT_ENTER_COST_RECRUIT();
+		RIFT_ENTER_COST_SOLDIER = eventConfig.getDimensionalRiftConfig().getRIFT_ENTER_COST_SOLDIER();
+		RIFT_ENTER_COST_OFFICER = eventConfig.getDimensionalRiftConfig().getRIFT_ENTER_COST_OFFICER();
+		RIFT_ENTER_COST_CAPTAIN = eventConfig.getDimensionalRiftConfig().getRIFT_ENTER_COST_CAPTAIN();
+		RIFT_ENTER_COST_COMMANDER = eventConfig.getDimensionalRiftConfig().getRIFT_ENTER_COST_COMMANDER();
+		FS_TIME_ENTRY = eventConfig.getFourSepulchersConfig().getFS_TIME_ENTRY();
+		FS_TIME_END = eventConfig.getFourSepulchersConfig().getFS_TIME_END();
+		FS_PARTY_MEMBER_COUNT = eventConfig.getFourSepulchersConfig().getFS_PARTY_MEMBER_COUNT();
+		ALT_OLY_START_TIME = eventConfig.getOlympiadConfig().getAltOlyStartTime();
+		ALT_OLY_MIN = eventConfig.getOlympiadConfig().getAltOlyMin();
+		ALT_OLY_CPERIOD = eventConfig.getOlympiadConfig().getAltOlyCPeriod();
+		ALT_OLY_BATTLE = eventConfig.getOlympiadConfig().getAltOlyBattle();
+		ALT_OLY_WPERIOD = eventConfig.getOlympiadConfig().getAltOlyWPeriod();
+		ALT_OLY_VPERIOD = eventConfig.getOlympiadConfig().getAltOlyVPeriod();
+		ALT_OLY_WAIT_TIME = eventConfig.getOlympiadConfig().getAltOlyWaitTime();
+		ALT_OLY_WAIT_BATTLE = eventConfig.getOlympiadConfig().getAltOlyWaitBattle();
+		ALT_OLY_WAIT_END = eventConfig.getOlympiadConfig().getAltOlyWaitEnd();
+		ALT_OLY_START_POINTS = eventConfig.getOlympiadConfig().getAltOlyStartPoints();
+		ALT_OLY_WEEKLY_POINTS = eventConfig.getOlympiadConfig().getAltOlyWeeklyPoints();
+		ALT_OLY_MIN_MATCHES = eventConfig.getOlympiadConfig().getAltOlyMinMatches();
+		ALT_OLY_CLASSED = eventConfig.getOlympiadConfig().getAltOlyClassed();
+		ALT_OLY_NONCLASSED = eventConfig.getOlympiadConfig().getAltOlyNonClassed();
+
+		ALT_OLY_CLASSED_REWARD = extractedList(
+				eventConfig.getOlympiadConfig().getAltOlyClassedReward()
+		);
+		ALT_OLY_NONCLASSED_REWARD = extractedList(
+				eventConfig.getOlympiadConfig().getAltOlyNonClassedReward()
+		);
+		ALT_OLY_GP_PER_POINT = eventConfig.getOlympiadConfig().getAltOlyGpPerPoint();
+		ALT_OLY_HERO_POINTS = eventConfig.getOlympiadConfig().getAltOlyHeroPoints();
+		ALT_OLY_RANK1_POINTS = eventConfig.getOlympiadConfig().getAltOlyRank1Points();
+		ALT_OLY_RANK2_POINTS = eventConfig.getOlympiadConfig().getAltOlyRank2Points();
+		ALT_OLY_RANK3_POINTS = eventConfig.getOlympiadConfig().getAltOlyRank3Points();
+		ALT_OLY_RANK4_POINTS = eventConfig.getOlympiadConfig().getAltOlyRank4Points();
+		ALT_OLY_RANK5_POINTS = eventConfig.getOlympiadConfig().getAltOlyRank5Points();
+		ALT_OLY_MAX_POINTS = eventConfig.getOlympiadConfig().getAltOlyMaxPoints();
+		ALT_OLY_DIVIDER_CLASSED = eventConfig.getOlympiadConfig().getAltOlyDividerClassed();
+		ALT_OLY_DIVIDER_NON_CLASSED = eventConfig.getOlympiadConfig().getAltOlyDividerNonClassed();
+		ALT_OLY_ANNOUNCE_GAMES = eventConfig.getOlympiadConfig().getAltOlyAnnounceGames();
+	}
+
+	private static IntIntHolder[] extractedList(List<RewardHolder> listOfElements) {
+		IntIntHolder[] temp =  new IntIntHolder[listOfElements.size()];
+		for (int i = 0; i< listOfElements.size(); i++){
+			temp[i] = listOfElements.get(i).rewardHolderToIntIntHolder();
+		}
+		return temp;
+	}
+
 }

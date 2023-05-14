@@ -1,8 +1,10 @@
 package net.sf.l2j.cms.models
 
+import kotlinx.serialization.Serializable
 import net.sf.l2j.Config
 import net.sf.l2j.gameserver.model.holder.IntIntHolder
 
+@Serializable
 data class EventConfig(
     val weddingConfig: WeddingConfig = WeddingConfig(),
     val loterryConfig: LoterryConfig = LoterryConfig(),
@@ -13,14 +15,14 @@ data class EventConfig(
     val dimensionalRiftConfig: DimensionalRiftConfig = DimensionalRiftConfig()
 )
 
-
+@Serializable
 data class WeddingConfig(
     var ALLOW_WEDDING: Boolean = Config.ALLOW_WEDDING,
     var WEDDING_PRICE: Int = Config.WEDDING_PRICE,
     var WEDDING_SAMESEX: Boolean = Config.WEDDING_SAMESEX,
     var WEDDING_FORMALWEAR: Boolean = Config.WEDDING_FORMALWEAR
 )
-
+@Serializable
 data class LoterryConfig(
     var ALT_LOTTERY_PRIZE: Int = Config.ALT_LOTTERY_PRIZE,
     var ALT_LOTTERY_TICKET_PRICE: Int = Config.ALT_LOTTERY_TICKET_PRICE,
@@ -29,7 +31,7 @@ data class LoterryConfig(
     var ALT_LOTTERY_3_NUMBER_RATE: Double = Config.ALT_LOTTERY_3_NUMBER_RATE,
     var ALT_LOTTERY_2_AND_1_NUMBER_PRIZE: Int = Config.ALT_LOTTERY_2_AND_1_NUMBER_PRIZE
 )
-
+@Serializable
 data class FishingConfig(
     var ALT_FISH_CHAMPIONSHIP_ENABLED: Boolean = Config.ALT_FISH_CHAMPIONSHIP_ENABLED,
     var ALT_FISH_CHAMPIONSHIP_REWARD_ITEM: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_ITEM,
@@ -39,13 +41,13 @@ data class FishingConfig(
     var ALT_FISH_CHAMPIONSHIP_REWARD_4: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_4,
     var ALT_FISH_CHAMPIONSHIP_REWARD_5: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_5
 )
-
+@Serializable
 data class FourSepulchersConfig(
     var FS_TIME_ENTRY: Int = Config.FS_TIME_ENTRY,
     var FS_TIME_END: Int = Config.FS_TIME_END,
     var FS_PARTY_MEMBER_COUNT: Int = Config.FS_PARTY_MEMBER_COUNT
 )
-
+@Serializable
 data class OlympiadConfig(
     var altOlyStartTime: Int = Config.ALT_OLY_START_TIME,
     var altOlyMin: Int = Config.ALT_OLY_MIN,
@@ -61,8 +63,12 @@ data class OlympiadConfig(
     var altOlyMinMatches: Int = Config.ALT_OLY_MIN_MATCHES,
     var altOlyClassed: Int = Config.ALT_OLY_CLASSED,
     var altOlyNonClassed: Int = Config.ALT_OLY_NONCLASSED,
-    var altOlyClassedReward: Array<IntIntHolder> = Config.ALT_OLY_CLASSED_REWARD,
-    var altOlyNonClassedReward: Array<IntIntHolder> = Config.ALT_OLY_NONCLASSED_REWARD,
+    var altOlyClassedReward: List<RewardHolder> = Config.ALT_OLY_CLASSED_REWARD.map {
+        it.intIntHolderToRewardHolder()
+    },
+    var altOlyNonClassedReward: List<RewardHolder> = Config.ALT_OLY_NONCLASSED_REWARD.map {
+        it.intIntHolderToRewardHolder()
+    },
     var altOlyGpPerPoint: Int = Config.ALT_OLY_GP_PER_POINT,
     var altOlyHeroPoints: Int = Config.ALT_OLY_HERO_POINTS,
     var altOlyRank1Points: Int = Config.ALT_OLY_RANK1_POINTS,
@@ -75,7 +81,7 @@ data class OlympiadConfig(
     var altOlyDividerNonClassed: Int = Config.ALT_OLY_DIVIDER_NON_CLASSED,
     var altOlyAnnounceGames: Boolean = Config.ALT_OLY_ANNOUNCE_GAMES
 )
-
+@Serializable
 data class SevenSignsConfig(
     var ALT_GAME_CASTLE_DAWN: Boolean = Config.ALT_GAME_CASTLE_DAWN,
     var ALT_GAME_CASTLE_DUSK: Boolean = Config.ALT_GAME_CASTLE_DUSK,
@@ -90,7 +96,7 @@ data class SevenSignsConfig(
     var ALT_FESTIVAL_SECOND_SWARM: Long = Config.ALT_FESTIVAL_SECOND_SWARM,
     var ALT_FESTIVAL_CHEST_SPAWN: Long = Config.ALT_FESTIVAL_CHEST_SPAWN
 )
-
+@Serializable
 data class DimensionalRiftConfig(
     var RIFT_MIN_PARTY_SIZE: Int = Config.RIFT_MIN_PARTY_SIZE,
     var RIFT_SPAWN_DELAY: Int = Config.RIFT_SPAWN_DELAY,
@@ -105,3 +111,17 @@ data class DimensionalRiftConfig(
     var RIFT_ENTER_COST_HERO: Int = Config.RIFT_ENTER_COST_HERO,
     var RIFT_BOSS_ROOM_TIME_MUTIPLY: Double = Config.RIFT_BOSS_ROOM_TIME_MUTIPLY
 )
+
+@Serializable
+class RewardHolder(
+    val id: Int = 0,
+    val value:Int = 0
+){
+    fun rewardHolderToIntIntHolder(): IntIntHolder {
+        return IntIntHolder(id, value)
+    }
+}
+
+fun IntIntHolder.intIntHolderToRewardHolder(): RewardHolder {
+    return RewardHolder(id, value)
+}
