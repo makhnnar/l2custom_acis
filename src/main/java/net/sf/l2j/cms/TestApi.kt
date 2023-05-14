@@ -9,6 +9,7 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import net.sf.l2j.Config
+import net.sf.l2j.cms.models.NpcsConfig
 import net.sf.l2j.cms.models.PlayersConfig
 import net.sf.l2j.cms.models.ServerConfig
 
@@ -78,7 +79,23 @@ fun Application.configureRouting() {
                 Config.setPlayersConfig(body)
                 call.respond(
                     mapOf(
-                        "response" to "all the field for server configs were updated",
+                        "response" to "all the field for Player configs were updated",
+                    )
+                )
+            }
+        }
+        route("/npcsConfig") {
+            val npcsConfig = NpcsConfig()
+            get {
+                call.respond(npcsConfig)
+            }
+            post {
+                val body = call.receive<NpcsConfig>()
+                println("received : $body")
+                Config.setNpcsConfig(body)
+                call.respond(
+                    mapOf(
+                        "response" to "all the field for Npcs configs were updated",
                     )
                 )
             }

@@ -1,5 +1,6 @@
 package net.sf.l2j;
 
+import net.sf.l2j.cms.models.NpcsConfig;
 import net.sf.l2j.cms.models.PlayersConfig;
 import net.sf.l2j.cms.models.ServerConfig;
 import net.sf.l2j.commons.config.ExProperties;
@@ -1423,23 +1424,16 @@ public final class Config
 	}
 
 	public static void setServerConfig(ServerConfig serverConfig) {
-		// Set sieges config
 		SIEGE_LENGTH = serverConfig.getConfigSieges().getSiegeLength();
 		MINIMUM_CLAN_LEVEL = serverConfig.getConfigSieges().getMinimumClanLevel();
 		MAX_ATTACKERS_NUMBER = serverConfig.getConfigSieges().getMaxAttackersNumber();
 		MAX_DEFENDERS_NUMBER = serverConfig.getConfigSieges().getMaxDefendersNumber();
 		ATTACKERS_RESPAWN_DELAY = serverConfig.getConfigSieges().getAttackersRespawnDelay();
-
-		// Set clients config
 		DELETE_DAYS = serverConfig.getConfigClients().getDeleteDays();
 		MAXIMUM_ONLINE_USERS = serverConfig.getConfigClients().getMaximumOnlineUsers();
-
-		// Set auto-loot config
 		AUTO_LOOT = serverConfig.getConfigAutoLoot().getAutoLoot();
 		AUTO_LOOT_HERBS = serverConfig.getConfigAutoLoot().getAutoLootHerbs();
 		AUTO_LOOT_RAID = serverConfig.getConfigAutoLoot().getAutoLootRaid();
-
-		// Set items management config
 		ALLOW_DISCARDITEM = serverConfig.getConfigItemsManagement().getAllowDiscardItem();
 		MULTIPLE_ITEM_DROP = serverConfig.getConfigItemsManagement().getMultipleItemDrop();
 		HERB_AUTO_DESTROY_TIME = serverConfig.getConfigItemsManagement().getHerbAutoDestroyTime();
@@ -1447,8 +1441,6 @@ public final class Config
 		EQUIPABLE_ITEM_AUTO_DESTROY_TIME = serverConfig.getConfigItemsManagement().getEquipableItemAutoDestroyTime();
 		SPECIAL_ITEM_DESTROY_TIME = serverConfig.getConfigItemsManagement().getSpecialItemDestroyTime();
 		PLAYER_DROPPED_ITEM_MULTIPLIER = serverConfig.getConfigItemsManagement().getPlayerDroppedItemMultiplier();
-
-		// Set rate control config
 		RATE_XP = serverConfig.getConfigRateControl().getRateXp();
 		RATE_SP = serverConfig.getConfigRateControl().getRateSp();
 		RATE_PARTY_XP = serverConfig.getConfigRateControl().getRatePartyXp();
@@ -1515,92 +1507,137 @@ public final class Config
 	}
 
 	public static void setPlayersConfig(PlayersConfig playersConfig) {
-		Config.ATTACK_FROM_MOUNTS = playersConfig.getMisc().getATTACK_FROM_MOUNTS();
-		Config.NO_GRADE_PENALTY = playersConfig.getMisc().getNO_GRADE_PENALTY();
-		Config.EFFECT_CANCELING = playersConfig.getMisc().getEFFECT_CANCELING();
-		Config.HP_REGEN_MULTIPLIER = playersConfig.getMisc().getHP_REGEN_MULTIPLIER();
-		Config.MP_REGEN_MULTIPLIER = playersConfig.getMisc().getMP_REGEN_MULTIPLIER();
-		Config.CP_REGEN_MULTIPLIER = playersConfig.getMisc().getCP_REGEN_MULTIPLIER();
-		Config.PLAYER_SPAWN_PROTECTION = playersConfig.getMisc().getPLAYER_SPAWN_PROTECTION();
-		Config.PLAYER_FAKEDEATH_UP_PROTECTION = playersConfig.getMisc().getPLAYER_FAKEDEATH_UP_PROTECTION();
-		Config.RESPAWN_RESTORE_HP = playersConfig.getMisc().getRESPAWN_RESTORE_HP();
-		Config.MAX_PVTSTORE_SLOTS_DWARF = playersConfig.getMisc().getMAX_PVTSTORE_SLOTS_DWARF();
-		Config.MAX_PVTSTORE_SLOTS_OTHER = playersConfig.getMisc().getMAX_PVTSTORE_SLOTS_OTHER();
-		Config.DEEPBLUE_DROP_RULES = playersConfig.getMisc().getDEEPBLUE_DROP_RULES();
-		Config.ALT_GAME_DELEVEL = playersConfig.getMisc().getALT_GAME_DELEVEL();
-		Config.DEATH_PENALTY_CHANCE = playersConfig.getMisc().getDEATH_PENALTY_CHANCE();
-		Config.INVENTORY_MAXIMUM_NO_DWARF = playersConfig.getInventory().getINVENTORY_MAXIMUM_NO_DWARF();
-		Config.INVENTORY_MAXIMUM_DWARF = playersConfig.getInventory().getINVENTORY_MAXIMUM_DWARF();
-		Config.INVENTORY_MAXIMUM_QUEST_ITEMS = playersConfig.getInventory().getINVENTORY_MAXIMUM_QUEST_ITEMS();
-		Config.INVENTORY_MAXIMUM_PET = playersConfig.getInventory().getINVENTORY_MAXIMUM_PET();
-		Config.MAX_ITEM_IN_PACKET = playersConfig.getInventory().getMAX_ITEM_IN_PACKET();
-		Config.ALT_WEIGHT_LIMIT = playersConfig.getInventory().getALT_WEIGHT_LIMIT();
-		Config.WAREHOUSE_SLOTS_NO_DWARF = playersConfig.getInventory().getWAREHOUSE_SLOTS_NO_DWARF();
-		Config.WAREHOUSE_SLOTS_DWARF = playersConfig.getInventory().getWAREHOUSE_SLOTS_DWARF();
-		Config.WAREHOUSE_SLOTS_CLAN = playersConfig.getInventory().getWAREHOUSE_SLOTS_CLAN();
-		Config.FREIGHT_SLOTS = playersConfig.getInventory().getFREIGHT_SLOTS();
-		Config.ALT_GAME_FREIGHTS = playersConfig.getInventory().getALT_GAME_FREIGHTS();
-		Config.ALT_GAME_FREIGHT_PRICE = playersConfig.getInventory().getALT_GAME_FREIGHT_PRICE();
-		Config.ENCHANT_CHANCE_WEAPON_MAGIC = playersConfig.getEnchant().getENCHANT_CHANCE_WEAPON_MAGIC();
-		Config.ENCHANT_CHANCE_WEAPON_MAGIC_15PLUS = playersConfig.getEnchant().getENCHANT_CHANCE_WEAPON_MAGIC_15PLUS();
-		Config.ENCHANT_CHANCE_WEAPON_NONMAGIC = playersConfig.getEnchant().getENCHANT_CHANCE_WEAPON_NONMAGIC();
-		Config.ENCHANT_CHANCE_WEAPON_NONMAGIC_15PLUS = playersConfig.getEnchant().getENCHANT_CHANCE_WEAPON_NONMAGIC_15PLUS();
-		Config.ENCHANT_CHANCE_ARMOR = playersConfig.getEnchant().getENCHANT_CHANCE_ARMOR();
-		Config.ENCHANT_MAX_WEAPON = playersConfig.getEnchant().getENCHANT_MAX_WEAPON();
-		Config.ENCHANT_MAX_ARMOR = playersConfig.getEnchant().getENCHANT_MAX_ARMOR();
-		Config.ENCHANT_SAFE_MAX = playersConfig.getEnchant().getENCHANT_SAFE_MAX();
-		Config.ENCHANT_SAFE_MAX_FULL = playersConfig.getEnchant().getENCHANT_SAFE_MAX_FULL();
-		Config.AUGMENTATION_NG_SKILL_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_NG_SKILL_CHANCE();
-		Config.AUGMENTATION_NG_GLOW_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_NG_GLOW_CHANCE();
-		Config.AUGMENTATION_MID_SKILL_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_MID_SKILL_CHANCE();
-		Config.AUGMENTATION_MID_GLOW_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_MID_GLOW_CHANCE();
-		Config.AUGMENTATION_HIGH_SKILL_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_HIGH_SKILL_CHANCE();
-		Config.AUGMENTATION_HIGH_GLOW_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_HIGH_GLOW_CHANCE();
-		Config.AUGMENTATION_TOP_SKILL_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_TOP_SKILL_CHANCE();
-		Config.AUGMENTATION_TOP_GLOW_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_TOP_GLOW_CHANCE();
-		Config.AUGMENTATION_BASESTAT_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_BASESTAT_CHANCE();
-		Config.KARMA_PLAYER_CAN_BE_KILLED_IN_PZ = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_BE_KILLED_IN_PZ();
-		Config.KARMA_PLAYER_CAN_SHOP = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_SHOP();
-		Config.KARMA_PLAYER_CAN_USE_GK = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_USE_GK();
-		Config.KARMA_PLAYER_CAN_TELEPORT = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_TELEPORT();
-		Config.KARMA_PLAYER_CAN_TRADE = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_TRADE();
-		Config.KARMA_PLAYER_CAN_USE_WH = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_USE_WH();
-		Config.KARMA_DROP_GM = playersConfig.getKarmaPvP().getKARMA_DROP_GM();
-		Config.KARMA_AWARD_PK_KILL = playersConfig.getKarmaPvP().getKARMA_AWARD_PK_KILL();
-		Config.KARMA_PK_LIMIT = playersConfig.getKarmaPvP().getKARMA_PK_LIMIT();
-		Config.KARMA_NONDROPPABLE_PET_ITEMS = playersConfig.getKarmaPvP().getKARMA_NONDROPPABLE_PET_ITEMS();
-		Config.KARMA_NONDROPPABLE_ITEMS = playersConfig.getKarmaPvP().getKARMA_NONDROPPABLE_ITEMS();
-		Config.KARMA_LIST_NONDROPPABLE_PET_ITEMS = playersConfig.getKarmaPvP().getKARMA_LIST_NONDROPPABLE_PET_ITEMS();
-		Config.KARMA_LIST_NONDROPPABLE_ITEMS = playersConfig.getKarmaPvP().getKARMA_LIST_NONDROPPABLE_ITEMS();
-		Config.PVP_NORMAL_TIME = playersConfig.getKarmaPvP().getPVP_NORMAL_TIME();
-		Config.PVP_PVP_TIME = playersConfig.getKarmaPvP().getPVP_PVP_TIME();
-		Config.PARTY_XP_CUTOFF_METHOD = playersConfig.getParty().getPARTY_XP_CUTOFF_METHOD();
-		Config.PARTY_XP_CUTOFF_LEVEL = playersConfig.getParty().getPARTY_XP_CUTOFF_LEVEL();
-		Config.PARTY_XP_CUTOFF_PERCENT = playersConfig.getParty().getPARTY_XP_CUTOFF_PERCENT();
-		Config.PARTY_RANGE = playersConfig.getParty().getPARTY_RANGE();
-		Config.DEFAULT_ACCESS_LEVEL = playersConfig.getGmAdmin().getDEFAULT_ACCESS_LEVEL();
-		Config.GM_HERO_AURA = playersConfig.getGmAdmin().getGM_HERO_AURA();
-		Config.GM_STARTUP_INVULNERABLE = playersConfig.getGmAdmin().getGM_STARTUP_INVULNERABLE();
-		Config.GM_STARTUP_INVISIBLE = playersConfig.getGmAdmin().getGM_STARTUP_INVISIBLE();
-		Config.GM_STARTUP_SILENCE = playersConfig.getGmAdmin().getGM_STARTUP_SILENCE();
-		Config.GM_STARTUP_AUTO_LIST = playersConfig.getGmAdmin().getGM_STARTUP_AUTO_LIST();
-		Config.PETITIONING_ALLOWED = playersConfig.getPetition().getPETITIONING_ALLOWED();
-		Config.MAX_PETITIONS_PER_PLAYER = playersConfig.getPetition().getMAX_PETITIONS_PER_PLAYER();
-		Config.MAX_PETITIONS_PENDING = playersConfig.getPetition().getMAX_PETITIONS_PENDING();
-		Config.IS_CRAFTING_ENABLED = playersConfig.getCrafting().getIS_CRAFTING_ENABLED();
-		Config.DWARF_RECIPE_LIMIT = playersConfig.getCrafting().getDWARF_RECIPE_LIMIT();
-		Config.COMMON_RECIPE_LIMIT = playersConfig.getCrafting().getCOMMON_RECIPE_LIMIT();
-		Config.ALT_BLACKSMITH_USE_RECIPES = playersConfig.getCrafting().getALT_BLACKSMITH_USE_RECIPES();
-		Config.AUTO_LEARN_SKILLS = playersConfig.getSkillsClasses().getAUTO_LEARN_SKILLS();
-		Config.MAGIC_FAILURES = playersConfig.getSkillsClasses().getMAGIC_FAILURES();
-		Config.PERFECT_SHIELD_BLOCK_RATE = playersConfig.getSkillsClasses().getPERFECT_SHIELD_BLOCK_RATE();
-		Config.LIFE_CRYSTAL_NEEDED = playersConfig.getSkillsClasses().getLIFE_CRYSTAL_NEEDED();
-		Config.SP_BOOK_NEEDED = playersConfig.getSkillsClasses().getSP_BOOK_NEEDED();
-		Config.ES_SP_BOOK_NEEDED = playersConfig.getSkillsClasses().getES_SP_BOOK_NEEDED();
-		Config.DIVINE_SP_BOOK_NEEDED = playersConfig.getSkillsClasses().getDIVINE_SP_BOOK_NEEDED();
-		Config.SUBCLASS_WITHOUT_QUESTS = playersConfig.getSkillsClasses().getSUBCLASS_WITHOUT_QUESTS();
-		Config.STORE_SKILL_COOLTIME = playersConfig.getBuffs().getSTORE_SKILL_COOLTIME();
-		Config.MAX_BUFFS_AMOUNT = playersConfig.getBuffs().getMAX_BUFFS_AMOUNT();
+		ATTACK_FROM_MOUNTS = playersConfig.getMisc().getATTACK_FROM_MOUNTS();
+		NO_GRADE_PENALTY = playersConfig.getMisc().getNO_GRADE_PENALTY();
+		EFFECT_CANCELING = playersConfig.getMisc().getEFFECT_CANCELING();
+		HP_REGEN_MULTIPLIER = playersConfig.getMisc().getHP_REGEN_MULTIPLIER();
+		MP_REGEN_MULTIPLIER = playersConfig.getMisc().getMP_REGEN_MULTIPLIER();
+		CP_REGEN_MULTIPLIER = playersConfig.getMisc().getCP_REGEN_MULTIPLIER();
+		PLAYER_SPAWN_PROTECTION = playersConfig.getMisc().getPLAYER_SPAWN_PROTECTION();
+		PLAYER_FAKEDEATH_UP_PROTECTION = playersConfig.getMisc().getPLAYER_FAKEDEATH_UP_PROTECTION();
+		RESPAWN_RESTORE_HP = playersConfig.getMisc().getRESPAWN_RESTORE_HP();
+		MAX_PVTSTORE_SLOTS_DWARF = playersConfig.getMisc().getMAX_PVTSTORE_SLOTS_DWARF();
+		MAX_PVTSTORE_SLOTS_OTHER = playersConfig.getMisc().getMAX_PVTSTORE_SLOTS_OTHER();
+		DEEPBLUE_DROP_RULES = playersConfig.getMisc().getDEEPBLUE_DROP_RULES();
+		ALT_GAME_DELEVEL = playersConfig.getMisc().getALT_GAME_DELEVEL();
+		DEATH_PENALTY_CHANCE = playersConfig.getMisc().getDEATH_PENALTY_CHANCE();
+		INVENTORY_MAXIMUM_NO_DWARF = playersConfig.getInventory().getINVENTORY_MAXIMUM_NO_DWARF();
+		INVENTORY_MAXIMUM_DWARF = playersConfig.getInventory().getINVENTORY_MAXIMUM_DWARF();
+		INVENTORY_MAXIMUM_QUEST_ITEMS = playersConfig.getInventory().getINVENTORY_MAXIMUM_QUEST_ITEMS();
+		INVENTORY_MAXIMUM_PET = playersConfig.getInventory().getINVENTORY_MAXIMUM_PET();
+		MAX_ITEM_IN_PACKET = playersConfig.getInventory().getMAX_ITEM_IN_PACKET();
+		ALT_WEIGHT_LIMIT = playersConfig.getInventory().getALT_WEIGHT_LIMIT();
+		WAREHOUSE_SLOTS_NO_DWARF = playersConfig.getInventory().getWAREHOUSE_SLOTS_NO_DWARF();
+		WAREHOUSE_SLOTS_DWARF = playersConfig.getInventory().getWAREHOUSE_SLOTS_DWARF();
+		WAREHOUSE_SLOTS_CLAN = playersConfig.getInventory().getWAREHOUSE_SLOTS_CLAN();
+		FREIGHT_SLOTS = playersConfig.getInventory().getFREIGHT_SLOTS();
+		ALT_GAME_FREIGHTS = playersConfig.getInventory().getALT_GAME_FREIGHTS();
+		ALT_GAME_FREIGHT_PRICE = playersConfig.getInventory().getALT_GAME_FREIGHT_PRICE();
+		ENCHANT_CHANCE_WEAPON_MAGIC = playersConfig.getEnchant().getENCHANT_CHANCE_WEAPON_MAGIC();
+		ENCHANT_CHANCE_WEAPON_MAGIC_15PLUS = playersConfig.getEnchant().getENCHANT_CHANCE_WEAPON_MAGIC_15PLUS();
+		ENCHANT_CHANCE_WEAPON_NONMAGIC = playersConfig.getEnchant().getENCHANT_CHANCE_WEAPON_NONMAGIC();
+		ENCHANT_CHANCE_WEAPON_NONMAGIC_15PLUS = playersConfig.getEnchant().getENCHANT_CHANCE_WEAPON_NONMAGIC_15PLUS();
+		ENCHANT_CHANCE_ARMOR = playersConfig.getEnchant().getENCHANT_CHANCE_ARMOR();
+		ENCHANT_MAX_WEAPON = playersConfig.getEnchant().getENCHANT_MAX_WEAPON();
+		ENCHANT_MAX_ARMOR = playersConfig.getEnchant().getENCHANT_MAX_ARMOR();
+		ENCHANT_SAFE_MAX = playersConfig.getEnchant().getENCHANT_SAFE_MAX();
+		ENCHANT_SAFE_MAX_FULL = playersConfig.getEnchant().getENCHANT_SAFE_MAX_FULL();
+		AUGMENTATION_NG_SKILL_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_NG_SKILL_CHANCE();
+		AUGMENTATION_NG_GLOW_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_NG_GLOW_CHANCE();
+		AUGMENTATION_MID_SKILL_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_MID_SKILL_CHANCE();
+		AUGMENTATION_MID_GLOW_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_MID_GLOW_CHANCE();
+		AUGMENTATION_HIGH_SKILL_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_HIGH_SKILL_CHANCE();
+		AUGMENTATION_HIGH_GLOW_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_HIGH_GLOW_CHANCE();
+		AUGMENTATION_TOP_SKILL_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_TOP_SKILL_CHANCE();
+		AUGMENTATION_TOP_GLOW_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_TOP_GLOW_CHANCE();
+		AUGMENTATION_BASESTAT_CHANCE = playersConfig.getAugmentation().getAUGMENTATION_BASESTAT_CHANCE();
+		KARMA_PLAYER_CAN_BE_KILLED_IN_PZ = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_BE_KILLED_IN_PZ();
+		KARMA_PLAYER_CAN_SHOP = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_SHOP();
+		KARMA_PLAYER_CAN_USE_GK = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_USE_GK();
+		KARMA_PLAYER_CAN_TELEPORT = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_TELEPORT();
+		KARMA_PLAYER_CAN_TRADE = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_TRADE();
+		KARMA_PLAYER_CAN_USE_WH = playersConfig.getKarmaPvP().getKARMA_PLAYER_CAN_USE_WH();
+		KARMA_DROP_GM = playersConfig.getKarmaPvP().getKARMA_DROP_GM();
+		KARMA_AWARD_PK_KILL = playersConfig.getKarmaPvP().getKARMA_AWARD_PK_KILL();
+		KARMA_PK_LIMIT = playersConfig.getKarmaPvP().getKARMA_PK_LIMIT();
+		KARMA_NONDROPPABLE_PET_ITEMS = playersConfig.getKarmaPvP().getKARMA_NONDROPPABLE_PET_ITEMS();
+		KARMA_NONDROPPABLE_ITEMS = playersConfig.getKarmaPvP().getKARMA_NONDROPPABLE_ITEMS();
+		KARMA_LIST_NONDROPPABLE_PET_ITEMS = playersConfig.getKarmaPvP().getKARMA_LIST_NONDROPPABLE_PET_ITEMS();
+		KARMA_LIST_NONDROPPABLE_ITEMS = playersConfig.getKarmaPvP().getKARMA_LIST_NONDROPPABLE_ITEMS();
+		PVP_NORMAL_TIME = playersConfig.getKarmaPvP().getPVP_NORMAL_TIME();
+		PVP_PVP_TIME = playersConfig.getKarmaPvP().getPVP_PVP_TIME();
+		PARTY_XP_CUTOFF_METHOD = playersConfig.getParty().getPARTY_XP_CUTOFF_METHOD();
+		PARTY_XP_CUTOFF_LEVEL = playersConfig.getParty().getPARTY_XP_CUTOFF_LEVEL();
+		PARTY_XP_CUTOFF_PERCENT = playersConfig.getParty().getPARTY_XP_CUTOFF_PERCENT();
+		PARTY_RANGE = playersConfig.getParty().getPARTY_RANGE();
+		DEFAULT_ACCESS_LEVEL = playersConfig.getGmAdmin().getDEFAULT_ACCESS_LEVEL();
+		GM_HERO_AURA = playersConfig.getGmAdmin().getGM_HERO_AURA();
+		GM_STARTUP_INVULNERABLE = playersConfig.getGmAdmin().getGM_STARTUP_INVULNERABLE();
+		GM_STARTUP_INVISIBLE = playersConfig.getGmAdmin().getGM_STARTUP_INVISIBLE();
+		GM_STARTUP_SILENCE = playersConfig.getGmAdmin().getGM_STARTUP_SILENCE();
+		GM_STARTUP_AUTO_LIST = playersConfig.getGmAdmin().getGM_STARTUP_AUTO_LIST();
+		PETITIONING_ALLOWED = playersConfig.getPetition().getPETITIONING_ALLOWED();
+		MAX_PETITIONS_PER_PLAYER = playersConfig.getPetition().getMAX_PETITIONS_PER_PLAYER();
+		MAX_PETITIONS_PENDING = playersConfig.getPetition().getMAX_PETITIONS_PENDING();
+		IS_CRAFTING_ENABLED = playersConfig.getCrafting().getIS_CRAFTING_ENABLED();
+		DWARF_RECIPE_LIMIT = playersConfig.getCrafting().getDWARF_RECIPE_LIMIT();
+		COMMON_RECIPE_LIMIT = playersConfig.getCrafting().getCOMMON_RECIPE_LIMIT();
+		ALT_BLACKSMITH_USE_RECIPES = playersConfig.getCrafting().getALT_BLACKSMITH_USE_RECIPES();
+		AUTO_LEARN_SKILLS = playersConfig.getSkillsClasses().getAUTO_LEARN_SKILLS();
+		MAGIC_FAILURES = playersConfig.getSkillsClasses().getMAGIC_FAILURES();
+		PERFECT_SHIELD_BLOCK_RATE = playersConfig.getSkillsClasses().getPERFECT_SHIELD_BLOCK_RATE();
+		LIFE_CRYSTAL_NEEDED = playersConfig.getSkillsClasses().getLIFE_CRYSTAL_NEEDED();
+		SP_BOOK_NEEDED = playersConfig.getSkillsClasses().getSP_BOOK_NEEDED();
+		ES_SP_BOOK_NEEDED = playersConfig.getSkillsClasses().getES_SP_BOOK_NEEDED();
+		DIVINE_SP_BOOK_NEEDED = playersConfig.getSkillsClasses().getDIVINE_SP_BOOK_NEEDED();
+		SUBCLASS_WITHOUT_QUESTS = playersConfig.getSkillsClasses().getSUBCLASS_WITHOUT_QUESTS();
+		STORE_SKILL_COOLTIME = playersConfig.getBuffs().getSTORE_SKILL_COOLTIME();
+		MAX_BUFFS_AMOUNT = playersConfig.getBuffs().getMAX_BUFFS_AMOUNT();
+	}
+
+	public static void setNpcsConfig(NpcsConfig npcsConfig) {
+		CHAMPION_FREQUENCY = npcsConfig.getChampionSettings().getFrequency();
+		CHAMP_MIN_LVL = npcsConfig.getChampionSettings().getMinLvl();
+		CHAMP_MAX_LVL = npcsConfig.getChampionSettings().getMaxLvl();
+		CHAMPION_HP = npcsConfig.getChampionSettings().getHp();
+		CHAMPION_REWARDS = npcsConfig.getChampionSettings().getRewards();
+		CHAMPION_ADENAS_REWARDS = npcsConfig.getChampionSettings().getAdenasRewards();
+		CHAMPION_HP_REGEN = npcsConfig.getChampionSettings().getHpRegen();
+		CHAMPION_ATK = npcsConfig.getChampionSettings().getAttack();
+		CHAMPION_SPD_ATK = npcsConfig.getChampionSettings().getSpeedAttack();
+		CHAMPION_REWARD = npcsConfig.getChampionSettings().getReward();
+		CHAMPION_REWARD_ID = npcsConfig.getChampionSettings().getRewardId();
+		CHAMPION_REWARD_QTY = npcsConfig.getChampionSettings().getRewardQty();
+		ALLOW_CLASS_MASTERS = npcsConfig.getClassMasterSettings().getAllowClassMasters();
+		ALLOW_ENTIRE_TREE = npcsConfig.getClassMasterSettings().getAllowEntireTree();
+		BUFFER_MAX_SCHEMES = npcsConfig.getClassMasterSettings().getBufferSettings().getMaxSchemes();
+		BUFFER_STATIC_BUFF_COST = npcsConfig.getClassMasterSettings().getBufferSettings().getStaticBuffCost();
+		WYVERN_ALLOW_UPGRADER = npcsConfig.getWyvernManagerSettings().getAllowUpgrader();
+		WYVERN_REQUIRED_LEVEL = npcsConfig.getWyvernManagerSettings().getRequiredLevel();
+		WYVERN_REQUIRED_CRYSTALS = npcsConfig.getWyvernManagerSettings().getRequiredCrystals();
+		RAID_HP_REGEN_MULTIPLIER = npcsConfig.getRaidBossSettings().getHpRegenMultiplier();
+		RAID_MP_REGEN_MULTIPLIER = npcsConfig.getRaidBossSettings().getMpRegenMultiplier();
+		RAID_DEFENCE_MULTIPLIER = npcsConfig.getRaidBossSettings().getDefenceMultiplier();
+		RAID_MINION_RESPAWN_TIMER = npcsConfig.getRaidBossSettings().getMinionRespawnTimer();
+		RAID_DISABLE_CURSE = npcsConfig.getRaidBossSettings().getDisableCurse();
+		SPAWN_INTERVAL_AQ = npcsConfig.getGrandBossSettings().getSpawnIntervalAQ();
+		RANDOM_SPAWN_TIME_AQ = npcsConfig.getGrandBossSettings().getRandomSpawnTimeAQ();
+		SPAWN_INTERVAL_ANTHARAS = npcsConfig.getGrandBossSettings().getSpawnIntervalAntharas();
+		RANDOM_SPAWN_TIME_ANTHARAS = npcsConfig.getGrandBossSettings().getRandomSpawnTimeAntharas();
+		WAIT_TIME_ANTHARAS = npcsConfig.getGrandBossSettings().getWaitTimeAntharas();
+		SPAWN_INTERVAL_BAIUM = npcsConfig.getGrandBossSettings().getSpawnIntervalBaium();
+		RANDOM_SPAWN_TIME_BAIUM = npcsConfig.getGrandBossSettings().getRandomSpawnTimeBaium();
+		SPAWN_INTERVAL_CORE = npcsConfig.getGrandBossSettings().getSpawnIntervalCore();
+		RANDOM_SPAWN_TIME_CORE = npcsConfig.getGrandBossSettings().getRandomSpawnTimeCore();
+		SPAWN_INTERVAL_FRINTEZZA = npcsConfig.getGrandBossSettings().getSpawnIntervalFrintezza();
+		RANDOM_SPAWN_TIME_FRINTEZZA = npcsConfig.getGrandBossSettings().getRandomSpawnTimeFrintezza();
+		WAIT_TIME_FRINTEZZA = npcsConfig.getGrandBossSettings().getWaitTimeFrintezza();
+		GUARD_ATTACK_AGGRO_MOB = npcsConfig.getAiSettings().getGuardAttackAggroMob();
+		MAX_DRIFT_RANGE = npcsConfig.getAiSettings().getMaxDriftRange();
+		MIN_NPC_ANIMATION = npcsConfig.getAiSettings().getMinNPCAnimation();
+		MAX_NPC_ANIMATION = npcsConfig.getAiSettings().getMaxNPCAnimation();
+		MIN_MONSTER_ANIMATION = npcsConfig.getAiSettings().getMinMonsterAnimation();
+		MAX_MONSTER_ANIMATION = npcsConfig.getAiSettings().getMaxMonsterAnimation();
 	}
 
 }
