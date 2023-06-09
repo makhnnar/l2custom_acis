@@ -1,0 +1,423 @@
+
+/serverConfig
+
+{
+    "configSieges": {
+        "siegeLength": 0,
+        "minimumClanLevel": 0,
+        "maxAttackersNumber": 0,
+        "maxDefendersNumber": 0,
+        "attackersRespawnDelay": 0
+    },
+    "configClients": {
+        "deleteDays": 0,
+        "maximumOnlineUsers": 0
+    },
+    "configAutoLoot": {
+        "autoLoot": false,
+        "autoLootHerbs": false,
+        "autoLootRaid": false
+    },
+    "configItemsManagement": {
+        "allowDiscardItem": false,
+        "multipleItemDrop": false,
+        "herbAutoDestroyTime": 0,
+        "itemAutoDestroyTime": 0,
+        "equipableItemAutoDestroyTime": 0,
+        "specialItemDestroyTime": null,
+        "playerDroppedItemMultiplier": 0
+    },
+    "configRateControl": {
+        "rateXp": 0.0,
+        "rateSp": 0.0,
+        "ratePartyXp": 0.0,
+        "ratePartySp": 0.0,
+        "rateDropAdena": 0.0,
+        "rateDropItems": 0.0,
+        "rateDropItemsByRaid": 0.0,
+        "rateDropSpoil": 0.0,
+        "rateDropManor": 0,
+        "rateQuestDrop": 0.0,
+        "rateQuestReward": 0.0,
+        "rateQuestRewardXp": 0.0,
+        "rateQuestRewardSp": 0.0,
+        "rateQuestRewardAdena": 0.0,
+        "rateKarmaExpLost": 0.0,
+        "rateSiegeGuardsPrice": 0.0,
+        "playerDropLimit": 0,
+        "playerRateDrop": 0,
+        "playerRateDropItem": 0,
+        "playerRateDropEquip": 0,
+        "playerRateDropEquipWeapon": 0,
+        "karmaDropLimit": 0,
+        "karmaRateDrop": 0,
+        "karmaRateDropItem": 0,
+        "karmaRateDropEquip": 0,
+        "karmaRateDropEquipWeapon": 0,
+        "petXpRate": 0.0,
+        "petFoodRate": 0,
+        "sinEaterXpRate": 0.0,
+        "rateDropCommonHerbs": 0.0,
+        "rateDropHpHerbs": 0.0,
+        "rateDropMpHerbs": 0.0,
+        "rateDropSpecialHerbs": 0.0
+    },
+    "configAllowTypes": {
+        "allowFreight": false,
+        "allowWarehouse": false,
+        "allowWear": false,
+        "wearDelay": 0,
+        "wearPrice": 0,
+        "allowLottery": false,
+        "allowWater": false,
+        "allowBoat": false,
+        "allowCursedWeapons": false,
+        "allowManor": false,
+        "enableFallingDamage": false
+    },
+    "configLogs": {
+        "logChat": false,
+        "logItems": false,
+        "gmAudit": false
+    },
+    "configCommunityBoard": {
+        "enableCommunityBoard": false,
+        "bbsDefault": null
+    },
+    "configFloodProtectors": {
+        "rollDiceTime": 0,
+        "heroVoiceTime": 0,
+        "subclassTime": 0,
+        "dropItemTime": 0,
+        "serverBypassTime": 0,
+        "multisellTime": 0,
+        "manufactureTime": 0,
+        "manorTime": 0,
+        "sendMailTime": 0,
+        "characterSelectTime": 0,
+        "globalChatTime": 0,
+        "tradeChatTime": 0,
+        "socialTime": 0
+    },
+    "configMisc": {
+        "l2WalkerProtection": false,
+        "serverNews": false,
+        "zoneTown": 0,
+        "disableTutorial": false
+    }
+}
+
+
+/playersConfig
+{
+    "party": {
+        "PARTY_XP_CUTOFF_METHOD": null,
+        "PARTY_XP_CUTOFF_LEVEL": 0,
+        "PARTY_XP_CUTOFF_PERCENT": 0.0,
+        "PARTY_RANGE": 0
+    },
+    "gmAdmin": {
+        "DEFAULT_ACCESS_LEVEL": 0,
+        "GM_HERO_AURA": false,
+        "GM_STARTUP_INVULNERABLE": false,
+        "GM_STARTUP_INVISIBLE": false,
+        "GM_STARTUP_SILENCE": false,
+        "GM_STARTUP_AUTO_LIST": false
+    },
+    "petition": {
+        "PETITIONING_ALLOWED": false,
+        "MAX_PETITIONS_PER_PLAYER": 0,
+        "MAX_PETITIONS_PENDING": 0
+    },
+    "crafting": {
+        "IS_CRAFTING_ENABLED": false,
+        "DWARF_RECIPE_LIMIT": 0,
+        "COMMON_RECIPE_LIMIT": 0,
+        "ALT_BLACKSMITH_USE_RECIPES": false
+    },
+    "skillsClasses": {
+        "AUTO_LEARN_SKILLS": false,
+        "MAGIC_FAILURES": false,
+        "PERFECT_SHIELD_BLOCK_RATE": 0,
+        "LIFE_CRYSTAL_NEEDED": false,
+        "SP_BOOK_NEEDED": false,
+        "ES_SP_BOOK_NEEDED": false,
+        "DIVINE_SP_BOOK_NEEDED": false,
+        "SUBCLASS_WITHOUT_QUESTS": false
+    },
+    "buffs": {
+        "STORE_SKILL_COOLTIME": false,
+        "MAX_BUFFS_AMOUNT": 0
+    },
+    "misc": {
+        "ATTACK_FROM_MOUNTS": false,
+        "NO_GRADE_PENALTY": false,
+        "EFFECT_CANCELING": false,
+        "HP_REGEN_MULTIPLIER": 0.0,
+        "MP_REGEN_MULTIPLIER": 0.0,
+        "CP_REGEN_MULTIPLIER": 0.0,
+        "PLAYER_SPAWN_PROTECTION": 0,
+        "PLAYER_FAKEDEATH_UP_PROTECTION": 0,
+        "RESPAWN_RESTORE_HP": 0.0,
+        "MAX_PVTSTORE_SLOTS_DWARF": 0,
+        "MAX_PVTSTORE_SLOTS_OTHER": 0,
+        "DEEPBLUE_DROP_RULES": false,
+        "ALT_GAME_DELEVEL": false,
+        "DEATH_PENALTY_CHANCE": 0
+    },
+    "inventory": {
+        "INVENTORY_MAXIMUM_NO_DWARF": 0,
+        "INVENTORY_MAXIMUM_DWARF": 0,
+        "INVENTORY_MAXIMUM_QUEST_ITEMS": 0,
+        "INVENTORY_MAXIMUM_PET": 0,
+        "MAX_ITEM_IN_PACKET": 0,
+        "ALT_WEIGHT_LIMIT": 0.0,
+        "WAREHOUSE_SLOTS_NO_DWARF": 0,
+        "WAREHOUSE_SLOTS_DWARF": 0,
+        "WAREHOUSE_SLOTS_CLAN": 0,
+        "FREIGHT_SLOTS": 0,
+        "ALT_GAME_FREIGHTS": false,
+        "ALT_GAME_FREIGHT_PRICE": 0
+    },
+    "enchant": {
+        "ENCHANT_CHANCE_WEAPON_MAGIC": 0.0,
+        "ENCHANT_CHANCE_WEAPON_MAGIC_15PLUS": 0.0,
+        "ENCHANT_CHANCE_WEAPON_NONMAGIC": 0.0,
+        "ENCHANT_CHANCE_WEAPON_NONMAGIC_15PLUS": 0.0,
+        "ENCHANT_CHANCE_ARMOR": 0.0,
+        "ENCHANT_MAX_WEAPON": 0,
+        "ENCHANT_MAX_ARMOR": 0,
+        "ENCHANT_SAFE_MAX": 0,
+        "ENCHANT_SAFE_MAX_FULL": 0
+    },
+    "augmentation": {
+        "AUGMENTATION_NG_SKILL_CHANCE": 0,
+        "AUGMENTATION_NG_GLOW_CHANCE": 0,
+        "AUGMENTATION_MID_SKILL_CHANCE": 0,
+        "AUGMENTATION_MID_GLOW_CHANCE": 0,
+        "AUGMENTATION_HIGH_SKILL_CHANCE": 0,
+        "AUGMENTATION_HIGH_GLOW_CHANCE": 0,
+        "AUGMENTATION_TOP_SKILL_CHANCE": 0,
+        "AUGMENTATION_TOP_GLOW_CHANCE": 0,
+        "AUGMENTATION_BASESTAT_CHANCE": 0
+    },
+    "karmaPvP": {
+        "KARMA_PLAYER_CAN_BE_KILLED_IN_PZ": false,
+        "KARMA_PLAYER_CAN_SHOP": false,
+        "KARMA_PLAYER_CAN_USE_GK": false,
+        "KARMA_PLAYER_CAN_TELEPORT": false,
+        "KARMA_PLAYER_CAN_TRADE": false,
+        "KARMA_PLAYER_CAN_USE_WH": false,
+        "KARMA_DROP_GM": false,
+        "KARMA_AWARD_PK_KILL": false,
+        "KARMA_PK_LIMIT": 0,
+        "KARMA_NONDROPPABLE_PET_ITEMS": null,
+        "KARMA_NONDROPPABLE_ITEMS": null,
+        "KARMA_LIST_NONDROPPABLE_PET_ITEMS": null,
+        "KARMA_LIST_NONDROPPABLE_ITEMS": null,
+        "PVP_NORMAL_TIME": 0,
+        "PVP_PVP_TIME": 0
+    }
+}
+
+
+/npcsConfig
+{
+    "championSettings": {
+        "frequency": 0,
+        "minLvl": 0,
+        "maxLvl": 0,
+        "hp": 0,
+        "rewards": 0,
+        "adenasRewards": 0,
+        "hpRegen": 0.0,
+        "attack": 0.0,
+        "speedAttack": 0.0,
+        "reward": 0,
+        "rewardId": 0,
+        "rewardQty": 0
+    },
+    "classMasterSettings": {
+        "allowClassMasters": false,
+        "bufferSettings": {
+            "maxSchemes": 0,
+            "staticBuffCost": 0
+        },
+        "allowEntireTree": false
+    },
+    "wyvernManagerSettings": {
+        "allowUpgrader": false,
+        "requiredLevel": 0,
+        "requiredCrystals": 0
+    },
+    "raidBossSettings": {
+        "hpRegenMultiplier": 0.0,
+        "mpRegenMultiplier": 0.0,
+        "defenceMultiplier": 0.0,
+        "minionRespawnTimer": 0,
+        "disableCurse": false
+    },
+    "grandBossSettings": {
+        "spawnIntervalAQ": 0,
+        "randomSpawnTimeAQ": 0,
+        "spawnIntervalAntharas": 0,
+        "randomSpawnTimeAntharas": 0,
+        "waitTimeAntharas": 0,
+        "spawnIntervalBaium": 0,
+        "randomSpawnTimeBaium": 0,
+        "spawnIntervalCore": 0,
+        "randomSpawnTimeCore": 0,
+        "spawnIntervalFrintezza": 0,
+        "randomSpawnTimeFrintezza": 0,
+        "waitTimeFrintezza": 0,
+        "spawnIntervalOrfen": 0,
+        "randomSpawnTimeOrfen": 0,
+        "spawnIntervalSailren": 0,
+        "randomSpawnTimeSailren": 0,
+        "waitTimeSailren": 0,
+        "spawnIntervalValakas": 0,
+        "randomSpawnTimeValakas": 0,
+        "waitTimeValakas": 0,
+        "spawnIntervalZaken": 0,
+        "randomSpawnTimeZaken": 0
+    },
+    "aiSettings": {
+        "guardAttackAggroMob": false,
+        "maxDriftRange": 0,
+        "minNPCAnimation": 0,
+        "maxNPCAnimation": 0,
+        "minMonsterAnimation": 0,
+        "maxMonsterAnimation": 0
+    }
+}
+
+/loginServerConfig
+{
+    "LOGIN_BIND_ADDRESS": null,
+    "PORT_LOGIN": 0,
+    "LOGIN_TRY_BEFORE_BAN": 0,
+    "LOGIN_BLOCK_AFTER_BAN": 0,
+    "ACCEPT_NEW_GAMESERVER": false,
+    "SHOW_LICENCE": false,
+    "AUTO_CREATE_ACCOUNTS": false,
+    "LOG_LOGIN_CONTROLLER": false,
+    "FLOOD_PROTECTION": false,
+    "FAST_CONNECTION_LIMIT": 0,
+    "NORMAL_CONNECTION_TIME": 0,
+    "FAST_CONNECTION_TIME": 0,
+    "MAX_CONNECTION_PER_IP": 0
+}
+
+/clanConfig
+{
+    "generalClanConfig": {
+        "ALT_CLAN_JOIN_DAYS": 0,
+        "ALT_CLAN_CREATE_DAYS": 0,
+        "ALT_CLAN_DISSOLVE_DAYS": 0,
+        "ALT_ALLY_JOIN_DAYS_WHEN_LEAVED": 0,
+        "ALT_ALLY_JOIN_DAYS_WHEN_DISMISSED": 0,
+        "ALT_ACCEPT_CLAN_DAYS_WHEN_DISMISSED": 0,
+        "ALT_CREATE_ALLY_DAYS_WHEN_DISSOLVED": 0,
+        "ALT_MAX_NUM_OF_CLANS_IN_ALLY": 0,
+        "ALT_CLAN_MEMBERS_FOR_WAR": 0,
+        "ALT_CLAN_WAR_PENALTY_WHEN_ENDED": 0,
+        "ALT_MEMBERS_CAN_WITHDRAW_FROM_CLANWH": false
+    },
+    "manorConfig": {
+        "ALT_MANOR_REFRESH_TIME": 0,
+        "ALT_MANOR_REFRESH_MIN": 0,
+        "ALT_MANOR_APPROVE_TIME": 0,
+        "ALT_MANOR_APPROVE_MIN": 0,
+        "ALT_MANOR_MAINTENANCE_MIN": 0,
+        "ALT_MANOR_SAVE_PERIOD_RATE": 0
+    }
+}
+
+/eventConfig
+{
+    "weddingConfig": {
+        "ALLOW_WEDDING": false,
+        "WEDDING_PRICE": 0,
+        "WEDDING_SAMESEX": false,
+        "WEDDING_FORMALWEAR": false
+    },
+    "loterryConfig": {
+        "ALT_LOTTERY_PRIZE": 0,
+        "ALT_LOTTERY_TICKET_PRICE": 0,
+        "ALT_LOTTERY_5_NUMBER_RATE": 0.0,
+        "ALT_LOTTERY_4_NUMBER_RATE": 0.0,
+        "ALT_LOTTERY_3_NUMBER_RATE": 0.0,
+        "ALT_LOTTERY_2_AND_1_NUMBER_PRIZE": 0
+    },
+    "fishingConfig": {
+        "ALT_FISH_CHAMPIONSHIP_ENABLED": false,
+        "ALT_FISH_CHAMPIONSHIP_REWARD_ITEM": 0,
+        "ALT_FISH_CHAMPIONSHIP_REWARD_1": 0,
+        "ALT_FISH_CHAMPIONSHIP_REWARD_2": 0,
+        "ALT_FISH_CHAMPIONSHIP_REWARD_3": 0,
+        "ALT_FISH_CHAMPIONSHIP_REWARD_4": 0,
+        "ALT_FISH_CHAMPIONSHIP_REWARD_5": 0
+    },
+    "fourSepulchersConfig": {
+        "FS_TIME_ENTRY": 0,
+        "FS_TIME_END": 0,
+        "FS_PARTY_MEMBER_COUNT": 0
+    },
+    "olympiadConfig": {
+        "altOlyStartTime": 0,
+        "altOlyMin": 0,
+        "altOlyCPeriod": 0,
+        "altOlyBattle": 0,
+        "altOlyWPeriod": 0,
+        "altOlyVPeriod": 0,
+        "altOlyWaitTime": 0,
+        "altOlyWaitBattle": 0,
+        "altOlyWaitEnd": 0,
+        "altOlyStartPoints": 0,
+        "altOlyWeeklyPoints": 0,
+        "altOlyMinMatches": 0,
+        "altOlyClassed": 0,
+        "altOlyNonClassed": 0,
+        "altOlyClassedReward": null,
+        "altOlyNonClassedReward": null,
+        "altOlyGpPerPoint": 0,
+        "altOlyHeroPoints": 0,
+        "altOlyRank1Points": 0,
+        "altOlyRank2Points": 0,
+        "altOlyRank3Points": 0,
+        "altOlyRank4Points": 0,
+        "altOlyRank5Points": 0,
+        "altOlyMaxPoints": 0,
+        "altOlyDividerClassed": 0,
+        "altOlyDividerNonClassed": 0,
+        "altOlyAnnounceGames": false
+    },
+    "sevenSignsConfig": {
+        "ALT_GAME_CASTLE_DAWN": false,
+        "ALT_GAME_CASTLE_DUSK": false,
+        "ALT_FESTIVAL_MIN_PLAYER": 0,
+        "ALT_MAXIMUM_PLAYER_CONTRIB": 0,
+        "ALT_FESTIVAL_MANAGER_START": 0,
+        "ALT_FESTIVAL_LENGTH": 0,
+        "ALT_FESTIVAL_CYCLE_LENGTH": 0,
+        "ALT_FESTIVAL_FIRST_SPAWN": 0,
+        "ALT_FESTIVAL_FIRST_SWARM": 0,
+        "ALT_FESTIVAL_SECOND_SPAWN": 0,
+        "ALT_FESTIVAL_SECOND_SWARM": 0,
+        "ALT_FESTIVAL_CHEST_SPAWN": 0
+    },
+    "dimensionalRiftConfig": {
+        "RIFT_MIN_PARTY_SIZE": 0,
+        "RIFT_SPAWN_DELAY": 0,
+        "RIFT_MAX_JUMPS": 0,
+        "RIFT_AUTO_JUMPS_TIME_MIN": 0,
+        "RIFT_AUTO_JUMPS_TIME_MAX": 0,
+        "RIFT_ENTER_COST_RECRUIT": 0,
+        "RIFT_ENTER_COST_SOLDIER": 0,
+        "RIFT_ENTER_COST_OFFICER": 0,
+        "RIFT_ENTER_COST_CAPTAIN": 0,
+        "RIFT_ENTER_COST_COMMANDER": 0,
+        "RIFT_ENTER_COST_HERO": 0,
+        "RIFT_BOSS_ROOM_TIME_MUTIPLY": 0.0
+    }
+}

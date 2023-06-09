@@ -63,10 +63,10 @@ data class OlympiadConfig(
     var altOlyMinMatches: Int = Config.ALT_OLY_MIN_MATCHES,
     var altOlyClassed: Int = Config.ALT_OLY_CLASSED,
     var altOlyNonClassed: Int = Config.ALT_OLY_NONCLASSED,
-    var altOlyClassedReward: List<RewardHolder> = Config.ALT_OLY_CLASSED_REWARD.map {
+    var altOlyClassedReward: List<RewardHolder>? = Config.ALT_OLY_CLASSED_REWARD?.map {
         it.intIntHolderToRewardHolder()
     },
-    var altOlyNonClassedReward: List<RewardHolder> = Config.ALT_OLY_NONCLASSED_REWARD.map {
+    var altOlyNonClassedReward: List<RewardHolder>? = Config.ALT_OLY_NONCLASSED_REWARD?.map {
         it.intIntHolderToRewardHolder()
     },
     var altOlyGpPerPoint: Int = Config.ALT_OLY_GP_PER_POINT,

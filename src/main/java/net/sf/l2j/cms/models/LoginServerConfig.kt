@@ -5,7 +5,7 @@ import net.sf.l2j.Config
 
 @Serializable
 data class LoginServerConfig(
-    var LOGIN_BIND_ADDRESS: String = Config.LOGIN_BIND_ADDRESS,
+    var LOGIN_BIND_ADDRESS: String? = Config.LOGIN_BIND_ADDRESS,
     var PORT_LOGIN: Int = Config.PORT_LOGIN,
     var LOGIN_TRY_BEFORE_BAN: Int = Config.LOGIN_TRY_BEFORE_BAN,
     var LOGIN_BLOCK_AFTER_BAN: Int = Config.LOGIN_BLOCK_AFTER_BAN,
