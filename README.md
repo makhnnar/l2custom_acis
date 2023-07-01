@@ -8,6 +8,8 @@ Current modifications:
 
  - Enable/Disable attack from mounts with equipped weapon
  - Enable/Disable grade penalty
+ - Migrated from ant build scripting to gradle
+ - Basic API to modify on Air some server values
 
 Future modifications:
 
