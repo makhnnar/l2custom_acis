@@ -1,12 +1,13 @@
 package net.sf.l2j.gameserver.taskmanager;
 
-import net.sf.l2j.commons.concurrent.ThreadPool;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import net.sf.l2j.commons.pool.ThreadPool;
+
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Summon;
 import net.sf.l2j.gameserver.model.actor.instance.Monster;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Destroys {@link Creature} corpse after specified time.
@@ -68,7 +69,7 @@ public final class DecayTaskManager implements Runnable
 			final Monster monster = ((Monster) creature);
 			
 			// If Monster is spoiled or seeded, double the corpse delay.
-			if (monster.getSpoilerId() != 0 || monster.isSeeded())
+			if (monster.getSpoilState().isSpoiled() || monster.getSeedState().isSeeded())
 				interval *= 2;
 		}
 		
@@ -100,7 +101,7 @@ public final class DecayTaskManager implements Runnable
 		int corpseTime = monster.getTemplate().getCorpseTime() * 1000 / 2;
 		
 		// If the Monster is spoiled or seeded, double the corpse action interval.
-		if (monster.getSpoilerId() != 0 || monster.isSeeded())
+		if (monster.getSpoilState().isSpoiled() || monster.getSeedState().isSeeded())
 			corpseTime *= 2;
 		
 		// Check last corpse action time.

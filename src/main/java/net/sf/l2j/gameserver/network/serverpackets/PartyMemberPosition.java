@@ -1,11 +1,11 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.group.Party;
 import net.sf.l2j.gameserver.model.location.Location;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class PartyMemberPosition extends L2GameServerPacket
 {
@@ -21,7 +21,7 @@ public class PartyMemberPosition extends L2GameServerPacket
 		_locations.clear();
 		
 		for (Player member : party.getMembers())
-			_locations.put(member.getObjectId(), new Location(member.getX(), member.getY(), member.getZ()));
+			_locations.put(member.getObjectId(), member.getPosition().clone());
 	}
 	
 	@Override

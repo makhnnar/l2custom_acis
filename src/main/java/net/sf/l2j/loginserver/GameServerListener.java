@@ -1,11 +1,11 @@
 package net.sf.l2j.loginserver;
 
-import net.sf.l2j.Config;
-
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+
+import net.sf.l2j.Config;
 
 public class GameServerListener extends FloodProtectedListener
 {
@@ -13,7 +13,7 @@ public class GameServerListener extends FloodProtectedListener
 	
 	public GameServerListener() throws IOException
 	{
-		super(Config.GAME_SERVER_LOGIN_HOST, Config.GAME_SERVER_LOGIN_PORT);
+		super(Config.GAMESERVER_LOGIN_HOSTNAME, Config.GAMESERVER_LOGIN_PORT);
 	}
 	
 	@Override

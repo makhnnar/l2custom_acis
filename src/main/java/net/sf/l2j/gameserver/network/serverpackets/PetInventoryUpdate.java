@@ -1,16 +1,13 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import net.sf.l2j.gameserver.model.item.instance.ItemInfo;
-import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
-import net.sf.l2j.gameserver.model.item.instance.ItemInstance.ItemState;
-import net.sf.l2j.gameserver.model.item.kind.Item;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Yme, Advi
- */
+import net.sf.l2j.gameserver.enums.items.ItemState;
+import net.sf.l2j.gameserver.model.item.instance.ItemInfo;
+import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
+import net.sf.l2j.gameserver.model.item.kind.Item;
+
 public class PetInventoryUpdate extends L2GameServerPacket
 {
 	private final List<ItemInfo> _items;
@@ -22,7 +19,7 @@ public class PetInventoryUpdate extends L2GameServerPacket
 	
 	public PetInventoryUpdate()
 	{
-		this(new ArrayList<ItemInfo>());
+		this(new ArrayList<>());
 	}
 	
 	public void addItem(ItemInstance item)

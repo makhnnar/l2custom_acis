@@ -1,14 +1,16 @@
 package net.sf.l2j.gameserver.data.xml;
 
-import net.sf.l2j.commons.data.xml.IXmlReader;
-import net.sf.l2j.commons.util.StatsSet;
-import net.sf.l2j.gameserver.model.soulcrystal.LevelingInfo;
-import net.sf.l2j.gameserver.model.soulcrystal.SoulCrystal;
-import org.w3c.dom.Document;
-
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
+
+import net.sf.l2j.commons.data.StatSet;
+import net.sf.l2j.commons.data.xml.IXmlReader;
+
+import net.sf.l2j.gameserver.model.soulcrystal.LevelingInfo;
+import net.sf.l2j.gameserver.model.soulcrystal.SoulCrystal;
+
+import org.w3c.dom.Document;
 
 /**
  * This class loads and stores following Soul Crystal infos :
@@ -41,12 +43,12 @@ public class SoulCrystalData implements IXmlReader
 		{
 			forEach(listNode, "crystals", crystalsNode -> forEach(crystalsNode, "crystal", crystalNode ->
 			{
-				final StatsSet set = parseAttributes(crystalNode);
+				final StatSet set = parseAttributes(crystalNode);
 				_soulCrystals.put(set.getInteger("initial"), new SoulCrystal(set));
 			}));
 			forEach(listNode, "npcs", npcsNode -> forEach(npcsNode, "npc", npcNode ->
 			{
-				final StatsSet set = parseAttributes(npcNode);
+				final StatSet set = parseAttributes(npcNode);
 				_levelingInfos.put(set.getInteger("id"), new LevelingInfo(set));
 			}));
 		});

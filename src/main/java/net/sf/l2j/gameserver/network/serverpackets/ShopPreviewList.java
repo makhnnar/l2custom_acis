@@ -1,11 +1,11 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import java.util.Collection;
+
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.buylist.NpcBuyList;
 import net.sf.l2j.gameserver.model.buylist.Product;
 import net.sf.l2j.gameserver.model.item.kind.Item;
-
-import java.util.Collection;
 
 public class ShopPreviewList extends L2GameServerPacket
 {
@@ -17,7 +17,7 @@ public class ShopPreviewList extends L2GameServerPacket
 	public ShopPreviewList(NpcBuyList list, int currentMoney, int expertiseIndex)
 	{
 		_listId = list.getListId();
-		_list = list.getProducts();
+		_list = list.values();
 		_money = currentMoney;
 		_expertise = expertiseIndex;
 	}

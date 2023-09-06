@@ -1,13 +1,13 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.sf.l2j.gameserver.enums.skills.AcquireSkillType;
 import net.sf.l2j.gameserver.model.holder.skillnode.ClanSkillNode;
 import net.sf.l2j.gameserver.model.holder.skillnode.FishingSkillNode;
 import net.sf.l2j.gameserver.model.holder.skillnode.GeneralSkillNode;
 import net.sf.l2j.gameserver.model.holder.skillnode.SkillNode;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public final class AcquireSkillList extends L2GameServerPacket
 {

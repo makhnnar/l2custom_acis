@@ -13,7 +13,8 @@ data class NpcsConfig(
 )
 @Serializable
 data class ChampionSettings(
-    var frequency: Int = Config.CHAMPION_FREQUENCY,
+   var frequency: Int = 0,
+   /* var frequency: Int = Config.CHAMPION_FREQUENCY,
     var minLvl: Int = Config.CHAMP_MIN_LVL,
     var maxLvl: Int = Config.CHAMP_MAX_LVL,
     var hp: Int = Config.CHAMPION_HP,
@@ -24,7 +25,7 @@ data class ChampionSettings(
     var speedAttack: Double = Config.CHAMPION_SPD_ATK,
     var reward: Int = Config.CHAMPION_REWARD,
     var rewardId: Int = Config.CHAMPION_REWARD_ID,
-    var rewardQty: Int = Config.CHAMPION_REWARD_QTY
+    var rewardQty: Int = Config.CHAMPION_REWARD_QTY*/
 )
 @Serializable
 data class BufferSettings(

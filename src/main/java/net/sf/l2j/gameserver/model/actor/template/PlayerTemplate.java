@@ -1,8 +1,11 @@
 package net.sf.l2j.gameserver.model.actor.template;
 
+import java.util.List;
+
+import net.sf.l2j.commons.data.StatSet;
 import net.sf.l2j.commons.random.Rnd;
-import net.sf.l2j.commons.util.StatsSet;
-import net.sf.l2j.gameserver.data.ItemTable;
+
+import net.sf.l2j.gameserver.data.xml.ItemData;
 import net.sf.l2j.gameserver.enums.actors.ClassId;
 import net.sf.l2j.gameserver.enums.actors.ClassRace;
 import net.sf.l2j.gameserver.enums.actors.Sex;
@@ -10,8 +13,6 @@ import net.sf.l2j.gameserver.model.holder.ItemTemplateHolder;
 import net.sf.l2j.gameserver.model.holder.skillnode.GeneralSkillNode;
 import net.sf.l2j.gameserver.model.item.kind.Weapon;
 import net.sf.l2j.gameserver.model.location.Location;
-
-import java.util.List;
 
 /**
  * A datatype extending {@link CreatureTemplate}, used to retain Player template informations such as classId, specific collision values for female, hp/mp/cp tables, etc.<br>
@@ -24,7 +25,7 @@ public class PlayerTemplate extends CreatureTemplate
 {
 	private final ClassId _classId;
 	
-	private final int _fallingHeight;
+	private final int[] _safeFallHeight;
 	
 	private final int _baseSwimSpd;
 	
@@ -39,18 +40,22 @@ public class PlayerTemplate extends CreatureTemplate
 	private final double[] _mpTable;
 	private final double[] _cpTable;
 	
+	private final double[] _hpRegenTable;
+	private final double[] _mpRegenTable;
+	private final double[] _cpRegenTable;
+	
 	private final List<ItemTemplateHolder> _items;
 	private final List<GeneralSkillNode> _skills;
 	
 	private final Weapon _fists;
 	
-	public PlayerTemplate(StatsSet set)
+	public PlayerTemplate(StatSet set)
 	{
 		super(set);
 		
 		_classId = ClassId.VALUES[set.getInteger("id")];
 		
-		_fallingHeight = set.getInteger("falling_height", 333);
+		_safeFallHeight = set.getIntegerArray("safeFallHeight");
 		
 		_baseSwimSpd = set.getInteger("swimSpd", 1);
 		
@@ -65,10 +70,14 @@ public class PlayerTemplate extends CreatureTemplate
 		_mpTable = set.getDoubleArray("mpTable");
 		_cpTable = set.getDoubleArray("cpTable");
 		
+		_hpRegenTable = set.getDoubleArray("hpRegenTable");
+		_mpRegenTable = set.getDoubleArray("mpRegenTable");
+		_cpRegenTable = set.getDoubleArray("cpRegenTable");
+		
 		_items = set.getList("items");
 		_skills = set.getList("skills");
 		
-		_fists = (Weapon) ItemTable.getInstance().getTemplate(set.getInteger("fists"));
+		_fists = (Weapon) ItemData.getInstance().getTemplate(set.getInteger("fists"));
 	}
 	
 	public final ClassId getClassId()
@@ -86,9 +95,9 @@ public class PlayerTemplate extends CreatureTemplate
 		return _classId.toString();
 	}
 	
-	public final int getFallHeight()
+	public final int getSafeFallHeight(Sex sex)
 	{
-		return _fallingHeight;
+		return (sex == Sex.MALE) ? _safeFallHeight[1] : _safeFallHeight[0];
 	}
 	
 	public final int getBaseSwimSpeed()
@@ -140,6 +149,23 @@ public class PlayerTemplate extends CreatureTemplate
 	public final double getBaseCpMax(int level)
 	{
 		return _cpTable[level - 1];
+	}
+	
+	@Override
+	public final double getBaseHpRegen(int level)
+	{
+		return _hpRegenTable[level - 1];
+	}
+	
+	@Override
+	public final double getBaseMpRegen(int level)
+	{
+		return _mpRegenTable[level - 1];
+	}
+	
+	public final double getBaseCpRegen(int level)
+	{
+		return _cpRegenTable[level - 1];
 	}
 	
 	/**

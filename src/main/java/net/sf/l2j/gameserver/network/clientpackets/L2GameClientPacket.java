@@ -1,13 +1,14 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
-import net.sf.l2j.Config;
+import java.nio.BufferUnderflowException;
+
 import net.sf.l2j.commons.logging.CLogger;
 import net.sf.l2j.commons.mmocore.ReceivablePacket;
+
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.network.GameClient;
 import net.sf.l2j.gameserver.network.serverpackets.L2GameServerPacket;
-
-import java.nio.BufferUnderflowException;
 
 /**
  * Packets received by the gameserver from clients.
@@ -58,9 +59,9 @@ public abstract class L2GameClientPacket extends ReceivablePacket<GameClient>
 					player.onActionRequest();
 			}
 		}
-		catch (Throwable t)
+		catch (Exception e)
 		{
-			LOGGER.error("Failed reading {} for {}. ", t, getType(), getClient().toString());
+			LOGGER.error("Failed reading {} for {}. ", e, getType(), getClient().toString());
 			
 			if (this instanceof EnterWorld)
 				getClient().closeNow();

@@ -1,14 +1,14 @@
 package net.sf.l2j.gameserver.model.itemcontainer.listeners;
 
-import net.sf.l2j.gameserver.model.L2Skill;
+import net.sf.l2j.gameserver.enums.Paperdoll;
 import net.sf.l2j.gameserver.model.actor.Playable;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.holder.IntIntHolder;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.model.item.kind.Item;
 import net.sf.l2j.gameserver.model.item.kind.Weapon;
-import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.serverpackets.SkillCoolTime;
+import net.sf.l2j.gameserver.skills.L2Skill;
 
 public class ItemPassiveSkillsListener implements OnEquipListener
 {
@@ -20,7 +20,7 @@ public class ItemPassiveSkillsListener implements OnEquipListener
 	}
 	
 	@Override
-	public void onEquip(int slot, ItemInstance item, Playable actor)
+	public void onEquip(Paperdoll slot, ItemInstance item, Playable actor)
 	{
 		final Player player = (Player) actor;
 		final Item it = item.getItem();
@@ -35,7 +35,7 @@ public class ItemPassiveSkillsListener implements OnEquipListener
 				item.getAugmentation().applyBonus(player);
 			
 			// Verify if the grade penalty is occuring. If yes, then forget +4 dual skills and SA attached to weapon.
-			if (player.getSkillLevel(CommonSkill.SKILL_EXPERTISE.id) < it.getCrystalType().getId())
+			if (player.getSkillLevel(L2Skill.SKILL_EXPERTISE) < it.getCrystalType().getId())
 				return;
 			
 			// Add skills bestowed from +4 Duals
@@ -91,7 +91,7 @@ public class ItemPassiveSkillsListener implements OnEquipListener
 	}
 	
 	@Override
-	public void onUnequip(int slot, ItemInstance item, Playable actor)
+	public void onUnequip(Paperdoll slot, ItemInstance item, Playable actor)
 	{
 		final Player player = (Player) actor;
 		final Item it = item.getItem();
@@ -131,7 +131,7 @@ public class ItemPassiveSkillsListener implements OnEquipListener
 					
 					for (ItemInstance pItem : player.getInventory().getPaperdollItems())
 					{
-						if (pItem != null && it.getItemId() == pItem.getItemId())
+						if (it.getItemId() == pItem.getItemId())
 						{
 							found = true;
 							break;

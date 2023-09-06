@@ -1,15 +1,16 @@
 package net.sf.l2j.gameserver.model.buylist;
 
-import net.sf.l2j.L2DatabaseFactory;
-import net.sf.l2j.commons.logging.CLogger;
-import net.sf.l2j.commons.util.StatsSet;
-import net.sf.l2j.gameserver.data.ItemTable;
-import net.sf.l2j.gameserver.model.item.kind.Item;
-import net.sf.l2j.gameserver.taskmanager.BuyListTaskManager;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import net.sf.l2j.commons.data.StatSet;
+import net.sf.l2j.commons.logging.CLogger;
+import net.sf.l2j.commons.pool.ConnectionPool;
+
+import net.sf.l2j.gameserver.data.xml.ItemData;
+import net.sf.l2j.gameserver.model.item.kind.Item;
+import net.sf.l2j.gameserver.taskmanager.BuyListTaskManager;
 
 /**
  * A datatype entry for {@link NpcBuyList}. It can own a count and a restock delay, the whole system of tasks being controlled by {@link BuyListTaskManager}.
@@ -29,10 +30,10 @@ public class Product
 	
 	private AtomicInteger _count = null;
 	
-	public Product(int buyListId, StatsSet set)
+	public Product(int buyListId, StatSet set)
 	{
 		_buyListId = buyListId;
-		_item = ItemTable.getInstance().getTemplate(set.getInteger("id"));
+		_item = ItemData.getInstance().getTemplate(set.getInteger("id"));
 		_price = set.getInteger("price", 0);
 		_restockDelay = set.getLong("restockDelay", -1) * 60000;
 		_maxCount = set.getInteger("count", -1);
@@ -124,7 +125,7 @@ public class Product
 	 */
 	public void save(long nextRestockTime)
 	{
-		try (Connection con = L2DatabaseFactory.getInstance().getConnection();
+		try (Connection con = ConnectionPool.getConnection();
 			PreparedStatement ps = con.prepareStatement(ADD_OR_UPDATE_BUYLIST))
 		{
 			ps.setInt(1, getBuyListId());
@@ -144,7 +145,7 @@ public class Product
 	 */
 	public void delete()
 	{
-		try (Connection con = L2DatabaseFactory.getInstance().getConnection();
+		try (Connection con = ConnectionPool.getConnection();
 			PreparedStatement ps = con.prepareStatement(DELETE_BUYLIST))
 		{
 			ps.setInt(1, getBuyListId());

@@ -1,5 +1,8 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.manager.CastleManorManager;
 import net.sf.l2j.gameserver.model.actor.Player;
@@ -7,9 +10,6 @@ import net.sf.l2j.gameserver.model.manor.CropProcure;
 import net.sf.l2j.gameserver.model.manor.Seed;
 import net.sf.l2j.gameserver.model.pledge.Clan;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RequestSetCrop extends L2GameClientPacket
 {
@@ -60,7 +60,7 @@ public class RequestSetCrop extends L2GameClientPacket
 		
 		// Check player privileges
 		final Player player = getClient().getPlayer();
-		if (player == null || player.getClan() == null || player.getClan().getCastleId() != _manorId || ((player.getClanPrivileges() & Clan.CP_CS_MANOR_ADMIN) != Clan.CP_CS_MANOR_ADMIN) || !player.getCurrentFolk().canInteract(player))
+		if (player == null || player.getClan() == null || player.getClan().getCastleId() != _manorId || !player.hasClanPrivileges(Clan.CP_CS_MANOR_ADMIN) || !player.getAI().canDoInteract(player.getCurrentFolk()))
 		{
 			sendPacket(ActionFailed.STATIC_PACKET);
 			return;

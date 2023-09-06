@@ -1,6 +1,13 @@
 package net.sf.l2j.gameserver.taskmanager;
 
-import net.sf.l2j.commons.concurrent.ThreadPool;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
+
+import net.sf.l2j.commons.pool.ThreadPool;
+
+import net.sf.l2j.gameserver.enums.Paperdoll;
 import net.sf.l2j.gameserver.model.actor.Playable;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
@@ -8,11 +15,6 @@ import net.sf.l2j.gameserver.model.itemcontainer.listeners.OnEquipListener;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.InventoryUpdate;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
-
-import java.util.Collections;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Updates the timer and removes the {@link ItemInstance} as a shadow item.
@@ -44,13 +46,13 @@ public class ShadowItemTaskManager implements Runnable, OnEquipListener
 			final Player player = entry.getValue();
 			
 			// Decrease item mana.
-			int mana = item.decreaseMana(DELAY);
+			int mana = item.decreaseMana();
 			
 			// If not enough mana, destroy the item and inform the player.
 			if (mana == -1)
 			{
 				// Remove item first.
-				player.getInventory().unEquipItemInSlotAndRecord(item.getLocationSlot());
+				player.getInventory().unequipItemInSlotAndRecord(item.getLocationSlot());
 				InventoryUpdate iu = new InventoryUpdate();
 				iu.addModifiedItem(item);
 				player.sendPacket(iu);
@@ -82,7 +84,7 @@ public class ShadowItemTaskManager implements Runnable, OnEquipListener
 	}
 	
 	@Override
-	public final void onEquip(int slot, ItemInstance item, Playable playable)
+	public final void onEquip(Paperdoll slot, ItemInstance item, Playable playable)
 	{
 		// Must be a shadow item.
 		if (!item.isShadowItem())
@@ -96,7 +98,7 @@ public class ShadowItemTaskManager implements Runnable, OnEquipListener
 	}
 	
 	@Override
-	public final void onUnequip(int slot, ItemInstance item, Playable actor)
+	public final void onUnequip(Paperdoll slot, ItemInstance item, Playable actor)
 	{
 		// Must be a shadow item.
 		if (!item.isShadowItem())

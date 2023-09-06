@@ -1,14 +1,15 @@
 package net.sf.l2j.gameserver.handler.usercommandhandlers;
 
+import java.text.SimpleDateFormat;
+
 import net.sf.l2j.commons.lang.StringUtil;
+
 import net.sf.l2j.gameserver.data.manager.CastleManager;
 import net.sf.l2j.gameserver.handler.IUserCommandHandler;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.entity.Castle;
 import net.sf.l2j.gameserver.model.pledge.Clan;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
-
-import java.text.SimpleDateFormat;
 
 public class ClanPenalty implements IUserCommandHandler
 {
@@ -20,21 +21,21 @@ public class ClanPenalty implements IUserCommandHandler
 	};
 	
 	@Override
-	public boolean useUserCommand(int id, Player activeChar)
+	public void useUserCommand(int id, Player player)
 	{
 		final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		final StringBuilder sb = new StringBuilder();
 		final long currentTime = System.currentTimeMillis();
 		
 		// Join a clan penalty.
-		if (activeChar.getClanJoinExpiryTime() > currentTime)
-			StringUtil.append(sb, "<tr><td width=170>Unable to join a clan.</td><td width=100 align=center>", sdf.format(activeChar.getClanJoinExpiryTime()), "</td></tr>");
+		if (player.getClanJoinExpiryTime() > currentTime)
+			StringUtil.append(sb, "<tr><td width=170>Unable to join a clan.</td><td width=100 align=center>", sdf.format(player.getClanJoinExpiryTime()), "</td></tr>");
 		
 		// Create a clan penalty.
-		if (activeChar.getClanCreateExpiryTime() > currentTime)
-			StringUtil.append(sb, "<tr><td width=170>Unable to create a clan.</td><td width=100 align=center>", sdf.format(activeChar.getClanCreateExpiryTime()), "</td></tr>");
+		if (player.getClanCreateExpiryTime() > currentTime)
+			StringUtil.append(sb, "<tr><td width=170>Unable to create a clan.</td><td width=100 align=center>", sdf.format(player.getClanCreateExpiryTime()), "</td></tr>");
 		
-		final Clan clan = activeChar.getClan();
+		final Clan clan = player.getClan();
 		if (clan != null)
 		{
 			// Invitation in a clan penalty.
@@ -82,8 +83,7 @@ public class ClanPenalty implements IUserCommandHandler
 		final NpcHtmlMessage html = new NpcHtmlMessage(0);
 		html.setFile("data/html/clan_penalty.htm");
 		html.replace("%content%", (sb.length() == 0) ? NO_PENALTY : sb.toString());
-		activeChar.sendPacket(html);
-		return true;
+		player.sendPacket(html);
 	}
 	
 	@Override

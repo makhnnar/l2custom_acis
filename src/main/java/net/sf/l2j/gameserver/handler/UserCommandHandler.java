@@ -1,9 +1,21 @@
 package net.sf.l2j.gameserver.handler;
 
-import net.sf.l2j.gameserver.handler.usercommandhandlers.*;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import net.sf.l2j.gameserver.handler.usercommandhandlers.ChannelDelete;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.ChannelLeave;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.ChannelListUpdate;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.ClanPenalty;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.ClanWarsList;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.Dismount;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.Escape;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.Loc;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.Mount;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.OlympiadStat;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.PartyInfo;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.SiegeStatus;
+import net.sf.l2j.gameserver.handler.usercommandhandlers.Time;
 
 public class UserCommandHandler
 {
@@ -16,7 +28,7 @@ public class UserCommandHandler
 		registerHandler(new ChannelListUpdate());
 		registerHandler(new ClanPenalty());
 		registerHandler(new ClanWarsList());
-		registerHandler(new DisMount());
+		registerHandler(new Dismount());
 		registerHandler(new Escape());
 		registerHandler(new Loc());
 		registerHandler(new Mount());

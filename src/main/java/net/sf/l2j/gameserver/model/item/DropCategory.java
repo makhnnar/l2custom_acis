@@ -1,14 +1,12 @@
 package net.sf.l2j.gameserver.model.item;
 
-import net.sf.l2j.Config;
-import net.sf.l2j.commons.random.Rnd;
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Fulminus
- */
+import net.sf.l2j.commons.random.Rnd;
+
+import net.sf.l2j.Config;
+
 public class DropCategory
 {
 	private final List<DropData> _drops;

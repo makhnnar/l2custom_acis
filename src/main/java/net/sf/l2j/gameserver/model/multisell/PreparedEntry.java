@@ -1,8 +1,8 @@
 package net.sf.l2j.gameserver.model.multisell;
 
-import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
-
 import java.util.ArrayList;
+
+import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 
 /**
  * A dynamic layer of {@link Entry}, which holds the tax amount and can retain previous {@link ItemInstance} enchantment.

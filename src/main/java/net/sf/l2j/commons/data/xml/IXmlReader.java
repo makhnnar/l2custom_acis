@@ -1,10 +1,32 @@
 package net.sf.l2j.commons.data.xml;
 
+import java.io.IOException;
+import java.nio.file.FileVisitOption;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.EnumSet;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import net.sf.l2j.commons.data.StatSet;
 import net.sf.l2j.commons.logging.CLogger;
-import net.sf.l2j.commons.util.StatsSet;
+
 import net.sf.l2j.gameserver.model.holder.IntIntHolder;
 import net.sf.l2j.gameserver.model.location.Location;
 import net.sf.l2j.gameserver.model.location.SpawnLocation;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
@@ -12,16 +34,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
-import java.nio.file.*;
-import java.nio.file.attribute.BasicFileAttributes;
-import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 
 public interface IXmlReader
 {
@@ -292,10 +304,10 @@ public interface IXmlReader
 		return parseEnum(attrs.getNamedItem(name), clazz, defaultValue);
 	}
 	
-	default StatsSet parseAttributes(Node node)
+	default StatSet parseAttributes(Node node)
 	{
 		final NamedNodeMap attrs = node.getAttributes();
-		final StatsSet map = new StatsSet();
+		final StatSet map = new StatSet();
 		for (int i = 0; i < attrs.getLength(); i++)
 		{
 			final Node att = attrs.item(i);
@@ -304,7 +316,7 @@ public interface IXmlReader
 		return map;
 	}
 	
-	default void addAttributes(StatsSet set, NamedNodeMap attrs)
+	default void addAttributes(StatSet set, NamedNodeMap attrs)
 	{
 		for (int i = 0; i < attrs.getLength(); i++)
 		{
@@ -322,20 +334,16 @@ public interface IXmlReader
 			switch (parameters_node.getNodeName().toLowerCase())
 			{
 				case "param":
-				{
 					parameters.put(parseString(attrs, "name"), parseString(attrs, "value"));
 					break;
-				}
+				
 				case "skill":
-				{
 					parameters.put(parseString(attrs, "name"), new IntIntHolder(parseInteger(attrs, "id"), parseInteger(attrs, "level")));
 					break;
-				}
+				
 				case "location":
-				{
 					parameters.put(parseString(attrs, "name"), new SpawnLocation(parseInteger(attrs, "x"), parseInteger(attrs, "y"), parseInteger(attrs, "z"), parseInteger(attrs, "heading", 0)));
 					break;
-				}
 			}
 		}
 		return parameters;

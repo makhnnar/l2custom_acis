@@ -1,11 +1,13 @@
 package net.sf.l2j.loginserver.network.gameserverpackets;
 
-import net.sf.l2j.commons.logging.CLogger;
-import net.sf.l2j.loginserver.network.clientpackets.ClientBasePacket;
-
-import javax.crypto.Cipher;
 import java.security.GeneralSecurityException;
 import java.security.interfaces.RSAPrivateKey;
+
+import javax.crypto.Cipher;
+
+import net.sf.l2j.commons.logging.CLogger;
+
+import net.sf.l2j.loginserver.network.clientpackets.ClientBasePacket;
 
 public class BlowFishKey extends ClientBasePacket
 {

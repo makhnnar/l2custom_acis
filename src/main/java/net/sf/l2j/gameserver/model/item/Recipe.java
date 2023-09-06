@@ -1,9 +1,10 @@
 package net.sf.l2j.gameserver.model.item;
 
-import net.sf.l2j.commons.util.StatsSet;
-import net.sf.l2j.gameserver.model.holder.IntIntHolder;
-
 import java.util.List;
+
+import net.sf.l2j.commons.data.StatSet;
+
+import net.sf.l2j.gameserver.model.holder.IntIntHolder;
 
 /**
  * This datatype is used to store Recipe informations used by Dwarf to craft items.<br>
@@ -22,7 +23,7 @@ public class Recipe
 	private final int _mpCost;
 	private final boolean _isDwarven;
 	
-	public Recipe(StatsSet set)
+	public Recipe(StatSet set)
 	{
 		_materials = set.getIntIntHolderList("material");
 		_product = set.getIntIntHolder("product");

@@ -1,21 +1,23 @@
 package net.sf.l2j.commons.config;
 
-import net.sf.l2j.commons.logging.CLogger;
-import net.sf.l2j.gameserver.model.holder.IntIntHolder;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import net.sf.l2j.commons.logging.CLogger;
+
+import net.sf.l2j.gameserver.model.holder.IntIntHolder;
+
 public class ExProperties extends Properties
 {
 	private static final CLogger LOGGER = new CLogger(ExProperties.class.getName());
 	
 	private static final long serialVersionUID = 1L;
+	private static final IntIntHolder[] NO_HOLDER = {};
 	
-	public static final String defaultDelimiter = "[\\s,;]+";
+	public static final String DEFAULT_DELIMITERS = "[\\s,;]+";
 	
 	public void load(final String fileName) throws IOException
 	{
@@ -38,6 +40,8 @@ public class ExProperties extends Properties
 		
 		if ((value = super.getProperty(name, null)) != null)
 			val = Boolean.parseBoolean(value);
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
@@ -50,6 +54,8 @@ public class ExProperties extends Properties
 		
 		if ((value = super.getProperty(name, null)) != null)
 			val = Integer.parseInt(value);
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
@@ -62,6 +68,8 @@ public class ExProperties extends Properties
 		
 		if ((value = super.getProperty(name, null)) != null)
 			val = Long.parseLong(value);
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
@@ -74,13 +82,15 @@ public class ExProperties extends Properties
 		
 		if ((value = super.getProperty(name, null)) != null)
 			val = Double.parseDouble(value);
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
 	
 	public String[] getProperty(final String name, final String[] defaultValue)
 	{
-		return getProperty(name, defaultValue, defaultDelimiter);
+		return getProperty(name, defaultValue, DEFAULT_DELIMITERS);
 	}
 	
 	public String[] getProperty(final String name, final String[] defaultValue, final String delimiter)
@@ -90,13 +100,15 @@ public class ExProperties extends Properties
 		
 		if ((value = super.getProperty(name, null)) != null)
 			val = value.split(delimiter);
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
 	
 	public boolean[] getProperty(final String name, final boolean[] defaultValue)
 	{
-		return getProperty(name, defaultValue, defaultDelimiter);
+		return getProperty(name, defaultValue, DEFAULT_DELIMITERS);
 	}
 	
 	public boolean[] getProperty(final String name, final boolean[] defaultValue, final String delimiter)
@@ -111,13 +123,15 @@ public class ExProperties extends Properties
 			for (int i = 0; i < val.length; i++)
 				val[i] = Boolean.parseBoolean(values[i]);
 		}
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
 	
 	public int[] getProperty(final String name, final int[] defaultValue)
 	{
-		return getProperty(name, defaultValue, defaultDelimiter);
+		return getProperty(name, defaultValue, DEFAULT_DELIMITERS);
 	}
 	
 	public int[] getProperty(final String name, final int[] defaultValue, final String delimiter)
@@ -132,13 +146,15 @@ public class ExProperties extends Properties
 			for (int i = 0; i < val.length; i++)
 				val[i] = Integer.parseInt(values[i]);
 		}
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
 	
 	public long[] getProperty(final String name, final long[] defaultValue)
 	{
-		return getProperty(name, defaultValue, defaultDelimiter);
+		return getProperty(name, defaultValue, DEFAULT_DELIMITERS);
 	}
 	
 	public long[] getProperty(final String name, final long[] defaultValue, final String delimiter)
@@ -153,13 +169,15 @@ public class ExProperties extends Properties
 			for (int i = 0; i < val.length; i++)
 				val[i] = Long.parseLong(values[i]);
 		}
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
 	
 	public double[] getProperty(final String name, final double[] defaultValue)
 	{
-		return getProperty(name, defaultValue, defaultDelimiter);
+		return getProperty(name, defaultValue, DEFAULT_DELIMITERS);
 	}
 	
 	public double[] getProperty(final String name, final double[] defaultValue, final String delimiter)
@@ -174,6 +192,8 @@ public class ExProperties extends Properties
 			for (int i = 0; i < val.length; i++)
 				val[i] = Double.parseDouble(values[i]);
 		}
+		else
+			LOGGER.warn("The following property key '{}' is missing. It will use default value '{}'.", name, defaultValue);
 		
 		return val;
 	}
@@ -187,7 +207,7 @@ public class ExProperties extends Properties
 	{
 		final String[] propertySplit = getProperty(key, defaultValue).split(";");
 		if (propertySplit.length == 0)
-			return null;
+			return NO_HOLDER;
 		
 		int i = 0;
 		final IntIntHolder[] result = new IntIntHolder[propertySplit.length];
@@ -197,7 +217,7 @@ public class ExProperties extends Properties
 			if (valueSplit.length != 2)
 			{
 				LOGGER.warn("Error parsing entry '{}', it should be itemId-itemNumber.", key);
-				return null;
+				return NO_HOLDER;
 			}
 			
 			try
@@ -207,7 +227,7 @@ public class ExProperties extends Properties
 			catch (Exception e)
 			{
 				LOGGER.error("Error parsing entry '{}', one of the value isn't a number.", e, key);
-				return null;
+				return NO_HOLDER;
 			}
 			
 			i++;

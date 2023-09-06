@@ -1,24 +1,28 @@
 package net.sf.l2j.gameserver.data.xml;
 
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+import net.sf.l2j.commons.data.StatSet;
 import net.sf.l2j.commons.data.xml.IXmlReader;
-import net.sf.l2j.commons.util.StatsSet;
-import net.sf.l2j.gameserver.data.ItemTable;
+
 import net.sf.l2j.gameserver.data.SkillTable;
-import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.MinionData;
 import net.sf.l2j.gameserver.model.PetDataEntry;
 import net.sf.l2j.gameserver.model.actor.template.NpcTemplate;
 import net.sf.l2j.gameserver.model.actor.template.PetTemplate;
 import net.sf.l2j.gameserver.model.item.DropCategory;
 import net.sf.l2j.gameserver.model.item.DropData;
-import net.sf.l2j.gameserver.model.skill.CommonSkill;
+import net.sf.l2j.gameserver.skills.L2Skill;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
-
-import java.nio.file.Path;
-import java.util.*;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 /**
  * Loads and stores {@link NpcTemplate}s.
@@ -47,7 +51,7 @@ public class NpcData implements IXmlReader
 			final NamedNodeMap attrs = npcNode.getAttributes();
 			final int npcId = parseInteger(attrs, "id");
 			final int templateId = attrs.getNamedItem("idTemplate") == null ? npcId : parseInteger(attrs, "idTemplate");
-			final StatsSet set = new StatsSet();
+			final StatSet set = new StatSet();
 			set.set("id", npcId);
 			set.set("idTemplate", templateId);
 			set.set("name", parseString(attrs, "name"));
@@ -89,12 +93,9 @@ public class NpcData implements IXmlReader
 					forEach(categoryNode, "drop", dropNode ->
 					{
 						final NamedNodeMap dropAttrs = dropNode.getAttributes();
-						final DropData data = new DropData();
-						data.setItemId(parseInteger(dropAttrs, "itemid"));
-						data.setMinDrop(parseInteger(dropAttrs, "min"));
-						data.setMaxDrop(parseInteger(dropAttrs, "max"));
-						data.setChance(parseInteger(dropAttrs, "chance"));
-						if (ItemTable.getInstance().getTemplate(data.getItemId()) == null)
+						final DropData data = new DropData(parseInteger(dropAttrs, "itemid"), parseInteger(dropAttrs, "min"), parseInteger(dropAttrs, "max"), parseInteger(dropAttrs, "chance"));
+						
+						if (ItemData.getInstance().getTemplate(data.getItemId()) == null)
 						{
 							LOGGER.warn("Droplist data for undefined itemId: {}.", data.getItemId());
 							return;
@@ -132,7 +133,7 @@ public class NpcData implements IXmlReader
 				final Map<Integer, PetDataEntry> entries = new HashMap<>();
 				forEach(petdataNode, "stat", statNode ->
 				{
-					final StatsSet petSet = parseAttributes(statNode);
+					final StatSet petSet = parseAttributes(statNode);
 					entries.put(petSet.getInteger("level"), new PetDataEntry(petSet));
 				});
 				set.set("petData", entries);
@@ -145,7 +146,7 @@ public class NpcData implements IXmlReader
 					final NamedNodeMap skillAttrs = skillNode.getAttributes();
 					final int skillId = parseInteger(skillAttrs, "id");
 					final int level = parseInteger(skillAttrs, "level");
-					if (skillId == CommonSkill.SKILL_NPC_RACE.id)
+					if (skillId == L2Skill.SKILL_NPC_RACE)
 					{
 						set.set("raceId", level);
 						return;

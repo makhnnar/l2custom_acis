@@ -1,5 +1,8 @@
 package net.sf.l2j.gameserver.model.actor.instance;
 
+import java.util.List;
+import java.util.StringTokenizer;
+
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.cache.HtmCache;
 import net.sf.l2j.gameserver.data.manager.BuyListManager;
@@ -8,14 +11,11 @@ import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.template.NpcTemplate;
 import net.sf.l2j.gameserver.model.buylist.NpcBuyList;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
-import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.serverpackets.BuyList;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.network.serverpackets.SellList;
 import net.sf.l2j.gameserver.network.serverpackets.ShopPreviewList;
-
-import java.util.List;
-import java.util.StringTokenizer;
+import net.sf.l2j.gameserver.skills.L2Skill;
 
 /**
  * An instance type extending {@link Folk}, used for merchant (regular and multisell). It got buy/sell methods.<br>
@@ -96,11 +96,11 @@ public class Merchant extends Folk
 		{
 			final NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
 			
-			if (player.getLevel() < 40)
+			if (player.getStatus().getLevel() < 40)
 				html.setFile("data/html/common/shadow_item-lowlevel.htm");
-			else if (player.getLevel() < 46)
+			else if (player.getStatus().getLevel() < 46)
 				html.setFile("data/html/common/shadow_item_mi_c.htm");
-			else if (player.getLevel() < 52)
+			else if (player.getStatus().getLevel() < 52)
 				html.setFile("data/html/common/shadow_item_hi_c.htm");
 			else
 				html.setFile("data/html/common/shadow_item_b.htm");
@@ -120,7 +120,7 @@ public class Merchant extends Folk
 			if (st.countTokens() < 1)
 				return;
 			
-			if (player.isNewbie())
+			if (player.isNewbie(true))
 				MultisellData.getInstance().separateAndSend(st.nextToken(), player, this, true);
 			else
 				showChatWindow(player, "data/html/exchangelvlimit.htm");
@@ -146,7 +146,7 @@ public class Merchant extends Folk
 			return;
 		
 		player.tempInventoryDisable();
-		player.sendPacket(new ShopPreviewList(buyList, player.getAdena(), player.getSkillLevel(CommonSkill.SKILL_EXPERTISE.id)));
+		player.sendPacket(new ShopPreviewList(buyList, player.getAdena(), player.getSkillLevel(L2Skill.SKILL_EXPERTISE)));
 	}
 	
 	protected final void showBuyWindow(Player player, int val)

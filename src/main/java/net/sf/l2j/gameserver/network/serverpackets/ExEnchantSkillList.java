@@ -1,8 +1,8 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import net.sf.l2j.gameserver.model.holder.skillnode.EnchantSkillNode;
-
 import java.util.List;
+
+import net.sf.l2j.gameserver.model.holder.skillnode.EnchantSkillNode;
 
 public class ExEnchantSkillList extends L2GameServerPacket
 {

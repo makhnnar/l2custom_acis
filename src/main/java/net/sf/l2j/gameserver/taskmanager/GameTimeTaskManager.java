@@ -1,18 +1,22 @@
 package net.sf.l2j.gameserver.taskmanager;
 
-import net.sf.l2j.commons.concurrent.ThreadPool;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import net.sf.l2j.commons.pool.ThreadPool;
+
 import net.sf.l2j.gameserver.data.SkillTable;
 import net.sf.l2j.gameserver.data.manager.DayNightManager;
-import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Player;
-import net.sf.l2j.gameserver.model.skill.CommonSkill;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 import net.sf.l2j.gameserver.scripting.Quest;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import net.sf.l2j.gameserver.skills.L2Skill;
 
 /**
  * Controls game time, informs spawn manager about day/night spawns and players about daytime change. Informs players about their extended activity in game.
@@ -58,8 +62,9 @@ public final class GameTimeTaskManager implements Runnable
 		_time++;
 		
 		// Quest listener.
+		final int gameTime = getGameTime();
 		for (Quest quest : _questEvents)
-			quest.onGameTime();
+			quest.onGameTime(gameTime);
 		
 		// Shadow Sense skill, if set then perform day/night info.
 		L2Skill skill = null;
@@ -74,7 +79,7 @@ public final class GameTimeTaskManager implements Runnable
 			DayNightManager.getInstance().notifyChangeMode();
 			
 			// Set Shadow Sense skill to apply/remove effect from players.
-			skill = SkillTable.getInstance().getInfo(CommonSkill.SKILL_SHADOW_SENSE.id, 1);
+			skill = SkillTable.getInstance().getInfo(L2Skill.SKILL_SHADOW_SENSE, 1);
 		}
 		
 		// List is empty, skip.
@@ -92,14 +97,14 @@ public final class GameTimeTaskManager implements Runnable
 				continue;
 			
 			// Shadow Sense skill is set and player has Shadow Sense skill, activate/deactivate its effect.
-			if (skill != null && player.hasSkill(CommonSkill.SKILL_SHADOW_SENSE.id))
+			if (skill != null && player.hasSkill(L2Skill.SKILL_SHADOW_SENSE))
 			{
 				// Remove and add Shadow Sense to activate/deactivate effect.
-				player.removeSkill(CommonSkill.SKILL_SHADOW_SENSE.id, false);
+				player.removeSkill(L2Skill.SKILL_SHADOW_SENSE, false);
 				player.addSkill(skill, false);
 				
 				// Inform player about effect change.
-				player.sendPacket(SystemMessage.getSystemMessage(_isNight ? SystemMessageId.NIGHT_S1_EFFECT_APPLIES : SystemMessageId.DAY_S1_EFFECT_DISAPPEARS).addSkillName(CommonSkill.SKILL_SHADOW_SENSE.id));
+				player.sendPacket(SystemMessage.getSystemMessage(_isNight ? SystemMessageId.NIGHT_S1_EFFECT_APPLIES : SystemMessageId.DAY_S1_EFFECT_DISAPPEARS).addSkillName(L2Skill.SKILL_SHADOW_SENSE));
 			}
 			
 			// Activity time has passed already.

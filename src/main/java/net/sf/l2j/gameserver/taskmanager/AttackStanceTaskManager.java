@@ -1,15 +1,16 @@
 package net.sf.l2j.gameserver.taskmanager;
 
-import net.sf.l2j.commons.concurrent.ThreadPool;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import net.sf.l2j.commons.pool.ThreadPool;
+
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Playable;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.Summon;
 import net.sf.l2j.gameserver.model.actor.instance.Cubic;
 import net.sf.l2j.gameserver.network.serverpackets.AutoAttackStop;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Turns off attack stance of {@link Creature} after ATTACK_STANCE_PERIOD (set to 15sec by default).
@@ -70,7 +71,7 @@ public final class AttackStanceTaskManager implements Runnable
 	{
 		if (creature instanceof Playable)
 		{
-			for (Cubic cubic : creature.getActingPlayer().getCubics().values())
+			for (Cubic cubic : creature.getActingPlayer().getCubicList())
 				if (cubic.getId() != Cubic.LIFE_CUBIC)
 					cubic.doAction();
 		}

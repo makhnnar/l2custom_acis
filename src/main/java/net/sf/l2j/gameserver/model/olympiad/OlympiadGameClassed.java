@@ -1,11 +1,12 @@
 package net.sf.l2j.gameserver.model.olympiad;
 
-import net.sf.l2j.Config;
+import java.util.List;
+
 import net.sf.l2j.commons.random.Rnd;
+
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.enums.OlympiadType;
 import net.sf.l2j.gameserver.model.holder.IntIntHolder;
-
-import java.util.List;
 
 public class OlympiadGameClassed extends OlympiadGameNormal
 {
@@ -23,13 +24,13 @@ public class OlympiadGameClassed extends OlympiadGameNormal
 	@Override
 	protected final int getDivider()
 	{
-		return Config.ALT_OLY_DIVIDER_CLASSED;
+		return Config.OLY_DIVIDER_CLASSED;
 	}
 	
 	@Override
 	protected final IntIntHolder[] getReward()
 	{
-		return Config.ALT_OLY_CLASSED_REWARD;
+		return Config.OLY_CLASSED_REWARD;
 	}
 	
 	protected static final OlympiadGameClassed createGame(int id, List<List<Integer>> classList)

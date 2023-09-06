@@ -1,8 +1,8 @@
 package net.sf.l2j.loginserver.crypt;
 
-import net.sf.l2j.commons.random.Rnd;
-
 import java.io.IOException;
+
+import net.sf.l2j.commons.random.Rnd;
 
 public class LoginCrypt
 {

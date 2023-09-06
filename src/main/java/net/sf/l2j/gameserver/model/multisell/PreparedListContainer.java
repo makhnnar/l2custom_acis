@@ -1,13 +1,13 @@
 package net.sf.l2j.gameserver.model.multisell;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 import net.sf.l2j.gameserver.model.actor.Npc;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.model.item.kind.Armor;
 import net.sf.l2j.gameserver.model.item.kind.Weapon;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
 
 /**
  * A dynamic layer of {@link ListContainer}, which holds the current {@link Npc} objectId for security reasons.<br>
@@ -83,6 +83,6 @@ public class PreparedListContainer extends ListContainer
 	
 	public final boolean checkNpcObjectId(int npcObjectId)
 	{
-		return (_npcObjectId != 0) ? _npcObjectId == npcObjectId : true;
+		return _npcObjectId == 0 || _npcObjectId == npcObjectId;
 	}
 }

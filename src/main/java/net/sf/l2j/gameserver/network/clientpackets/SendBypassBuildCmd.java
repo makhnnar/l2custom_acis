@@ -1,12 +1,12 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
+import java.util.logging.Logger;
+
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.xml.AdminData;
 import net.sf.l2j.gameserver.handler.AdminCommandHandler;
 import net.sf.l2j.gameserver.handler.IAdminCommandHandler;
 import net.sf.l2j.gameserver.model.actor.Player;
-
-import java.util.logging.Logger;
 
 public final class SendBypassBuildCmd extends L2GameClientPacket
 {

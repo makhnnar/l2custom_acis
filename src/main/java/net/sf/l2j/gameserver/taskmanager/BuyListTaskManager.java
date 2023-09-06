@@ -1,10 +1,11 @@
 package net.sf.l2j.gameserver.taskmanager;
 
-import net.sf.l2j.commons.concurrent.ThreadPool;
-import net.sf.l2j.gameserver.model.buylist.Product;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import net.sf.l2j.commons.pool.ThreadPool;
+
+import net.sf.l2j.gameserver.model.buylist.Product;
 
 /**
  * Handles individual {@link Product} restock timers.<br>

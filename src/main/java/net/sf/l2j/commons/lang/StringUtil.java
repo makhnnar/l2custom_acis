@@ -1,7 +1,5 @@
 package net.sf.l2j.commons.lang;
 
-import net.sf.l2j.commons.logging.CLogger;
-
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,6 +8,8 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
+
+import net.sf.l2j.commons.logging.CLogger;
 
 public final class StringUtil
 {
@@ -175,5 +175,31 @@ public final class StringUtil
 			fileName = fileName.substring(0, pos);
 		
 		return fileName;
+	}
+	
+	/**
+	 * Trim the {@link String} set as parameter to the amount of characters set as second parameter.
+	 * @param s : The {@link String} to trim.
+	 * @param maxWidth : The maximum length.
+	 * @return The {@link String} trimmed to the good format.
+	 */
+	public static String trim(String s, int maxWidth)
+	{
+		return (s.length() > maxWidth) ? s.substring(0, maxWidth) : s;
+	}
+	
+	/**
+	 * Trim the {@link String} set as parameter to the amount of characters set as second parameter, or return {@link String} defaultValue if {@link String} is null or empty.
+	 * @param s : The {@link String} to trim.
+	 * @param maxWidth : The maximum length.
+	 * @param defaultValue : The default {@link String} to return if {@link String} is null or empty.
+	 * @return The {@link String} trimmed to the good format.
+	 */
+	public static String trim(String s, int maxWidth, String defaultValue)
+	{
+		if (s == null || s.isEmpty())
+			return defaultValue;
+		
+		return trim(s, maxWidth);
 	}
 }

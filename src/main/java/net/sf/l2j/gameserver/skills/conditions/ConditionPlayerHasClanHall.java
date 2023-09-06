@@ -1,39 +1,29 @@
 package net.sf.l2j.gameserver.skills.conditions;
 
-import net.sf.l2j.gameserver.model.pledge.Clan;
-import net.sf.l2j.gameserver.skills.Env;
-
 import java.util.List;
 
-/**
- * The Class ConditionPlayerHasClanHall.
- * @author MrPoke
- */
+import net.sf.l2j.gameserver.model.actor.Creature;
+import net.sf.l2j.gameserver.model.actor.Player;
+import net.sf.l2j.gameserver.model.item.kind.Item;
+import net.sf.l2j.gameserver.model.pledge.Clan;
+import net.sf.l2j.gameserver.skills.L2Skill;
+
 public final class ConditionPlayerHasClanHall extends Condition
 {
 	private final List<Integer> _clanHall;
 	
-	/**
-	 * Instantiates a new condition player has clan hall.
-	 * @param clanHall the clan hall
-	 */
 	public ConditionPlayerHasClanHall(List<Integer> clanHall)
 	{
 		_clanHall = clanHall;
 	}
 	
-	/**
-	 * @param env the env
-	 * @return true, if successful
-	 * @see Condition#testImpl(Env)
-	 */
 	@Override
-	public boolean testImpl(Env env)
+	public boolean testImpl(Creature effector, Creature effected, L2Skill skill, Item item)
 	{
-		if (env.getPlayer() == null)
+		if (!(effector instanceof Player))
 			return false;
 		
-		final Clan clan = env.getPlayer().getClan();
+		final Clan clan = ((Player) effector).getClan();
 		if (clan == null)
 			return (_clanHall.size() == 1 && _clanHall.get(0) == 0);
 		

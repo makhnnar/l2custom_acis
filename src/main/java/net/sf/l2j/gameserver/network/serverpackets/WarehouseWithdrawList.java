@@ -1,10 +1,10 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import java.util.Set;
+
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.model.item.kind.Item;
-
-import java.util.Set;
 
 public class WarehouseWithdrawList extends L2GameServerPacket
 {
@@ -52,8 +52,8 @@ public class WarehouseWithdrawList extends L2GameServerPacket
 			writeD(temp.getObjectId());
 			if (temp.isAugmented())
 			{
-				writeD(0x0000FFFF & temp.getAugmentation().getAugmentationId());
-				writeD(temp.getAugmentation().getAugmentationId() >> 16);
+				writeD(0x0000FFFF & temp.getAugmentation().getId());
+				writeD(temp.getAugmentation().getId() >> 16);
 			}
 			else
 				writeQ(0x00);

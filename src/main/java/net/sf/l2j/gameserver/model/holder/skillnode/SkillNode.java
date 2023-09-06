@@ -1,6 +1,7 @@
 package net.sf.l2j.gameserver.model.holder.skillnode;
 
-import net.sf.l2j.commons.util.StatsSet;
+import net.sf.l2j.commons.data.StatSet;
+
 import net.sf.l2j.gameserver.model.holder.IntIntHolder;
 
 /**
@@ -12,7 +13,7 @@ public class SkillNode extends IntIntHolder
 {
 	private final int _minLvl;
 	
-	public SkillNode(StatsSet set)
+	public SkillNode(StatSet set)
 	{
 		super(set.getInteger("id"), set.getInteger("lvl"));
 		

@@ -1,9 +1,9 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import java.util.Collection;
+
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.Recipe;
-
-import java.util.Collection;
 
 public class RecipeBookItemList extends L2GameServerPacket
 {
@@ -13,9 +13,9 @@ public class RecipeBookItemList extends L2GameServerPacket
 	
 	public RecipeBookItemList(Player player, boolean isDwarven)
 	{
-		_recipes = (isDwarven) ? player.getDwarvenRecipeBook() : player.getCommonRecipeBook();
+		_recipes = player.getRecipeBook().get(isDwarven);
 		_isDwarven = isDwarven;
-		_maxMp = player.getMaxMp();
+		_maxMp = player.getStatus().getMaxMp();
 	}
 	
 	@Override

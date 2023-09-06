@@ -1,8 +1,9 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import net.sf.l2j.Config;
 import net.sf.l2j.commons.logging.CLogger;
 import net.sf.l2j.commons.mmocore.SendablePacket;
+
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.network.GameClient;
 
 public abstract class L2GameServerPacket extends SendablePacket<GameClient>
@@ -21,9 +22,9 @@ public abstract class L2GameServerPacket extends SendablePacket<GameClient>
 		{
 			writeImpl();
 		}
-		catch (Throwable t)
+		catch (Exception e)
 		{
-			LOGGER.error("Failed writing {} for {}. ", t, getType(), getClient().toString());
+			LOGGER.error("Failed writing {} for {}. ", e, getType(), getClient().toString());
 		}
 	}
 	

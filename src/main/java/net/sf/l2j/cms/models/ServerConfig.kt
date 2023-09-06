@@ -137,5 +137,5 @@ data class ConfigMisc(
     var l2WalkerProtection: Boolean = Config.L2WALKER_PROTECTION,
     var serverNews: Boolean = Config.SERVER_NEWS,
     var zoneTown: Int = Config.ZONE_TOWN,
-    var disableTutorial: Boolean = Config.DISABLE_TUTORIAL
+    //var disableTutorial: Boolean = Config.DISABLE_TUTORIAL
 )

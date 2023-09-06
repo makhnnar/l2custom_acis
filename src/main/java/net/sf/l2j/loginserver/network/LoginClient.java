@@ -1,33 +1,29 @@
 package net.sf.l2j.loginserver.network;
 
+import java.net.InetAddress;
+import java.nio.ByteBuffer;
+import java.security.interfaces.RSAPrivateKey;
+
 import net.sf.l2j.commons.logging.CLogger;
 import net.sf.l2j.commons.mmocore.MMOClient;
 import net.sf.l2j.commons.mmocore.MMOConnection;
 import net.sf.l2j.commons.mmocore.SendablePacket;
 import net.sf.l2j.commons.random.Rnd;
+
 import net.sf.l2j.loginserver.LoginController;
 import net.sf.l2j.loginserver.crypt.LoginCrypt;
 import net.sf.l2j.loginserver.crypt.ScrambledKeyPair;
+import net.sf.l2j.loginserver.enums.LoginClientState;
+import net.sf.l2j.loginserver.model.Account;
 import net.sf.l2j.loginserver.network.serverpackets.L2LoginServerPacket;
 import net.sf.l2j.loginserver.network.serverpackets.LoginFail;
 import net.sf.l2j.loginserver.network.serverpackets.PlayFail;
-
-import java.net.InetAddress;
-import java.nio.ByteBuffer;
-import java.security.interfaces.RSAPrivateKey;
 
 /**
  * Represents a client connected into the LoginServer
  */
 public final class LoginClient extends MMOClient<MMOConnection<LoginClient>>
 {
-	public static enum LoginClientState
-	{
-		CONNECTED,
-		AUTHED_GG,
-		AUTHED_LOGIN
-	}
-	
 	private static final CLogger LOGGER = new CLogger(LoginClient.class.getName());
 	
 	private final LoginCrypt _loginCrypt;
@@ -37,9 +33,7 @@ public final class LoginClient extends MMOClient<MMOConnection<LoginClient>>
 	private final long _connectionStartTime;
 	
 	private LoginClientState _state;
-	private String _account;
-	private int _accessLevel;
-	private int _lastServer;
+	private Account _account;
 	private SessionKey _sessionKey;
 	private boolean _joinedGS;
 	
@@ -49,7 +43,7 @@ public final class LoginClient extends MMOClient<MMOConnection<LoginClient>>
 		
 		_state = LoginClientState.CONNECTED;
 		_scrambledPair = LoginController.getInstance().getScrambledRSAKeyPair();
-		_blowfishKey = LoginController.getInstance().getBlowfishKey();
+		_blowfishKey = LoginController.getInstance().getRandomBlowfishKey();
 		_sessionId = Rnd.nextInt();
 		_connectionStartTime = System.currentTimeMillis();
 		_loginCrypt = new LoginCrypt();
@@ -107,8 +101,11 @@ public final class LoginClient extends MMOClient<MMOConnection<LoginClient>>
 	@Override
 	public void onDisconnection()
 	{
+		if (_account == null)
+			return;
+		
 		if (!hasJoinedGS() || (getConnectionStartTime() + LoginController.LOGIN_TIMEOUT) < System.currentTimeMillis())
-			LoginController.getInstance().removeAuthedLoginClient(getAccount());
+			LoginController.getInstance().removeAuthedLoginClient(_account.getLogin());
 	}
 	
 	@Override
@@ -141,34 +138,14 @@ public final class LoginClient extends MMOClient<MMOConnection<LoginClient>>
 		return (RSAPrivateKey) _scrambledPair.getKeyPair().getPrivate();
 	}
 	
-	public String getAccount()
+	public Account getAccount()
 	{
 		return _account;
 	}
 	
-	public void setAccount(String account)
+	public void setAccount(Account account)
 	{
 		_account = account;
-	}
-	
-	public void setAccessLevel(int accessLevel)
-	{
-		_accessLevel = accessLevel;
-	}
-	
-	public int getAccessLevel()
-	{
-		return _accessLevel;
-	}
-	
-	public void setLastServer(int lastServer)
-	{
-		_lastServer = lastServer;
-	}
-	
-	public int getLastServer()
-	{
-		return _lastServer;
 	}
 	
 	public int getSessionId()

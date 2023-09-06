@@ -1,13 +1,25 @@
 package net.sf.l2j.gameserver.handler;
 
-import net.sf.l2j.gameserver.handler.chathandlers.*;
-
 import java.util.HashMap;
 import java.util.Map;
 
+import net.sf.l2j.gameserver.enums.SayType;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatAll;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatAlliance;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatClan;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatHeroVoice;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatParty;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatPartyMatchRoom;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatPartyRoomAll;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatPartyRoomCommander;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatPetition;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatShout;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatTell;
+import net.sf.l2j.gameserver.handler.chathandlers.ChatTrade;
+
 public class ChatHandler
 {
-	private final Map<Integer, IChatHandler> _entries = new HashMap<>();
+	private final Map<SayType, IChatHandler> _entries = new HashMap<>();
 	
 	protected ChatHandler()
 	{
@@ -27,11 +39,11 @@ public class ChatHandler
 	
 	private void registerHandler(IChatHandler handler)
 	{
-		for (int id : handler.getChatTypeList())
-			_entries.put(id, handler);
+		for (SayType type : handler.getChatTypeList())
+			_entries.put(type, handler);
 	}
 	
-	public IChatHandler getHandler(int chatType)
+	public IChatHandler getHandler(SayType chatType)
 	{
 		return _entries.get(chatType);
 	}

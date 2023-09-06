@@ -24,22 +24,24 @@ data class WeddingConfig(
 )
 @Serializable
 data class LoterryConfig(
-    var ALT_LOTTERY_PRIZE: Int = Config.ALT_LOTTERY_PRIZE,
+    var ALT_LOTTERY_PRIZE: Int = 0,
+    /*var ALT_LOTTERY_PRIZE: Int = Config.ALT_LOTTERY_PRIZE,
     var ALT_LOTTERY_TICKET_PRICE: Int = Config.ALT_LOTTERY_TICKET_PRICE,
     var ALT_LOTTERY_5_NUMBER_RATE: Double = Config.ALT_LOTTERY_5_NUMBER_RATE,
     var ALT_LOTTERY_4_NUMBER_RATE: Double = Config.ALT_LOTTERY_4_NUMBER_RATE,
     var ALT_LOTTERY_3_NUMBER_RATE: Double = Config.ALT_LOTTERY_3_NUMBER_RATE,
-    var ALT_LOTTERY_2_AND_1_NUMBER_PRIZE: Int = Config.ALT_LOTTERY_2_AND_1_NUMBER_PRIZE
+    var ALT_LOTTERY_2_AND_1_NUMBER_PRIZE: Int = Config.ALT_LOTTERY_2_AND_1_NUMBER_PRIZE*/
 )
 @Serializable
 data class FishingConfig(
-    var ALT_FISH_CHAMPIONSHIP_ENABLED: Boolean = Config.ALT_FISH_CHAMPIONSHIP_ENABLED,
+    var ALT_FISH_CHAMPIONSHIP_ENABLED: Boolean = false,
+    /*var ALT_FISH_CHAMPIONSHIP_ENABLED: Boolean = Config.ALT_FISH_CHAMPIONSHIP_ENABLED,
     var ALT_FISH_CHAMPIONSHIP_REWARD_ITEM: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_ITEM,
     var ALT_FISH_CHAMPIONSHIP_REWARD_1: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_1,
     var ALT_FISH_CHAMPIONSHIP_REWARD_2: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_2,
     var ALT_FISH_CHAMPIONSHIP_REWARD_3: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_3,
     var ALT_FISH_CHAMPIONSHIP_REWARD_4: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_4,
-    var ALT_FISH_CHAMPIONSHIP_REWARD_5: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_5
+    var ALT_FISH_CHAMPIONSHIP_REWARD_5: Int = Config.ALT_FISH_CHAMPIONSHIP_REWARD_5*/
 )
 @Serializable
 data class FourSepulchersConfig(
@@ -49,7 +51,8 @@ data class FourSepulchersConfig(
 )
 @Serializable
 data class OlympiadConfig(
-    var altOlyStartTime: Int = Config.ALT_OLY_START_TIME,
+    var altOlyStartTime: Int = 0,
+    /*var altOlyStartTime: Int = Config.ALT_OLY_START_TIME,
     var altOlyMin: Int = Config.ALT_OLY_MIN,
     var altOlyCPeriod: Long = Config.ALT_OLY_CPERIOD,
     var altOlyBattle: Long = Config.ALT_OLY_BATTLE,
@@ -79,11 +82,12 @@ data class OlympiadConfig(
     var altOlyMaxPoints: Int = Config.ALT_OLY_MAX_POINTS,
     var altOlyDividerClassed: Int = Config.ALT_OLY_DIVIDER_CLASSED,
     var altOlyDividerNonClassed: Int = Config.ALT_OLY_DIVIDER_NON_CLASSED,
-    var altOlyAnnounceGames: Boolean = Config.ALT_OLY_ANNOUNCE_GAMES
+    var altOlyAnnounceGames: Boolean = Config.ALT_OLY_ANNOUNCE_GAMES*/
 )
 @Serializable
 data class SevenSignsConfig(
-    var ALT_GAME_CASTLE_DAWN: Boolean = Config.ALT_GAME_CASTLE_DAWN,
+    var ALT_GAME_CASTLE_DAWN: Boolean = false,
+    /*var ALT_GAME_CASTLE_DAWN: Boolean = Config.ALT_GAME_CASTLE_DAWN,
     var ALT_GAME_CASTLE_DUSK: Boolean = Config.ALT_GAME_CASTLE_DUSK,
     var ALT_FESTIVAL_MIN_PLAYER: Int = Config.ALT_FESTIVAL_MIN_PLAYER,
     var ALT_MAXIMUM_PLAYER_CONTRIB: Int = Config.ALT_MAXIMUM_PLAYER_CONTRIB,
@@ -94,7 +98,7 @@ data class SevenSignsConfig(
     var ALT_FESTIVAL_FIRST_SWARM: Long = Config.ALT_FESTIVAL_FIRST_SWARM,
     var ALT_FESTIVAL_SECOND_SPAWN: Long = Config.ALT_FESTIVAL_SECOND_SPAWN,
     var ALT_FESTIVAL_SECOND_SWARM: Long = Config.ALT_FESTIVAL_SECOND_SWARM,
-    var ALT_FESTIVAL_CHEST_SPAWN: Long = Config.ALT_FESTIVAL_CHEST_SPAWN
+    var ALT_FESTIVAL_CHEST_SPAWN: Long = Config.ALT_FESTIVAL_CHEST_SPAWN*/
 )
 @Serializable
 data class DimensionalRiftConfig(
@@ -109,7 +113,7 @@ data class DimensionalRiftConfig(
     var RIFT_ENTER_COST_CAPTAIN: Int = Config.RIFT_ENTER_COST_CAPTAIN,
     var RIFT_ENTER_COST_COMMANDER: Int = Config.RIFT_ENTER_COST_COMMANDER,
     var RIFT_ENTER_COST_HERO: Int = Config.RIFT_ENTER_COST_HERO,
-    var RIFT_BOSS_ROOM_TIME_MUTIPLY: Double = Config.RIFT_BOSS_ROOM_TIME_MUTIPLY
+    //var RIFT_BOSS_ROOM_TIME_MUTIPLY: Double = Config.RIFT_BOSS_ROOM_TIME_MUTIPLY
 )
 
 @Serializable

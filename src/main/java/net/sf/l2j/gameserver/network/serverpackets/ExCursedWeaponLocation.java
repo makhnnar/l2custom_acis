@@ -1,13 +1,9 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import net.sf.l2j.gameserver.model.location.Location;
-
 import java.util.List;
 
-/**
- * Format: (ch) d[ddddd]
- * @author -Wooden-
- */
+import net.sf.l2j.gameserver.model.location.Location;
+
 public class ExCursedWeaponLocation extends L2GameServerPacket
 {
 	private final List<CursedWeaponInfo> _cursedWeaponInfo;

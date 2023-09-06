@@ -1,10 +1,10 @@
 package net.sf.l2j.gameserver.model.spawn;
 
-import net.sf.l2j.gameserver.model.actor.Npc;
-import net.sf.l2j.gameserver.model.location.SpawnLocation;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import net.sf.l2j.gameserver.model.actor.Npc;
+import net.sf.l2j.gameserver.model.location.SpawnLocation;
 
 /**
  * Stores information about a registered auto spawn.
@@ -111,14 +111,14 @@ public class AutoSpawn
 		return ret;
 	}
 	
-	public L2Spawn[] getSpawns()
+	public Spawn[] getSpawns()
 	{
-		List<L2Spawn> npcSpawns = new ArrayList<>();
+		List<Spawn> npcSpawns = new ArrayList<>();
 		
 		for (Npc npcInst : _npcList)
 			npcSpawns.add(npcInst.getSpawn());
 		
-		return npcSpawns.toArray(new L2Spawn[npcSpawns.size()]);
+		return npcSpawns.toArray(new Spawn[npcSpawns.size()]);
 	}
 	
 	public void setSpawnCount(int spawnCount)

@@ -26,14 +26,8 @@ repositories {
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/com.mchange/c3p0
-    implementation 'com.mchange:c3p0:0.9.5-pre5'
-
-    // https://mvnrepository.com/artifact/com.mchange/mchange-commons-java
-    implementation 'com.mchange:mchange-commons-java:0.2.6.2'
-
-    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
-    implementation 'mysql:mysql-connector-java:8.0.15'
+    // https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.6.1'
 
     implementation "io.ktor:ktor-server-core:2.2.4"
     implementation "io.ktor:ktor-server-netty:2.2.4"
@@ -250,4 +244,6 @@ build {
     copyDependenciesToLibFolder
     copyDocsFiles
 }
+
+//geodata link https://drive.google.com/file/d/1R22ZN7XPEUHghgiZCb6-9xnIgSOC-1GB/view
 

@@ -1,14 +1,16 @@
 package net.sf.l2j.gameserver.data.xml;
 
-import net.sf.l2j.Config;
-import net.sf.l2j.commons.data.xml.IXmlReader;
-import net.sf.l2j.gameserver.model.skill.CommonSkill;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
+
+import net.sf.l2j.commons.data.xml.IXmlReader;
+
+import net.sf.l2j.Config;
+import net.sf.l2j.gameserver.skills.L2Skill;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
 
 /**
  * This class loads and stores spellbook / skillId relation.<br>
@@ -42,7 +44,7 @@ public class SpellbookData implements IXmlReader
 	
 	public int getBookForSkill(int skillId, int level)
 	{
-		if (skillId == CommonSkill.SKILL_DIVINE_INSPIRATION.id)
+		if (skillId == L2Skill.SKILL_DIVINE_INSPIRATION)
 		{
 			if (!Config.DIVINE_SP_BOOK_NEEDED)
 				return 0;

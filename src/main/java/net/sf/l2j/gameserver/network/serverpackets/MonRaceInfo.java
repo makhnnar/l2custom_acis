@@ -1,8 +1,8 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import net.sf.l2j.gameserver.model.actor.Npc;
-
 import java.util.List;
+
+import net.sf.l2j.gameserver.model.actor.Npc;
 
 public class MonRaceInfo extends L2GameServerPacket
 {

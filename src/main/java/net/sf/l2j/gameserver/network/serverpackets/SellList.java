@@ -1,8 +1,8 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
-
 import java.util.List;
+
+import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 
 public class SellList extends L2GameServerPacket
 {

@@ -1,9 +1,17 @@
 package net.sf.l2j.gameserver.taskmanager;
 
-import net.sf.l2j.Config;
-import net.sf.l2j.L2DatabaseFactory;
-import net.sf.l2j.commons.concurrent.ThreadPool;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
+
 import net.sf.l2j.commons.logging.CLogger;
+import net.sf.l2j.commons.pool.ConnectionPool;
+import net.sf.l2j.commons.pool.ThreadPool;
+
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.manager.CastleManager;
 import net.sf.l2j.gameserver.data.manager.CursedWeaponManager;
 import net.sf.l2j.gameserver.model.World;
@@ -11,13 +19,6 @@ import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Playable;
 import net.sf.l2j.gameserver.model.entity.Castle;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Destroys item on ground after specified time. When server is about to shutdown/restart, saves all dropped items in to SQL. Loads them during server start.
@@ -38,7 +39,7 @@ public final class ItemsOnGroundTaskManager implements Runnable
 		ThreadPool.scheduleAtFixedRate(this, 5000, 5000);
 		
 		// Load all items.
-		try (Connection con = L2DatabaseFactory.getInstance().getConnection();
+		try (Connection con = ConnectionPool.getConnection();
 			PreparedStatement st = con.prepareStatement(LOAD_ITEMS);
 			PreparedStatement st2 = con.prepareStatement(DELETE_ITEMS);
 			ResultSet rs = st.executeQuery())
@@ -171,7 +172,7 @@ public final class ItemsOnGroundTaskManager implements Runnable
 		}
 		
 		// Store whole items list to database.
-		try (Connection con = L2DatabaseFactory.getInstance().getConnection();
+		try (Connection con = ConnectionPool.getConnection();
 			PreparedStatement st = con.prepareStatement(SAVE_ITEMS))
 		{
 			// Get current time.

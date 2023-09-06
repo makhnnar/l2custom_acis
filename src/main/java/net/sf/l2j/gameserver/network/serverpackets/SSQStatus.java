@@ -1,14 +1,15 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import net.sf.l2j.commons.util.StatsSet;
+import java.util.Map.Entry;
+
+import net.sf.l2j.commons.data.StatSet;
+
 import net.sf.l2j.gameserver.data.manager.FestivalOfDarknessManager;
 import net.sf.l2j.gameserver.data.manager.SevenSignsManager;
 import net.sf.l2j.gameserver.enums.CabalType;
 import net.sf.l2j.gameserver.enums.FestivalType;
 import net.sf.l2j.gameserver.enums.SealType;
 import net.sf.l2j.gameserver.network.SystemMessageId;
-
-import java.util.Map.Entry;
 
 public class SSQStatus extends L2GameServerPacket
 {
@@ -24,7 +25,7 @@ public class SSQStatus extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		final CabalType winningCabal = SevenSignsManager.getInstance().getCabalHighestScore();
+		final CabalType winningCabal = SevenSignsManager.getInstance().getWinningCabal();
 		final int totalDawnMembers = SevenSignsManager.getInstance().getTotalMembers(CabalType.DAWN);
 		final int totalDuskMembers = SevenSignsManager.getInstance().getTotalMembers(CabalType.DUSK);
 		
@@ -135,7 +136,7 @@ public class SSQStatus extends L2GameServerPacket
 					// Dusk Score \\
 					writeD(duskScore);
 					
-					StatsSet highScoreData = FestivalOfDarknessManager.getInstance().getHighestScoreData(CabalType.DUSK, festivalId);
+					StatSet highScoreData = FestivalOfDarknessManager.getInstance().getHighestScoreData(CabalType.DUSK, festivalId);
 					String[] partyMembers = highScoreData.getString("members").split(",");
 					
 					if (partyMembers != null)
@@ -366,6 +367,7 @@ public class SSQStatus extends L2GameServerPacket
 							}
 							break;
 					}
+					writeH(0);
 				}
 				break;
 		}

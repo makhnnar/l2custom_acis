@@ -1,10 +1,10 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import java.util.Set;
+
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.model.item.kind.Item;
-
-import java.util.Set;
 
 public class ItemList extends L2GameServerPacket
 {
@@ -38,7 +38,7 @@ public class ItemList extends L2GameServerPacket
 			writeD(item.getBodyPart());
 			writeH(temp.getEnchantLevel());
 			writeH(temp.getCustomType2());
-			writeD((temp.isAugmented()) ? temp.getAugmentation().getAugmentationId() : 0x00);
+			writeD((temp.isAugmented()) ? temp.getAugmentation().getId() : 0x00);
 			writeD(temp.getMana());
 		}
 	}

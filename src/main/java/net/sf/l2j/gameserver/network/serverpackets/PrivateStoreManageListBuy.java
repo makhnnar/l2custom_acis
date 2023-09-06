@@ -1,10 +1,10 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import java.util.List;
+
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
-import net.sf.l2j.gameserver.model.tradelist.TradeItem;
-
-import java.util.List;
+import net.sf.l2j.gameserver.model.trade.TradeItem;
 
 public class PrivateStoreManageListBuy extends L2GameServerPacket
 {
@@ -17,8 +17,8 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 	{
 		_objId = player.getObjectId();
 		_playerAdena = player.getAdena();
-		_itemList = player.getInventory().getUniqueItems(false, true);
-		_buyList = player.getBuyList().getItems();
+		_itemList = player.getInventory().getUniqueItems(false, true, true);
+		_buyList = player.getBuyList();
 	}
 	
 	@Override
@@ -45,7 +45,7 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 		{
 			writeD(item.getItem().getItemId());
 			writeH(item.getEnchant());
-			writeD(item.getCount());
+			writeD(item.getQuantity());
 			writeD(item.getItem().getReferencePrice());
 			writeH(0x00);
 			writeD(item.getItem().getBodyPart());

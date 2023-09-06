@@ -1,6 +1,7 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
 import net.sf.l2j.commons.lang.StringUtil;
+
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.model.olympiad.OlympiadGameManager;
@@ -17,8 +18,8 @@ public final class RequestOlympiadMatchList extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		final Player activeChar = getClient().getPlayer();
-		if (activeChar == null || !activeChar.isInObserverMode())
+		final Player player = getClient().getPlayer();
+		if (player == null || !player.isInObserverMode())
 			return;
 		
 		int i = 0;
@@ -48,6 +49,6 @@ public final class RequestOlympiadMatchList extends L2GameClientPacket
 		final NpcHtmlMessage html = new NpcHtmlMessage(0);
 		html.setFile(Olympiad.OLYMPIAD_HTML_PATH + "olympiad_arena_observe_list.htm");
 		html.replace("%list%", sb.toString());
-		activeChar.sendPacket(html);
+		player.sendPacket(html);
 	}
 }

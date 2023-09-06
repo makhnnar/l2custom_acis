@@ -1,16 +1,18 @@
 package net.sf.l2j.gameserver.data.xml;
 
-import net.sf.l2j.commons.data.xml.IXmlReader;
-import net.sf.l2j.gameserver.model.item.DropCategory;
-import net.sf.l2j.gameserver.model.item.DropData;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import net.sf.l2j.commons.data.xml.IXmlReader;
+
+import net.sf.l2j.gameserver.model.item.DropCategory;
+import net.sf.l2j.gameserver.model.item.DropData;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
 
 /**
  * This class loads herbs drop rules.<br>
@@ -42,14 +44,8 @@ public class HerbDropData implements IXmlReader
 			forEach(groupNode, "item", itemNode ->
 			{
 				final NamedNodeMap attrs = itemNode.getAttributes();
-				final int id = parseInteger(attrs, "id");
 				final int categoryType = parseInteger(attrs, "category");
-				final int chance = parseInteger(attrs, "chance");
-				final DropData dropDat = new DropData();
-				dropDat.setItemId(id);
-				dropDat.setMinDrop(1);
-				dropDat.setMaxDrop(1);
-				dropDat.setChance(chance);
+				final DropData dropDat = new DropData(parseInteger(attrs, "id"), 1, 1, parseInteger(attrs, "chance"));
 				
 				boolean catExists = false;
 				for (final DropCategory cat : category)
@@ -61,6 +57,7 @@ public class HerbDropData implements IXmlReader
 						break;
 					}
 				}
+				
 				if (!catExists)
 				{
 					final DropCategory cat = new DropCategory(categoryType);

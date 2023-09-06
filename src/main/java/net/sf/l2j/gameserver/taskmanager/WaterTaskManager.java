@@ -1,15 +1,16 @@
 package net.sf.l2j.gameserver.taskmanager;
 
-import net.sf.l2j.commons.concurrent.ThreadPool;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import net.sf.l2j.commons.pool.ThreadPool;
+
 import net.sf.l2j.gameserver.enums.GaugeColor;
 import net.sf.l2j.gameserver.enums.skills.Stats;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.SetupGauge;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Updates {@link Player} drown timer and reduces {@link Player} HP, when drowning.
@@ -45,7 +46,7 @@ public final class WaterTaskManager implements Runnable
 			final Player player = entry.getKey();
 			
 			// Reduce 1% of HP per second.
-			final double hp = player.getMaxHp() / 100.0;
+			final double hp = player.getStatus().getMaxHp() / 100.0;
 			player.reduceCurrentHp(hp, player, false, false, null);
 			player.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.DROWN_DAMAGE_S1).addNumber((int) hp));
 		}
@@ -59,7 +60,7 @@ public final class WaterTaskManager implements Runnable
 	{
 		if (!player.isDead() && !_players.containsKey(player))
 		{
-			final int time = (int) player.calcStat(Stats.BREATH, 60000 * player.getRace().getBreathMultiplier(), player, null);
+			final int time = (int) player.getStatus().calcStat(Stats.BREATH, 60000 * player.getRace().getBreathMultiplier(), player, null);
 			
 			_players.put(player, System.currentTimeMillis() + time);
 			

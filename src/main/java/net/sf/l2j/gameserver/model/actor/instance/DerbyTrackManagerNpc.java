@@ -1,6 +1,9 @@
 package net.sf.l2j.gameserver.model.actor.instance;
 
+import java.util.Locale;
+
 import net.sf.l2j.commons.lang.StringUtil;
+
 import net.sf.l2j.gameserver.data.manager.DerbyTrackManager;
 import net.sf.l2j.gameserver.data.manager.DerbyTrackManager.RaceState;
 import net.sf.l2j.gameserver.idfactory.IdFactory;
@@ -16,11 +19,9 @@ import net.sf.l2j.gameserver.network.serverpackets.DeleteObject;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 
-import java.util.Locale;
-
 public class DerbyTrackManagerNpc extends Folk
 {
-	protected static final int TICKET_PRICES[] =
+	protected static final int[] TICKET_PRICES =
 	{
 		100,
 		500,
@@ -60,7 +61,9 @@ public class DerbyTrackManagerNpc extends Folk
 				val = 0;
 			
 			int npcId = getTemplate().getNpcId();
-			String search, replace;
+			
+			String search;
+			String replace;
 			
 			final NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
 			
@@ -295,7 +298,6 @@ public class DerbyTrackManagerNpc extends Folk
 				player.addAdena("MonsterTrack", (int) (bet * ((lane == info.getFirst() + 1) ? info.getOddRate() : 0.01)), this, true);
 			
 			super.onBypassFeedback(player, "Chat 0");
-			return;
 		}
 		else if (command.equals("ViewHistory"))
 		{
