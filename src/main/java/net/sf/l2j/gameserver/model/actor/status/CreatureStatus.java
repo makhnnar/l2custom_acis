@@ -403,7 +403,7 @@ public class CreatureStatus<T extends Creature>
 	{
 		// Modify the current HP of the Creature.
 		if (_hp < getMaxHp())
-			setHp(_hp + Math.max(1, getRegenHp()), false);
+			setHp(_hp + Math.max(1, getRegenHp() ), false);
 		
 		// Modify the current MP of the Creature.
 		if (_mp < getMaxMp())
@@ -609,7 +609,19 @@ public class CreatureStatus<T extends Creature>
 	 */
 	public double getRegenHp()
 	{
-		return calcStat(Stats.REGENERATE_HP_RATE, _actor.getTemplate().getBaseHpRegen(getLevel()) * (_actor.isRaidRelated() ? Config.RAID_HP_REGEN_MULTIPLIER : Config.HP_REGEN_MULTIPLIER), null, null);
+		double mobRegen = Config.HP_REGEN_MULTIPLIER;
+		if(_actor.isRaidRelated()){
+			mobRegen = Config.RAID_HP_REGEN_MULTIPLIER;
+		}
+		if(!_actor.isRaidRelated() && _actor.isChampion()){
+			mobRegen = Config.CHAMPION_HP_REGEN;
+		}
+		return calcStat(
+				Stats.REGENERATE_HP_RATE,
+				_actor.getTemplate().getBaseHpRegen(getLevel()) * mobRegen
+				, null,
+				null
+		);
 	}
 	
 	/**
@@ -617,7 +629,19 @@ public class CreatureStatus<T extends Creature>
 	 */
 	public double getRegenMp()
 	{
-		return calcStat(Stats.REGENERATE_MP_RATE, _actor.getTemplate().getBaseMpRegen(getLevel()) * (_actor.isRaidRelated() ? Config.RAID_MP_REGEN_MULTIPLIER : Config.MP_REGEN_MULTIPLIER), null, null);
+		double mobRegen = Config.MP_REGEN_MULTIPLIER;
+		if(_actor.isRaidRelated()){
+			mobRegen = Config.RAID_MP_REGEN_MULTIPLIER;
+		}
+		if(!_actor.isRaidRelated() && _actor.isChampion()){
+			mobRegen = Config.CHAMPION_MP_REGEN;
+		}
+		return calcStat(
+				Stats.REGENERATE_MP_RATE,
+				_actor.getTemplate().getBaseMpRegen(getLevel()) * mobRegen,
+				null,
+				null
+		);
 	}
 	
 	/**
@@ -625,17 +649,32 @@ public class CreatureStatus<T extends Creature>
 	 * @param skill : The {@link L2Skill} whose properties will be used in the calculation.
 	 * @return The MAtk (base+modifier) of this {@link Creature} for a given {@link L2Skill} and {@link Creature} target.
 	 */
-	public int getMAtk(Creature target, L2Skill skill)
-	{
-		return (int) calcStat(Stats.MAGIC_ATTACK, _actor.getTemplate().getBaseMAtk(), target, skill);
+	public int getMAtk(Creature target, L2Skill skill) {
+
+		double attack = _actor.getTemplate().getBaseMAtk() * ((_actor.isChampion()) ? Config.CHAMPION_ATK : 1);
+
+		// Add the power of the skill to the attack effect
+		if (skill != null)
+			attack += skill.getPower();
+
+		return (int) calcStat(
+				Stats.MAGIC_ATTACK,
+				attack,
+				target,
+				skill
+		);
 	}
 	
 	/**
 	 * @return The MAtk Speed (base+modifier) of this {@link Creature}.
 	 */
-	public int getMAtkSpd()
-	{
-		return (int) calcStat(Stats.MAGIC_ATTACK_SPEED, 333.0, null, null);
+	public int getMAtkSpd() {
+		return (int) calcStat(
+				Stats.MAGIC_ATTACK_SPEED,
+				333.0 * ((_actor.isChampion()) ? Config.CHAMPION_SPD_ATK : 1),
+				null,
+				null
+		);
 	}
 	
 	/**
@@ -653,17 +692,25 @@ public class CreatureStatus<T extends Creature>
 	 * @param target : The {@link Creature} target whose properties will be used in the calculation.
 	 * @return The PAtk (base+modifier) of this {@link Creature} for a given {@link Creature} target.
 	 */
-	public int getPAtk(Creature target)
-	{
-		return (int) calcStat(Stats.POWER_ATTACK, _actor.getTemplate().getBasePAtk(), target, null);
+	public int getPAtk(Creature target) {
+		return (int) calcStat(
+				Stats.POWER_ATTACK,
+				_actor.getTemplate().getBasePAtk() * ((_actor.isChampion()) ? Config.CHAMPION_ATK : 1),
+				target,
+				null
+		);
 	}
 	
 	/**
 	 * @return The PAtk Speed (base+modifier) of this {@link Creature}.
 	 */
-	public int getPAtkSpd()
-	{
-		return (int) calcStat(Stats.POWER_ATTACK_SPEED, _actor.getTemplate().getBasePAtkSpd(), null, null);
+	public int getPAtkSpd() {
+		return (int) calcStat(
+				Stats.POWER_ATTACK_SPEED,
+				_actor.getTemplate().getBasePAtkSpd() * ((_actor.isChampion()) ? Config.CHAMPION_SPD_ATK : 1),
+				null,
+				null
+		);
 	}
 	
 	/**

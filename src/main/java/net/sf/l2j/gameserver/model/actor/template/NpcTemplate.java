@@ -34,6 +34,7 @@ public class NpcTemplate extends CreatureTemplate
 	private boolean _usingServerSideName;
 	private final String _title;
 	private boolean _usingServerSideTitle;
+	private final boolean _cantBeChampionMonster;
 	private final byte _level;
 	private final int _exp;
 	private final int _sp;
@@ -81,6 +82,7 @@ public class NpcTemplate extends CreatureTemplate
 		_usingServerSideName = set.getBool("usingServerSideName", false);
 		_title = set.getString("title", "");
 		_usingServerSideTitle = set.getBool("usingServerSideTitle", false);
+		_cantBeChampionMonster = _title.equalsIgnoreCase("Quest Monster") || isType("Chest");
 		_level = set.getByte("level", (byte) 1);
 		_exp = set.getInteger("exp", 0);
 		_sp = set.getInteger("sp", 0);
@@ -193,6 +195,11 @@ public class NpcTemplate extends CreatureTemplate
 	public boolean isUsingServerSideTitle()
 	{
 		return _usingServerSideTitle;
+	}
+
+	public boolean cantBeChampion()
+	{
+		return _cantBeChampionMonster;
 	}
 	
 	public byte getLevel()

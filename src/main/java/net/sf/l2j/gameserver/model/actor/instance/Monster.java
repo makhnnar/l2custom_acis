@@ -459,7 +459,13 @@ public class Monster extends Attackable
 			xp = xp * pow;
 			sp = sp * pow;
 		}
-		
+
+		// Add champion ratio, if any.
+		if (isChampion()) {
+			xp *= Config.CHAMPION_REWARDS;
+			sp *= Config.CHAMPION_REWARDS;
+		}
+
 		// If the XP is inferior or equals 0, don't reward any SP. Both XP and SP can't be inferior to 0.
 		if (xp <= 0)
 		{
@@ -578,7 +584,11 @@ public class Monster extends Attackable
 			// Prepare for next iteration if dropChance > DropData.MAX_CHANCE
 			dropChance -= DropData.MAX_CHANCE;
 		}
-		
+
+		if (isChampion())
+			if (drop.getItemId() == 57 || (drop.getItemId() >= 6360 && drop.getItemId() <= 6362))
+				itemCount *= Config.CHAMPION_ADENAS_REWARDS;
+
 		if (itemCount > 0)
 			return new IntIntHolder(drop.getItemId(), itemCount);
 		
@@ -865,7 +875,30 @@ public class Monster extends Attackable
 				dropOrAutoLootItem(player, holder, true);
 			}
 		}
-		
+
+		// Apply special item drop for champions.
+		if (isChampion() && Config.CHAMPION_REWARD > 0) {
+			int dropChance = Config.CHAMPION_REWARD;
+
+			// Apply level modifier, if any/wanted.
+			if (Config.DEEPBLUE_DROP_RULES)
+			{
+				int deepBlueDrop = (levelModifier > 0) ? 3 : 1;
+
+				// Check if we should apply our maths so deep blue mobs will not drop that easy.
+				dropChance = ((Config.CHAMPION_REWARD - ((Config.CHAMPION_REWARD * levelModifier) / 100)) / deepBlueDrop);
+			}
+
+			if (Rnd.get(100) < dropChance)
+			{
+				final IntIntHolder item = new IntIntHolder(Config.CHAMPION_REWARD_ID, Math.max(1, Rnd.get(1, Config.CHAMPION_REWARD_QTY)));
+				if (Config.AUTO_LOOT)
+					player.addItem("ChampionLoot", item.getId(), item.getValue(), this, true);
+				else
+					dropItem(player, item);
+			}
+		}
+
 		// Herbs.
 		if (getTemplate().getDropHerbGroup() > 0)
 		{

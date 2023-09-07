@@ -255,6 +255,22 @@ public final class Config
 	// --------------------------------------------------
 	// NPCs / Monsters
 	// --------------------------------------------------
+
+	/** Champion Mod */
+	public static int CHAMPION_FREQUENCY;
+	public static int CHAMP_MIN_LVL;
+	public static int CHAMP_MAX_LVL;
+	public static int CHAMPION_HP;
+	public static int CHAMPION_REWARDS;
+	public static int CHAMPION_ADENAS_REWARDS;
+	public static double CHAMPION_HP_REGEN;
+
+	public static double CHAMPION_MP_REGEN;
+	public static double CHAMPION_ATK;
+	public static double CHAMPION_SPD_ATK;
+	public static int CHAMPION_REWARD;
+	public static int CHAMPION_REWARD_ID;
+	public static int CHAMPION_REWARD_QTY;
 	
 	/** Buffer */
 	public static int BUFFER_MAX_SCHEMES;
@@ -890,6 +906,20 @@ public final class Config
 	private static final void loadNpcs()
 	{
 		final ExProperties npcs = initProperties(NPCS_FILE);
+
+		CHAMPION_FREQUENCY = npcs.getProperty("ChampionFrequency", 0);
+		CHAMP_MIN_LVL = npcs.getProperty("ChampionMinLevel", 20);
+		CHAMP_MAX_LVL = npcs.getProperty("ChampionMaxLevel", 70);
+		CHAMPION_HP = npcs.getProperty("ChampionHp", 8);
+		CHAMPION_HP_REGEN = npcs.getProperty("ChampionHpRegen", 1.);
+		CHAMPION_MP_REGEN = npcs.getProperty("ChampionMpRegen", 1.);
+		CHAMPION_REWARDS = npcs.getProperty("ChampionRewards", 8);
+		CHAMPION_ADENAS_REWARDS = npcs.getProperty("ChampionAdenasRewards", 1);
+		CHAMPION_ATK = npcs.getProperty("ChampionAtk", 1.);
+		CHAMPION_SPD_ATK = npcs.getProperty("ChampionSpdAtk", 1.);
+		CHAMPION_REWARD = npcs.getProperty("ChampionRewardItem", 0);
+		CHAMPION_REWARD_ID = npcs.getProperty("ChampionRewardItemID", 6393);
+		CHAMPION_REWARD_QTY = npcs.getProperty("ChampionRewardItemQty", 1);
 		
 		BUFFER_MAX_SCHEMES = npcs.getProperty("BufferMaxSchemesPerChar", 4);
 		BUFFER_STATIC_BUFF_COST = npcs.getProperty("BufferStaticCostPerBuff", -1);
