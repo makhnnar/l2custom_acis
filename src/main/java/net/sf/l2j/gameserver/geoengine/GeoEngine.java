@@ -104,10 +104,9 @@ public class GeoEngine
 		// release multilayer block temporarily buffer
 		BlockMultilayer.release();
 		
-		if (failed > 0)
-		{
+		if (failed > 0) {
 			LOGGER.warn("Failed to load {} {} region files. Please consider to check your \"geodata.properties\" settings and location of your geodata files.", failed, Config.GEODATA_TYPE);
-			System.exit(1);
+			//System.exit(1);
 		}
 		
 		// initialize bug reports
@@ -182,16 +181,14 @@ public class GeoEngine
 		final String filepath = Config.GEODATA_PATH + filename;
 		
 		// standard load
-		try (RandomAccessFile raf = new RandomAccessFile(filepath, "r");
-			FileChannel fc = raf.getChannel())
-		{
+		try (RandomAccessFile raf = new RandomAccessFile(filepath, "r")) {
+			FileChannel fc = raf.getChannel();
 			// initialize file buffer
 			MappedByteBuffer buffer = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size()).load();
 			buffer.order(ByteOrder.LITTLE_ENDIAN);
 			
 			// load 18B header for L2OFF geodata (1st and 2nd byte...region X and Y)
-			if (Config.GEODATA_TYPE == GeoType.L2OFF)
-			{
+			if (Config.GEODATA_TYPE == GeoType.L2OFF) {
 				for (int i = 0; i < 18; i++)
 					buffer.get();
 			}
@@ -201,18 +198,14 @@ public class GeoEngine
 			final int blockY = (regionY - World.TILE_Y_MIN) * GeoStructure.REGION_BLOCKS_Y;
 			
 			// loop over region blocks
-			for (int ix = 0; ix < GeoStructure.REGION_BLOCKS_X; ix++)
-			{
-				for (int iy = 0; iy < GeoStructure.REGION_BLOCKS_Y; iy++)
-				{
-					if (Config.GEODATA_TYPE == GeoType.L2J)
-					{
+			for (int ix = 0; ix < GeoStructure.REGION_BLOCKS_X; ix++) {
+				for (int iy = 0; iy < GeoStructure.REGION_BLOCKS_Y; iy++) {
+					if (Config.GEODATA_TYPE == GeoType.L2J) {
 						// get block type
 						final byte type = buffer.get();
 						
 						// load block according to block type
-						switch (type)
-						{
+						switch (type) {
 							case GeoStructure.TYPE_FLAT_L2J_L2OFF:
 								_blocks[blockX + ix][blockY + iy] = new BlockFlat(buffer, Config.GEODATA_TYPE);
 								break;
@@ -228,15 +221,12 @@ public class GeoEngine
 							default:
 								throw new IllegalArgumentException("Unknown block type: " + type);
 						}
-					}
-					else
-					{
+					} else {
 						// get block type
 						final short type = buffer.getShort();
 						
 						// load block according to block type
-						switch (type)
-						{
+						switch (type) {
 							case GeoStructure.TYPE_FLAT_L2J_L2OFF:
 								_blocks[blockX + ix][blockY + iy] = new BlockFlat(buffer, Config.GEODATA_TYPE);
 								break;
@@ -259,9 +249,7 @@ public class GeoEngine
 			
 			// loading was successful
 			return true;
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 			// an error occured while loading, load null blocks
 			LOGGER.error("Error loading {} region file.", e, filename);
 			
