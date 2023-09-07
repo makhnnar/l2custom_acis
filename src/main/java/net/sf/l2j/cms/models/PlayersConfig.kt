@@ -18,8 +18,9 @@ data class PlayersConfig(
 )
 @Serializable
 data class MiscConfig(
-//    var ATTACK_FROM_MOUNTS: Boolean = Config.ATTACK_FROM_MOUNTS,
-//    var NO_GRADE_PENALTY: Boolean = Config.NO_GRADE_PENALTY,
+    var ATTACK_FROM_MOUNTS: Boolean = Config.ATTACK_FROM_MOUNTS,
+    var NO_GRADE_PENALTY: Boolean = Config.NO_GRADE_PENALTY,
+    var NO_WEIGHT_PENALTY: Boolean = Config.NO_WEIGHT_PENALTY,
     var EFFECT_CANCELING: Boolean = Config.EFFECT_CANCELING,
     var HP_REGEN_MULTIPLIER: Double = Config.HP_REGEN_MULTIPLIER,
     var MP_REGEN_MULTIPLIER: Double = Config.MP_REGEN_MULTIPLIER,

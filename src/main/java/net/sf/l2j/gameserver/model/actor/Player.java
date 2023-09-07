@@ -1123,8 +1123,8 @@ public final class Player extends Playable
 	/**
 	 * Update the overloaded status of the Player.
 	 */
-	public void refreshWeightPenalty()
-	{
+	public void refreshWeightPenalty() {
+		if(Config.NO_WEIGHT_PENALTY) return;
 		final int weightLimit = getWeightLimit();
 		if (weightLimit <= 0)
 			return;
@@ -1156,8 +1156,9 @@ public final class Player extends Playable
 	/**
 	 * Refresh expertise level ; weapon got one rank, when armor got 4 ranks.<br>
 	 */
-	public void refreshExpertisePenalty()
-	{
+	public void refreshExpertisePenalty() {
+		if(Config.NO_GRADE_PENALTY) return;
+
 		final int expertiseLevel = getSkillLevel(L2Skill.SKILL_EXPERTISE);
 		
 		int armorPenalty = 0;
@@ -3699,7 +3700,7 @@ public final class Player extends Playable
 	
 	public boolean mount(Summon pet)
 	{
-		if (!disarmWeapon(true))
+		if (!Config.ATTACK_FROM_MOUNTS && !disarmWeapon(true))
 			return false;
 		
 		forceRunStance();
@@ -3724,7 +3725,7 @@ public final class Player extends Playable
 	
 	public boolean mount(int npcId, int controlItemId)
 	{
-		if (!disarmWeapon(true))
+		if (!Config.ATTACK_FROM_MOUNTS && !disarmWeapon(true))
 			return false;
 		
 		forceRunStance();

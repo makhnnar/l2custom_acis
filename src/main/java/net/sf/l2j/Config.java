@@ -330,8 +330,13 @@ public final class Config
 	// --------------------------------------------------
 	// Players
 	// --------------------------------------------------
-	
+
 	/** Misc */
+	public static boolean ATTACK_FROM_MOUNTS;
+
+	public static boolean NO_GRADE_PENALTY;
+
+	public static boolean NO_WEIGHT_PENALTY;
 	public static boolean EFFECT_CANCELING;
 	public static double HP_REGEN_MULTIPLIER;
 	public static double MP_REGEN_MULTIPLIER;
@@ -959,7 +964,10 @@ public final class Config
 	private static final void loadPlayers()
 	{
 		final ExProperties players = initProperties(PLAYERS_FILE);
-		
+
+		ATTACK_FROM_MOUNTS = players.getProperty("AttackFromMounts", false);
+		NO_GRADE_PENALTY = players.getProperty("NoGradePenalty", false);
+		NO_WEIGHT_PENALTY = players.getProperty("NoWeightPenalty", false);
 		EFFECT_CANCELING = players.getProperty("CancelLesserEffect", true);
 		HP_REGEN_MULTIPLIER = players.getProperty("HpRegenMultiplier", 1.);
 		MP_REGEN_MULTIPLIER = players.getProperty("MpRegenMultiplier", 1.);
