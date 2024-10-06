@@ -11,6 +11,9 @@
 # BlueJ files
 *.ctxt
 
+#geodata files
+*.l2j
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 

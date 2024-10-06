@@ -231,8 +231,7 @@ public abstract class Creature extends WorldObject
 	}
 	
 	@Override
-	public boolean isInsideZone(ZoneId zone)
-	{
+	public boolean isInsideZone(ZoneId zone) {
 		return zone == ZoneId.PVP ? _zones[ZoneId.PVP.getId()] > 0 && _zones[ZoneId.PEACE.getId()] == 0 : _zones[zone.getId()] > 0;
 	}
 	

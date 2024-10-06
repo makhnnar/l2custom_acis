@@ -998,6 +998,13 @@ public final class Config
 		ATTACK_FROM_MOUNTS = players.getProperty("AttackFromMounts", false);
 		NO_GRADE_PENALTY = players.getProperty("NoGradePenalty", false);
 		NO_WEIGHT_PENALTY = players.getProperty("NoWeightPenalty", false);
+
+		LOGGER.info("======== Custom Features ========= ");
+		LOGGER.info("AttackFromMounts: "+ATTACK_FROM_MOUNTS);
+		LOGGER.info("NoGradePenalty: "+NO_GRADE_PENALTY);
+		LOGGER.info("NoWeightPenalty: "+NO_WEIGHT_PENALTY);
+		LOGGER.info("=================================== ");
+
 		EFFECT_CANCELING = players.getProperty("CancelLesserEffect", true);
 		HP_REGEN_MULTIPLIER = players.getProperty("HpRegenMultiplier", 1.);
 		MP_REGEN_MULTIPLIER = players.getProperty("MpRegenMultiplier", 1.);

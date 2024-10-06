@@ -3700,11 +3700,12 @@ public final class Player extends Playable
 	
 	public boolean mount(Summon pet)
 	{
-		if (!Config.ATTACK_FROM_MOUNTS && !disarmWeapon(true))
-			return false;
-		
+		if(!Config.ATTACK_FROM_MOUNTS){
+			if (!disarmWeapon(true))
+				return false;
+			stopAllToggles();
+		}
 		forceRunStance();
-		stopAllToggles();
 		
 		final Ride mount = new Ride(getObjectId(), Ride.ACTION_MOUNT, pet.getTemplate().getNpcId());
 		setMount(pet.getNpcId(), pet.getStatus().getLevel(), mount.getMountType());
@@ -3725,11 +3726,12 @@ public final class Player extends Playable
 	
 	public boolean mount(int npcId, int controlItemId)
 	{
-		if (!Config.ATTACK_FROM_MOUNTS && !disarmWeapon(true))
-			return false;
-		
+		if(!Config.ATTACK_FROM_MOUNTS){
+			if (!disarmWeapon(true))
+				return false;
+			stopAllToggles();
+		}
 		forceRunStance();
-		stopAllToggles();
 		
 		final Ride mount = new Ride(getObjectId(), Ride.ACTION_MOUNT, npcId);
 		

@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/instance/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/instance/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/CreatureStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/CreatureStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/template/NpcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/template/NpcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/spawn/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/spawn/Spawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/network/clientpackets/RequestGameStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/network/clientpackets/RequestGameStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/geoengine.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/geoengine.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/loginserver.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/loginserver.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config/npcs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/npcs.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/players.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/players.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/server.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +82,11 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="l2custom_acis" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -116,7 +125,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/phgom/Documents/originalacis/l2custom_acis-develop/l2custom_acis-develop",
+    "last_opened_file_path": "C:/Users/phgom/Documents/GitHub/l2custom_acis/src/main/resources/data/geodata",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -131,11 +140,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phgom\Documents\GitHub\l2custom_acis\src\main\resources\data\geodata" />
       <recent name="C:\Users\phgom\Documents\GitHub\l2custom_acis\src\main\resources\sql" />
       <recent name="C:\Users\phgom\Documents\GitHub\l2custom_acis\src\main\resources\data" />
       <recent name="C:\Users\phgom\Documents\GitHub\l2custom_acis\src\main\java\net\sf\l2j" />
       <recent name="C:\Users\phgom\Documents\GitHub\l2custom_acis" />
-      <recent name="C:\Users\phgom\Documents\GitHub\l2custom_acis\aCis_datapack" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.l2custom_acis [copyDocsFiles]">
@@ -265,8 +274,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.l2custom_acis [copyDocsFiles]" />
-        <item itemvalue="Gradle.l2custom_acis [copyDependenciesToLibFolder]" />
         <item itemvalue="Gradle.l2custom_acis [build]" />
+        <item itemvalue="Gradle.l2custom_acis [copyDependenciesToLibFolder]" />
         <item itemvalue="Gradle.l2custom_acis [assemble]" />
         <item itemvalue="Gradle.l2custom_acis [copyToLib]" />
       </list>

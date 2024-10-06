@@ -28,3 +28,9 @@ Future modifications:
  *Server modifications*
 
  - enable an easy NPC creation proccess with python scripting
+
+ *How to build your version*
+ 
+ - Run the build gradle command
+ - Run the task copyDependenciesToLibFolder
+
