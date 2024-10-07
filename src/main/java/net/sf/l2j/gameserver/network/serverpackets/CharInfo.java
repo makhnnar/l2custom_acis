@@ -87,7 +87,11 @@ public class CharInfo extends L2GameServerPacket
 		final int runSpd = _player.getStatus().getBaseRunSpeed();
 		final int walkSpd = _player.getStatus().getBaseWalkSpeed();
 		final int swimSpd = _player.getStatus().getBaseSwimSpeed();
-		
+
+		LOGGER.info("runSpd",runSpd);
+		LOGGER.info("walkSpd",walkSpd);
+		LOGGER.info("swimSpd",swimSpd);
+
 		writeD(runSpd);
 		writeD(walkSpd);
 		writeD(swimSpd);

@@ -146,13 +146,11 @@ public class CreatureTemplate
 		return _baseCritRate;
 	}
 	
-	public final int getBaseWalkSpeed()
-	{
+	public final int getBaseWalkSpeed() {
 		return _baseWalkSpd;
 	}
 	
-	public final int getBaseRunSpeed()
-	{
+	public final int getBaseRunSpeed() {
 		return _baseRunSpd;
 	}
 	

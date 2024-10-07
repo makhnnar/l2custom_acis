@@ -901,8 +901,8 @@ public class PlayerStatus extends PlayableStatus<Player>
 		if (_actor.isMounted())
 		{
 			int base = (_actor.isFlying()) ? _actor.getPetDataEntry().getMountFlySpeed() : _actor.getPetDataEntry().getMountBaseSpeed();
-			
-			if (getLevel() < _actor.getMountLevel())
+			//aqui aplicamos una penalidad de velocidad si el nivel de la montura es mayor que la del usuario
+			if (!Config.NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS && getLevel() < _actor.getMountLevel())
 				base /= 2;
 			
 			if (_actor.checkFoodState(_actor.getPetTemplate().getHungryLimit()))
@@ -920,7 +920,7 @@ public class PlayerStatus extends PlayableStatus<Player>
 		{
 			int base = _actor.getPetDataEntry().getMountSwimSpeed();
 			
-			if (getLevel() < _actor.getMountLevel())
+			if (!Config.NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS && getLevel() < _actor.getMountLevel())
 				base /= 2;
 			
 			if (_actor.checkFoodState(_actor.getPetTemplate().getHungryLimit()))
@@ -955,8 +955,12 @@ public class PlayerStatus extends PlayableStatus<Player>
 		final int agp = _actor.getArmorGradePenalty();
 		if (agp > 0)
 			baseValue *= Math.pow(0.84, agp);
-		
-		return (float) calcStat(Stats.RUN_SPEED, baseValue, null, null);
+
+		final float moveSpd = (float) calcStat(Stats.RUN_SPEED, baseValue, null, null);
+		if(Config.MAX_RUN_SPD>0){
+			return moveSpd<Config.MAX_RUN_SPD ? moveSpd : Config.MAX_RUN_SPD;
+		}
+		return moveSpd;
 	}
 	
 	@Override
@@ -982,8 +986,11 @@ public class PlayerStatus extends PlayableStatus<Player>
 		final int agp = _actor.getArmorGradePenalty();
 		if (agp > 0)
 			baseValue *= Math.pow(0.84, agp);
-		
-		return (float) calcStat(Stats.RUN_SPEED, baseValue, null, null);
+		final float realSpd = (float) calcStat(Stats.RUN_SPEED, baseValue, null, null);
+		if(Config.MAX_RUN_SPD>0){
+			return realSpd<Config.MAX_RUN_SPD ? realSpd : Config.MAX_RUN_SPD;
+		}
+		return realSpd;
 	}
 	
 	@Override
@@ -993,7 +1000,7 @@ public class PlayerStatus extends PlayableStatus<Player>
 		{
 			double base = _actor.getPetDataEntry().getMountMAtk();
 			
-			if (getLevel() < _actor.getMountLevel())
+			if (!Config.NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS && getLevel() < _actor.getMountLevel())
 				base /= 2;
 			
 			return (int) calcStat(Stats.MAGIC_ATTACK, base, null, null);
@@ -1027,7 +1034,7 @@ public class PlayerStatus extends PlayableStatus<Player>
 		{
 			double base = _actor.getPetDataEntry().getMountPAtk();
 			
-			if (getLevel() < _actor.getMountLevel())
+			if (!Config.NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS && getLevel() < _actor.getMountLevel())
 				base /= 2;
 			
 			return (int) calcStat(Stats.POWER_ATTACK, base, null, null);

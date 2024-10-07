@@ -828,8 +828,7 @@ public class CreatureStatus<T extends Creature>
 	/**
 	 * @return The movement speed multiplier, which is used by client to set correct character/object movement speed.
 	 */
-	public final float getMovementSpeedMultiplier()
-	{
+	public final float getMovementSpeedMultiplier() {
 		return getMoveSpeed() / getBaseMoveSpeed();
 	}
 	

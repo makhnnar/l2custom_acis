@@ -25,7 +25,7 @@ import net.sf.l2j.gameserver.model.holder.IntIntHolder;
  */
 public final class Config
 {
-	private static final CLogger LOGGER = new CLogger(Config.class.getName());
+	public static final CLogger LOGGER = new CLogger(Config.class.getName());
 	
 	public static final String CLANS_FILE = "./config/clans.properties";
 	public static final String EVENTS_FILE = "./config/events.properties";
@@ -353,6 +353,11 @@ public final class Config
 	public static boolean NO_GRADE_PENALTY;
 
 	public static boolean NO_WEIGHT_PENALTY;
+
+	public static boolean NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS;
+
+	public static int MAX_RUN_SPD;
+
 	public static boolean EFFECT_CANCELING;
 	public static double HP_REGEN_MULTIPLIER;
 	public static double MP_REGEN_MULTIPLIER;
@@ -998,6 +1003,8 @@ public final class Config
 		ATTACK_FROM_MOUNTS = players.getProperty("AttackFromMounts", false);
 		NO_GRADE_PENALTY = players.getProperty("NoGradePenalty", false);
 		NO_WEIGHT_PENALTY = players.getProperty("NoWeightPenalty", false);
+		NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS = players.getProperty("NoPenaltiesOnDiffLvlForMounts", false);
+		MAX_RUN_SPD = players.getProperty("MaxRunSpd", 0);
 
 		LOGGER.info("======== Custom Features ========= ");
 		LOGGER.info("AttackFromMounts: "+ATTACK_FROM_MOUNTS);
