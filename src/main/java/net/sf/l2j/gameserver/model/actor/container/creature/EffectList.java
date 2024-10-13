@@ -241,7 +241,6 @@ public class EffectList
 	 */
 	private boolean doesStack(L2Skill checkSkill)
 	{
-		LOGGER.info("addEffectFromQueue: asking if the buff stack");
 		if (_buffs == null || _buffs.isEmpty())
 			return false;
 		
@@ -258,17 +257,14 @@ public class EffectList
 		{
 			if(Config.ALLOW_STACK_BUFFS_OF_SAME_EFFECT){
 				if (e.getSkill().getName() != null && e.getSkill().getName().equals(skillName)) {
-					LOGGER.info("addEffectFromQueue: validating by name => "+e.getSkill().getName()+"=="+skillName);
 					return true;
 				}
 			} else {
 				if (e.getTemplate().getStackType() != null && e.getTemplate().getStackType().equals(stackType)) {
-					LOGGER.info("addEffectFromQueue: validating by stackType => "+e.getTemplate().getStackType()+"=="+stackType);
 					return true;
 				}
 			}
 		}
-		LOGGER.info("addEffectFromQueue: returning false. Why?");
 		return false;
 	}
 	
@@ -539,8 +535,10 @@ public class EffectList
 			
 			effectList = _buffs;
 		}
-		
-		final String stackType = effect.getTemplate().getStackType();
+
+		final String stackType = Config.ALLOW_STACK_BUFFS_OF_SAME_EFFECT?
+				effect.getSkill().getName() :
+				effect.getTemplate().getStackType();
 		
 		if ("none".equals(stackType))
 		{

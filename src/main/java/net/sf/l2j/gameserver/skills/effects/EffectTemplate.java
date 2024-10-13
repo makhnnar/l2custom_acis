@@ -196,10 +196,6 @@ public class EffectTemplate
 	 */
 	public boolean isSameStackTypeAndOrderThan(EffectTemplate template)
 	{
-		return _stackOrder == template.getStackOrder() &&
-				(
-						!Config.ALLOW_STACK_BUFFS_OF_SAME_EFFECT &&
-						_stackType.equals(template.getStackType())
-				);
+		return _stackOrder == template.getStackOrder() && _stackType.equals(template.getStackType());
 	}
 }
