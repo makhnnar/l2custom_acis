@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.logging.CLogger;
 
 import net.sf.l2j.gameserver.enums.skills.AbnormalEffect;
@@ -31,7 +32,12 @@ public class EffectTemplate
 	
 	private final AbnormalEffect _abnormalEffect;
 	private List<FuncTemplate> _funcTemplates;
-	
+
+	/**
+	 * stackType is setted directly on the skills definitions on the xml definitions of the skills,
+	 * then if we want to stack buff with the same effect, this value needs to be different between
+	 * the related buffs.
+	 */
 	private final String _stackType;
 	private final float _stackOrder;
 	
@@ -190,6 +196,10 @@ public class EffectTemplate
 	 */
 	public boolean isSameStackTypeAndOrderThan(EffectTemplate template)
 	{
-		return _stackOrder == template.getStackOrder() && _stackType.equals(template.getStackType());
+		return _stackOrder == template.getStackOrder() &&
+				(
+						!Config.ALLOW_STACK_BUFFS_OF_SAME_EFFECT &&
+						_stackType.equals(template.getStackType())
+				);
 	}
 }

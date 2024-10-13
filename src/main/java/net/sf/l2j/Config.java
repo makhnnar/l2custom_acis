@@ -356,6 +356,8 @@ public final class Config
 
 	public static boolean NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS;
 
+	public static boolean ALLOW_STACK_BUFFS_OF_SAME_EFFECT;
+
 	public static int MAX_RUN_SPD;
 
 	public static boolean EFFECT_CANCELING;
@@ -1004,12 +1006,16 @@ public final class Config
 		NO_GRADE_PENALTY = players.getProperty("NoGradePenalty", false);
 		NO_WEIGHT_PENALTY = players.getProperty("NoWeightPenalty", false);
 		NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS = players.getProperty("NoPenaltiesOnDiffLvlForMounts", false);
+		ALLOW_STACK_BUFFS_OF_SAME_EFFECT = players.getProperty("AllowStackBuffsOfSameEffect", false);
 		MAX_RUN_SPD = players.getProperty("MaxRunSpd", 0);
 
 		LOGGER.info("======== Custom Features ========= ");
 		LOGGER.info("AttackFromMounts: "+ATTACK_FROM_MOUNTS);
 		LOGGER.info("NoGradePenalty: "+NO_GRADE_PENALTY);
 		LOGGER.info("NoWeightPenalty: "+NO_WEIGHT_PENALTY);
+		LOGGER.info("NoPenaltiesOnDiffLvlForMounts: "+NO_PENALTIES_ON_DIFF_LVL_FOR_MOUNTS);
+		LOGGER.info("AllowStackBuffsOfSameEffect: "+ALLOW_STACK_BUFFS_OF_SAME_EFFECT);
+		LOGGER.info("MaxRunSpd: "+(MAX_RUN_SPD==0?"no limit":MAX_RUN_SPD));
 		LOGGER.info("=================================== ");
 
 		EFFECT_CANCELING = players.getProperty("CancelLesserEffect", true);

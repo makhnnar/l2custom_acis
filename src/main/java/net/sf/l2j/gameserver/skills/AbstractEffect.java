@@ -402,4 +402,6 @@ public abstract class AbstractEffect
 	{
 		return _skill.getId() == effect.getSkill().getId() && getEffectType() == effect.getEffectType() && _template.isSameStackTypeAndOrderThan(effect.getTemplate());
 	}
+
+
 }

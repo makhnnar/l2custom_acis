@@ -29,6 +29,8 @@ import net.sf.l2j.gameserver.skills.AbstractEffect;
 import net.sf.l2j.gameserver.skills.L2Skill;
 import net.sf.l2j.gameserver.skills.effects.EffectTemplate;
 
+import static net.sf.l2j.Config.LOGGER;
+
 public class EffectList
 {
 	private static final AbstractEffect[] EMPTY_EFFECTS = new AbstractEffect[0];
@@ -239,6 +241,7 @@ public class EffectList
 	 */
 	private boolean doesStack(L2Skill checkSkill)
 	{
+		LOGGER.info("addEffectFromQueue: asking if the buff stack");
 		if (_buffs == null || _buffs.isEmpty())
 			return false;
 		
@@ -247,14 +250,25 @@ public class EffectList
 			return false;
 		
 		final String stackType = templates.get(0).getStackType();
-		if (stackType == null || "none".equals(stackType))
+		final String skillName = checkSkill.getName();
+		if (stackType == null || "none".equals(stackType) || skillName==null || skillName.isEmpty())
 			return false;
 		
 		for (AbstractEffect e : _buffs)
 		{
-			if (e.getTemplate().getStackType() != null && e.getTemplate().getStackType().equals(stackType))
-				return true;
+			if(Config.ALLOW_STACK_BUFFS_OF_SAME_EFFECT){
+				if (e.getSkill().getName() != null && e.getSkill().getName().equals(skillName)) {
+					LOGGER.info("addEffectFromQueue: validating by name => "+e.getSkill().getName()+"=="+skillName);
+					return true;
+				}
+			} else {
+				if (e.getTemplate().getStackType() != null && e.getTemplate().getStackType().equals(stackType)) {
+					LOGGER.info("addEffectFromQueue: validating by stackType => "+e.getTemplate().getStackType()+"=="+stackType);
+					return true;
+				}
+			}
 		}
+		LOGGER.info("addEffectFromQueue: returning false. Why?");
 		return false;
 	}
 	
@@ -629,8 +643,10 @@ public class EffectList
 			// Started scheduled timer needs to be canceled.
 			for (AbstractEffect e : _buffs)
 			{
-				if (e.isIdentical(newEffect))
+				if (e.isIdentical(newEffect)) {
+					LOGGER.info("addEffectFromQueue: the buff already exist on the list. Canceling the effect = ",newEffect);
 					e.exit();
+				}
 			}
 			
 			// if max buffs, no herb effects are used, even if they would replace one old
@@ -697,7 +713,9 @@ public class EffectList
 			}
 		}
 		
-		final String stackType = newEffect.getTemplate().getStackType();
+		final String stackType = Config.ALLOW_STACK_BUFFS_OF_SAME_EFFECT?
+				newEffect.getSkill().getName() :
+				newEffect.getTemplate().getStackType();
 		
 		// Check if a stack group is defined for this effect
 		if ("none".equals(stackType))
@@ -716,6 +734,7 @@ public class EffectList
 		
 		// Get the list of all stacked effects corresponding to the stack type to add.
 		List<AbstractEffect> stackQueue = _stackedEffects.get(stackType);
+
 		if (stackQueue != null)
 		{
 			int pos = 0;

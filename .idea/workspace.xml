@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/CreatureStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/CreatureStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/PlayerStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/PlayerStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/template/CreatureTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/template/CreatureTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/network/serverpackets/CharInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/network/serverpackets/CharInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/container/creature/EffectList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/container/creature/EffectList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/AbstractEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/AbstractEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/EffectTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/EffectTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config/players.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/players.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/server.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
