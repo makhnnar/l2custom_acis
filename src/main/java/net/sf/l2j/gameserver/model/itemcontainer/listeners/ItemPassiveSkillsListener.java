@@ -1,5 +1,6 @@
 package net.sf.l2j.gameserver.model.itemcontainer.listeners;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.enums.Paperdoll;
 import net.sf.l2j.gameserver.model.actor.Playable;
 import net.sf.l2j.gameserver.model.actor.Player;
@@ -35,8 +36,10 @@ public class ItemPassiveSkillsListener implements OnEquipListener
 				item.getAugmentation().applyBonus(player);
 			
 			// Verify if the grade penalty is occuring. If yes, then forget +4 dual skills and SA attached to weapon.
-			if (player.getSkillLevel(L2Skill.SKILL_EXPERTISE) < it.getCrystalType().getId())
-				return;
+			if (
+					!Config.NO_GRADE_PENALTY &&
+					player.getSkillLevel(L2Skill.SKILL_EXPERTISE) < it.getCrystalType().getId()
+			) return;
 			
 			// Add skills bestowed from +4 Duals
 			if (item.getEnchantLevel() >= 4)
