@@ -223,6 +223,8 @@ import net.sf.l2j.gameserver.taskmanager.PvpFlagTaskManager;
 import net.sf.l2j.gameserver.taskmanager.ShadowItemTaskManager;
 import net.sf.l2j.gameserver.taskmanager.WaterTaskManager;
 
+import static net.sf.l2j.gameserver.enums.actors.WeightPenalty.NONE;
+
 /**
  * This class represents a player in the world.<br>
  * There is always a client-thread connected to this (except if a player-store is activated upon logout).
@@ -289,7 +291,7 @@ public final class Player extends Playable
 	private int _pkKills;
 	private byte _pvpFlag;
 	private int _siegeState;
-	private WeightPenalty _weightPenalty = WeightPenalty.NONE;
+	private WeightPenalty _weightPenalty = NONE;
 	
 	private int _lastCompassZone; // the last compass zone update send to the client
 	
@@ -1112,19 +1114,18 @@ public final class Player extends Playable
 	
 	public boolean getWeaponGradePenalty()
 	{
-		return _weaponGradePenalty;
+		return Config.NO_GRADE_PENALTY? false : _weaponGradePenalty;
 	}
 	
 	public WeightPenalty getWeightPenalty()
 	{
-		return _weightPenalty;
+		return Config.NO_WEIGHT_PENALTY? NONE : _weightPenalty;
 	}
 	
 	/**
 	 * Update the overloaded status of the Player.
 	 */
 	public void refreshWeightPenalty() {
-		if(Config.NO_WEIGHT_PENALTY) return;
 		final int weightLimit = getWeightLimit();
 		if (weightLimit <= 0)
 			return;
@@ -1132,17 +1133,21 @@ public final class Player extends Playable
 		final double ratio = (getCurrentWeight() - getStatus().calcStat(Stats.WEIGHT_PENALTY, 0, this, null)) / weightLimit;
 		
 		final WeightPenalty newWeightPenalty;
-		if (ratio < 0.5)
-			newWeightPenalty = WeightPenalty.NONE;
-		else if (ratio < 0.666)
-			newWeightPenalty = WeightPenalty.LEVEL_1;
-		else if (ratio < 0.8)
-			newWeightPenalty = WeightPenalty.LEVEL_2;
-		else if (ratio < 1)
-			newWeightPenalty = WeightPenalty.LEVEL_3;
-		else
-			newWeightPenalty = WeightPenalty.LEVEL_4;
-		
+		if(Config.NO_WEIGHT_PENALTY){
+			newWeightPenalty = NONE;
+		} else {
+			if (ratio < 0.5)
+				newWeightPenalty = NONE;
+			else if (ratio < 0.666)
+				newWeightPenalty = WeightPenalty.LEVEL_1;
+			else if (ratio < 0.8)
+				newWeightPenalty = WeightPenalty.LEVEL_2;
+			else if (ratio < 1)
+				newWeightPenalty = WeightPenalty.LEVEL_3;
+			else
+				newWeightPenalty = WeightPenalty.LEVEL_4;
+		}
+
 		if (_weightPenalty != newWeightPenalty)
 		{
 			_weightPenalty = newWeightPenalty;
