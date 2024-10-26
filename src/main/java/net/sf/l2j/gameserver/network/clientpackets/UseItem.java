@@ -158,7 +158,7 @@ public final class UseItem extends L2GameClientPacket
 				case Item.SLOT_LR_HAND:
 				case Item.SLOT_L_HAND:
 				case Item.SLOT_R_HAND:
-					if (player.isMounted())
+					if (!Config.ATTACK_FROM_MOUNTS && player.isMounted())
 					{
 						player.sendPacket(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION);
 						return;
