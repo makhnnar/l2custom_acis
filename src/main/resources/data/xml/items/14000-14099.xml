@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
-    <item id="9300" type="Weapon" name="Demonic Mace Mehimoloth">
+    <item id="14099" type="Weapon" name="Demonic Mace Mehimoloth">
         <set name="default_action" val="equip" />
         <set name="is_magical" val="true" />
         <set name="weapon_type" val="BLUNT" />
@@ -10,12 +10,11 @@
         <set name="damage_range" val="0;0;46;120" />
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
-        <set name="is_tradable" val="true" />
-        <set name="is_dropable" val="true" />
-        <set name="is_destroyable" val="true" />
-        <set name="is_sellable" val="true" />
-        <set name="is_depositable" val="true" />
-        <set name="item_skill" val="3630-1;3631-1;3700-10" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
         <for>
             <set stat="mAtk" val="361" />
             <set stat="pAtk" val="137" />
