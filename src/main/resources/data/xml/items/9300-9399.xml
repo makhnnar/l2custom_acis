@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
-    <item id="9300" type="Weapon" name="Demonic Mace Mehimoloth">
+    <item id="9300" type="Weapon" name="Mace of Mehimoloth">
         <set name="default_action" val="equip" />
         <set name="is_magical" val="true" />
         <set name="weapon_type" val="BLUNT" />
-        <set name="bodypart" val="lrhand" />
+        <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
         <set name="damage_range" val="0;0;46;120" />
