@@ -1541,6 +1541,8 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="item_skill" val="3630-1;3631-1" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
 		<for>
 			<set stat="pAtk" val="361" />
 			<set stat="mAtk" val="137" />

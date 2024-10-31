@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
-    <item id="14099" type="Weapon" name="Demonic Mace Mehimoloth">
+    <item id="14001" type="Weapon" name="Demonic Mace Mehimoloth">
         <set name="default_action" val="equip" />
         <set name="weapon_type" val="NONE" />
         <set name="bodypart" val="rhand" />

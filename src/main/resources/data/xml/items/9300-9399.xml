@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
-    <item id="9300" type="Weapon" name="Mace of Mehimoloth">
+    <item id="9301" type="Weapon" name="Mace of Mehimoloth">
         <set name="default_action" val="equip" />
         <set name="is_magical" val="true" />
         <set name="weapon_type" val="BLUNT" />
@@ -15,6 +15,8 @@
         <set name="is_destroyable" val="true" />
         <set name="is_sellable" val="true" />
         <set name="is_depositable" val="true" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <set name="item_skill" val="3630-1;3631-1;3700-10" />
         <for>
             <set stat="mAtk" val="361" />
