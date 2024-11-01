@@ -2175,15 +2175,17 @@
 		<set name="element" val="FIRE"/>
 		<set name="hitTime" val="7000"/>
 		<set name="skillType" val="MDAM"/>
-		<set name="reuseDelay" val="3600000"/>
+		<set name="reuseDelay" val="360000"/>
 		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="true"/>
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="900"/>
 		<set name="effectRange" val="1400"/>
-		<cond msgId="113" addName="1">
+		<set name="itemConsumeId" val="6028"/><!-- fire essence -->
+		<set name="itemConsumeCount" val="1"/>
+		<!--<cond msgId="113" addName="1">
 			<player seed_fire="2"/>
-		</cond>
+		</cond>-->
 		<for>
 			<effect count="20" name="DamOverTime" val="118" stackOrder="10" stackType="dot_attr" effectPower="80" effectType="DOT" abnormal="flame"/>
 		</for>
@@ -2197,15 +2199,17 @@
 		<set name="element" val="WATER"/>
 		<set name="hitTime" val="7000"/>
 		<set name="skillType" val="MDAM"/>
-		<set name="reuseDelay" val="3600000"/>
+		<set name="reuseDelay" val="360000"/>
 		<set name="isMagic" val="true"/>
 		<set name="isDebuff" val="true" />
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="900"/>
 		<set name="effectRange" val="1400"/>
-		<cond msgId="113" addName="1">
+		<set name="itemConsumeId" val="6029"/><!-- Lunargent -->
+		<set name="itemConsumeCount" val="1"/>
+		<!--<cond msgId="113" addName="1">
 			<player seed_water="2"/>
-		</cond>
+		</cond>-->
 		<for>
 			<effect name="Debuff" time="30" val="0" stackOrder="3" stackType="speed_down" effectPower="80" effectType="DEBUFF">
 				<mul stat="runSpd" val="0.5"/>
@@ -2221,15 +2225,17 @@
 		<set name="element" val="WIND"/>
 		<set name="hitTime" val="7000"/>
 		<set name="skillType" val="MDAM"/>
-		<set name="reuseDelay" val="3600000"/>
+		<set name="reuseDelay" val="360000"/>
 		<set name="isMagic" val="true"/>
 		<set name="isDebuff" val="true" />
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="900"/>
 		<set name="effectRange" val="1400"/>
-		<cond msgId="113" addName="1">
+		<set name="itemConsumeId" val="6032"/><!-- abyss oil -->
+		<set name="itemConsumeCount" val="1"/>
+		<!--<cond msgId="113" addName="1">
 			<player seed_wind="2"/>
-		</cond>
+		</cond>-->
 		<for>
 			<effect name="Debuff" time="120" val="0" stackOrder="1" stackType="heal_effect_down" effectPower="80" effectType="DEBUFF">
 				<mul stat="gainHp" val="0.5"/>
@@ -2246,13 +2252,15 @@
 		<set name="skillType" val="MDAM"/>
 		<set name="isMagic" val="true"/>
 		<set name="overHit" val="true"/>
-		<set name="reuseDelay" val="3600000"/>
+		<set name="reuseDelay" val="360000"/>
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="900"/>
 		<set name="effectRange" val="1400"/>
-		<cond msgId="113" addName="1">
+		<set name="itemConsumeId" val="4657"/><!-- blue soul crystal lvl 6-->
+		<set name="itemConsumeCount" val="1"/>
+		<!--<cond msgId="113" addName="1">
 			<player seed_water="1" seed_wind="1"/>
-		</cond>
+		</cond>-->
 	</skill>
 	<skill id="1293" levels="1" name="Elemental Symphony">
 		<set name="mpInitialConsume" val="50"/>
@@ -2262,15 +2270,17 @@
 		<set name="target" val="ONE"/>
 		<set name="hitTime" val="7000"/>
 		<set name="skillType" val="MDAM"/>
-		<set name="reuseDelay" val="3600000"/>
+		<set name="reuseDelay" val="360000"/>
 		<set name="isMagic" val="true"/>
 		<set name="overHit" val="true"/>
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="900"/>
 		<set name="effectRange" val="1400"/>
-		<cond msgId="113" addName="1">
+		<set name="itemConsumeId" val="4635"/><!-- red soul crystal lvl 6 -->
+		<set name="itemConsumeCount" val="1"/>
+		<!--<cond msgId="113" addName="1">
 			<player seed_fire="1" seed_wind="1"/>
-		</cond>		
+		</cond>-->
 	</skill>
 	<skill id="1294" levels="1" name="Elemental Storm">
 		<set name="mpInitialConsume" val="50"/>
@@ -2280,15 +2290,17 @@
 		<set name="target" val="ONE"/>
 		<set name="hitTime" val="7000"/>
 		<set name="skillType" val="MDAM"/>
-		<set name="reuseDelay" val="3600000"/>
+		<set name="reuseDelay" val="360000"/>
 		<set name="isMagic" val="true"/>
 		<set name="overHit" val="true"/>
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="900"/>
 		<set name="effectRange" val="1400"/>
-		<cond msgId="113" addName="1">
+		<set name="itemConsumeId" val="4646"/><!-- green soul crystal lvl 6-->
+		<set name="itemConsumeCount" val="1"/>
+		<!--<cond msgId="113" addName="1">
 			<player seed_water="1" seed_fire="1"/>
-		</cond>		
+		</cond>-->
 	</skill>
 	<skill id="1295" levels="9" name="Aqua Splash" enchantLevels1="30" enchantLevels2="30" >
 		<table name="#enchantMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 82 83 83 83 84 84 85 85 85 </table>
