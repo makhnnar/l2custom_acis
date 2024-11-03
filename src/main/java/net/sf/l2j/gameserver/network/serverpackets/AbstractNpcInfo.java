@@ -98,8 +98,10 @@ public abstract class AbstractNpcInfo extends L2GameServerPacket
 			
 			if (_npc.getTemplate().isUsingServerSideName())
 				_name = _npc.getName();
-			
-			if (_npc.getTemplate().isUsingServerSideTitle())
+
+			if (_npc.isChampion())
+				_title = "Champion";
+			else if (_npc.getTemplate().isUsingServerSideTitle())
 				_title = _npc.getTitle();
 			
 			if (Config.SHOW_NPC_LVL && _npc instanceof Monster)

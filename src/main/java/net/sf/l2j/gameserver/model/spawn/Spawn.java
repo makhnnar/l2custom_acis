@@ -393,12 +393,21 @@ public final class Spawn implements Runnable
 		// Set the HP and MP of the Npc to the max
 		_npc.getStatus().setMaxHpMp();
 
-		if (Config.CHAMPION_FREQUENCY > 0)
-		{
+		if (Config.CHAMPION_FREQUENCY > 0) {
 			// It can't be a Raid, a Raid minion nor a minion. Quest mobs and chests are disabled too.
-			if (_npc instanceof Monster && !getTemplate().cantBeChampion() && getTemplate().getLevel() >= Config.CHAMP_MIN_LVL && getTemplate().getLevel() <= Config.CHAMP_MAX_LVL && !_npc.isRaidRelated() && !_npc.isMinion())
+			if (
+					_npc instanceof Monster &&
+					!getTemplate().cantBeChampion() &&
+					getTemplate().getLevel() >= Config.CHAMP_MIN_LVL &&
+					getTemplate().getLevel() <= Config.CHAMP_MAX_LVL &&
+					!_npc.isRaidRelated() &&
+					!_npc.isMinion()
+			) {
 				((Attackable) _npc).setChampion(Rnd.get(100) < Config.CHAMPION_FREQUENCY);
+			}
 		}
+
+		_npc.setHeading(_loc.getHeading() < 0 ? Rnd.get(65536) : _loc.getHeading());
 		
 		// spawn NPC on new coordinates
 		_npc.spawnMe(locX, locY, locZ, (_loc.getHeading() < 0) ? Rnd.get(65536) : _loc.getHeading());

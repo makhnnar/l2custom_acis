@@ -120,6 +120,9 @@ public abstract class Creature extends WorldObject
 	private boolean _allSkillsDisabled;
 
 	private boolean _champion = false;
+
+	/** Orientation of the Creature */
+	private int _heading;
 	
 	public Creature(int objectId, CreatureTemplate template)
 	{
@@ -1954,5 +1957,10 @@ public abstract class Creature extends WorldObject
 	public boolean isChampion()
 	{
 		return _champion;
+	}
+
+	public final void setHeading(int heading)
+	{
+		_heading = heading;
 	}
 }
