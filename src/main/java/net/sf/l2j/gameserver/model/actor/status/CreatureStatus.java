@@ -39,6 +39,8 @@ public class CreatureStatus<T extends Creature>
 	
 	protected double _hp = .0;
 	protected double _mp = .0;
+
+	protected boolean isChampion = false;
 	
 	private Future<?> _regTask;
 	protected byte _flagsRegenActive = 0;
@@ -364,7 +366,7 @@ public class CreatureStatus<T extends Creature>
 		setHp(newHp, false);
 		setMp(newMp, true);
 	}
-	
+
 	/**
 	 * Set HPs to the maximum value.
 	 */
@@ -372,14 +374,18 @@ public class CreatureStatus<T extends Creature>
 	{
 		setHp(getMaxHp());
 	}
-	
+
+	public final void setMaxHpMp(){
+		setMaxHpMp(false);
+	}
+
 	/**
 	 * Set both HPs and MPs to the maximum values. The udpate is called only one time.
 	 */
-	public final void setMaxHpMp()
+	public final void setMaxHpMp(boolean isChampion)
 	{
+		this.isChampion = isChampion;
 		setMp(getMaxMp(), false);
-		
 		setMaxHp();
 	}
 	
@@ -579,13 +585,22 @@ public class CreatureStatus<T extends Creature>
 	{
 		return (int) calcStat(Stats.ACCURACY_COMBAT, 0, null, null);
 	}
-	
+
 	/**
 	 * @return The maximum HP of this {@link Creature}, based on its current level.
 	 */
 	public int getMaxHp()
 	{
-		return (int) calcStat(Stats.MAX_HP, _actor.getTemplate().getBaseHpMax(getLevel()), null, null);
+		int multiplier = isChampion?Config.CHAMPION_HP:1;
+		int hp = (int) calcStat(
+				Stats.MAX_HP,
+				_actor.getTemplate().getBaseHpMax(getLevel()),
+				null,
+				null
+		);
+		int result = hp*multiplier;
+		Config.LOGGER.info("hp: "+hp+" multiplier: "+multiplier+" result: "+result);
+		return result;
 	}
 	
 	/**

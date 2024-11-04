@@ -389,23 +389,23 @@ public final class Spawn implements Runnable
 		// FIXME temporarily fix: when the spawn Z and geo Z differs more than 200, use spawn Z coord
 		if (Math.abs(locZ - _loc.getZ()) > 200)
 			locZ = _loc.getZ();
-		
-		// Set the HP and MP of the Npc to the max
-		_npc.getStatus().setMaxHpMp();
 
 		if (Config.CHAMPION_FREQUENCY > 0) {
 			// It can't be a Raid, a Raid minion nor a minion. Quest mobs and chests are disabled too.
-			if (
-					_npc instanceof Monster &&
+			boolean canCreateChamp = _npc instanceof Monster &&
 					!getTemplate().cantBeChampion() &&
 					getTemplate().getLevel() >= Config.CHAMP_MIN_LVL &&
 					getTemplate().getLevel() <= Config.CHAMP_MAX_LVL &&
 					!_npc.isRaidRelated() &&
-					!_npc.isMinion()
-			) {
-				((Attackable) _npc).setChampion(Rnd.get(100) < Config.CHAMPION_FREQUENCY);
+					!_npc.isMinion();
+			if (canCreateChamp) {
+				boolean isChampion = Rnd.get(100) < Config.CHAMPION_FREQUENCY;
+				_npc.setChampion(isChampion);
 			}
 		}
+
+		// Set the HP and MP of the Npc to the max
+		_npc.getStatus().setMaxHpMp(_npc.isChampion());
 
 		_npc.setHeading(_loc.getHeading() < 0 ? Rnd.get(65536) : _loc.getHeading());
 		
