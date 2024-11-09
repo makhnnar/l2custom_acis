@@ -599,7 +599,6 @@ public class CreatureStatus<T extends Creature>
 				null
 		);
 		int result = hp*multiplier;
-		Config.LOGGER.info("hp: "+hp+" multiplier: "+multiplier+" result: "+result);
 		return result;
 	}
 	
