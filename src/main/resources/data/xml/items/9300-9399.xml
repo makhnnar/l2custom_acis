@@ -17,7 +17,8 @@
         <set name="is_depositable" val="true" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
-        <set name="item_skill" val="3630-1;3631-1;3700-10" />
+        <!--<set name="item_skill" val="3630-1;3631-1;3700-10" />-->
+        <set name="item_skill" val="3630-1;3631-1" />
         <for>
             <set stat="mAtk" val="361" />
             <set stat="pAtk" val="137" />

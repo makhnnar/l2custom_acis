@@ -32,15 +32,7 @@ import net.sf.l2j.gameserver.communitybbs.CommunityBoard;
 import net.sf.l2j.gameserver.communitybbs.model.Forum;
 import net.sf.l2j.gameserver.data.SkillTable;
 import net.sf.l2j.gameserver.data.SkillTable.FrequentSkill;
-import net.sf.l2j.gameserver.data.manager.CastleManager;
-import net.sf.l2j.gameserver.data.manager.CoupleManager;
-import net.sf.l2j.gameserver.data.manager.CursedWeaponManager;
-import net.sf.l2j.gameserver.data.manager.DimensionalRiftManager;
-import net.sf.l2j.gameserver.data.manager.FestivalOfDarknessManager;
-import net.sf.l2j.gameserver.data.manager.HeroManager;
-import net.sf.l2j.gameserver.data.manager.PartyMatchRoomManager;
-import net.sf.l2j.gameserver.data.manager.SevenSignsManager;
-import net.sf.l2j.gameserver.data.manager.ZoneManager;
+import net.sf.l2j.gameserver.data.manager.*;
 import net.sf.l2j.gameserver.data.sql.ClanTable;
 import net.sf.l2j.gameserver.data.sql.PlayerInfoTable;
 import net.sf.l2j.gameserver.data.xml.AdminData;
@@ -1799,6 +1791,9 @@ public final class Player extends Playable
 			// Cursed Weapon
 			if (CursedWeaponManager.getInstance().isCursed(newitem.getItemId()))
 				CursedWeaponManager.getInstance().activate(this, newitem);
+			// Custom Cursed Weapon
+			if (CustomCursedWeaponManager.getInstance().isCursed(newitem.getItemId()))
+				CustomCursedWeaponManager.getInstance().activate(this, newitem);
 			// If you pickup arrows and a bow is equipped, try to equip them if no arrows is currently equipped.
 			else if (item.getItem().getItemType() == EtcItemType.ARROW && getAttackType() == WeaponType.BOW && !getInventory().hasItemIn(Paperdoll.LHAND))
 				checkAndEquipArrows();
@@ -1859,6 +1854,9 @@ public final class Player extends Playable
 				// Cursed Weapon
 				if (CursedWeaponManager.getInstance().isCursed(createdItem.getItemId()))
 					CursedWeaponManager.getInstance().activate(this, createdItem);
+				// Custom Cursed Weapon
+				if (CustomCursedWeaponManager.getInstance().isCursed(createdItem.getItemId()))
+					CustomCursedWeaponManager.getInstance().activate(this, createdItem);
 				// If you pickup arrows and a bow is equipped, try to equip them if no arrows is currently equipped.
 				else if (item.getItemType() == EtcItemType.ARROW && getAttackType() == WeaponType.BOW && !getInventory().hasItemIn(Paperdoll.LHAND))
 					checkAndEquipArrows();

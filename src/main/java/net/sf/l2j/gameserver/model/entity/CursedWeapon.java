@@ -522,7 +522,7 @@ public class CursedWeapon
 	 */
 	public boolean checkDrop(Attackable attackable, Player player)
 	{
-		if (Rnd.get(1000000) < _dropRate)
+		if (Rnd.get(1000) < _dropRate)
 		{
 			// Drop the item.
 			dropFromMob(attackable, player);

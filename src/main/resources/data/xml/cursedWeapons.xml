@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
-	<item id="8190" skillId="3603" name="Demonic Sword Zariche" dropRate="2" duration="72" durationLost="24" dissapearChance="50" stageKills="10"/>
-	<item id="8689" skillId="3629" name="Blood Sword Akamanah" dropRate="2" duration="72" durationLost="24" dissapearChance="50" stageKills="10"/>
-	<item id="14001" skillId="9099" name="Demonic Mace Mehimoloth" dropRate="2" duration="72" durationLost="24" dissapearChance="50" stageKills="10"/>
+	<item id="8190" skillId="3603" name="Demonic Sword Zariche" dropRate="100" duration="72" durationLost="24" dissapearChance="50" stageKills="10"/>
+	<item id="8689" skillId="3629" name="Blood Sword Akamanah" dropRate="100" duration="72" durationLost="24" dissapearChance="50" stageKills="10"/>
 </list>

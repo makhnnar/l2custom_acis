@@ -13,6 +13,7 @@ import net.sf.l2j.commons.random.Rnd;
 
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.manager.CursedWeaponManager;
+import net.sf.l2j.gameserver.data.manager.CustomCursedWeaponManager;
 import net.sf.l2j.gameserver.data.xml.HerbDropData;
 import net.sf.l2j.gameserver.enums.BossInfoType;
 import net.sf.l2j.gameserver.geoengine.GeoEngine;
@@ -837,6 +838,7 @@ public class Monster extends Attackable
 		
 		// Check Cursed Weapons drop.
 		CursedWeaponManager.getInstance().checkDrop(this, player);
+		CustomCursedWeaponManager.getInstance().checkDrop(this, player);
 		
 		// now throw all categorized drops and handle spoil.
 		for (DropCategory cat : template.getDropData())
