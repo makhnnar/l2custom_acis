@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/0700-0799.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/0700-0799.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/0900-0999.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/0900-0999.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/customCursedWeapons.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/customCursedWeapons.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9300-9399.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9300-9399.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3700-3799.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3700-3799.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

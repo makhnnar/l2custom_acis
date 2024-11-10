@@ -2728,7 +2728,10 @@ public final class Player extends Playable
 			
 			// Clear resurrect xp calculation
 			setExpBeforeDeath(0);
-			
+			CustomCursedWeaponManager.getInstance().drop(
+					getActiveWeaponItem().getItemId(),
+					killer
+			);
 			if (isCursedWeaponEquipped())
 				CursedWeaponManager.getInstance().drop(_cursedWeaponEquippedId, killer);
 			else
@@ -2882,11 +2885,14 @@ public final class Player extends Playable
 			return;
 		
 		// Don't rank up the CW if it was a summon.
-		if (isCursedWeaponEquipped() && target instanceof Player)
-		{
+		if (isCursedWeaponEquipped() && target instanceof Player) {
 			CursedWeaponManager.getInstance().increaseKills(_cursedWeaponEquippedId);
 			return;
 		}
+
+		CustomCursedWeaponManager.getInstance().increaseKills(
+				getActiveWeaponItem().getItemId()
+		);
 		
 		// If in duel and you kill (only can kill l2summon), do nothing
 		if (isInDuel() && targetPlayer.isInDuel())
@@ -4333,6 +4339,7 @@ public final class Player extends Playable
 					player.getPunishment().load(rs.getInt("punish_level"), rs.getLong("punish_timer"));
 					
 					CursedWeaponManager.getInstance().checkPlayer(player);
+					CustomCursedWeaponManager.getInstance().checkPlayer(player);
 					
 					player.setAllianceWithVarkaKetra(rs.getInt("varka_ketra_ally"));
 					
@@ -6580,6 +6587,10 @@ public final class Player extends Playable
 			
 			if (isCursedWeaponEquipped())
 				CursedWeaponManager.getInstance().getCursedWeapon(_cursedWeaponEquippedId).setPlayer(null);
+
+			CustomCursedWeaponManager.getInstance().getCursedWeapon(
+					getActiveWeaponItem().getItemId()
+			).setPlayer(null);
 			
 			if (_clan != null)
 				_clan.broadcastToMembersExcept(this, new PledgeShowMemberListUpdate(this));

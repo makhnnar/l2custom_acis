@@ -26,4 +26,30 @@
             <set stat="mAtkSpd" val="325" />
         </for>
     </item>
+    <item id="9302" type="Weapon" name="Spirit Bow of Azrael">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="BOW" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
+        <set name="is_tradable" val="true" />
+        <set name="is_dropable" val="true" />
+        <set name="is_destroyable" val="true" />
+        <set name="is_sellable" val="true" />
+        <set name="is_depositable" val="true" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <!--<set name="item_skill" val="3630-1;3631-1;3700-10" />-->
+        <set name="item_skill" val="3630-1;3631-1" />
+        <for>
+            <set stat="pAtk" val="341" />
+            <set stat="mAtk" val="117" />
+            <set stat="rCrit" val="4" />
+            <set stat="pAtkSpd" val="355" />
+        </for>
+    </item>
 </list>
