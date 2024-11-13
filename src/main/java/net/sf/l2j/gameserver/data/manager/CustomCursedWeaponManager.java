@@ -110,7 +110,7 @@ public class CustomCursedWeaponManager implements IXmlReader
             return;
 
         // Can't own 2 cursed swords ; ranks the existing one, and ends the life of the newly obtained cursed weapon.
-        if (player.isCursedWeaponEquipped()) {
+        if (isCursed(player.getActiveWeaponItem().getItemId())) {
             // Ranks up the existing cursed weapon.
             _cursedWeapons.get(player.getCursedWeaponEquippedId()).rankUp();
 

@@ -10,11 +10,11 @@
         <set name="damage_range" val="0;0;46;120" />
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
-        <set name="is_tradable" val="true" />
+        <set name="is_tradable" val="false" />
         <set name="is_dropable" val="true" />
-        <set name="is_destroyable" val="true" />
-        <set name="is_sellable" val="true" />
-        <set name="is_depositable" val="true" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
         <!--<set name="item_skill" val="3630-1;3631-1;3700-10" />-->
@@ -36,11 +36,11 @@
         <set name="damage_range" val="0;0;10;0" />
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
-        <set name="is_tradable" val="true" />
+        <set name="is_tradable" val="false" />
         <set name="is_dropable" val="true" />
-        <set name="is_destroyable" val="true" />
-        <set name="is_sellable" val="true" />
-        <set name="is_depositable" val="true" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
         <!--<set name="item_skill" val="3630-1;3631-1;3700-10" />-->
