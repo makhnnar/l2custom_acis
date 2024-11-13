@@ -59,8 +59,9 @@ public class CustomCursedWeaponManager implements IXmlReader
         load();
     }
 
-    public boolean isCursed(int itemId)
-    {
+    public boolean isCursed(int itemId) {
+        LOGGER.info("Incoming weapon Id: "+itemId);
+        LOGGER.info("isCursed weapon?: "+_cursedWeapons.containsKey(itemId));
         return _cursedWeapons.containsKey(itemId);
     }
 
@@ -112,7 +113,7 @@ public class CustomCursedWeaponManager implements IXmlReader
         // Can't own 2 cursed swords ; ranks the existing one, and ends the life of the newly obtained cursed weapon.
         if (isCursed(player.getActiveWeaponItem().getItemId())) {
             // Ranks up the existing cursed weapon.
-            _cursedWeapons.get(player.getCursedWeaponEquippedId()).rankUp();
+            _cursedWeapons.get(player.getActiveWeaponItem().getItemId()).rankUp();
 
             // Setup the player in order to drop the weapon from inventory.
             cw.setPlayer(player);

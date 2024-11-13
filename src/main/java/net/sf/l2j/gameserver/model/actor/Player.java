@@ -3650,8 +3650,14 @@ public final class Player extends Playable
 	public boolean disarmWeapon(boolean leftHandIncluded)
 	{
 		// Don't allow disarming a cursed weapon.
-		if (isCursedWeaponEquipped())
+		if (
+				isCursedWeaponEquipped() ||
+				CustomCursedWeaponManager.getInstance().isCursed(
+						getActiveWeaponItem().getItemId()
+				)
+		) {
 			return false;
+		}
 		
 		// Cancel current attack, no matter what.
 		getAttack().stop();
@@ -6134,7 +6140,15 @@ public final class Player extends Playable
 	{
 		if (isCursedWeaponEquipped())
 			CursedWeaponManager.getInstance().getCursedWeapon(getCursedWeaponEquippedId()).cursedOnLogin();
-		
+		if(
+				CustomCursedWeaponManager.getInstance().isCursed(
+						getActiveWeaponItem().getItemId()
+				)
+		){
+			CustomCursedWeaponManager.getInstance().getCursedWeapon(
+					getActiveWeaponItem().getItemId()
+			).cursedOnLogin();
+		}
 		// Add to the GameTimeTask to keep inform about activity time.
 		GameTimeTaskManager.getInstance().add(this);
 		
@@ -6588,9 +6602,15 @@ public final class Player extends Playable
 			if (isCursedWeaponEquipped())
 				CursedWeaponManager.getInstance().getCursedWeapon(_cursedWeaponEquippedId).setPlayer(null);
 
-			CustomCursedWeaponManager.getInstance().getCursedWeapon(
-					getActiveWeaponItem().getItemId()
-			).setPlayer(null);
+			if(
+					CustomCursedWeaponManager.getInstance().isCursed(
+							getActiveWeaponItem().getItemId()
+					)
+			) {
+				CustomCursedWeaponManager.getInstance().getCursedWeapon(
+						getActiveWeaponItem().getItemId()
+				).setPlayer(null);
+			}
 			
 			if (_clan != null)
 				_clan.broadcastToMembersExcept(this, new PledgeShowMemberListUpdate(this));

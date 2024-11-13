@@ -2,6 +2,7 @@ package net.sf.l2j.gameserver.skills.effects;
 
 import net.sf.l2j.gameserver.enums.skills.EffectFlag;
 import net.sf.l2j.gameserver.enums.skills.EffectType;
+import net.sf.l2j.gameserver.enums.skills.SkillTargetType;
 import net.sf.l2j.gameserver.enums.skills.SkillType;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.network.SystemMessageId;
@@ -25,21 +26,25 @@ public class EffectSilentMove extends AbstractEffect
 	@Override
 	public boolean onActionTime()
 	{
-		// Only cont skills shouldn't end
-		if (getSkill().getSkillType() != SkillType.CONT)
-			return false;
-		
-		if (getEffected().isDead())
-			return false;
-		
-		if (getTemplate().getValue() > getEffected().getStatus().getMp())
-		{
-			getEffected().sendPacket(SystemMessage.getSystemMessage(SystemMessageId.SKILL_REMOVED_DUE_LACK_MP));
-			return false;
+		L2Skill skill = getSkill();
+		switch (skill.getSkillType()){
+			case BUFF: //validate if we have the effect as a passive skill
+				return skill.isPassive() && skill.getTargetType() == SkillTargetType.SELF;
+			case CONT: // Only cont skills shouldn't end
+				if (getEffected().isDead()) {
+					return false;
+				}
+				//no more mana to be reduced
+				if (getTemplate().getValue() > getEffected().getStatus().getMp()) {
+					getEffected().sendPacket(SystemMessage.getSystemMessage(SystemMessageId.SKILL_REMOVED_DUE_LACK_MP));
+					return false;
+				}
+				//we can reduce mana, effects can continue
+				getEffected().getStatus().reduceMp(getTemplate().getValue());
+				return true;
+			default:
+				return false;
 		}
-		
-		getEffected().getStatus().reduceMp(getTemplate().getValue());
-		return true;
 	}
 	
 	@Override

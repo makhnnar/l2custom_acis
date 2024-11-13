@@ -87,7 +87,7 @@
             <addMul stat="darkRes" val="30" />
             <addMul stat="sleepVuln" val="30" />
             <add stat="absorbDam" val="50"/>
-            <effect name="SilentMove" abnormal="stealth" val="0"/>
+            <effect name="SilentMove" abnormal="stealth" count="0x7fffffff" val="0" stackOrder="1" time="5"/>
         </for>
     </skill>
 </list>

@@ -700,7 +700,7 @@ public class CursedWeapon
 		giveDemonicSkills();
 		
 		// Send level up animation.
-		_player.broadcastPacket(new SocialAction(_player, 17));
+		//_player.broadcastPacket(new SocialAction(_player, 17));
 	}
 	
 	public void teleportTo(Player player)
