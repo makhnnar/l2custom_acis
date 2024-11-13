@@ -2,4 +2,5 @@
 <list>
     <item id="9301" skillId="3700" name="Mace of Mehimoloth" dropRate="50" dissapearChance="50" stageKills="10"/>
     <item id="9302" skillId="3701" name="Spirit Bow of Azrael" dropRate="50" dissapearChance="50" stageKills="10"/>
+    <item id="9303" skillId="3702" name="Murzaraels Agony Dagger" dropRate="50" dissapearChance="50" stageKills="10"/>
 </list>
