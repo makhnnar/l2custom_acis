@@ -30,6 +30,7 @@ public class CustomCursedWeapon {
     private static final String UPDATE_PLAYER = "UPDATE characters SET karma=?, pkkills=? WHERE obj_id=?";
     private static final String INSERT_CW = "INSERT INTO custom_cursed_weapons (itemId, playerId, playerKarma, playerPkKills, nbKills, currentStage, numberBeforeNextStage) VALUES (?, ?, ?, ?, ?, ?, ?)";
     private static final String DELETE_CW = "DELETE FROM custom_cursed_weapons WHERE itemId = ?";
+    private static final String UPDATE_CW = "UPDATE custom_cursed_weapons SET nbKills=?, currentStage=?, numberBeforeNextStage=? WHERE itemId=?";
 
     private final String _name;
 
@@ -507,10 +508,7 @@ public class CustomCursedWeapon {
             if (_nbKills >= _numberBeforeNextStage)
             {
                 // Reset the number of kills to 0.
-                _nbKills = 0;
-
-                // Setup the new random number.
-                _numberBeforeNextStage = Rnd.get((int) Math.round(_stageKills * 0.5), (int) Math.round(_stageKills * 1.5));
+                resetKillsForNextStage();
 
                 // Rank up the CW.
                 rankUp();
@@ -529,11 +527,32 @@ public class CustomCursedWeapon {
         // Rank up current stage.
         _currentStage++;
 
+        resetKillsForNextStage();
+
         // Reward skills for that CW.
         giveDemonicSkills();
 
+        try (Connection con = ConnectionPool.getConnection()) {
+            try (PreparedStatement ps = con.prepareStatement(UPDATE_CW))
+            {
+                ps.setInt(1, _nbKills);
+                ps.setInt(2, _currentStage);
+                ps.setInt(3, _numberBeforeNextStage);
+                ps.setInt(6, _itemId);
+                ps.executeUpdate();
+            }
+        } catch (Exception e) {
+            LOGGER.error("Failed to update cursed weapon data.", e);
+        }
+
         // Send level up animation.
         //_player.broadcastPacket(new SocialAction(_player, 17));
+    }
+
+    private void resetKillsForNextStage() {
+        _nbKills = 0;
+        // Setup the new random number.
+        _numberBeforeNextStage = Rnd.get((int) Math.round(_stageKills * 0.5), (int) Math.round(_stageKills * 1.5));
     }
 
     public void teleportTo(Player player)
