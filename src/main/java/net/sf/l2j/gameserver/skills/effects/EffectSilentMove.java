@@ -1,5 +1,6 @@
 package net.sf.l2j.gameserver.skills.effects;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.enums.skills.EffectFlag;
 import net.sf.l2j.gameserver.enums.skills.EffectType;
 import net.sf.l2j.gameserver.enums.skills.SkillTargetType;
@@ -29,8 +30,10 @@ public class EffectSilentMove extends AbstractEffect
 		L2Skill skill = getSkill();
 		switch (skill.getSkillType()){
 			case BUFF: //validate if we have the effect as a passive skill
+				Config.LOGGER.info("BUFF - Check: isPassive: "+skill.isPassive()+" targetType: "+skill.getTargetType());
 				return skill.isPassive() && skill.getTargetType() == SkillTargetType.SELF;
 			case CONT: // Only cont skills shouldn't end
+				Config.LOGGER.info("Validating CONT section");
 				if (getEffected().isDead()) {
 					return false;
 				}
@@ -43,6 +46,7 @@ public class EffectSilentMove extends AbstractEffect
 				getEffected().getStatus().reduceMp(getTemplate().getValue());
 				return true;
 			default:
+				Config.LOGGER.info("It is not CONT, and it is not The CWS");
 				return false;
 		}
 	}

@@ -1096,6 +1096,7 @@ public final class Player extends Playable
 	@Override
 	public int getWeightLimit()
 	{
+		if(Config.NO_WEIGHT_PENALTY) return 0;
 		return (int) getStatus().calcStat(Stats.WEIGHT_LIMIT, 69000 * Formulas.CON_BONUS[getStatus().getCON()] * Config.WEIGHT_LIMIT, this, null);
 	}
 	
@@ -1119,8 +1120,10 @@ public final class Player extends Playable
 	 */
 	public void refreshWeightPenalty() {
 		final int weightLimit = getWeightLimit();
-		if (weightLimit <= 0)
+		if (weightLimit <= 0) {
+			_weightPenalty = NONE;
 			return;
+		}
 		
 		final double ratio = (getCurrentWeight() - getStatus().calcStat(Stats.WEIGHT_PENALTY, 0, this, null)) / weightLimit;
 		
@@ -1154,29 +1157,28 @@ public final class Player extends Playable
 	 * Refresh expertise level ; weapon got one rank, when armor got 4 ranks.<br>
 	 */
 	public void refreshExpertisePenalty() {
-		if(Config.NO_GRADE_PENALTY) return;
 
 		final int expertiseLevel = getSkillLevel(L2Skill.SKILL_EXPERTISE);
 		
 		int armorPenalty = 0;
 		boolean weaponPenalty = false;
-		
-		for (final ItemInstance item : getInventory().getPaperdollItems())
-		{
-			if (item.getItemType() != EtcItemType.ARROW && item.getItem().getCrystalType().getId() > expertiseLevel)
+
+		if(!Config.NO_GRADE_PENALTY){
+			for (final ItemInstance item : getInventory().getPaperdollItems())
 			{
-				if (item.isWeapon())
-					weaponPenalty = true;
-				else
-					armorPenalty += (item.getItem().getBodyPart() == Item.SLOT_FULL_ARMOR) ? 2 : 1;
+				if (item.getItemType() != EtcItemType.ARROW && item.getItem().getCrystalType().getId() > expertiseLevel)
+				{
+					if (item.isWeapon())
+						weaponPenalty = true;
+					else
+						armorPenalty += (item.getItem().getBodyPart() == Item.SLOT_FULL_ARMOR) ? 2 : 1;
+				}
 			}
+			armorPenalty = Math.min(armorPenalty, 4);
 		}
-		
-		armorPenalty = Math.min(armorPenalty, 4);
-		
+
 		// Found a different state than previous ; update it.
-		if (_weaponGradePenalty != weaponPenalty || _armorGradePenalty != armorPenalty)
-		{
+		if (_weaponGradePenalty != weaponPenalty || _armorGradePenalty != armorPenalty) {
 			_weaponGradePenalty = weaponPenalty;
 			_armorGradePenalty = armorPenalty;
 			
@@ -4346,6 +4348,16 @@ public final class Player extends Playable
 					
 					CursedWeaponManager.getInstance().checkPlayer(player);
 					CustomCursedWeaponManager.getInstance().checkPlayer(player);
+
+					if(
+							CustomCursedWeaponManager.getInstance().isCursed(
+									player.getActiveWeaponItem().getItemId()
+							)
+					){
+						CustomCursedWeaponManager.getInstance().getCursedWeapon(
+								player.getActiveWeaponItem().getItemId()
+						).cursedOnLogin();
+					}
 					
 					player.setAllianceWithVarkaKetra(rs.getInt("varka_ketra_ally"));
 					
@@ -4794,7 +4806,7 @@ public final class Player extends Playable
 		
 		// Add Func objects of newSkill to the calculator set of the Creature
 		addStatFuncs(newSkill.getStatFuncs(this));
-		
+
 		// Test and delete chance skill if found.
 		if (oldSkill != null && getChanceSkills() != null)
 			removeChanceSkill(oldSkill.getId());
@@ -4804,8 +4816,9 @@ public final class Player extends Playable
 			addChanceTrigger(newSkill);
 		
 		// Add or update the skill in the database.
-		if (store)
+		if (store) {
 			storeSkill(newSkill, -1);
+		}
 		
 		// Update shortcuts.
 		if (updateShortcuts)

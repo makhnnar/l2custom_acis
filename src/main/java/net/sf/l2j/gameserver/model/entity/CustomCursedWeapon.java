@@ -16,6 +16,7 @@ import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.*;
 import net.sf.l2j.gameserver.skills.AbstractEffect;
 import net.sf.l2j.gameserver.skills.L2Skill;
+import net.sf.l2j.gameserver.skills.effects.EffectTemplate;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -86,6 +87,7 @@ public class CustomCursedWeapon {
                         _nbKills = rs.getInt("nbKills");
                         _currentStage = rs.getInt("currentStage");
                         _numberBeforeNextStage = rs.getInt("numberBeforeNextStage");
+                        _isActivated = true;
                     }
                 }
             }
@@ -342,13 +344,16 @@ public class CustomCursedWeapon {
      * <li>the other shows left timer for the cursed weapon owner (either in hours or minutes).</li>
      * </ul>
      */
-    public void cursedOnLogin()
-    {
+    public void cursedOnLogin() {
+        /*
+        this pice of code is crashing the client for some reason
         SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.S2_OWNER_HAS_LOGGED_INTO_THE_S1_REGION);
         sm.addZoneName(_player.getPosition());
-        //sm.addItemName(_player.getCursedWeaponEquippedId());
+        sm.addItemName(_player.getCursedWeaponEquippedId());
         World.toAllOnlinePlayers(sm);
         _player.sendPacket(sm);
+        */
+        giveDemonicSkills();
     }
 
     /**
@@ -357,8 +362,17 @@ public class CustomCursedWeapon {
     public void giveDemonicSkills()
     {
         final L2Skill skill = SkillTable.getInstance().getInfo(_skillId, _currentStage);
-        if (skill != null) {
+        if (skill != null && _player!=null) {
             _player.addSkill(skill, false);
+            //if has effects those are applied if it is a non stored skill
+            if (skill.hasEffects()) {
+                for (final EffectTemplate template : skill.getEffectTemplates()) {
+                    final AbstractEffect effect = template.getEffect(_player, _player, skill);
+                    if (effect != null) {
+                        effect.scheduleEffect();
+                    }
+                }
+            }
             _player.sendSkillList();
         }
     }
@@ -538,7 +552,7 @@ public class CustomCursedWeapon {
                 ps.setInt(1, _nbKills);
                 ps.setInt(2, _currentStage);
                 ps.setInt(3, _numberBeforeNextStage);
-                ps.setInt(6, _itemId);
+                ps.setInt(4, _itemId);
                 ps.executeUpdate();
             }
         } catch (Exception e) {

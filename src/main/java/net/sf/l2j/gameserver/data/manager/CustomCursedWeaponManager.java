@@ -165,20 +165,21 @@ public class CustomCursedWeaponManager implements IXmlReader
      * If so, we set the {@link Player} and item references on the {@link CustomCursedWeapon}, then we reward associated skills to that {@link Player}.
      * @param player : The {@link Player} to test.
      */
-    public void checkPlayer(Player player)
-    {
+    public void checkPlayer(Player player) {
+        LOGGER.info("isPlayer null? "+(player == null));
         if (player == null)
             return;
 
-        for (CustomCursedWeapon cw : _cursedWeapons.values())
-        {
-            if (cw.isActivated() && player.getObjectId() == cw.getPlayerId())
-            {
+        for (CustomCursedWeapon cw : _cursedWeapons.values()) {
+            LOGGER.info(
+                    "CW - isActivated: "+cw.isActivated()+" playerId: "+player.getObjectId()+" cwPlId: "+cw.getPlayerId()
+            );
+            if (cw.isActivated() && player.getObjectId() == cw.getPlayerId()) {
                 cw.setPlayer(player);
                 cw.setItem(player.getInventory().getItemByItemId(cw.getItemId()));
                 cw.giveDemonicSkills();
-
-                player.setCursedWeaponEquippedId(cw.getItemId());
+                //this works only for the real cursed weapons
+                //player.setCursedWeaponEquippedId(cw.getItemId());
                 break;
             }
         }

@@ -1113,8 +1113,7 @@ public abstract class L2Skill implements IChanceSkillTrigger
 		
 		final List<Func> funcs = new ArrayList<>(_funcTemplates.size());
 		
-		for (FuncTemplate t : _funcTemplates)
-		{
+		for (FuncTemplate t : _funcTemplates) {
 			final Func f = t.getFunc(player, null, this, this);
 			if (f != null)
 				funcs.add(f);
