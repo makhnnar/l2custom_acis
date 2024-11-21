@@ -2730,10 +2730,12 @@ public final class Player extends Playable
 			
 			// Clear resurrect xp calculation
 			setExpBeforeDeath(0);
-			CustomCursedWeaponManager.getInstance().drop(
-					getActiveWeaponItem().getItemId(),
-					killer
-			);
+			if (CustomCursedWeaponManager.getInstance().isCursed(getActiveWeaponItem().getItemId())){
+				CustomCursedWeaponManager.getInstance().drop(
+						getActiveWeaponItem().getItemId(),
+						killer
+				);
+			}
 			if (isCursedWeaponEquipped())
 				CursedWeaponManager.getInstance().drop(_cursedWeaponEquippedId, killer);
 			else

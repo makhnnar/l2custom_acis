@@ -265,7 +265,7 @@ public final class ItemInstance extends WorldObject implements Runnable, Compara
 	{
 		if (count == 0)
 			return;
-		
+		//this line validates the max integer possible 2147483648
 		if (count > 0 && getCount() > Integer.MAX_VALUE - count)
 			setCount(Integer.MAX_VALUE);
 		else

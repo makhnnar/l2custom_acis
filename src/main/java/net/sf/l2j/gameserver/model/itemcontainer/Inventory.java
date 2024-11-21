@@ -9,6 +9,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.pool.ConnectionPool;
 
 import net.sf.l2j.gameserver.data.manager.HeroManager;
@@ -57,9 +58,11 @@ public abstract class Inventory extends ItemContainer
 	protected void refreshWeight()
 	{
 		int weight = 0;
-		for (ItemInstance item : _items)
-			weight += item.getItem().getWeight() * item.getCount();
-		
+		if(!Config.NO_WEIGHT_PENALTY){
+			for (ItemInstance item : _items) {
+				weight += item.getItem().getWeight() * item.getCount();
+			}
+		}
 		_totalWeight = weight;
 	}
 	
