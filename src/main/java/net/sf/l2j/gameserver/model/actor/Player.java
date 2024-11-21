@@ -1096,8 +1096,10 @@ public final class Player extends Playable
 	@Override
 	public int getWeightLimit()
 	{
-		if(Config.NO_WEIGHT_PENALTY) return 0;
-		return (int) getStatus().calcStat(Stats.WEIGHT_LIMIT, 69000 * Formulas.CON_BONUS[getStatus().getCON()] * Config.WEIGHT_LIMIT, this, null);
+		int weightMultiplayer = Config.NO_WEIGHT_PENALTY? 3 : 1;
+		return weightMultiplayer*(
+				(int) getStatus().calcStat(Stats.WEIGHT_LIMIT, 69000 * Formulas.CON_BONUS[getStatus().getCON()] * Config.WEIGHT_LIMIT, this, null)
+		);
 	}
 	
 	public int getArmorGradePenalty()

@@ -58,10 +58,11 @@ public abstract class Inventory extends ItemContainer
 	protected void refreshWeight()
 	{
 		int weight = 0;
-		if(!Config.NO_WEIGHT_PENALTY){
-			for (ItemInstance item : _items) {
-				weight += item.getItem().getWeight() * item.getCount();
-			}
+		for (ItemInstance item : _items) {
+			weight += item.getItem().getWeight() * item.getCount();
+		}
+		if(Config.NO_WEIGHT_PENALTY){
+			weight /= 3;
 		}
 		_totalWeight = weight;
 	}

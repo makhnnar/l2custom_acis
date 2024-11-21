@@ -7,7 +7,6 @@
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/item/instance/ItemInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/item/instance/ItemInstance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/itemcontainer/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/itemcontainer/Inventory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
