@@ -1254,6 +1254,7 @@ public final class Formulas
 		switch (type)
 		{
 			case MANADAM:
+			case MANADRAIN:
 			case MDOT:
 				return true;
 			

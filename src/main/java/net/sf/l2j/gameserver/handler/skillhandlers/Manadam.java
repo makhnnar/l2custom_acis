@@ -57,7 +57,7 @@ public class Manadam implements ISkillHandler
 				
 				double damage = Formulas.calcManaDam(activeChar, target, skill, sps, bsps);
 				
-				double mp = (damage > target.getStatus().getMp() ? target.getStatus().getMp() : damage);
+				double mp = (Math.min(damage, target.getStatus().getMp()));
 				target.getStatus().reduceMp(mp);
 				if (damage > 0)
 				{

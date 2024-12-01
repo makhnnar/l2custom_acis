@@ -1001,6 +1001,7 @@ public abstract class L2Skill implements IChanceSkillTrigger
 			case CHARGEDAM:
 			case DEATHLINK:
 			case MANADAM:
+			case MANADRAIN:
 			case MDOT:
 			case MUTE:
 			case SOULSHOT:

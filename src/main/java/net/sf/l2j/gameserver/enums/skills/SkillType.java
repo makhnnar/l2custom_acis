@@ -5,18 +5,7 @@ import java.lang.reflect.Constructor;
 import net.sf.l2j.commons.data.StatSet;
 
 import net.sf.l2j.gameserver.skills.L2Skill;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillAppearance;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillChargeDmg;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillCreateItem;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillDefault;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillDrain;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillSeed;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillSiegeFlag;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillSignet;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillSignetCasttime;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillSpawn;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillSummon;
-import net.sf.l2j.gameserver.skills.l2skills.L2SkillTeleport;
+import net.sf.l2j.gameserver.skills.l2skills.*;
 
 public enum SkillType
 {
@@ -30,6 +19,7 @@ public enum SkillType
 	MDOT,
 	DRAIN_SOUL,
 	DRAIN(L2SkillDrain.class),
+	MANADRAIN(L2SkillManaDrain.class),
 	DEATHLINK,
 	BLOW,
 	SIGNET(L2SkillSignet.class),

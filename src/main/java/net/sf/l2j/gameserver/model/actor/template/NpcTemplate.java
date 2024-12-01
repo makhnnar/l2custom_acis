@@ -494,6 +494,7 @@ public class NpcTemplate extends CreatureTemplate
 				case FATAL:
 				case DEATHLINK:
 				case MANADAM:
+				case MANADRAIN:
 				case CPDAMPERCENT:
 				case AGGDAMAGE:
 					addSkill((skill.getCastRange() > 150) ? NpcSkillType.LONG_RANGE : NpcSkillType.SHORT_RANGE, skill);

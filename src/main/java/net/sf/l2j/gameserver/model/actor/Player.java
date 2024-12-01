@@ -1122,10 +1122,6 @@ public final class Player extends Playable
 	 */
 	public void refreshWeightPenalty() {
 		final int weightLimit = getWeightLimit();
-		if (weightLimit <= 0) {
-			_weightPenalty = NONE;
-			return;
-		}
 		
 		final double ratio = (getCurrentWeight() - getStatus().calcStat(Stats.WEIGHT_PENALTY, 0, this, null)) / weightLimit;
 		
