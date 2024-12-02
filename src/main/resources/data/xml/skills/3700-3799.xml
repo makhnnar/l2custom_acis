@@ -90,4 +90,108 @@
             <effect name="SilentMove" abnormal="stealth" count="0x7fffffff" val="0" stackOrder="1" time="5"/>
         </for>
     </skill>
+    <skill id="3704" levels="1" name="Create Cursed Arrow">
+        <set name="mpConsume" val="100" />
+        <set name="target" val="SELF" />
+        <set name="hitTime" val="10000" />
+        <set name="isMagic" val="true" />
+        <set name="skillType" val="CREATE_ITEM" />
+        <set name="reuseDelay" val="1200000"/>
+        <set name="operateType" val="ACTIVE"/>
+        <set name="itemConsumeId" val="1864"/><!-- stem -->
+        <set name="itemConsumeCount" val="1" />
+        <set name="create_item_id" val="17" /><!-- wooden arrow -->
+        <set name="create_item_count" val="100" />
+        <set name="random_count" val="300" />
+    </skill>
+    <skill id="3705" levels="1" name="Shot of Death">
+        <set name="mpConsume" val="170"/>
+        <set name="weaponsAllowed" val="BOW" />
+        <set name="power" val="15000"/>
+        <set name="target" val="ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="ACTIVE"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1400"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="overHit" val="true"/>
+        <set name="SSBoost" val="2.0"/>
+        <set name="lethal1" val="5"/>
+        <set name="lethal2" val="2"/>
+        <set name="hitTime" val="4000"/>
+    </skill>
+    <skill id="3706" levels="1" name="Blow of Death">
+        <set name="mpConsume" val="85"/>
+        <set name="nextActionAttack" val="true" />
+        <set name="weaponsAllowed" val="DAGGER"/>
+        <set name="power" val="15000"/>
+        <set name="target" val="ONE"/>
+        <set name="baseLandRate" val="200"/>
+        <set name="skillType" val="BLOW"/>
+        <set name="operateType" val="ACTIVE"/>
+        <set name="castRange" val="40"/>
+        <set name="effectRange" val="400"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="lethal1" val="5"/>
+        <set name="lethal2" val="2"/>
+        <set name="SSBoost" val="2.0" />
+        <set name="hitTime" val="1800"/>
+        <set name="baseCritRate" val="15"/>
+    </skill>
+    <skill id="3707" levels="1" name="Demonic rage">
+        <set name="mpConsume" val="100"/>
+        <set name="target" val="SELF"/>
+        <set name="reuseDelay" val="800000"/>
+        <set name="hitTime" val="1000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="ACTIVE"/>
+        <for>
+            <effect name="Buff" time="15" val="0" stackOrder="2" stackType="speed_up_special">
+                <add stat="runSpd" val="150"/>
+                <mul stat="pAtkSpd" val="2"/>
+                <mul stat="pDef" val="0.1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="3708" levels="1" name="Cursed Vortex">
+        <set name="mpInitialConsume" val="21"/>
+        <set name="mpConsume" val="300"/>
+        <set name="power" val="333"/>
+        <set name="target" val="ONE"/>
+        <set name="hitTime" val="6000"/>
+        <set name="element" val="DARK"/>
+        <set name="reuseDelay" val="90000"/>
+        <set name="skillType" val="DRAIN"/>
+        <set name="operateType" val="ACTIVE"/>
+        <set name="isDebuff" val="true" />
+        <set name="isMagic" val="true"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1400"/>
+        <set name="absorbPart" val="1" />
+        <for>
+            <effect count="5" name="ManaDamOverTime" time="2" val="40" stackOrder="1" stackType="multi_debuff" effectPower="80" effectType="MDOT">
+                <subDiv stat="darkRes" val="30" />
+                <mul stat="mDef" val="0.7" />
+            </effect>
+        </for>
+    </skill>
+    <skill id="3709" levels="1" name="Perpetual Suffering">
+        <set name="mpInitialConsume" val="14"/>
+        <set name="mpConsume" val="300"/>
+        <set name="power" val="80"/>
+        <set name="target" val="ONE"/>
+        <set name="reuseDelay" val="150000"/>
+        <set name="hitTime" val="4000"/>
+        <set name="skillType" val="MUTE" />
+        <set name="element" val="DARK"/>
+        <set name="isDebuff" val="true" />
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="ACTIVE"/>
+        <set name="castRange" val="600"/>
+        <set name="effectRange" val="1100"/>
+        <for>
+            <effect name="SilenceMagicPhysical" time="60" val="0" stackOrder="1" stackType="silence_all" />
+            <effect count="60" name="DamOverTime" val="236" stackOrder="8" stackType="dot_attr" abnormal="flame"/>
+        </for>
+    </skill>
 </list>

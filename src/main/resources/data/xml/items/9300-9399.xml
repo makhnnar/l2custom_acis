@@ -18,7 +18,7 @@
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
         <!--<set name="item_skill" val="3630-1;3631-1;3700-10" />-->
-        <set name="item_skill" val="3630-1;3631-1" />
+        <set name="item_skill" val="3708-1;3709-1" />
         <for>
             <set stat="mAtk" val="361" />
             <set stat="pAtk" val="137" />
@@ -44,7 +44,7 @@
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
         <!--<set name="item_skill" val="3630-1;3631-1;3700-10" />-->
-        <set name="item_skill" val="3630-1;3631-1" />
+        <set name="item_skill" val="3704-1;3705-1" />
         <for>
             <set stat="pAtk" val="381" />
             <set stat="mAtk" val="117" />
@@ -70,7 +70,7 @@
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
         <!--<set name="item_skill" val="3630-1;3631-1;3700-10" />-->
-        <set name="item_skill" val="3630-1;3631-1" />
+        <set name="item_skill" val="3706-1;3707-1" />
         <for>
             <set stat="pAtk" val="300" />
             <set stat="mAtk" val="117" />
