@@ -96,12 +96,12 @@
         <set name="hitTime" val="10000" />
         <set name="isMagic" val="true" />
         <set name="skillType" val="CREATE_ITEM" />
-        <set name="reuseDelay" val="1200000"/>
+        <set name="reuseDelay" val="160000"/>
         <set name="operateType" val="ACTIVE"/>
-        <set name="itemConsumeId" val="1864"/><!-- stem -->
+        <set name="itemConsumeId" val="1872"/><!-- animal bone -->
         <set name="itemConsumeCount" val="1" />
-        <set name="create_item_id" val="17" /><!-- wooden arrow -->
-        <set name="create_item_count" val="100" />
+        <set name="create_item_id" val="9304" /><!-- cursed arrow -->
+        <set name="create_item_count" val="150" />
         <set name="random_count" val="300" />
     </skill>
     <skill id="3705" levels="1" name="Shot of Death">
@@ -193,5 +193,32 @@
             <effect name="SilenceMagicPhysical" time="60" val="0" stackOrder="1" stackType="silence_all" />
             <effect count="60" name="DamOverTime" val="236" stackOrder="8" stackType="dot_attr" abnormal="flame"/>
         </for>
+    </skill>
+    <skill id="3710" levels="10" name="Mana Drain" enchantLevels1="30" enchantLevels2="30" >
+        <table name="#enchantMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 82 83 83 83 84 84 85 85 85 </table>
+        <table name="#ench2MpConsume"> 80 79 78 77 76 75 74 72 71 70 69 68 66 65 64 63 62 61 65 59 58 56 55 54 53 52 50 49 48 47 </table>
+        <table name="#ench2mpInitialConsume"> 20 19 19 19 19 18 18 18 17 17 17 17 16 16 16 15 15 15 15 14 14 14 13 13 13 13 12 12 12 11 </table>
+        <table name="#mpConsume"> 48 58 71 74 80 82 87 88 97 98 </table>
+        <table name="#magicLvl"> 38 46 54 59 63 64 68 71 73 74 </table>
+        <table name="#power"> 49 58 68 78 84 89 94 99 105 108 </table>
+        <table name="#ench1Power"> 109 109 110 111 111 112 113 113 114 115 115 116 116 117 118 118 119 120 120 121 122 122 123 124 124 125 125 126 127 127 </table>
+        <set name="hpConsume" val="#mpConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="power" val="#power"/>
+        <set name="target" val="ONE"/>
+        <set name="element" val="DARK"/>
+        <set name="reuseDelay" val="12000"/>
+        <set name="hitTime" val="4000"/>
+        <set name="skillType" val="MANADRAIN"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="ACTIVE"/>
+        <set name="castRange" val="900"/>
+        <set name="effectRange" val="1400"/>
+        <set name="absorbPart" val="0.4" />
+        <enchant1 name="power" val="#ench1Power"/>
+        <enchant1 name="magicLvl" val="#enchantMagicLvl"/>
+        <enchant2 name="magicLvl" val="#enchantMagicLvl"/>
+        <enchant2 name="mpConsume" val="#ench2MpConsume"/>
+        <enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume"/>
     </skill>
 </list>

@@ -841,8 +841,9 @@ public abstract class Inventory extends ItemContainer
 		switch (bow.getCrystalType())
 		{
 			case NONE:
+				ItemInstance arrow = getItemByItemId(9304); //cursed arrows has preference
+				if(arrow!=null) return arrow;
 				return getItemByItemId(17); // Wooden arrow
-				
 			case D:
 				return getItemByItemId(1341); // Bone arrow
 				
