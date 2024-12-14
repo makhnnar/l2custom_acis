@@ -5,6 +5,10 @@ import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.skills.AbstractEffect;
 import net.sf.l2j.gameserver.skills.L2Skill;
 
+/**
+ * this skills will increase the damage that the effected gets while is moving it. If the user stops the movement won't take
+ * any damage
+ * **/
 public class EffectDamOverMove extends AbstractEffect {
 
     private int bonusDamage = 0;
