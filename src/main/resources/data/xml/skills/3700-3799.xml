@@ -179,7 +179,7 @@
         <set name="mpInitialConsume" val="14"/>
         <set name="mpConsume" val="300"/>
         <set name="magicLvl" val="77"/>
-        <set name="power" val="80"/>
+        <set name="power" val="111"/>
         <set name="target" val="ONE"/>
         <set name="reuseDelay" val="150000"/>
         <set name="hitTime" val="4000"/>
@@ -190,9 +190,22 @@
         <set name="operateType" val="ACTIVE"/>
         <set name="castRange" val="600"/>
         <set name="effectRange" val="1100"/>
+        <set name="killByDOT" val="true" />
         <for>
-            <effect name="SilenceMagicPhysical" time="60" val="0" stackOrder="1" stackType="silence_all" />
-            <effect count="60" name="DamOverTime" val="236" stackOrder="8" stackType="dot_attr" abnormal="flame"/>
+            <!--
+                the value time will affect the count value. Then, if time is define together with
+                count the count will be discounted each number of seconds defined on the time value
+                Ex:
+
+                time = 5
+                count = 15
+
+                it has to happen 5 seconds before to decrease the count value.
+
+                NOTE:if a skill is defined as killByDOT = true, the time value won't cancel the skill, only the count one
+                would do that
+            -->
+            <effect name="BurningSilence" count="60" val="136" stackOrder="8" stackType="silence_all" abnormal="flame"/>
         </for>
     </skill>
     <skill id="3710" levels="10" name="Mana Drain" enchantLevels1="30" enchantLevels2="30" >
@@ -219,5 +232,33 @@
         <enchant1 name="magicLvl" val="#enchantMagicLvl"/>
         <enchant2 name="magicLvl" val="#enchantMagicLvl"/>
         <enchant2 name="hpConsume" val="#ench2HpConsume"/>
+    </skill>
+    <skill id="3711" levels="10" name="Rupture"><!--it is like hammer crush id 260-->
+        <table name="#mpConsume"> 48 58 71 74 80 82 87 88 97 98 </table>
+        <table name="#magicLvl"> 38 46 54 59 63 64 68 71 73 74 </table>
+        <table name="#power"> 49 58 68 78 84 89 94 99 105 108 </table>
+        <set name="baseCritRate" val="15" />
+        <set name="mpInitialConsume" val="14"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="power" val="#power"/>
+        <set name="target" val="ONE"/>
+        <set name="reuseDelay" val="150000"/>
+        <set name="hitTime" val="4000"/>
+        <set name="skillType" val="PDAM" />
+        <set name="ignoreShld" val="true"/>
+        <set name="overHit" val="true"/>
+        <set name="SSBoost" val="2.0"/>
+        <set name="element" val="DARK"/>
+        <set name="isDebuff" val="true" />
+        <set name="castRange" val="40"/>
+        <set name="effectRange" val="400"/>
+        <set name="operateType" val="ACTIVE"/>
+        <set name="hitTime" val="1080"/>
+        <set name="coolTime" val="720" />
+        <set name="nextActionAttack" val="true" />
+        <for>
+            <effect count="60" name="DamOverMove" val="20" stackOrder="8" stackType="dot_attr" abnormal="flame"/>
+        </for>
     </skill>
 </list>

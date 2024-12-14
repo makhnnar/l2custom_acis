@@ -48,13 +48,6 @@ public class L2SkillManaDrain extends L2Skill
             if (activeChar != target && target.isInvul())
                 continue; // No effect on invulnerable chars unless they cast it themselves.
 
-            /*
-            definition from the normal drain
-            final boolean isCrit = Formulas.calcMCrit(activeChar, target, this);
-            final ShieldDefense sDef = Formulas.calcShldUse(activeChar, target, this, false);
-            final int damage = (int) Formulas.calcMagicDam(activeChar, target, this, sDef, sps, bsps, isCrit);
-            */
-
             final ShieldDefense sDef = Formulas.calcShldUse(activeChar, target, this, false);
             final int damage = (int) Formulas.calcManaDam(activeChar, target, this, sps, bsps);
 

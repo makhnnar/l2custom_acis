@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.pool.ThreadPool;
 
 import net.sf.l2j.gameserver.enums.skills.AbnormalEffect;
@@ -271,6 +272,9 @@ public abstract class AbstractEffect
 	
 	public final void scheduleEffect()
 	{
+		if(getEffected() instanceof Player) {
+			Config.LOGGER.info("scheduleEffect. skillName="+_skill.getName()+"_state="+_state+" _count="+_count);
+		}
 		switch (_state)
 		{
 			case CREATED:

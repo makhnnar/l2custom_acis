@@ -7,7 +7,7 @@ public enum EffectType
 	
 	BUFF,
 	DEBUFF,
-	
+	BURNING_SILENCE,
 	CANCEL,
 	
 	CANCEL_DEBUFF,
@@ -17,6 +17,7 @@ public enum EffectType
 	CHANCE_SKILL_TRIGGER,
 	INCREASE_CHARGES,
 	
+	DMG_OVER_MOVE,
 	DMG_OVER_TIME,
 	HEAL,
 	HEAL_OVER_TIME,
