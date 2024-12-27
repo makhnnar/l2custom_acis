@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="825" levels="1" name="Sharp Edge">
+		<set name="magicLvl" val="49" />
+		<set name="mpInitialConsume" val="16" />
+		<set name="mpConsume" val="28" />
+		<set name="target" val="ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="ACTIVE" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<for>
+			<effect name="Buff" time="14400" val="0" stackOrder="1"
+				stackType="ws_weapon">
+				<mul order="0x30" stat="pAtk" val="1.05">
+					<using kind="SWORD,BIGSWORD,DUALSWORD,DAGGER,POLE,DUALFIST" />
+				</mul>
+				<basemul order="0x30" stat="rCrit" val="0.2">
+					<using kind="SWORD,BIGSWORD,DUALSWORD,DAGGER,POLE,DUALFIST" />
+				</basemul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="826" levels="1" name="Spike">
+		<set name="magicLvl" val="49" />
+		<set name="mpInitialConsume" val="16" />
+		<set name="mpConsume" val="28" />
+		<set name="target" val="ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="ACTIVE" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<for>
+			<effect name="Buff" time="14400" val="0" stackOrder="1"
+				stackType="ws_weapon">
+				<mul order="0x30" stat="pAtk" val="1.05">
+					<using kind="BLUNT,BIGBLUNT" />
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="827" levels="1" name="Restring">
+		<set name="magicLvl" val="49" />
+		<set name="mpInitialConsume" val="16" />
+		<set name="mpConsume" val="28" />
+		<set name="target" val="ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="ACTIVE" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<for>
+			<effect name="Buff" time="14400" val="0" stackOrder="1"
+				stackType="ws_weapon">
+				<mul order="0x30" stat="pAtk" val="1.05">
+					<using kind="BOW" />
+				</mul>
+				<add order="0x40" stat="pAtkRange" val="100">
+					<using kind="BOW" />
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="828" levels="1" name="Case Harden">
+		<set name="magicLvl" val="46" />
+		<set name="mpInitialConsume" val="15" />
+		<set name="mpConsume" val="25" />
+		<set name="target" val="ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="ACTIVE" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<for>
+			<effect name="Buff" time="14400" val="0" stackOrder="1"
+				stackType="ws_armor">
+				<mul order="0x30" stat="pDef" val="1.1">
+					<and>
+						<using kind="HEAVY" />
+						<not>
+							<using kind="LIGHT,MAGIC" />
+						</not>
+					</and>
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="829" levels="1" name="Hard Tanning">
+		<set name="magicLvl" val="46" />
+		<set name="mpInitialConsume" val="15" />
+		<set name="mpConsume" val="25" />
+		<set name="target" val="ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="ACTIVE" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<for>
+			<effect name="Buff" time="14400" val="0" stackOrder="1"
+				stackType="ws_armor">
+				<mul order="0x30" stat="pDef" val="1.05">
+					<and>
+						<using kind="LIGHT" />
+						<not>
+							<using kind="HEAVY,MAGIC" />
+						</not>
+					</and>
+				</mul>
+				<add order="0x40" stat="rEvas" val="2">
+					<and>
+						<using kind="LIGHT" />
+						<not>
+							<using kind="HEAVY,MAGIC" />
+						</not>
+					</and>
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="830" levels="1" name="Embroider">
+		<set name="magicLvl" val="46" />
+		<set name="mpInitialConsume" val="15" />
+		<set name="mpConsume" val="25" />
+		<set name="target" val="ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="ACTIVE" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="400" />
+		<for>
+			<effect name="Buff" time="14400" val="0" stackOrder="1"
+				stackType="ws_armor">
+				<mul order="0x30" stat="pDef" val="1.05">
+					<and>
+						<using kind="MAGIC" />
+						<not>
+							<using kind="HEAVY,LIGHT" />
+						</not>
+					</and>
+				</mul>
+				<add order="0x40" stat="regMp" val="2">
+					<and>
+						<using kind="MAGIC" />
+						<not>
+							<using kind="HEAVY,LIGHT" />
+						</not>
+					</and>
+				</add>
+			</effect>
+		</for>
+	</skill>
+</list>

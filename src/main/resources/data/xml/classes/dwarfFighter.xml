@@ -622,6 +622,18 @@
 			<skill id="424" lvl="3" cost="2000000" minLvl="74"/>
 			<!-- Summon Swoop Cannon -->
 			<skill id="448" lvl="1" cost="3300000" minLvl="68"/>
+			<!-- Sharp Edge -->
+			<skill id="825" lvl="1" cost="61000" minLvl="49"/>
+			<!-- Spike -->
+			<skill id="826" lvl="1" cost="61000" minLvl="49"/>
+			<!-- Restring -->
+			<skill id="827" lvl="1" cost="61000" minLvl="49"/>
+			<!-- Case Harden -->
+			<skill id="828" lvl="1" cost="46000" minLvl="46"/>
+			<!-- Hard Tanning -->
+			<skill id="829" lvl="1" cost="46000" minLvl="46"/>
+			<!-- Embroider -->
+			<skill id="830" lvl="1" cost="46000" minLvl="46"/>
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>

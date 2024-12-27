@@ -1159,7 +1159,7 @@
 	<skill id="76" levels="1" name="Bear Spirit Totem">
 		<set name="magicLvl" val="28" />
 		<set name="mpConsume" val="13" />
-		<set name="target" val="SELF" />
+		<set name="target" val="PARTY" />
 		<set name="reuseDelay" val="90000" />
 		<set name="hitTime" val="2000" />
 		<set name="skillType" val="BUFF" />
@@ -1282,7 +1282,7 @@
 	<skill id="83" levels="1" name="Wolf Spirit Totem">
 		<set name="magicLvl" val="20" />
 		<set name="mpConsume" val="10"/>
-		<set name="target" val="SELF"/>
+		<set name="target" val="PARTY"/>
 		<set name="reuseDelay" val="90000"/>
 		<set name="hitTime" val="2000"/>
 		<set name="skillType" val="BUFF"/>
