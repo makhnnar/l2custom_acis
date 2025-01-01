@@ -39,6 +39,7 @@ public class EffectTemplate
 	 * the related buffs.
 	 */
 	private final String _stackType;
+	private final String _playerState;
 	private final float _stackOrder;
 	
 	private final boolean _showIcon;
@@ -49,9 +50,24 @@ public class EffectTemplate
 	private final int _triggeredId;
 	private final int _triggeredLevel;
 	private final ChanceCondition _chanceCondition;
-	
-	public EffectTemplate(Condition attachCond, String funcName, double value, int counter, int period, AbnormalEffect abnormalEffect, String stackType, float stackOrder, boolean showIcon, double effectPower, SkillType effectType, int triggeredId, int triggeredLevel, ChanceCondition chanceCondition)
-	{
+
+	public EffectTemplate(
+			Condition attachCond,
+			String funcName,
+			double value,
+			int counter,
+			int period,
+			AbnormalEffect abnormalEffect,
+			String stackType,
+			float stackOrder,
+			String playerState,
+			boolean showIcon,
+			double effectPower,
+			SkillType effectType,
+			int triggeredId,
+			int triggeredLevel,
+			ChanceCondition chanceCondition
+	) {
 		_attachCond = attachCond;
 		
 		_value = value;
@@ -62,6 +78,7 @@ public class EffectTemplate
 		
 		_stackType = stackType;
 		_stackOrder = stackOrder;
+		_playerState = playerState;
 		
 		_showIcon = showIcon;
 		
@@ -197,5 +214,9 @@ public class EffectTemplate
 	public boolean isSameStackTypeAndOrderThan(EffectTemplate template)
 	{
 		return _stackOrder == template.getStackOrder() && _stackType.equals(template.getStackType());
+	}
+
+	public String getPlayerState() {
+		return _playerState;
 	}
 }

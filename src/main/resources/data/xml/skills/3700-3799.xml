@@ -225,8 +225,8 @@
         <set name="skillType" val="MANADRAIN"/>
         <set name="isMagic" val="true"/>
         <set name="operateType" val="ACTIVE"/>
-        <set name="castRange" val="900"/>
-        <set name="effectRange" val="1400"/>
+        <set name="castRange" val="600"/>
+        <set name="effectRange" val="1000"/>
         <set name="absorbPart" val="0.4" />
         <enchant1 name="power" val="#ench1Power"/>
         <enchant1 name="magicLvl" val="#enchantMagicLvl"/>
@@ -258,7 +258,7 @@
         <set name="coolTime" val="720" />
         <set name="nextActionAttack" val="true" />
         <for>
-            <effect count="60" name="DamOverMove" val="20" stackOrder="8" stackType="dot_attr" abnormal="flame"/>
+            <effect count="60" name="DamOverTimeIncreases" val="200" stackOrder="8" stackType="dot_attr" abnormal="flame" player_state="moving"/>
         </for>
     </skill>
     <skill id="3712" levels="1" name="Fury of madness">
@@ -270,6 +270,39 @@
             <effect count="0x7fffffff" name="BurningSilence" val="33">
                 <mul stat="pAtkSpd" val="1.65"/>
                 <mul stat="pAtk" val="2"/>
+                <mul stat="pDef" val="0.5"/>
+                <mul stat="mDef" val="0.5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="3713" levels="9" name="Hammer of God">
+        <table name="#magicLvl"> 40 44 48 52 56 60 64 68 72 </table>
+        <set name="mpConsume" val="120"/>
+        <set name="isDebuff" val="true" />
+        <set name="isMagic" val="true" />
+        <set name="lvlDepend" val="1" />
+        <set name="magicLvl" val="#magicLvl" />
+        <set name="operateType" val="ACTIVE" />
+        <set name="power" val="80" />
+        <set name="skillType" val="STUN" />
+        <set name="target" val="ONE" />
+        <set name="hitTime" val="12000"/>
+        <set name="reuseDelay" val="90000"/>
+        <set name="castRange" val="600"/>
+        <set name="effectRange" val="1000"/>
+        <for>
+            <effect name="Stun" time="3" val="0" stackOrder="1" stackType="stun" />
+        </for>
+    </skill>
+    <skill id="3714" levels="1" name="Dark Magic">
+        <set name="hpConsume" val="300"/>
+        <set name="target" val="SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="DamOverTimeIncreases" val="33" player_state="casting" abnormal="flame">
+                <mul stat="mAtkSpd" val="1.65"/>
+                <mul stat="mAtk" val="2"/>
                 <mul stat="pDef" val="0.5"/>
                 <mul stat="mDef" val="0.5"/>
             </effect>

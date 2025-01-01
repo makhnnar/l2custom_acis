@@ -5,6 +5,7 @@ public enum PlayerState
 	RESTING,
 	MOVING,
 	RUNNING,
+	CASTING,
 	RIDING,
 	FLYING,
 	BEHIND,

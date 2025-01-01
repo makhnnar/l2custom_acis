@@ -205,6 +205,10 @@ abstract class DocumentBase
 		
 		if (attrs.getNamedItem("time") != null)
 			time = Integer.decode(getValue(attrs.getNamedItem("time").getNodeValue(), template));
+
+		String playerState = null;
+		if (attrs.getNamedItem("player_state") != null)
+			playerState = attrs.getNamedItem("player_state").getNodeValue();
 		
 		boolean self = false;
 		if (attrs.getNamedItem("self") != null)
@@ -289,7 +293,7 @@ abstract class DocumentBase
 		if (chance == null && isChanceSkillTrigger)
 			throw new NoSuchElementException("Invalid chance condition: " + chanceCond + " " + activationChance);
 		
-		lt = new EffectTemplate(attachCond, name, value, count, time, abnormal, stackType, stackOrder, icon, effectPower, type, trigId, trigLvl, chance);
+		lt = new EffectTemplate(attachCond, name, value, count, time, abnormal, stackType, stackOrder, playerState, icon, effectPower, type, trigId, trigLvl, chance);
 		
 		parseTemplate(n, lt);
 		if (template instanceof L2Skill)
@@ -416,6 +420,11 @@ abstract class DocumentBase
 			{
 				boolean val = Boolean.valueOf(a.getNodeValue());
 				cond = joinAnd(cond, new ConditionPlayerState(PlayerState.RUNNING, val));
+			}
+			else if ("casting".equalsIgnoreCase(a.getNodeName()))
+			{
+				boolean val = Boolean.valueOf(a.getNodeValue());
+				cond = joinAnd(cond, new ConditionPlayerState(PlayerState.CASTING, val));
 			}
 			else if ("behind".equalsIgnoreCase(a.getNodeName()))
 			{

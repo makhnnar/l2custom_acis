@@ -5,15 +5,17 @@ import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.skills.AbstractEffect;
 import net.sf.l2j.gameserver.skills.L2Skill;
 
+import java.util.Objects;
+
 /**
  * this skills will increase the damage that the effected gets while is moving it. If the user stops the movement won't take
  * any damage
  * **/
-public class EffectDamOverMove extends AbstractEffect {
+public class EffectDamOverTimeIncreases extends AbstractEffect {
 
-    private int bonusDamage = 0;
+    private double damage = 0;
 
-    public EffectDamOverMove(EffectTemplate template, L2Skill skill, Creature effected, Creature effector) {
+    public EffectDamOverTimeIncreases(EffectTemplate template, L2Skill skill, Creature effected, Creature effector) {
         super(template, skill, effected, effector);
     }
 
@@ -27,12 +29,13 @@ public class EffectDamOverMove extends AbstractEffect {
         if (getEffected().isDead())
             return false;
 
-        if(!getEffected().isMoving())
+        if(Objects.equals(getTemplate().getPlayerState().toLowerCase(), "moving") && !getEffected().isMoving())
             return true;
 
-        bonusDamage += 20;
+        if(Objects.equals(getTemplate().getPlayerState().toLowerCase(), "casting") && !getEffected().getCast().isCastingNow())
+            return true;
 
-        double damage = getTemplate().getValue() + bonusDamage;
+        damage += getTemplate().getValue();
 
         if (damage >= getEffected().getStatus().getHp()) {
             // For DOT skills that will not kill effected player.

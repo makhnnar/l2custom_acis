@@ -21,7 +21,6 @@ public class ConditionPlayerState extends Condition
 	public boolean testImpl(Creature effector, Creature effected, L2Skill skill, Item item)
 	{
 		final Player player = (effector instanceof Player) ? (Player) effector : null;
-		
 		switch (_check)
 		{
 			case RESTING:
@@ -32,6 +31,9 @@ public class ConditionPlayerState extends Condition
 			
 			case RUNNING:
 				return effector.isMoving() == _required && effector.isRunning() == _required;
+
+			case CASTING:
+				return effector.getCast().isCastingNow() == _required;
 			
 			case RIDING:
 				return effector.isRiding() == _required;
