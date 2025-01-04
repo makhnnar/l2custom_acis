@@ -84,7 +84,7 @@
 		<set name="operateType" val="ACTIVE"/> 
 		<set name="mpConsume" val="180"/> 
 		<set name="hitTime" val="15000"/> 
-		<set name="reuseDelay" val="450000"/> 
+		<set name="reuseDelay" val="1200000"/>
 		<set name="castRange" val="-2"/> 
 		<set name="effectRange" val="-2"/> 
 		<set name="isMagic" val="true"/> 

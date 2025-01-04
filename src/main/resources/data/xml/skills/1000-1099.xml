@@ -417,20 +417,25 @@
 		<set name="aggroPoints" val="#aggro"/>
 	</skill>
 	<skill id="1016" levels="9" name="Resurrection">
-		<table name="#mpInitialConsume"> 12 18 25 31 36 39 42 46 48 </table>
+		<table name="#mpInitialConsume"> 24 36 50 61 72 78 84 92 96 </table>
 		<table name="#mpConsume"> 47 70 97 121 144 156 165 182 191 </table>
 		<table name="#power"> 0 20 30 40 50 55 60 65 70 </table>
-		<table name="#aggro"> 121 196 290 374 460 502 542 595 624 </table>
+		<!-- the aggro points are inverted-->
+		<table name="#aggro"> 624 595 542 502 460 374 290 196 121 </table>
+		<!-- create a reuseDaley for each level -->
+		<table name="#reuseDelay"> 900000 850000 750000 700000 650000 600000 550000 500000 450000 </table>
+		<!-- create a castRange for each level starting from 200 up to 600 with a step of 50 -->
+		<table name="#castRange"> 200 250 300 350 400 450 500 550 600 </table>
 		<set name="mpInitialConsume" val="#mpInitialConsume"/>
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="power" val="#power"/>
 		<set name="target" val="CORPSE_PLAYER"/>
-		<set name="reuseDelay" val="120000"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
 		<set name="hitTime" val="6000"/>
 		<set name="skillType" val="RESURRECT"/>
 		<set name="isMagic" val="true"/>
 		<set name="operateType" val="ACTIVE"/>
-		<set name="castRange" val="400"/>
+		<set name="castRange" val="#castRange"/>
 		<set name="effectRange" val="900"/>
 		<set name="aggroPoints" val="#aggro"/>
 	</skill>
@@ -965,13 +970,13 @@
 		</for>
 	</skill>
 	<skill id="1050" levels="2" name="Return">
-		<table name="#mpInitialConsume"> 21 31 </table>
+		<table name="#mpInitialConsume"> 100 150 </table>
 		<table name="#mpConsume"> 84 122 </table>
 		<table name="#hitTime"> 20000 1500 </table>
 		<set name="mpInitialConsume" val="#mpInitialConsume"/>
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="target" val="SELF"/>
-		<set name="reuseDelay" val="300000"/>
+		<set name="reuseDelay" val="900000"/>
 		<set name="hitTime" val="#hitTime"/>
 		<set name="skillType" val="RECALL"/>
 		<set name="isMagic" val="true"/>

@@ -1312,16 +1312,20 @@
 		</enchant1for>
 	</skill>
 	<skill id="1254" levels="6" name="Mass Resurrection">
-		<table name="#aggro"> 290 331 417 460 481 578 </table>
-		<table name="#mpInitialConsume"> 49 54 66 72 76 89 </table>
+		<!-- the aggropoints are inverted from the original-->
+		<table name="#aggro"> 578 460 417 331 290 481 </table>
+		<!-- the mp initial consume is the double of the original -->
+		<table name="#mpInitialConsume"> 97 108 132 144 152 178 </table>
 		<table name="#mpConsume"> 194 214 261 288 301 353 </table>
 		<table name="#power"> 0 20 30 40 50 55 </table>
+		<!-- create a table for reuse delay starting at 1200000 and decreasing 50000 for each level -->
+		<table name="#reuseDelay"> 1200000 1150000 1100000 1050000 1000000 950000 </table>
 		<set name="mpInitialConsume" val="#mpInitialConsume"/>
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="power" val="#power"/>
 		<set name="target" val="CORPSE_ALLY"/>
 		<set name="skillRadius" val="600"/>
-		<set name="reuseDelay" val="600000"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
 		<set name="hitTime" val="10000"/>
 		<set name="skillType" val="RESURRECT"/>
 		<set name="isMagic" val="true"/>
@@ -1329,14 +1333,14 @@
 		<set name="aggroPoints" val="#aggro"/>
 	</skill>
 	<skill id="1255" levels="2" name="Party Recall">
-		<table name="#mpInitialConsume"> 52 61 </table>
+		<table name="#mpInitialConsume"> 200 300 </table>
 		<table name="#mpConsume"> 205 244 </table>
 		<table name="#hitTime"> 20000 3500 </table>
 		<set name="mpInitialConsume" val="#mpInitialConsume"/>
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="target" val="PARTY"/>
 		<set name="skillRadius" val="1000"/>
-		<set name="reuseDelay" val="600000"/>
+		<set name="reuseDelay" val="1200000"/>
 		<set name="hitTime" val="#hitTime"/>
 		<set name="skillType" val="RECALL"/>
 		<set name="isMagic" val="true"/>
