@@ -1,29 +1,35 @@
-# l2custom_acis
+# reimagined-world-of-aden
 
-It is a copy from https://gitlab.com/Tryskell/acis_public in version 382.
+Thi project starts as a fork of the l2acis interlude emulator in the version 382 and don't pretend to be an image of the same. To know more about please visit: https://gitlab.com/Tryskell/acis_public.
 
-It has some custom modifications for custom and fun servers.
+It has a lot of modifications for custom and fun servers, trying to change the original game experience.
 
-Current modifications:
+Some of those modifications are:
 
  - Enable/Disable attack from mounts with equipped weapon
  - Enable/Disable grade penalty
  - Migrated from ant build scripting to gradle
  - Basic API to modify on Air some server values
-
-Future modifications:
-
- *Game modifications*
-
- - build new skill tress for every class, and merge some classes.
- - add and modify some skills
- - Modify base quests and created new ones
+ - Damage over time effect that can be applied to movement or casting user actions
+ - Modified skill tress for every class like:
+   - Summoners
+   - Archers
+   - Healers
+   - Drawfs
+   - Dual warriors
+   - Single words warriors
+   - Orc warriors
+ - A set of new and unique skills
+ - Modify some base quests
+ - Created new ones like:
+   - Researchers of the forbidden knowledge
+   - Researches of Cruma Tower
+   - Researches of the Giants Cave
+   - Researches of the Tower of Insolence
 
  *Develop modifications*
 
- - Migration all code to kotlin.
- - Include some Injection Dependecy framework
- - Include unit testing for new features development
+ - Gradle build system
 
  *Server modifications*
 
@@ -33,3 +39,16 @@ Future modifications:
  
  - Run the build gradle command
  - Run the task copyDependenciesToLibFolder
+
+*How to add an special ability to an item*
+
+- For server side
+  - create a skill on the skill xml files with the special ability
+  - create a new item on the item xml files with the skill id of the special ability
+  - add the item to the item list of the npc that will sell it
+
+*How to add an armor set to the game*
+
+- For server side
+  - create a skill on the skill xml files with the armor set skill
+  - create a new row on the armorSets xml file with the armor set skill id attached to the armor set
