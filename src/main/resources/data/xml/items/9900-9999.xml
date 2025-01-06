@@ -1,6 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
     <item id="9953" type="Weapon" name="Antharas Dual Blade">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -13,6 +24,17 @@
     </item>
 
     <item id="9954" type="Weapon" name="Unknow Antharas Dual Blade">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -25,6 +47,17 @@
     </item>
 
     <item id="9955" type="Weapon" name="Antharas Avenger">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -39,6 +72,17 @@
     </item>
 
     <item id="9956" type="Weapon" name="Antharas Buster">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -53,6 +97,17 @@
     </item>
 
     <item id="9957" type="Weapon" name="Antharas Cutter">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -68,6 +123,17 @@
     </item>
 
     <item id="9958" type="Weapon" name="Anthares Fighter">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -82,6 +148,17 @@
     </item>
 
     <item id="9959" type="Weapon" name="Antharas Shaper">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -95,6 +172,17 @@
     </item>
 
     <item id="9960" type="Weapon" name="Antharas Slasher">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -108,6 +196,17 @@
     </item>
 
     <item id="9961" type="Weapon" name="Antharas Stormer">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="696" />
             <set order="0x08" stat="mAtk" val="576" />
@@ -121,6 +220,17 @@
     </item>
 
     <item id="9962" type="Weapon" name="Antharas Thrower">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="1024" />
             <set order="0x08" stat="mAtk" val="576" />

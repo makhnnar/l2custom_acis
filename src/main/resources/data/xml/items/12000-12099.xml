@@ -1,6 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
     <item id='12000' type="Armor" name="Titanium Earring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rear;lear" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="207" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="2590000" />
         <for>
             <add val='71'  stat='mDef'/>
             <add val='61' order='0x60' stat='maxMp'/>
@@ -14,6 +21,13 @@
     </item>
 
     <item id='12001' type="Armor" name="Titanium Ring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rfinger;lfinger" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="138" />
+        <set name="material" val="GOLD" />
+        <set name="weight" val="150" />
+        <set name="price" val="1730000" />
         <for>
             <add val='48'  stat='mDef'/>
             <add val='61' order='0x60' stat='maxMp'/>
@@ -27,6 +41,13 @@
     </item>
 
     <item id='12002' type="Armor" name="Titanium Necklace">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="neck" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="276" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="3450000" />
         <for>
             <add val='95'  stat='mDef'/>
             <add val='61' order='0x60' stat='maxMp'/>
@@ -55,6 +76,13 @@
         </for>
     </item>
     <item id='12003' type="Armor" name="Titanium Earring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rear;lear" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="207" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="2590000" />
         <for>
             <add val='74'  stat='mDef'/>
             <add val='71' order='0x60' stat='maxMp'/>
@@ -68,6 +96,13 @@
     </item>
 
     <item id='12004' type="Armor" name="Titanium Ring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rfinger;lfinger" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="138" />
+        <set name="material" val="GOLD" />
+        <set name="weight" val="150" />
+        <set name="price" val="1730000" />
         <for>
             <add val='51'  stat='mDef'/>
             <add val='71' order='0x60' stat='maxMp'/>
@@ -81,6 +116,13 @@
     </item>
 
     <item id='12005' type="Armor" name="Titanium Necklace">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="neck" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="276" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="3450000" />
         <for>
             <add val='98'  stat='mDef'/>
             <add val='71' order='0x60' stat='maxMp'/>
@@ -103,6 +145,13 @@
         </for>
     </item>
     <item id='12006' type="Armor" name="Titanium Earring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rear;lear" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="207" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="2590000" />
         <for>
             <add val='77'  stat='mDef'/>
             <add val='81' order='0x60' stat='maxMp'/>
@@ -116,6 +165,13 @@
     </item>
 
     <item id='12007' type="Armor" name="Titanium Ring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rfinger;lfinger" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="138" />
+        <set name="material" val="GOLD" />
+        <set name="weight" val="150" />
+        <set name="price" val="1730000" />
         <for>
             <add val='54'  stat='mDef'/>
             <add val='81' order='0x60' stat='maxMp'/>
@@ -129,6 +185,13 @@
     </item>
 
     <item id='12008' type="Armor" name="Titanium Necklace">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="neck" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="276" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="3450000" />
         <for>
             <add val='101'  stat='mDef'/>
             <add val='101'  stat='pDef'/>
@@ -149,6 +212,13 @@
         </for>
     </item>
     <item id='12009' type="Armor" name="Titanium Earring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rear;lear" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="207" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="2590000" />
         <for>
             <add val='80'  stat='mDef'/>
             <add val='91' order='0x60' stat='maxMp'/>
@@ -162,6 +232,13 @@
     </item>
 
     <item id='12010' type="Armor" name="Titanium Ring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rfinger;lfinger" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="138" />
+        <set name="material" val="GOLD" />
+        <set name="weight" val="150" />
+        <set name="price" val="1730000" />
         <for>
             <add val='57'  stat='mDef'/>
             <add val='91' order='0x60' stat='maxMp'/>
@@ -175,6 +252,13 @@
     </item>
 
     <item id='12011' type="Armor" name="Titanium Necklace">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="neck" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="276" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="3450000" />
         <for>
             <add val='104'  stat='mDef'/>
             <add val='91' order='0x60' stat='maxMp'/>
@@ -197,6 +281,13 @@
         </for>
     </item>
     <item id='12012' type="Armor" name="Titanium Earring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rear;lear" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="207" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="2590000" />
         <for>
             <add val='83'  stat='mDef'/>
             <add val='101' order='0x60' stat='maxMp'/>
@@ -210,6 +301,13 @@
     </item>
 
     <item id='12013' type="Armor" name="Titanium Ring">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="rfinger;lfinger" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="138" />
+        <set name="material" val="GOLD" />
+        <set name="weight" val="150" />
+        <set name="price" val="1730000" />
         <for>
             <add val='60'  stat='mDef'/>
             <add val='101' order='0x60' stat='maxMp'/>
@@ -223,6 +321,13 @@
     </item>
 
     <item id='12014' type="Armor" name="Titanium Necklace">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="neck" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="276" />
+        <set name="material" val="SILVER" />
+        <set name="weight" val="150" />
+        <set name="price" val="3450000" />
         <for>
             <add val='107'  stat='mDef'/>
             <add val='101' order='0x60' stat='maxMp'/>

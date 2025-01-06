@@ -1,6 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
     <item id="9717" type="Weapon" name="Scarlet Hammer">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="1089" />
             <set order="0x08" stat="mAtk" val="352" />
@@ -11,6 +22,17 @@
         </for>
     </item>
     <item id="9718" type="Weapon" name="Scarlet Magic Sword">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="SWORD" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="10" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="STEEL" />
+        <set name="weight" val="1600" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="500" />
             <set order="0x08" stat="mAtk" val="1112" />
@@ -22,6 +44,17 @@
         </for>
     </item>
     <item id="9719" type="Weapon" name="Scarlet Blade">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="SWORD" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="10" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="STEEL" />
+        <set name="weight" val="1600" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="1089" />
             <set order="0x08" stat="mAtk" val="552" />
@@ -43,6 +76,17 @@
         </for>
     </item>
     <item id="9721" type="Weapon" name="Scarlet Dagger">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="DAGGER" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="STEEL" />
+        <set name="weight" val="1160" />
+        <set name="price" val="138" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="1089" />
             <set order="0x08" stat="mAtk" val="352" />
@@ -65,6 +109,18 @@
         </for>
     </item>
     <item id="9723" type="Weapon" name="Scarlet Spear">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="POLE" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="10" />
+        <set name="attack_range" val="80" />
+        <set name="damage_range" val="0;0;66;120" />
+        <set name="material" val="STEEL" />
+        <set name="weight" val="2140" />
+        <set name="price" val="136000" />
+        <set name="soulshots" val="2" />
+        <set name="spiritshots" val="2" />
+        <set name="item_skill" val="3599-1" />
         <for>
             <set order="0x08" stat="pAtk" val="1098" />
             <set order="0x08" stat="mAtk" val="352" />
@@ -75,6 +131,19 @@
         </for>
     </item>
     <item id="9724" type="Weapon" name="Scarlet Bow">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BOW" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="500" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1950" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <set name="mp_consume" val="1" />
+        <set name="reuse_delay" val="1500" />
         <for>
             <set order="0x08" stat="pAtk" val="1548" />
             <set order="0x08" stat="mAtk" val="352" />
@@ -108,6 +177,7 @@
         </for>
     </item>
     <item id="9727" type="Weapon" name="Unknown Scarlet">
+        <set name="default_action" val="equip" />
         <for>
             <set order="0x08" stat="pAtk" val="500" />
             <set order="0x08" stat="mAtk" val="1112" />
@@ -120,6 +190,11 @@
         </for>
     </item>
     <item id="9728" type="Weapon" name="Scarlet Shield">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="lhand" />
+        <set name="material" val="LEATHER" />
+        <set name="weight" val="1430" />
+        <set name="price" val="39" />
         <for>
             <sub val='26' order='0x10' stat='rEvas'/>
             <mul val="0.5" order="0x40" stat="pDef" />
