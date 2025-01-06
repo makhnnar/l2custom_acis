@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/0400-0499.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/0400-0499.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9200-9299.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9200-9299.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0600-0699.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0600-0699.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0800-0899.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0800-0899.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/7100-7199.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/7100-7199.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/html/admin/gmshop/Armors.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/html/admin/gmshop/Armors.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/html/admin/gmshop/Jewels.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/html/admin/gmshop/Jewels.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/html/admin/gmshop/Weapons.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/html/admin/gmshop/Weapons.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/buyLists.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/buyLists.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/0700-0799.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/0700-0799.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9700-9799.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9700-9799.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

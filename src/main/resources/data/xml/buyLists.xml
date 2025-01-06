@@ -390,8 +390,6 @@
 		<product id="734" price="1380"/>
 		<product id="735" price="2760"/>
 		<product id="6035" price="2760"/>
-		<product id="736" price="460"/>
-		<product id="737" price="2300"/>
 		<product id="3031" price="460"/>
 		<product id="1785" price="288"/>
 		<product id="5589" price="115"/>
@@ -567,8 +565,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="144"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="3031" price="480"/>
 		<product id="1785" price="300"/>
@@ -619,8 +615,6 @@
 		<product id="735" price="3120"/>
 		<product id="6035" price="3120"/>
 		<product id="6037" price="130"/>
-		<product id="736" price="520"/>
-		<product id="737" price="2600"/>
 		<product id="1829" price="650"/>
 		<product id="1830" price="650"/>
 		<product id="5589" price="130"/>
@@ -663,8 +657,6 @@
 		<product id="735" price="3600"/>
 		<product id="6035" price="3600"/>
 		<product id="6037" price="180"/>
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
 		<product id="1829" price="750"/>
 		<product id="3031" price="600"/>
 		<product id="1785" price="375"/>
@@ -715,8 +707,6 @@
 		<product id="735" price="2640"/>
 		<product id="6035" price="2640"/>
 		<product id="6037" price="132"/>
-		<product id="736" price="440"/>
-		<product id="737" price="2200"/>
 		<product id="1829" price="550"/>
 		<product id="1830" price="550"/>
 		<product id="3031" price="440"/>
@@ -1144,8 +1134,6 @@
 		<product id="734" price="1380"/>
 		<product id="735" price="2760"/>
 		<product id="6035" price="2760"/>
-		<product id="736" price="460"/>
-		<product id="737" price="2300"/>
 		<product id="3031" price="460"/>
 		<product id="1785" price="288"/>
 		<product id="5589" price="115"/>
@@ -1310,8 +1298,6 @@
 		<product id="734" price="1380"/>
 		<product id="735" price="2760"/>
 		<product id="6035" price="2760"/>
-		<product id="736" price="460"/>
-		<product id="737" price="2300"/>
 		<product id="3031" price="460"/>
 		<product id="1785" price="288"/>
 		<product id="5589" price="115"/>
@@ -1653,8 +1639,6 @@
 		<product id="735" price="2760"/>
 		<product id="6035" price="2760"/>
 		<product id="6037" price="138"/>
-		<product id="736" price="460"/>
-		<product id="737" price="2300"/>
 		<product id="1829" price="575"/>
 		<product id="3031" price="460"/>
 		<product id="1785" price="287"/>
@@ -2023,8 +2007,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="144"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="3031" price="480"/>
 		<product id="1785" price="300"/>
@@ -2086,8 +2068,8 @@
 		<product id="735" price="3120"/>
 		<product id="6035" price="3120"/>
 		<product id="6037" price="156"/>
-		<product id="736" price="520"/>
-		<product id="737" price="2600"/>
+		<product id="736" price="1500000"/>
+		<product id="737" price="15000000"/>
 		<product id="1829" price="650"/>
 		<product id="3031" price="520"/>
 		<product id="1785" price="325"/>
@@ -2230,8 +2212,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="144"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="3031" price="480"/>
 		<product id="1785" price="300"/>
@@ -2336,8 +2316,8 @@
 		<product id="735" price="3960"/>
 		<product id="6035" price="3960"/>
 		<product id="6037" price="165"/>
-		<product id="736" price="660"/>
-		<product id="737" price="3300"/>
+		<product id="736" price="1500000"/>
+		<product id="737" price="15000000"/>
 		<product id="1829" price="825"/>
 		<product id="3031" price="660"/>
 		<product id="1785" price="412"/>
@@ -2388,8 +2368,6 @@
 		<product id="735" price="3600"/>
 		<product id="6035" price="3600"/>
 		<product id="6037" price="150"/>
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
 		<product id="1829" price="750"/>
 		<product id="3031" price="600"/>
 		<product id="1785" price="375"/>
@@ -2440,8 +2418,6 @@
 		<product id="735" price="3600"/>
 		<product id="6035" price="3600"/>
 		<product id="6037" price="150"/>
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
 		<product id="1829" price="750"/>
 		<product id="1830" price="750"/>
 		<product id="5589" price="150"/>
@@ -2475,8 +2451,6 @@
 		<product id="735" price="3600"/>
 		<product id="6035" price="3600"/>
 		<product id="6037" price="150"/>
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
 		<product id="1829" price="750"/>
 		<product id="3031" price="600"/>
 		<product id="1785" price="375"/>
@@ -2634,8 +2608,6 @@
 		<product id="734" price="1380"/>
 		<product id="735" price="2760"/>
 		<product id="6035" price="2760"/>
-		<product id="736" price="460"/>
-		<product id="737" price="2300"/>
 		<product id="3031" price="460"/>
 		<product id="1785" price="288"/>
 		<product id="5589" price="115"/>
@@ -2793,8 +2765,6 @@
 		<product id="734" price="1380"/>
 		<product id="735" price="2760"/>
 		<product id="6035" price="2760"/>
-		<product id="736" price="460"/>
-		<product id="737" price="2300"/>
 		<product id="3031" price="460"/>
 		<product id="1785" price="288"/>
 		<product id="5589" price="115"/>
@@ -3346,8 +3316,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="144"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="1830" price="600"/>
 		<product id="3031" price="480"/>
@@ -4194,8 +4162,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="144"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="1830" price="600"/>
 		<product id="3031" price="480"/>
@@ -5063,8 +5029,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="144"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="1830" price="600"/>
 		<product id="3031" price="480"/>
@@ -5307,8 +5271,8 @@
 		<product id="735" price="3600"/>
 		<product id="6035" price="3600"/>
 		<product id="6037" price="150"/>
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
+		<product id="736" price="1500000"/>
+		<product id="737" price="15000000"/>
 		<product id="1829" price="750"/>
 		<product id="3031" price="600"/>
 		<product id="1785" price="375"/>
@@ -6688,8 +6652,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="144"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="1830" price="600"/>
 		<product id="3031" price="480"/>
@@ -8630,8 +8592,8 @@
 		<product id="3038" price="2015"/>
 	</buyList>
 	<buyList id="381" npcId="32105">
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
+		<product id="736" price="1500000"/>
+		<product id="737" price="15000000"/>
 		<product id="734" price="1800"/>
 		<product id="735" price="3600"/>
 		<product id="1831" price="112"/>
@@ -8665,8 +8627,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="120"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="1830" price="600"/>
 		<product id="5589" price="120"/>
@@ -8710,8 +8670,6 @@
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
 		<product id="6037" price="120"/>
-		<product id="736" price="480"/>
-		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="1830" price="600"/>
 		<product id="5589" price="120"/>
@@ -9393,8 +9351,8 @@
 		<product id="8202" price="6000"/>
 	</buyList>
 	<buyList id="423" npcId="32105">
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
+		<product id="736" price="1500000"/>
+		<product id="737" price="15000000"/>
 		<product id="734" price="1800"/>
 		<product id="735" price="3600"/>
 		<product id="1831" price="112"/>
@@ -10039,6 +9997,14 @@
 		<product id="495"/>
 		<product id="496"/>
 		<product id="2410"/>
+		<product id="10001"/>
+		<product id="10002"/>
+		<product id="10003"/>
+		<product id="10004"/>
+		<product id="10005"/>
+		<product id="10006"/>
+		<product id="10007"/>
+		<product id="10008"/>
 	</buyList>
 	<buyList id="1012" npcId="-1">
 		<product id="2506"/>
@@ -10779,8 +10745,6 @@
 		<product id="734" price="1440"/>
 		<product id="735" price="2880"/>
 		<product id="6035" price="2880"/>
-		<product id="6037" price="144"/>
-		<product id="736" price="480"/>
 		<product id="737" price="2400"/>
 		<product id="1829" price="600"/>
 		<product id="1830" price="600"/>
@@ -11528,8 +11492,8 @@
 		<product id="735" price="3600"/>
 		<product id="6035" price="3600"/>
 		<product id="6037" price="150"/>
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
+		<product id="736" price="1500000"/>
+		<product id="737" price="15000000"/>
 		<product id="1829" price="750"/>
 		<product id="3031" price="600"/>
 		<product id="1785" price="375"/>
@@ -11580,8 +11544,8 @@
 		<product id="735" price="3600"/>
 		<product id="6035" price="3600"/>
 		<product id="6037" price="150"/>
-		<product id="736" price="600"/>
-		<product id="737" price="3000"/>
+		<product id="736" price="1500000"/>
+		<product id="737" price="15000000"/>
 		<product id="1829" price="750"/>
 		<product id="3031" price="600"/>
 		<product id="1785" price="375"/>
@@ -19803,5 +19767,111 @@
 		<product id="7968" price="60000"/>
 		<product id="7969" price="150000"/>
 		<product id="7970" price="150000"/>
+	</buyList>
+	<!-- custom armors -->
+	<buyList id="355576" npcId="-1">
+		<product id="10009"/>
+		<product id="10087"/>
+		<product id="10088"/>
+		<product id="10089"/>
+		<product id="10090"/>
+		<product id="40000"/>
+		<product id="40001"/>
+		<product id="40002"/>
+		<product id="40003"/>
+		<product id="40004"/>
+		<product id="40005"/>
+		<product id="40006"/>
+		<product id="40007"/>
+		<product id="40008"/>
+		<product id="9740"/>
+		<product id="9741"/>
+		<product id="9742"/>
+		<product id="9743"/>
+		<product id="9744"/>
+		<product id="9745"/>
+		<product id="9746"/>
+		<product id="9747"/>
+		<product id="9748"/>
+		<product id="9749"/>
+		<product id="9750"/>
+		<product id="9751"/>
+		<product id="9752"/>
+		<product id="9753"/>
+		<product id="9754"/>
+		<!-- sacrifice armor -->
+		<product id="9220"/>
+		<product id="9221"/>
+		<product id="9222"/>
+		<product id="9223"/>
+		<product id="9224"/>
+		<product id="9225"/>
+		<product id="9226"/>
+		<product id="9227"/>
+		<product id="9228"/>
+		<product id="9229"/>
+		<product id="9230"/>
+		<product id="9231"/>
+	</buyList>
+	<!-- custom jewels -->
+	<buyList id="355577" npcId="-1">
+		<!-- titanuim -->
+		<product id="12000"/>
+		<product id="12001"/>
+		<product id="12002"/>
+		<product id="12003"/>
+		<product id="12004"/>
+		<product id="12005"/>
+		<product id="12006"/>
+		<product id="12007"/>
+		<product id="12008"/>
+		<product id="12009"/>
+		<product id="12010"/>
+		<product id="12011"/>
+		<product id="12012"/>
+		<product id="12013"/>
+		<product id="12014"/>
+	</buyList>
+	<!-- custom weapons -->
+	<buyList id="355578" npcId="-1">
+		<!-- create the ids from 9953 until 9962 -->
+		<!-- antaras weapons -->
+		<product id="9953"/>
+		<product id="9954"/>
+		<product id="9955"/>
+		<product id="9956"/>
+		<product id="9957"/>
+		<product id="9958"/>
+		<product id="9959"/>
+		<product id="9960"/>
+		<product id="9961"/>
+		<product id="9962"/>
+		<!-- create the ids from 9717 until 9728 -->
+		<!-- scarlet weapons -->
+		<product id="9717"/>
+		<product id="9718"/>
+		<product id="9719"/>
+		<product id="9720"/>
+		<product id="9721"/>
+		<product id="9722"/>
+		<product id="9723"/>
+		<product id="9724"/>
+		<product id="9725"/>
+		<product id="9726"/>
+		<product id="9727"/>
+		<product id="9728"/>
+		<!-- create the ids from 14640 until 14650 -->
+		<!-- demonic weapons (not the cursed ones) -->
+		<product id="14640"/>
+		<product id="14641"/>
+		<product id="14642"/>
+		<product id="14643"/>
+		<product id="14644"/>
+		<product id="14645"/>
+		<product id="14646"/>
+		<product id="14647"/>
+		<product id="14648"/>
+		<product id="14649"/>
+		<product id="14650"/>
 	</buyList>
 </list>

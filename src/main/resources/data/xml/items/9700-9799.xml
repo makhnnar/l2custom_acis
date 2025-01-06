@@ -1,5 +1,137 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
+    <item id="9717" type="Weapon" name="Scarlet Hammer">
+        <for>
+            <set order="0x08" stat="pAtk" val="1089" />
+            <set order="0x08" stat="mAtk" val="352" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9718" type="Weapon" name="Scarlet Magic Sword">
+        <for>
+            <set order="0x08" stat="pAtk" val="500" />
+            <set order="0x08" stat="mAtk" val="1112" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9719" type="Weapon" name="Scarlet Blade">
+        <for>
+            <set order="0x08" stat="pAtk" val="1089" />
+            <set order="0x08" stat="mAtk" val="552" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9720" type="Weapon" name="Scarlet Fists">
+        <for>
+            <set order="0x08" stat="pAtk" val="1089" />
+            <set order="0x08" stat="mAtk" val="652" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9721" type="Weapon" name="Scarlet Dagger">
+        <for>
+            <set order="0x08" stat="pAtk" val="1089" />
+            <set order="0x08" stat="mAtk" val="352" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9722" type="Weapon" name="Scarlet Slasher">
+        <for>
+            <set order="0x08" stat="pAtk" val="1089" />
+            <set order="0x08" stat="mAtk" val="352" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9723" type="Weapon" name="Scarlet Spear">
+        <for>
+            <set order="0x08" stat="pAtk" val="1098" />
+            <set order="0x08" stat="mAtk" val="352" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9724" type="Weapon" name="Scarlet Bow">
+        <for>
+            <set order="0x08" stat="pAtk" val="1548" />
+            <set order="0x08" stat="mAtk" val="352" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9725" type="Weapon" name="Scarlet Dual Sword">
+        <for>
+            <set order="0x08" stat="pAtk" val="1089" />
+            <set order="0x08" stat="mAtk" val="552" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9726" type="Weapon" name="Scarlet Caster">
+        <for>
+            <set order="0x08" stat="pAtk" val="500" />
+            <set order="0x08" stat="mAtk" val="1112" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+            <mul order="0x08" stat="MagicalMpConsumeRate" val="0.82" />
+        </for>
+    </item>
+    <item id="9727" type="Weapon" name="Unknown Scarlet">
+        <for>
+            <set order="0x08" stat="pAtk" val="500" />
+            <set order="0x08" stat="mAtk" val="1112" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="340" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+            <mul order="0x08" stat="MagicalMpConsumeRate" val="0.82" />
+        </for>
+    </item>
+    <item id="9728" type="Weapon" name="Scarlet Shield">
+        <for>
+            <sub val='26' order='0x10' stat='rEvas'/>
+            <mul val="0.5" order="0x40" stat="pDef" />
+            <mul val="0.5" order="0x40" stat="mDef" />
+            <mul val="3" order="0x40" stat="pAtk" />
+            <mul val="3" order="0x40" stat="mAtk" />
+            <mul order="0x08" stat="MagicalMpConsumeRate" val="2.92" />
+            <enchant val='0' order='0x0C' stat='sDef'/>
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
     <item id='9740' type="Armor" name="Top (Fire) - Heavy	[Level 3]">
         <for>
             <add val='280'  stat='pDef'/>

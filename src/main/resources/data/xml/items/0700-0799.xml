@@ -417,7 +417,7 @@
 		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
-		<set name="price" val="400" />
+		<set name="price" val="1000000" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ItemSkills" />
@@ -428,7 +428,7 @@
 		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
-		<set name="price" val="2000" />
+		<set name="price" val="10000000" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ScrollsOfResurrection" />

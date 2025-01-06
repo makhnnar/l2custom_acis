@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <item id="9953" type="Weapon" name="Antharas Dual Blade">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='8' order='0x08' stat='rCrit'/>
+            <add val='0' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+
+    <item id="9954" type="Weapon" name="Unknow Antharas Dual Blade">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='8' order='0x08' stat='rCrit'/>
+            <add val='0' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+
+    <item id="9955" type="Weapon" name="Antharas Avenger">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='4' order='0x08' stat='rCrit'/>
+            <add val='4' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <add val='50' order='0x10' stat='rCrit'/>
+
+        </for>
+    </item>
+
+    <item id="9956" type="Weapon" name="Antharas Buster">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='4' order='0x08' stat='rCrit'/>
+            <add val='4' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <mul val='1.07' order='0x30' stat='mAtkSpd'/>
+            <mul val='1.05' order='0x30' stat='mAtk'/>
+        </for>
+    </item>
+
+    <item id="9957" type="Weapon" name="Antharas Cutter">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='8' order='0x08' stat='rCrit'/>
+            <add val='0' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <mul val='1.07' order='0x30' stat='pAtkSpd'/>
+            <add val='88' order='0x10' stat='rCrit'/>
+
+        </for>
+    </item>
+
+    <item id="9958" type="Weapon" name="Anthares Fighter">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='4' order='0x08' stat='rCrit'/>
+            <add val='4' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <add val='50' order='0x10' stat='rCrit'/>
+
+        </for>
+    </item>
+
+    <item id="9959" type="Weapon" name="Antharas Shaper">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='12' order='0x08' stat='rCrit'/>
+            <add val='-3' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <mul val='1.07' order='0x30' stat='pAtkSpd'/>
+        </for>
+    </item>
+
+    <item id="9960" type="Weapon" name="Antharas Slasher">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='8' order='0x08' stat='rCrit'/>
+            <add val='0' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <mul val='1.07' order='0x30' stat='pAtkSpd'/>
+        </for>
+    </item>
+
+    <item id="9961" type="Weapon" name="Antharas Stormer">
+        <for>
+            <set order="0x08" stat="pAtk" val="696" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='60' order='0x08' stat='rCrit'/>
+            <set val='66' order='0x08' stat='pAtkRange'/>
+            <add val='-3' order='0x10' stat='accCombat'/>
+            <set val='325' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+
+    <item id="9962" type="Weapon" name="Antharas Thrower">
+        <for>
+            <set order="0x08" stat="pAtk" val="1024" />
+            <set order="0x08" stat="mAtk" val="576" />
+            <set val='12' order='0x08' stat='rCrit'/>
+            <add val='-3' order='0x10' stat='accCombat'/>
+            <set val='283' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <add val='88' order='0x10' stat='rCrit'/>
+        </for>
+    </item>
+</list>

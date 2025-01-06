@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <item id='14640' type="Weapon" name="Demonic Agony Splitter">
+        <for>
+            <set val='1397' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='12' order='0x08' stat='rCrit'/>
+            <add val='-3' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+    <item id='14641' type="Weapon" name="Demonic Corpse Impaler">
+        <for>
+            <set val='1397' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='5' order='0x08' stat='rCrit'/>
+            <add val='-3' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+    <item id='14642' type="Weapon" name="Demonic Blood Seeker">
+        <for>
+            <set val='1397' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='4' order='0x08' stat='rCrit'/>
+            <add val='4' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+    <item id='14643' type="Weapon" name="Demonic Doom Bringer">
+        <for>
+            <set val='1397' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='8' order='0x08' stat='rCrit'/>
+            <add val='0' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+    <item id='14644' type="Weapon" name="Demonic Spirit Bow">
+        <for>
+            <set val='1881' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='12' order='0x08' stat='rCrit'/>
+            <add val='-3' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <!-- SA: Focus -->
+            <add val='87' order='0x40' stat='rCrit'/>
+        </for>
+    </item>
+    <item id='14645' type="Weapon" name="Demonic Soul Eater">
+        <for>
+            <set val='1397' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='5' order='0x08' stat='rCrit'/>
+            <add val='0' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+    <item id='14646' type="Weapon" name="Demonic Death Dealer">
+        <for>
+            <set val='1397' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='5' order='0x08' stat='rCrit'/>
+            <add val='4' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+    <item id='14647' type="Weapon" name="Demonic Tormenting Whisper">
+        <for>
+            <set val='1147' order='0x08' stat='pAtk'/>
+            <set val='1382' order='0x08' stat='mAtk'/>
+            <set val='4' order='0x08' stat='rCrit'/>
+            <add val='4' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+            <!-- SA: Acumen -->
+            <mul val='1.04' order='0x30' stat='mAtkSpd'/>
+        </for>
+    </item>
+    <item id='14648' type="Weapon" name="Demonic Fates Redemption">
+        <for>
+            <set val='1397' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='8' order='0x08' stat='rCrit'/>
+            <add val='0' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <mul val='1.04' order='0x30' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+    <item id='14649' type="Weapon" name="Unknown Demonic Weapon">
+        <for>
+            <set val='1397' order='0x08' stat='pAtk'/>
+            <set val='1145' order='0x08' stat='mAtk'/>
+            <set val='8' order='0x08' stat='rCrit'/>
+            <add val='0' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <mul val='1.04' order='0x30' stat='pAtkSpd'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+    <item id='14650' type="Weapon" name="Demonic Arcana">
+        <for>
+            <set val='1238' order='0x08' stat='pAtk'/>
+            <set val='1382' order='0x08' stat='mAtk'/>
+            <set val='6' order='0x08' stat='rCrit'/>
+            <add val='2' order='0x10' stat='accCombat'/>
+            <set val='300' order='0x08' stat='pAtkSpd'/>
+            <mul val='1.04' order='0x30' stat='mAtkSpd'/>
+            <add val='1500' order='0x40' stat='mAtk'/>
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+
+</list>
