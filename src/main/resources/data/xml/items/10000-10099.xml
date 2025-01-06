@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <item id='10001' type="Armor" name="Blessed Tattoo - Mage">
+        <for>
+            <add  stat="INT" val="1"/>
+            <add  stat="WIT" val="1"/>
+            <mul  stat="pDef" val="1.02"/>
+            <add  stat="runSpd" val="50"/>
+            <mul  stat="mAtkSpd" val="1.05"/>
+            <mul  stat="mAtk" val="1.08"/>
+        </for>
+    </item>
+
+    <item id='10002' type="Armor" name="Blessed Tattoo - Tank">
+        <for>
+            <add  stat="CON" val="1"/>
+            <add  stat="STR" val="1"/>
+            <mul  stat="pDef" val="1.02"/>
+            <mul  stat="mDef" val="1.02"/>
+            <add  stat="maxHp" val="250"/>
+            <add  stat="maxCp" val="250"/>
+            <add  stat="reflectSkillPhysic" val="2"/>
+            <add  stat="reflectSkillMagic" val="2"/>
+        </for>
+    </item>
+
+    <item id='10003' type="Armor" name="Blessed Tattoo - Dagger">
+        <for>
+            <add  stat="DEX" val="1"/>
+            <add  stat="CON" val="1"/>
+            <mul  stat="mDef" val="1.02"/>
+            <mul  stat="pDef" val="1.02"/>
+            <add  stat="rCrit" val="25"/>
+            <add  stat="rEvas" val="2"/>
+            <add  stat="runSpd" val="100"/>
+            <mul  stat="pAtkSpd" val="1.04"/>
+        </for>
+    </item>
+
+    <item id='10004' type="Armor" name="Blessed Tattoo - Archer">
+        <for>
+            <add  stat="DEX" val="1"/>
+            <add  stat="STR" val="1"/>
+            <mul  stat="mDef" val="1.02"/>
+            <add  stat="accCombat" val="2"/>
+            <add  stat="runSpd" val="80"/>
+            <mul  stat="pAtkSpd" val="1.03"/>
+            <mul  stat="pAtk" val="1.05">
+                <and>
+                    <using kind="BOW"/>
+                </and>
+            </mul>
+        </for>
+    </item>
+
+    <item id='10005' type="Armor" name="Blessed Tattoo - Warrior">
+        <for>
+            <add  stat="CON" val="1"/>
+            <add  stat="STR" val="1"/>
+            <mul  stat="pDef" val="1.02"/>
+            <mul  stat="mDef" val="1.02"/>
+            <mul  stat="pAtk" val="1.03"/>
+            <add  stat="absorbDam" val="3"/>
+        </for>
+    </item>
+
+
+    <item id='10006' type="Armor" name="Blessed Tattoo - Support">
+        <for>
+            <add  stat="MEN" val="1"/>
+            <add  stat="WIT" val="1"/>
+            <mul  stat="pDef" val="1.02"/>
+            <mul  stat="mDef" val="1.02"/>
+            <mul  stat="mAtkSpd" val="1.08"/>
+            <mul  stat="gainHp" val="1.05"/>
+            <add  stat="maxMp" val="250"/>
+            <mul  stat="regMp" val="1.10"/>
+        </for>
+    </item>
+
+
+    <item id='10007' type="Armor" name="Improved Blessed Tattoo - AIO Mage">
+        <for>
+            <add  stat="WIT" val="1"/>
+            <add  stat="INT" val="1"/>
+            <add  stat="MEN" val="1"/>
+            <mul  stat="pDef" val="1.02"/>
+            <mul  stat="mDef" val="1.02"/>
+            <mul  stat="mAtkSpd" val="1.04"/>
+            <mul  stat="mAtk" val="1.12"/>
+            <mul  stat="pvpMagicalDmg" val="1.05"/>
+            <add  stat="maxHp" val="450"/>
+            <add  stat="maxCp" val="450"/>
+        </for>
+    </item>
+
+    <item id='10008' type="Armor" name="Improved Blessed Tattoo - AIO Figther">
+        <for>
+            <add  stat="STR" val="1"/>
+            <add  stat="CON" val="1"/>
+            <add  stat="DEX" val="1"/>
+            <mul  stat="pDef" val="1.02"/>
+            <mul  stat="mDef" val="1.02"/>
+            <mul  stat="pAtk" val="1.1"/>
+            <mul  stat="pAtkSpd" val="1.03"/>
+            <mul  stat="pvpPhysDmg" val="1.05"/>
+            <mul  stat="pvpPhysSkillsDmg" val="1.05"/>
+            <add  stat="maxHp" val="350"/>
+            <add  stat="maxCp" val="350"/>
+        </for>
+    </item>
+
+    <item id='10009' type="Armor" name="Japan General Costume - Event Use">
+        <for>
+            <add order="0x10" stat="pDef" val="120"/>
+            <add  stat="STR" val="3"/>
+            <add  stat="CON" val="3"/>
+            <add  stat="DEX" val="3"/>
+            <mul  stat="pDef" val="0.68"/>
+            <mul  stat="mDef" val="0.68"/>
+            <mul  stat="pAtk" val="1.08"/>
+            <mul  stat="pAtkSpd" val="1.03"/>
+            <mul  stat="pvpPhysDmg" val="1.05"/>
+            <mul  stat="pvpPhysSkillsDmg" val="1.05"/>
+            <add  stat="maxHp" val="550"/>
+            <add  stat="maxCp" val="550"/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <!-- no agregar 10010 ya esta en weapons -->
+    <item id='10087' type="Armor" name="Stealth Assassin Cuirass">
+        <for>
+            <add val='337'  stat='pDef' />
+            <enchant val='0'  stat='pDef' />
+        </for>
+    </item>
+    <item id='10088' type="Armor" name="Stealth Assassin Leggings">
+        <for>
+            <add val='211'  stat='pDef' />
+            <enchant val='0'  stat='pDef' />
+        </for>
+    </item>
+    <item id='10089' type="Armor" name="Stealth Assassin Gloves">
+        <for>
+            <add val='122'  stat='pDef' />
+            <enchant val='0'  stat='pDef' />
+        </for>
+    </item>
+    <item id='10090' type="Armor" name="Stealth Assassin Boots">
+        <for>
+            <add val='122'  stat='pDef' />
+            <enchant val='0'  stat='pDef' />
+        </for>
+    </item>
+</list>

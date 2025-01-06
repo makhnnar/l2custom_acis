@@ -1234,8 +1234,13 @@
 		<set name="weight" val="4200" />
 		<set name="price" val="36900" />
 		<for>
-			<baseadd stat="pDef" val="53" />
-			<enchant stat="pDef" val="0" />
+			<mul val='0.87'  stat='pDef'/>
+			<mul val='0.87'  stat='mDef'/>
+			<add  stat="reflectDam" val="3"/>
+			<add  stat="absorbDam" val="3"/>
+			<mul val='1.17'  stat='runSpd'/>
+			<enchant val='0'  stat='absorbDam'/>
+			<enchant val='0'  stat='reflectDam'/>
 		</for>
 	</item>
 	<item id="486" type="Armor" name="Tattoo of Fire">
@@ -1248,8 +1253,12 @@
 		<set name="weight" val="4050" />
 		<set name="price" val="152000" />
 		<for>
-			<baseadd stat="pDef" val="73" />
-			<enchant stat="pDef" val="0" />
+			<add val='83'  stat='pDef'/>
+			<mul val='1.1024' order='0x30' stat='mAtkSpd'/>
+			<mul val='1.1024' order='0x30' stat='pAtkSpd'/>
+			<enchant val='0'  stat='pDef'/>
+			<enchant val='0'  stat='mAtkSpd'/>
+			<enchant val='0'  stat='pAtkSpd'/>
 		</for>
 	</item>
 	<item id="487" type="Armor" name="Tattoo of Resolve">
@@ -1262,8 +1271,11 @@
 		<set name="weight" val="4000" />
 		<set name="price" val="152000" />
 		<for>
-			<baseadd stat="pDef" val="73" />
-			<enchant stat="pDef" val="0" />
+			<add val='83'  stat='pDef'/>
+			<add val='37'  stat='runSpd'/>
+			<mul val='1.07'  stat='runSpd'/>
+			<enchant val='0'  stat='pDef'/>
+			<enchant val='0'  stat='runSpd'/>
 		</for>
 	</item>
 	<item id="488" type="Armor" name="Tattoo of Flame">
@@ -1276,8 +1288,14 @@
 		<set name="weight" val="800" />
 		<set name="price" val="3470000" />
 		<for>
-			<baseadd stat="pDef" val="139" />
-			<enchant stat="pDef" val="0" />
+			<add val='89'  stat='pDef'/>
+			<add val='89'  stat='mDef'/>
+			<add val='406' order='0x30' stat='maxMp'/>
+			<add val='406' order='0x30' stat='maxHp'/>
+			<enchant val='0'  stat='pDef'/>
+			<enchant val='0'  stat='mDef'/>
+			<enchant val='0'  stat='maxHp'/>
+			<enchant val='0'  stat='maxMp'/>
 		</for>
 	</item>
 	<item id="489" type="Armor" name="Tattoo of Bravery">
@@ -1290,8 +1308,12 @@
 		<set name="weight" val="4100" />
 		<set name="price" val="1070000" />
 		<for>
-			<baseadd stat="pDef" val="110" />
-			<enchant stat="pDef" val="0" />
+			<add val='90'  stat='pDef'/>
+			<add val='406' order='0x30' stat='maxCp'/>
+			<mul val='1.18' order='0x30' stat='pAtk'/>
+			<enchant val='0'  stat='pDef'/>
+			<enchant val='0'  stat='maxCp'/>
+			<enchant val='0'  stat='pAtk'/>
 		</for>
 	</item>
 	<item id="490" type="Armor" name="Tattoo of Blood">
@@ -1304,8 +1326,14 @@
 		<set name="weight" val="3800" />
 		<set name="price" val="3470000" />
 		<for>
-			<baseadd stat="pDef" val="132" />
-			<enchant stat="pDef" val="0" />
+			<mul val='0.97'  stat='pDef'/>
+			<mul val='0.97'  stat='mDef'/>
+			<add val='134' order='0x08' stat='pAtk'/>
+			<add val='134' order='0x08' stat='mAtk'/>
+			<mul val='1.03' order='0x08' stat='pAtk'/>
+			<mul val='1.03' order='0x08' stat='mAtk'/>
+			<enchant val='0'  stat='pAtk'/>
+			<enchant val='0'  stat='mAtk'/>
 		</for>
 	</item>
 	<item id="491" type="Armor" name="Tattoo of Absolute">
@@ -1318,8 +1346,20 @@
 		<set name="weight" val="800" />
 		<set name="price" val="5280000" />
 		<for>
-			<baseadd stat="pDef" val="146" />
-			<enchant stat="pDef" val="0" />
+			<add val='100'  stat='pDef'/>
+			<add val='100'  stat='mDef'/>
+			<add val='800'  stat='maxMp'/>
+			<add val='800'  stat='maxHp'/>
+			<add val='800'  stat='maxCp'/>
+			<mul val='1.15'  stat='maxMp'/>
+			<mul val='1.15'  stat='maxHp'/>
+			<mul val='1.15'  stat='maxCp'/>
+			<mul val='0.85'  stat='runSpd'/>
+			<enchant val='0'  stat='pDef'/>
+			<enchant val='0'  stat='mDef'/>
+			<enchant val='0'  stat='maxMp'/>
+			<enchant val='0'  stat='maxHp'/>
+			<enchant val='0'  stat='maxCp'/>
 		</for>
 	</item>
 	<item id="492" type="Armor" name="Tattoo of Soul">
@@ -1332,8 +1372,13 @@
 		<set name="weight" val="4150" />
 		<set name="price" val="99900" />
 		<for>
-			<baseadd stat="pDef" val="65" />
-			<enchant stat="pDef" val="0" />
+			<add val='150'  stat='mDef'/>
+			<add val='1200'  stat='maxMp'/>
+			<mul val='1.25'  stat='maxMp'/>
+			<mul  stat="regMp" val="1.55"/>
+			<mul  stat="gainMp" val="1.26"/>
+			<enchant val='0'  stat='mDef'/>
+			<enchant val='0'  stat='maxMp'/>
 		</for>
 	</item>
 	<item id="493" type="Armor" name="Tattoo of Avadon">
@@ -1346,8 +1391,13 @@
 		<set name="weight" val="4000" />
 		<set name="price" val="1560000" />
 		<for>
-			<baseadd stat="pDef" val="117" />
-			<enchant stat="pDef" val="0" />
+			<add val='150'  stat='pDef'/>
+			<add val='1200'  stat='maxHp'/>
+			<mul val='1.25'  stat='maxHp'/>
+			<mul  stat="regHp" val="1.55"/>
+			<mul  stat="gainHp" val="1.26"/>
+			<enchant val='0'  stat='pDef'/>
+			<enchant val='0'  stat='maxHp'/>
 		</for>
 	</item>
 	<item id="494" type="Armor" name="Tattoo of Doom">
@@ -1360,8 +1410,15 @@
 		<set name="weight" val="4100" />
 		<set name="price" val="2410000" />
 		<for>
-			<baseadd stat="pDef" val="125" />
-			<enchant stat="pDef" val="0" />
+			<add val='100'  stat='pDef'/>
+			<add val='100'  stat='mDef'/>
+			<add val='1200'  stat='maxCp'/>
+			<mul val='1.25'  stat='maxCp'/>
+			<mul  stat="regCp" val="1.55"/>
+			<add  stat="runSpd" val="15"/>
+			<enchant val='0'  stat='pDef'/>
+			<enchant val='0'  stat='mDef'/>
+			<enchant val='0'  stat='maxCp'/>
 		</for>
 	</item>
 	<item id="495" type="Armor" name="Tattoo of Pledge">
@@ -1374,8 +1431,12 @@
 		<set name="weight" val="4000" />
 		<set name="price" val="1560000" />
 		<for>
-			<baseadd stat="pDef" val="124" />
-			<enchant stat="pDef" val="0" />
+			<add val='90'  stat='mDef'/>
+			<add val='406' order='0x30' stat='maxCp'/>
+			<mul val='1.18' order='0x30' stat='mAtk'/>
+			<enchant val='0'  stat='mDef'/>
+			<enchant val='0'  stat='maxCp'/>
+			<enchant val='0'  stat='mAtk'/>
 		</for>
 	</item>
 	<item id="496" type="Armor" name="Tattoo of Divine">
@@ -1388,8 +1449,18 @@
 		<set name="weight" val="4100" />
 		<set name="price" val="2410000" />
 		<for>
-			<baseadd stat="pDef" val="131" />
-			<enchant stat="pDef" val="0" />
+			<add val='331'  stat='pDef'/>
+			<add val='331'  stat='mDef'/>
+			<mul val='1.1331'  stat='pDef'/>
+			<mul val='1.1331'  stat='mDef'/>
+			<mul stat="fireRes" val="0.75"/>
+			<mul stat="waterRes" val="0.75"/>
+			<mul stat="windRes" val="0.75"/>
+			<mul stat="earthRes" val="0.75"/>
+			<mul stat="darkRes" val="0.75"/>
+			<mul val='0.85'  stat='runSpd'/>
+			<enchant val='0'  stat='pDef'/>
+			<enchant val='0'  stat='mDef'/>
 		</for>
 	</item>
 	<item id="497" type="Armor" name="Chain Helmet">

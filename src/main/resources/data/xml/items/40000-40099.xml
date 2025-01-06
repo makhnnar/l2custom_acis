@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <item id='40000' type="Armor" name="Draconic v2 part 1">
+        <for>
+            <add val='265'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='40001' type="Armor" name="Draconic v2 part 2">
+        <for>
+            <add val='265'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='40002' type="Armor" name="Draconic v2 part 3">
+        <for>
+            <add val='265'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='40003' type="Armor" name="Draconic v2 part 4">
+        <for>
+            <add val='105'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='40004' type="Armor" name="Draconic v2 part 5">
+        <for>
+            <add val='105'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='40005' type="Armor" name="Draconic v2 part 6">
+        <for>
+            <add val='105'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='40006' type="Armor" name="Draconic v2 part 7">
+        <for>
+            <add val='105'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='40007' type="Armor" name="Draconic v2 part 8">
+        <for>
+            <add val='105'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='40008' type="Armor" name="Draconic v2 part 9">
+        <for>
+            <add val='105'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+</list>

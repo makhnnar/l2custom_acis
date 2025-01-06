@@ -102,4 +102,76 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 	</item>
+	<item id='9220' type="Armor" name="Sacrifice Helm">
+		<for>
+			<add val='65' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9221' type="Armor" name="Sacrifice Plate Armor">
+		<for>
+			<add val='255' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9222' type="Armor" name="Sacrifice Gauntlet">
+		<for>
+			<add val='50' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9223' type="Armor" name="Sacrifice Solleret">
+		<for>
+			<add val='50' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9224' type="Armor" name="Sacrifice Helmet">
+		<for>
+			<add val='65' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9225' type="Armor" name="Sacrifice Brigandine">
+		<for>
+			<add val='283' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9226' type="Armor" name="Sacrifice Leather Gloves">
+		<for>
+			<add val='30' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9227' type="Armor" name="Sacrifice Boots">
+		<for>
+			<add val='80' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9228' type="Armor" name="Sacrifice Hat">
+		<for>
+			<add val='65' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9229' type="Armor" name="Sacrifice Doublet">
+		<for>
+			<add val='233' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9230' type="Armor" name="Sacrifice Silk Gloves">
+		<for>
+			<add val='60' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
+	<item id='9231' type="Armor" name="Sacrifice Sandals">
+		<for>
+			<add val='30' order='0x10' stat='pDef'/>
+			<enchant val='0' order='0x0C' stat='pDef'/>
+		</for>
+	</item>
 </list>

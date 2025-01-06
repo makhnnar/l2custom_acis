@@ -73,10 +73,11 @@
         <set name="effectRange" val="-1"/>
         <set name="operateType" val="ACTIVE"/>
         <set name="nextActionAttack" val="true"/>
+        <set name="skillType" val="PDAM"/>
         <for>
             <effect count="20" name="DamOverTime" val="#dot" time="1">
-                <mul order="0x30" stat="regHp" val="#regPenalty"/>
-                <mul order="0x30" stat="regCp" val="#regPenalty"/>
+                <mul stat="regHp" val="#regPenalty"/>
+                <mul stat="regCp" val="#regPenalty"/>
             </effect>
         </for>
     </skill>
@@ -132,7 +133,7 @@
         <for>
             <effect count="1" name="TargetMe" time="5" val="0"/>
             <effect self="1" count="1" name="Buff" time="10" val="0">
-                <mul order="0x30" stat="pAtkSpd" val="1.1"/>
+                <mul stat="pAtkSpd" val="1.1"/>
             </effect>
         </for>
     </skill>
@@ -187,7 +188,7 @@
         <enchant2 name="power" val="#ench2Power"/>
         <for>
             <effect count="1" name="Stun" time="5" val="0" stackOrder="1" stackType="Stun" effectPower="70" effectType="STUN">
-                <mul order="0x30" stat="pDef" val="0.8"/>
+                <mul  stat="pDef" val="0.8"/>
             </effect>
         </for>
     </skill>
@@ -306,8 +307,8 @@
         <set name="nextActionAttack" val="True"/>
         <for>
             <effect count="1" name="Buff" val="0" stackOrder="#uprate" stackType="pAtks" time="6">
-                <mul order="0x30" stat="pAtk" val="#pAtk"/>
-                <mul order="0x30" stat="pDef" val="0.6"/>
+                <mul stat="pAtk" val="#pAtk"/>
+                <mul stat="pDef" val="0.6"/>
             </effect>
         </for>
     </skill>
@@ -347,12 +348,12 @@
         <enchant2 name="mpInitialConsume" val="#ench2MpConsume_Init"/>
         <for>
             <effect count="1" name="Buff" time="1200" val="0" stackOrder="#power" stackType="DmgShield">
-                <add order="0x40" stat="reflectDam" val="#power"/>
+                <add stat="reflectDam" val="#power"/>
             </effect>
         </for>
         <enchant1for>
             <effect count="1" name="Buff" time="#ench1time" val="0" stackOrder="20" stackType="DmgShield">
-                <add order="0x40" stat="reflectDam" val="20"/>
+                <add stat="reflectDam" val="20"/>
             </effect>
         </enchant1for>
     </skill>
@@ -367,8 +368,10 @@
         <set name="aggroPoints" val="549"/>
         <for>
             <effect count="1" name="Buff" time="600" val="0" stackOrder="1" stackType="detect_weakness">
-                <mul order="0x30" stat="pAtk-dragons" val="2.4"/>
-                <target kind="dragon,animal,monster,insect"/>
+                <mul stat="pAtk-dragons" val="2.4"/>
+                <mul stat="pAtk-monsters" val="2.4"/>
+                <mul stat="pAtk-insects" val="2.4" />
+                <mul stat="pAtk-animals" val="2.4"/>
             </effect>
         </for>
     </skill>
@@ -393,26 +396,26 @@
         <set name="aggroPoints" val="#aggro"/>
         <for>
             <effect count="1" name="Buff" val="0" stackOrder="#uprate" stackType="pAtks" time="25">
-                <mul order="0x30" stat="pDef" val="#pDef"/>
-                <sub order="0x40" stat="rEvas" val="4"/>
-                <add order="0x40" stat="accCombat" val="#accCombat">
+                <mul stat="pDef" val="#pDef"/>
+                <sub stat="rEvas" val="4"/>
+                <add stat="accCombat" val="#accCombat">
                     <and>
-                        <using kind="Pole"/>
+                        <using kind="POLE"/>
                     </and>
                 </add>
-                <mul order="0x30" stat="pAtk" val="#swordblunt">
+                <mul stat="pAtk" val="#swordblunt">
                     <and>
-                        <using kind="Sword,Blunt"/>
+                        <using kind="SWORD,BLUNT"/>
                     </and>
                 </mul>
-                <mul order="0x30" stat="pAtk" val="#twohands">
+                <mul stat="pAtk" val="#twohands">
                     <and>
-                        <using kind="Pole"/>
+                        <using kind="POLE"/>
                     </and>
                 </mul>
-                <mul order="0x30" stat="pAtk" val="#other">
+                <mul stat="pAtk" val="#other">
                     <and>
-                        <using kind="Dual Fist,Dual Sword,Fist,Etc,Big Sword,Big Blunt,Bow,Dagger"/>
+                        <using kind="DUALFIST,DUAL,FIST,ETC,BIGSWORD,BIGBLUNT,BOW,DAGGER"/>
                     </and>
                 </mul>
             </effect>

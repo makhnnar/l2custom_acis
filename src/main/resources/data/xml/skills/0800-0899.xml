@@ -14,11 +14,11 @@
 		<for>
 			<effect name="Buff" time="14400" val="0" stackOrder="1"
 				stackType="ws_weapon">
-				<mul order="0x30" stat="pAtk" val="1.05">
-					<using kind="SWORD,BIGSWORD,DUALSWORD,DAGGER,POLE,DUALFIST" />
+				<mul  stat="pAtk" val="1.05">
+					<using kind="SWORD,BIGSWORD,DUAL,DAGGER,POLE,DUALFIST" />
 				</mul>
-				<basemul order="0x30" stat="rCrit" val="0.2">
-					<using kind="SWORD,BIGSWORD,DUALSWORD,DAGGER,POLE,DUALFIST" />
+				<basemul  stat="rCrit" val="0.2">
+					<using kind="SWORD,BIGSWORD,DUAL,DAGGER,POLE,DUALFIST" />
 				</basemul>
 			</effect>
 		</for>
@@ -37,7 +37,7 @@
 		<for>
 			<effect name="Buff" time="14400" val="0" stackOrder="1"
 				stackType="ws_weapon">
-				<mul order="0x30" stat="pAtk" val="1.05">
+				<mul  stat="pAtk" val="1.05">
 					<using kind="BLUNT,BIGBLUNT" />
 				</mul>
 			</effect>
@@ -57,10 +57,10 @@
 		<for>
 			<effect name="Buff" time="14400" val="0" stackOrder="1"
 				stackType="ws_weapon">
-				<mul order="0x30" stat="pAtk" val="1.05">
+				<mul  stat="pAtk" val="1.05">
 					<using kind="BOW" />
 				</mul>
-				<add order="0x40" stat="pAtkRange" val="100">
+				<add  stat="pAtkRange" val="100">
 					<using kind="BOW" />
 				</add>
 			</effect>
@@ -80,7 +80,7 @@
 		<for>
 			<effect name="Buff" time="14400" val="0" stackOrder="1"
 				stackType="ws_armor">
-				<mul order="0x30" stat="pDef" val="1.1">
+				<mul  stat="pDef" val="1.1">
 					<and>
 						<using kind="HEAVY" />
 						<not>
@@ -105,7 +105,7 @@
 		<for>
 			<effect name="Buff" time="14400" val="0" stackOrder="1"
 				stackType="ws_armor">
-				<mul order="0x30" stat="pDef" val="1.05">
+				<mul  stat="pDef" val="1.05">
 					<and>
 						<using kind="LIGHT" />
 						<not>
@@ -113,7 +113,7 @@
 						</not>
 					</and>
 				</mul>
-				<add order="0x40" stat="rEvas" val="2">
+				<add  stat="rEvas" val="2">
 					<and>
 						<using kind="LIGHT" />
 						<not>
@@ -138,7 +138,7 @@
 		<for>
 			<effect name="Buff" time="14400" val="0" stackOrder="1"
 				stackType="ws_armor">
-				<mul order="0x30" stat="pDef" val="1.05">
+				<mul  stat="pDef" val="1.05">
 					<and>
 						<using kind="MAGIC" />
 						<not>
@@ -146,7 +146,7 @@
 						</not>
 					</and>
 				</mul>
-				<add order="0x40" stat="regMp" val="2">
+				<add  stat="regMp" val="2">
 					<and>
 						<using kind="MAGIC" />
 						<not>
@@ -164,7 +164,7 @@
 		<set name="skillType" val="BUFF"/>
 		<set name="operateType" val="PASSIVE"/>
 		<for>
-			<mul order="0x30" stat="pAtkSpd" val="#rate">
+			<mul stat="pAtkSpd" val="#rate">
 				<player hp="30"/>
 			</mul>
 		</for>
@@ -222,10 +222,10 @@
 		<set name="effectRange" val="400" />
 		<for>
 			<effect count="25" name="ManaDamOverTime" time="1" val="#dmg">
-				<mul order="0x30" stat="runSpd" val="#rate"/>
-				<mul order="0x30" stat="pAtkSpd" val="#rPatk"/>
-				<mul order="0x30" stat="stunVuln" val="#stunvuln"/>
-				<mul order="0x30" stat="pReuse" val="1.5"/>
+				<mul  stat="runSpd" val="#rate"/>
+				<mul  stat="pAtkSpd" val="#rPatk"/>
+				<mul  stat="stunVuln" val="#stunvuln"/>
+				<mul  stat="pReuse" val="1.5"/>
 			</effect>
 		</for>
 	</skill>
@@ -245,9 +245,9 @@
 		<set name="aggroPoints" val="549"/>
 		<for>
 			<effect name="Buff" time="600" count="1" val="0">
-				<mul order="0x30" stat="pAtk" val="1.25"/>
-				<mul order="0x30" stat="pAtkSpd" val="1.18"/>
-				<mul order="0x30" stat="runSpd" val="1.18"/>
+				<mul  stat="pAtk" val="1.25"/>
+				<mul  stat="pAtkSpd" val="1.18"/>
+				<mul  stat="runSpd" val="1.18"/>
 			</effect>
 		</for>
 	</skill>
@@ -270,9 +270,9 @@
 		<enchant2 name="mpConsume" val="#ench2MpConsume"/>
 		<for>
 			<effect name="Buff" time="600" count="1" val="0">
-				<mul order="0x30" stat="mAtk" val="1.25"/>
-				<mul order="0x30" stat="mAtkSpd" val="1.18"/>
-				<mul order="0x30" stat="runSpd" val="1.08"/>
+				<mul  stat="mAtk" val="1.25"/>
+				<mul  stat="mAtkSpd" val="1.18"/>
+				<mul  stat="runSpd" val="1.08"/>
 			</effect>
 		</for>
 	</skill>
@@ -292,17 +292,17 @@
 		<set name="aggroPoints" val="549"/>
 		<for>
 			<effect name="Buff" time="600" count="1" val="0">
-				<mul order="0x30" stat="mDef" val="1.28"/>
-				<mul order="0x30" stat="pDef" val="1.28"/>
-				<mul order="0x30" stat="sDef" val="1.28"/>
-				<mul order="0x30" stat="bowWpnVuln" val="0.9"/>
-				<mul order="0x30" stat="cancelVuln" val="0.9"/>
-				<mul order="0x30" stat="stunVuln" val="0.9"/>
-				<mul order="0x30" stat="bleedVuln" val="0.9"/>
-				<mul order="0x30" stat="paralyzeVuln" val="0.9"/>
-				<mul order="0x30" stat="daggerWpnVuln" val="0.9"/>
-				<!--<mul order="0x30" stat="magicDamVul" val="0.8"/> no lo reconoce para interlude-->
-				<mul order="0x30" stat="pvpPhysSkillsDmg" val="0.9"/>
+				<mul  stat="mDef" val="1.28"/>
+				<mul  stat="pDef" val="1.28"/>
+				<mul  stat="sDef" val="1.28"/>
+				<mul  stat="bowWpnVuln" val="0.9"/>
+				<mul  stat="cancelVuln" val="0.9"/>
+				<mul  stat="stunVuln" val="0.9"/>
+				<mul  stat="bleedVuln" val="0.9"/>
+				<mul  stat="paralyzeVuln" val="0.9"/>
+				<mul  stat="daggerWpnVuln" val="0.9"/>
+				<!--<mul  stat="magicDamVul" val="0.8"/> no lo reconoce para interlude-->
+				<mul  stat="pvpPhysSkillsDmg" val="0.9"/>
 			</effect>
 		</for>
 	</skill>
@@ -322,13 +322,13 @@
 		<set name="aggroPoints" val="549"/>
 		<for>
 			<effect name="Buff" time="600" count="1" val="0">
-				<mul order="0x30" stat="maxMp" val="1.48"/>
-				<mul order="0x30" stat="maxHp" val="1.48"/>
-				<mul order="0x30" stat="regMp" val="1.8"/>
-				<mul order="0x30" stat="regHp" val="1.8"/>
-				<mul order="0x30" stat="gainMp" val="1.8"/>
-				<mul order="0x30" stat="gainHp" val="1.8"/>
-				<mul order="0x30" stat="maxCp" val="1.48"/>
+				<mul  stat="maxMp" val="1.48"/>
+				<mul  stat="maxHp" val="1.48"/>
+				<mul  stat="regMp" val="1.8"/>
+				<mul  stat="regHp" val="1.8"/>
+				<mul  stat="gainMp" val="1.8"/>
+				<mul  stat="gainHp" val="1.8"/>
+				<mul  stat="maxCp" val="1.48"/>
 			</effect>
 		</for>
 	</skill>
@@ -348,16 +348,16 @@
 		<set name="aggroPoints" val="549"/>
 		<for>
 			<effect name="Buff" time="30" count="1" val="0">
-				<mul order="0x30" stat="pAtk" val="2.48"/>
-				<mul order="0x30" stat="mAtk" val="2.48"/>
-				<mul order="0x30" stat="pAtkSpd" val="1.4"/>
-				<mul order="0x30" stat="mAtkSpd" val="1.4"/>
-				<mul order="0x30" stat="mCritRate" val="2"/>
-				<mul order="0x30" stat="rCrit" val="2"/>
-				<mul order="0x30" stat="mReuse" val="0.8"/>
-				<mul order="0x30" stat="pReuse" val="0.8"/>
-				<mul order="0x30" stat="pDef" val="0.3"/>
-				<mul order="0x30" stat="mDef" val="0.3"/>
+				<mul  stat="pAtk" val="2.48"/>
+				<mul  stat="mAtk" val="2.48"/>
+				<mul  stat="pAtkSpd" val="1.4"/>
+				<mul  stat="mAtkSpd" val="1.4"/>
+				<mul  stat="mCritRate" val="2"/>
+				<mul  stat="rCrit" val="2"/>
+				<mul  stat="mReuse" val="0.8"/>
+				<mul  stat="pReuse" val="0.8"/>
+				<mul  stat="pDef" val="0.3"/>
+				<mul  stat="mDef" val="0.3"/>
 			</effect>
 		</for>
 	</skill>
@@ -377,17 +377,17 @@
 		<set name="aggroPoints" val="549"/>
 		<for>
 			<effect name="Buff" time="60" count="1" val="0">
-				<mul order="0x30" stat="pAtk" val="0.08"/>
-				<mul order="0x30" stat="mAtk" val="0.08"/>
-				<mul order="0x30" stat="pAtkSpd" val="0.08"/>
-				<mul order="0x30" stat="mAtkSpd" val="0.08"/>
-				<mul order="0x30" stat="mReuse" val="0.1"/>
-				<mul order="0x30" stat="pReuse" val="0.1"/>
-				<mul order="0x30" stat="regMp" val="5"/>
-				<mul order="0x30" stat="regHp" val="5"/>
-				<mul order="0x30" stat="pDef" val="10"/>
-				<mul order="0x30" stat="mDef" val="10"/>
-				<mul order="0x30" stat="runSpd" val="2"/>
+				<mul  stat="pAtk" val="0.08"/>
+				<mul  stat="mAtk" val="0.08"/>
+				<mul  stat="pAtkSpd" val="0.08"/>
+				<mul  stat="mAtkSpd" val="0.08"/>
+				<mul  stat="mReuse" val="0.1"/>
+				<mul  stat="pReuse" val="0.1"/>
+				<mul  stat="regMp" val="5"/>
+				<mul  stat="regHp" val="5"/>
+				<mul  stat="pDef" val="10"/>
+				<mul  stat="mDef" val="10"/>
+				<mul  stat="runSpd" val="2"/>
 			</effect>
 		</for>
 	</skill>
@@ -411,10 +411,10 @@
 		<set name="effectRange" val="400" />
 		<for>
 			<effect count="20" name="DamOverTime" time="1" val="288" effectPower="60" effectType="DEBUFF">
-				<mul order="0x40" stat="runSpd" val="0.80"/>
-				<mul order="0x30" stat="pAtkSpd" val="0.80"/>
-				<mul order="0x30" stat="mAtkSpd" val="0.80"/>
-				<mul order="0x30" stat="daggerWpnVuln" val="3.80"/>
+				<mul  stat="runSpd" val="0.80"/>
+				<mul  stat="pAtkSpd" val="0.80"/>
+				<mul  stat="mAtkSpd" val="0.80"/>
+				<mul  stat="daggerWpnVuln" val="3.80"/>
 			</effect>
 		</for>
 	</skill>
@@ -437,8 +437,8 @@
 		<set name="effectRange" val="400"/>
 		<for>
 			<effect count="1" name="Buff" time="30" val="0" stackOrder="10" stackType="accuracyDown">
-				<mul order="0x40" stat="accCombat" val="0.3"/>
-				<mul order="0x40" stat="runSpd" val="0.5"/>
+				<mul  stat="accCombat" val="0.3"/>
+				<mul  stat="runSpd" val="0.5"/>
 			</effect>
 		</for>
 	</skill>
@@ -464,7 +464,7 @@
 				<using kind="Shield"/>
 			</effect>
 			<effect self="1" count="1" name="Buff" time="3" val="0">
-				<mul order="0x30" stat="runSpd" val="4"/>
+				<mul  stat="runSpd" val="4"/>
 				<using kind="Shield"/>
 			</effect>
 		</for>
@@ -515,10 +515,10 @@
 		<set name="skillType" val="BUFF"/>
 		<set name="operateType" val="PASSIVE"/>
 		<for>
-			<mul order="0x40" stat="pDef" val="13">
+			<mul  stat="pDef" val="13">
 				<player resting="true"/>
 			</mul>
-			<mul order="0x40" stat="mDef" val="7.5">
+			<mul  stat="mDef" val="7.5">
 				<player resting="true"/>
 			</mul>
 		</for>
@@ -533,21 +533,21 @@
 		<set name="hitTime" val="2000"/>
 		<set name="weaponsAllowed" val="BOW"/>
 		<cond msg="Bow required.">
-			<using kind="Bow"/>
+			<using kind="BOW"/>
 		</cond>
 		<for>
 			<effect count="1" name="Buff" time="60" val="0">
-				<mul order="0x40" stat="pAtk" val="1.5">
-					<using kind="Bow"/>
+				<mul  stat="pAtk" val="1.5">
+					<using kind="BOW"/>
 				</mul>
-				<mul order="0x40" stat="accCombat" val="2">
-					<using kind="Bow"/>
+				<mul  stat="accCombat" val="2">
+					<using kind="BOW"/>
 				</mul>
-				<mul order="0x40" stat="runSpd" val="1.2">
-					<using kind="Bow"/>
+				<mul  stat="runSpd" val="1.2">
+					<using kind="BOW"/>
 				</mul>
-				<add order="0x40" stat="pAtkRange" val="400">
-					<using kind="Bow"/>
+				<add  stat="pAtkRange" val="400">
+					<using kind="BOW"/>
 				</add>
 			</effect>
 		</for>
@@ -562,24 +562,24 @@
 		<set name="hitTime" val="2000"/>
 		<set name="weaponsAllowed" val="BOW"/>
 		<cond msg="Bow required.">
-			<using kind="Bow"/>
+			<using kind="BOW"/>
 		</cond>
 		<for>
 			<effect count="1" name="Buff" time="60" val="0">
-				<mul order="0x40" stat="pAtk" val="1.1">
-					<using kind="Bow"/>
+				<mul  stat="pAtk" val="1.1">
+					<using kind="BOW"/>
 				</mul>
-				<mul order="0x40" stat="pAtkSpd" val="1.1">
-					<using kind="Bow"/>
+				<mul  stat="pAtkSpd" val="1.1">
+					<using kind="BOW"/>
 				</mul>
-				<mul order="0x30" stat="rCrit" val="2">
-					<using kind="Bow"/>
+				<mul  stat="rCrit" val="2">
+					<using kind="BOW"/>
 				</mul>
-				<mul order="0x30" stat="mReuse" val="0.2">
-					<using kind="Bow"/>
+				<mul  stat="mReuse" val="0.2">
+					<using kind="BOW"/>
 				</mul>
-				<mul order="0x30" stat="PhysicalMpConsumeRate" val="0.1">
-					<using kind="Bow"/>
+				<mul  stat="PhysicalMpConsumeRate" val="0.1">
+					<using kind="BOW"/>
 				</mul>
 			</effect>
 		</for>

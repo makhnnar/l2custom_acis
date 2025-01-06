@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <item id='9740' type="Armor" name="Top (Fire) - Heavy	[Level 3]">
+        <for>
+            <add val='280'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9741' type="Armor" name="Bottom (Fire) - Heavy	[Level 3]">
+        <for>
+            <add val='100'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9742' type="Armor" name="Gloves (Fire) - Heavy	[Level 3]">
+        <for>
+            <add val='85'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9743' type="Armor" name="Boots (Fire) - Heavy	[Level 3]">
+        <for>
+            <add val='85'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9744' type="Armor" name="Top (Fire) - Light 	[Level 3]">
+        <for>
+            <add val='280'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9745' type="Armor" name="Bottom (Fire) - Light	[Level 3]">
+        <for>
+            <add val='100'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9746' type="Armor" name="Gloves (Fire) - Light	[Level 3]">
+        <for>
+            <add val='85'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9747' type="Armor" name="Boots (Fire) - Light	[Level 3]">
+        <for>
+            <add val='85'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9748' type="Armor" name="Top (Fire) - Robe 	[Level 3]">
+        <for>
+            <add val='280'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9749' type="Armor" name="Bottom (Fire) - Robe	[Level 3]">
+        <for>
+            <add val='100'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9750' type="Armor" name="Gloves (Fire) - Robe	[Level 3]">
+        <for>
+            <add val='685'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9751' type="Armor" name="Boots (Fire) - Robe	[Level 3]">
+        <for>
+            <add val='85'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9752' type="Armor" name="Helmet (Fire) - Heavy	[Level 3]">
+        <for>
+            <add val='70'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9753' type="Armor" name="Helmet (Fire) - Light	[Level 3]">
+        <for>
+            <add val='70'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='9754' type="Armor" name="Helmet (Fire) - Robe	[Level 3]">
+        <for>
+            <add val='70'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+</list>

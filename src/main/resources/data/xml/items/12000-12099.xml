@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <item id='12000' type="Armor" name="Titanium Earring">
+        <for>
+            <add val='71'  stat='mDef'/>
+            <add val='61' order='0x60' stat='maxMp'/>
+            <add val='61' order='0x60' stat='maxHp'/>
+            <add val='61' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12001' type="Armor" name="Titanium Ring">
+        <for>
+            <add val='48'  stat='mDef'/>
+            <add val='61' order='0x60' stat='maxMp'/>
+            <add val='61' order='0x60' stat='maxHp'/>
+            <add val='61' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12002' type="Armor" name="Titanium Necklace">
+        <for>
+            <add val='95'  stat='mDef'/>
+            <add val='61' order='0x60' stat='maxMp'/>
+            <add val='61' order='0x60' stat='maxHp'/>
+            <add val='61' order='0x60' stat='maxCp'/>
+            <add val='11'  stat='pAtk'/>
+            <add val='11'  stat='mAtk'/>
+            <mul  stat="mAtkSpd" val="1.2">
+                <and>
+                    <player hp="30"/>
+                </and>
+                <using kind="Dual, Sword, Blunt, Staff"/>
+            </mul>
+            <mul  stat="pAtkSpd" val="1.2">
+                <and>
+                    <player hp="30"/>
+                </and>
+                <using kind="Fist, Dual Fist, Pole, Sword, Big Sword, Blunt, Staff,Dual,Bow"/>
+            </mul>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+            <enchant val='0'  stat='mAtk'/>
+            <enchant val='0'  stat='pAtk'/>
+        </for>
+    </item>
+    <item id='12003' type="Armor" name="Titanium Earring">
+        <for>
+            <add val='74'  stat='mDef'/>
+            <add val='71' order='0x60' stat='maxMp'/>
+            <add val='71' order='0x60' stat='maxHp'/>
+            <add val='71' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12004' type="Armor" name="Titanium Ring">
+        <for>
+            <add val='51'  stat='mDef'/>
+            <add val='71' order='0x60' stat='maxMp'/>
+            <add val='71' order='0x60' stat='maxHp'/>
+            <add val='71' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12005' type="Armor" name="Titanium Necklace">
+        <for>
+            <add val='98'  stat='mDef'/>
+            <add val='71' order='0x60' stat='maxMp'/>
+            <add val='71' order='0x60' stat='maxHp'/>
+            <add val='71' order='0x60' stat='maxCp'/>
+            <add val='11'  stat='regMp'/>
+            <add val='11'  stat='regHp'/>
+            <mul  stat="mDef" val="1.4">
+                <and>
+                    <player hp="30"/>
+                </and>
+                <using kind="Dual, Sword, Blunt, Staff"/>
+            </mul>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+            <enchant val='0'  stat='regMp'/>
+            <enchant val='0'  stat='regHp'/>
+        </for>
+    </item>
+    <item id='12006' type="Armor" name="Titanium Earring">
+        <for>
+            <add val='77'  stat='mDef'/>
+            <add val='81' order='0x60' stat='maxMp'/>
+            <add val='81' order='0x60' stat='maxHp'/>
+            <add val='81' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12007' type="Armor" name="Titanium Ring">
+        <for>
+            <add val='54'  stat='mDef'/>
+            <add val='81' order='0x60' stat='maxMp'/>
+            <add val='81' order='0x60' stat='maxHp'/>
+            <add val='81' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12008' type="Armor" name="Titanium Necklace">
+        <for>
+            <add val='101'  stat='mDef'/>
+            <add val='101'  stat='pDef'/>
+            <add val='81' order='0x60' stat='maxMp'/>
+            <add val='81' order='0x60' stat='maxHp'/>
+            <add val='81' order='0x60' stat='maxCp'/>
+            <mul  stat="mAtk" val="1.4">
+                <and>
+                    <player hp="30"/>
+                </and>
+                <using kind="Dual, Sword, Blunt, Staff"/>
+            </mul>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
+    </item>
+    <item id='12009' type="Armor" name="Titanium Earring">
+        <for>
+            <add val='80'  stat='mDef'/>
+            <add val='91' order='0x60' stat='maxMp'/>
+            <add val='91' order='0x60' stat='maxHp'/>
+            <add val='91' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12010' type="Armor" name="Titanium Ring">
+        <for>
+            <add val='57'  stat='mDef'/>
+            <add val='91' order='0x60' stat='maxMp'/>
+            <add val='91' order='0x60' stat='maxHp'/>
+            <add val='91' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12011' type="Armor" name="Titanium Necklace">
+        <for>
+            <add val='104'  stat='mDef'/>
+            <add val='91' order='0x60' stat='maxMp'/>
+            <add val='91' order='0x60' stat='maxHp'/>
+            <add val='91' order='0x60' stat='maxCp'/>
+            <add val='11'  stat='cAtk'/>
+            <add val='11'  stat='accCombat'/>
+            <mul  stat="pAtk" val="1.4">
+                <and>
+                    <player hp="30"/>
+                </and>
+                <using kind="Fist, Dual Fist, Pole, Sword, Big Sword, Blunt, Staff"/>
+            </mul>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+            <enchant val='0'  stat='cAtk'/>
+            <enchant val='0'  stat='accCombat'/>
+        </for>
+    </item>
+    <item id='12012' type="Armor" name="Titanium Earring">
+        <for>
+            <add val='83'  stat='mDef'/>
+            <add val='101' order='0x60' stat='maxMp'/>
+            <add val='101' order='0x60' stat='maxHp'/>
+            <add val='101' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12013' type="Armor" name="Titanium Ring">
+        <for>
+            <add val='60'  stat='mDef'/>
+            <add val='101' order='0x60' stat='maxMp'/>
+            <add val='101' order='0x60' stat='maxHp'/>
+            <add val='101' order='0x60' stat='maxCp'/>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+
+    <item id='12014' type="Armor" name="Titanium Necklace">
+        <for>
+            <add val='107'  stat='mDef'/>
+            <add val='101' order='0x60' stat='maxMp'/>
+            <add val='101' order='0x60' stat='maxHp'/>
+            <add val='101' order='0x60' stat='maxCp'/>
+            <add  stat="reflectDam" val="3"/>
+            <add  stat="absorbDam" val="3"/>
+            <add  stat="runSpd" val="30"/>
+            <sub  stat="cancel" val="50"/>
+            <mul  stat="pDef" val="1.4">
+                <and>
+                    <player hp="30"/>
+                </and>
+                <using kind="Fist, Dual Fist, Pole, Sword, Big Sword, Blunt, Staff"/>
+            </mul>
+            <enchant val='0'  stat='mDef'/>
+            <enchant val='0'  stat='maxMp'/>
+            <enchant val='0'  stat='maxHp'/>
+            <enchant val='0'  stat='maxCp'/>
+        </for>
+    </item>
+</list>
