@@ -2,7 +2,7 @@
 <list>
     <item id="9953" type="Weapon" name="Antharas Dual Blade">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="DUAL" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
@@ -25,7 +25,7 @@
 
     <item id="9954" type="Weapon" name="Unknow Antharas Dual Blade">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="DUAL" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
@@ -73,7 +73,7 @@
 
     <item id="9956" type="Weapon" name="Antharas Buster">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="SWORD" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
@@ -98,7 +98,7 @@
 
     <item id="9957" type="Weapon" name="Antharas Cutter">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="DAGGER" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
@@ -124,7 +124,7 @@
 
     <item id="9958" type="Weapon" name="Anthares Fighter">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="DUALFIST" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
@@ -149,7 +149,7 @@
 
     <item id="9959" type="Weapon" name="Antharas Shaper">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="DAGGER" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
@@ -173,7 +173,7 @@
 
     <item id="9960" type="Weapon" name="Antharas Slasher">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="BIGSWORD" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
@@ -197,7 +197,7 @@
 
     <item id="9961" type="Weapon" name="Antharas Stormer">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="POLE" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />
@@ -221,7 +221,7 @@
 
     <item id="9962" type="Weapon" name="Antharas Thrower">
         <set name="default_action" val="equip" />
-        <set name="weapon_type" val="BLUNT" />
+        <set name="weapon_type" val="BOW" />
         <set name="bodypart" val="rhand" />
         <set name="random_damage" val="20" />
         <set name="attack_range" val="40" />

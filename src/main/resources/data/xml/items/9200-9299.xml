@@ -223,7 +223,7 @@
 	</item>
 	<item id='9229' type="Armor" name="Sacrifice Doublet">
 		<set name="default_action" val="equip" />
-		<set name="armor_type" val="ROBE" />
+		<set name="armor_type" val="MAGIC" />
 		<set name="bodypart" val="fullarmor" />
 		<set name="crystal_type" val="A" />
 		<set name="crystal_count" val="406" />

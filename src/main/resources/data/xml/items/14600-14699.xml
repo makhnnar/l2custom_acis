@@ -1,6 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
     <item id='14640' type="Weapon" name="Demonic Agony Splitter">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="DAGGER" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -12,6 +21,15 @@
         </for>
     </item>
     <item id='14641' type="Weapon" name="Demonic Corpse Impaler">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="POLE" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -23,6 +41,15 @@
         </for>
     </item>
     <item id='14642' type="Weapon" name="Demonic Blood Seeker">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="SWORD" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -34,6 +61,15 @@
         </for>
     </item>
     <item id='14643' type="Weapon" name="Demonic Doom Bringer">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="BIGSWORD" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -45,6 +81,15 @@
         </for>
     </item>
     <item id='14644' type="Weapon" name="Demonic Spirit Bow">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="BOW" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1881' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -58,6 +103,15 @@
         </for>
     </item>
     <item id='14645' type="Weapon" name="Demonic Soul Eater">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="SWORD" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -69,6 +123,15 @@
         </for>
     </item>
     <item id='14646' type="Weapon" name="Demonic Death Dealer">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="SWORD" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -80,6 +143,15 @@
         </for>
     </item>
     <item id='14647' type="Weapon" name="Demonic Tormenting Whisper">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="DUALFIST" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1147' order='0x08' stat='pAtk'/>
             <set val='1382' order='0x08' stat='mAtk'/>
@@ -93,6 +165,15 @@
         </for>
     </item>
     <item id='14648' type="Weapon" name="Demonic Fates Redemption">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="SWORD" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -105,6 +186,15 @@
         </for>
     </item>
     <item id='14649' type="Weapon" name="Unknown Demonic Weapon">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -117,6 +207,15 @@
         </for>
     </item>
     <item id='14650' type="Weapon" name="Demonic Arcana">
+        <set name="default_action" val="equip" />
+        <set name="is_magical" val="true" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="lrhand" />
+        <set name="random_damage" val="5" />
+        <set name="attack_range" val="600" />
+        <set name="damage_range" val="0;0;10;0" />
+        <set name="material" val="BONE" />
+        <set name="weight" val="1300" />
         <for>
             <set val='1238' order='0x08' stat='pAtk'/>
             <set val='1382' order='0x08' stat='mAtk'/>

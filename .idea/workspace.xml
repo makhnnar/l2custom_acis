@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/10000-10099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/10000-10099.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/12000-12099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/12000-12099.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/14600-14699.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/14600-14699.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/40000-40099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/40000-40099.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9200-9299.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9200-9299.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9700-9799.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9700-9799.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9900-9999.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9900-9999.xml" afterDir="false" />

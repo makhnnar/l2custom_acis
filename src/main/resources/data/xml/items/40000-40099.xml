@@ -1,54 +1,128 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
-    <item id='40000' type="Armor" name="Draconic v2 part 1">
+    <item id='40000' type="Armor" name="Draconic v2 part Heavy Full Body">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="fullarmor" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='40001' type="Armor" name="Draconic v2 part 2">
+    <item id='40001' type="Armor" name="Draconic v2 part Robe Full Body">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="fullarmor" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='40002' type="Armor" name="Draconic v2 part 3">
+    <item id='40002' type="Armor" name="Draconic v2 part Light Full Body">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="fullarmor" />
+        <set name="material" val="LEATHER" />
+        <set name="weight" val="650" />
+        <set name="price" val="6770000" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='40003' type="Armor" name="Draconic v2 part 4">
+    <item id='40003' type="Armor" name="Draconic v2 part Robe Boots">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="LEATHER" />
+        <set name="weight" val="1320" />
+        <set name="price" val="37000000" />
         <for>
             <add val='105'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='40004' type="Armor" name="Draconic v2 part 5">
+    <item id='40004' type="Armor" name="Draconic v2 part Robe Gloves">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
+        <for>
+            <add val='265'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
         <for>
             <add val='105'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='40005' type="Armor" name="Draconic v2 part 6">
+    <item id='40005' type="Armor" name="Draconic v2 part Heavy Boots">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
+        <for>
+            <add val='265'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
         <for>
             <add val='105'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='40006' type="Armor" name="Draconic v2 part 7">
+    <item id='40006' type="Armor" name="Draconic v2 part Heavy Gloves">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
+        <for>
+            <add val='265'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
         <for>
             <add val='105'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='40007' type="Armor" name="Draconic v2 part 8">
+    <item id='40007' type="Armor" name="Draconic v2 part Light Boots">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
+        <for>
+            <add val='265'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
         <for>
             <add val='105'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='40008' type="Armor" name="Draconic v2 part 9">
+    <item id='40008' type="Armor" name="Draconic v2 part Light Gloves">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
+        <for>
+            <add val='265'  stat='pDef'/>
+            <enchant val='0'  stat='pDef'/>
+        </for>
         <for>
             <add val='105'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>

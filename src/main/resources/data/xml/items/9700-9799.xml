@@ -65,6 +65,17 @@
         </for>
     </item>
     <item id="9720" type="Weapon" name="Scarlet Fists">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="DUALFIST" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="10" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="STEEL" />
+        <set name="weight" val="1600" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="1089" />
             <set order="0x08" stat="mAtk" val="652" />
@@ -98,6 +109,17 @@
         </for>
     </item>
     <item id="9722" type="Weapon" name="Scarlet Slasher">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BIGSWORD" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="10" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="STEEL" />
+        <set name="weight" val="1600" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="1089" />
             <set order="0x08" stat="mAtk" val="352" />
@@ -155,6 +177,17 @@
         </for>
     </item>
     <item id="9725" type="Weapon" name="Scarlet Dual Sword">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="DUAL" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="10" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="STEEL" />
+        <set name="weight" val="1600" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="1089" />
             <set order="0x08" stat="mAtk" val="552" />
@@ -165,6 +198,17 @@
         </for>
     </item>
     <item id="9726" type="Weapon" name="Scarlet Caster">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="10" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="STEEL" />
+        <set name="weight" val="1600" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set order="0x08" stat="pAtk" val="500" />
             <set order="0x08" stat="mAtk" val="1112" />
@@ -192,9 +236,11 @@
     <item id="9728" type="Weapon" name="Scarlet Shield">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="lhand" />
-        <set name="material" val="LEATHER" />
-        <set name="weight" val="1430" />
-        <set name="price" val="39" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="97" />
+        <set name="material" val="CRYSTAL" />
+        <set name="weight" val="1190" />
+        <set name="price" val="1220000" />
         <for>
             <sub val='26' order='0x10' stat='rEvas'/>
             <mul val="0.5" order="0x40" stat="pDef" />
@@ -208,90 +254,186 @@
         </for>
     </item>
     <item id='9740' type="Armor" name="Top (Fire) - Heavy	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="chest" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='280'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9741' type="Armor" name="Bottom (Fire) - Heavy	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="legs" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='100'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9742' type="Armor" name="Gloves (Fire) - Heavy	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='85'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9743' type="Armor" name="Boots (Fire) - Heavy	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='85'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9744' type="Armor" name="Top (Fire) - Light 	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="chest" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='280'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9745' type="Armor" name="Bottom (Fire) - Light	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="legs" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='100'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9746' type="Armor" name="Gloves (Fire) - Light	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='85'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9747' type="Armor" name="Boots (Fire) - Light	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='85'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9748' type="Armor" name="Top (Fire) - Robe 	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="chest" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='280'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9749' type="Armor" name="Bottom (Fire) - Robe	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="legs" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='100'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9750' type="Armor" name="Gloves (Fire) - Robe	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='685'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9751' type="Armor" name="Boots (Fire) - Robe	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <add val='85'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9752' type="Armor" name="Helmet (Fire) - Heavy	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="head" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="139" />
+        <set name="material" val="CRYSTAL" />
+        <set name="weight" val="570" />
+        <set name="price" val="1740000" />
         <for>
             <add val='70'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9753' type="Armor" name="Helmet (Fire) - Light	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="head" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="139" />
+        <set name="material" val="CRYSTAL" />
+        <set name="weight" val="570" />
+        <set name="price" val="1740000" />
         <for>
             <add val='70'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
     <item id='9754' type="Armor" name="Helmet (Fire) - Robe	[Level 3]">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="head" />
+        <set name="crystal_type" val="A" />
+        <set name="crystal_count" val="139" />
+        <set name="material" val="CRYSTAL" />
+        <set name="weight" val="570" />
+        <set name="price" val="1740000" />
         <for>
             <add val='70'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
