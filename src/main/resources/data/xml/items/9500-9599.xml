@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bloody Aramanthine Weapons By WariinG For Interlude -->
+<list>
+    <item id="9500" type="Weapon" name="Bloody Aramanthine Cutter">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9501" type="Weapon" name="Bloody Aramanthine Cutter - Haste">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="496" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <mul order="0x10" stat="pAtkSpd" val="1.04" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9502" type="Weapon" name="Bloody Aramanthine Cutter - Health">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="496" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <mul order="0x10" stat="maxHp" val="1.25" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9503" type="Weapon" name="Bloody Aramanthine Cutter - Focus">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <add order="0x10" stat="rCrit" val="100" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9504" type="Weapon" name="Bloody Aramanthine Avenger">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9505" type="Weapon" name="Bloody Aramanthine Avenger - HP Drain">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9506" type="Weapon" name="Bloody Aramanthine Avenger - Health">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <mul order="0x10" stat="maxHp" val="1.25" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9507" type="Weapon" name="Bloody Aramanthine Avenger - HP Regeneration">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <mul order="0x30" stat="regHp" val="1.3"/>
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9508" type="Weapon" name="Bloody Aramanthine Thrower">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="924" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="293" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9509" type="Weapon" name="Bloody Aramanthine Thrower - Cheap Shot">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="924" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="293" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9510" type="Weapon" name="Bloody Aramanthine Thrower - Focus">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="924" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <add order="0x10" stat="rCrit" val="100" />
+            <set order="0x08" stat="pAtkSpd" val="293" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9511" type="Weapon" name="Bloody Aramanthine Thrower - Critical Slow">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="924" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="293" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9512" type="Weapon" name="Bloody Aramanthine Shaper">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="546" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9513" type="Weapon" name="Bloody Aramanthine Shaper - Critical Damage">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="546" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9514" type="Weapon" name="Bloody Aramanthine Shaper - HP Drain">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="546" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9515" type="Weapon" name="Bloody Aramanthine Shaper - Haste">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="546" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="12" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9516" type="Weapon" name="Bloody Aramanthine Buster">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="517" />
+            <set order="0x08" stat="mAtk" val="534" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9517" type="Weapon" name="Bloody Aramanthine Buster - Mana Up">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="517" />
+            <set order="0x08" stat="mAtk" val="534" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9518" type="Weapon" name="Bloody Aramanthine Buster - Acumen">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="517" />
+            <set order="0x08" stat="mAtk" val="534" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9519" type="Weapon" name="Bloody Aramanthine Buster - Magic Hold">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="517" />
+            <set order="0x08" stat="mAtk" val="534" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9520" type="Weapon" name="Bloody Aramanthine Slasher">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9521" type="Weapon" name="Bloody Aramanthine Slasher - Haste">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9522" type="Weapon" name="Bloody Aramanthine Slasher - Health">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9523" type="Weapon" name="Bloody Aramanthine Slasher - Focus">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9524" type="Weapon" name="Bloody Aramanthine Stormer">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9525" type="Weapon" name="Bloody Aramanthine Stormer - Health">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9526" type="Weapon" name="Bloody Aramanthine Stormer - Guidance">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9527" type="Weapon" name="Bloody Aramanthine Stormer - Haste">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="596" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <add order="0x10" stat="accCombat" val="-3.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9528" type="Weapon" name="Bloody Aramanthine Caster">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="517" />
+            <set order="0x08" stat="mAtk" val="534" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9529" type="Weapon" name="Bloody Aramanthine Caster - Acumen">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="517" />
+            <set order="0x08" stat="mAtk" val="534" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9530" type="Weapon" name="Bloody Aramanthine Caster - MP Regeneration">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="517" />
+            <set order="0x08" stat="mAtk" val="534" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9531" type="Weapon" name="Bloody Aramanthine Caster - Mana Up">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="517" />
+            <set order="0x08" stat="mAtk" val="534" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9532" type="Weapon" name="Bloody Aramanthine Fighter">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9533" type="Weapon" name="Bloody Aramanthine Fighter - Focus">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9534" type="Weapon" name="Bloody Aramanthine Fighter - Health">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9535" type="Weapon" name="Bloody Aramanthine Fighter - Critical Stun">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9536" type="Weapon" name="Bloody Aramanthine Retributer">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9537" type="Weapon" name="Bloody Aramanthine Retributer - HP Regeneration">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9538" type="Weapon" name="Bloody Aramanthine Retributer - Health">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9539" type="Weapon" name="Bloody Aramanthine Retributer - HP Drain">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="4" />
+            <add order="0x10" stat="accCombat" val="4.75" />
+            <set order="0x08" stat="pAtkSpd" val="325" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9540" type="Weapon" name="Bloody Aramanthine Dual Dagger">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9541" type="Weapon" name="Bloody Aramanthine Dual Sword">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id="9542" type="Weapon" name="Bloody Aramanthine Dual Blunt">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set order="0x08" stat="pAtk" val="682" />
+            <set order="0x08" stat="mAtk" val="476" />
+            <set order="0x08" stat="rCrit" val="8" />
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val="0" order="0x0C" stat="pAtk" />
+            <enchant val="0" order="0x0C" stat="mAtk" />
+        </for>
+    </item>
+    <item id='9550' type="Weapon" name="Negi Vocaloid">
+        <set name="default_action" val="equip" />
+        <set name="weapon_type" val="BLUNT" />
+        <set name="bodypart" val="rhand" />
+        <set name="random_damage" val="20" />
+        <set name="attack_range" val="40" />
+        <set name="damage_range" val="0;0;40;120" />
+        <set name="material" val="WOOD" />
+        <set name="weight" val="1870" />
+        <set name="price" val="768" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
+        <for>
+            <set val='585' order='0x08' stat='pAtk'/>
+            <set val='581' order='0x08' stat='mAtk'/>
+            <set val='12' order='0x08' stat='rCrit'/>
+            <add val='12' order='0x10' stat='accCombat'/>
+            <set order="0x08" stat="pAtkSpd" val="350" />
+            <enchant val='0' order='0x0C' stat='pAtk'/>
+            <enchant val='0' order='0x0C' stat='mAtk'/>
+        </for>
+    </item>
+</list>

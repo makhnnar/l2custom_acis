@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <!-- 9860	Core Helm		May be worn by a Baron or a higher level Aristocrat.	-1					0	0	0	 -->
+    <item id="9860" type="Armor" name="Core Helm">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="head" />
+        <set name="material" val="FINE_STEEL" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="pDef" val="232" />
+            <set stat="maxCp" val="40" />
+        </for>
+    </item>
+    '<!-- 9861	Core Plate Armor		May be worn by a Baron or a higher level Aristocrat. Full body armor used by clan members.	-1	7860,7861,7862,7863	Produces the following effects: Maximum CP +232 and +40% CP recovery speed. When under attack from an opposing PC, debuff can be cast at an 80% success rate.			0	0	6	When all set items are enchanted by 6 or higher, P. Def. and MP regeneration rate will increase. -->
+    <item id="9861" type="Armor" name="Core Plate Armor">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="fullarmor" />
+        <set name="material" val="FINE_STEEL" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="pDef" val="232" />
+            <set stat="maxCp" val="40" />
+        </for>
+    </item>
+    <!-- 9862	Core Gauntlet	Heavy Armor	May be worn by a Baron or a higher level Aristocrat.	-1					0	0	0	 -->
+    <item id="9862" type="Armor" name="Core Gauntlet">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="FINE_STEEL" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="pDef" val="232" />
+            <set stat="maxCp" val="40" />
+        </for>
+    </item>
+    <!-- 9863	Core Solleret	Heavy Armor	May be worn by a Baron or a higher level Aristocrat.	-1					0	0	0	 -->
+    <item id="9863" type="Armor" name="Core Solleret">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="FINE_STEEL" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="pDef" val="232" />
+            <set stat="maxCp" val="40" />
+        </for>
+    </item>
+    <!-- 9864	Core Brigandine		May be worn by a Baron or a higher level Aristocrat. Full body armor used by clan members.	-1	7864,7860,7865,7866	Produces the following effects: Maximum CP +195 and +40% CP recovery speed. When under attack from an opposing PC, debuff can be cast at an 80% success rate.			0	0	6	When all set items are enchanted by 6 or higher, M. Def. and Evasion will increase. -->
+    <item id="9864" type="Armor" name="Core Brigandine">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="fullarmor" />
+        <set name="material" val="FINE_STEEL" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="maxCp" val="195" />
+        </for>
+    </item>
+    <!-- 9865	Core Leather Gloves	Light Armor	May be worn by a Baron or a higher level Aristocrat.	-1					0	0	0	 -->
+    <item id="9865" type="Armor" name="Core Leather Gloves">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="LEATHER" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="pDef" val="232" />
+            <set stat="maxCp" val="40" />
+        </for>
+    </item>
+    <!-- 9866	Core Boots	Light Armor	May be worn by a Baron or a higher level Aristocrat.	-1					0	0	0	 -->
+    <item id="9866" type="Armor" name="Core Boots">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="LIGHT" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="LEATHER" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="pDef" val="232" />
+            <set stat="maxCp" val="40" />
+        </for>
+    </item>
+    <!-- 9867	Core Doublet		May be worn by a Baron or a higher level Aristocrat. Full body armor used by clan members.	-1	7867,7860,7868,7869	Produces the following effects: Maximum CP +177 and +40% CP recovery speed. When under attack from an opposing PC, debuff can be cast at an 80% success rate.			0	0	6	When all set items are enchanted by 6 or higher, P. Def. and Weight Gauge will increase. -->
+    <item id="9867" type="Armor" name="Core Doublet">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="HEAVY" />
+        <set name="bodypart" val="fullarmor" />
+        <set name="material" val="FINE_STEEL" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="maxCp" val="177" />
+        </for>
+    </item>
+    <!-- 9868	Core Silk Gloves	Robe	May be worn by a Baron or a higher level Aristocrat.	-1					0	0	0	 -->
+    <item id="9868" type="Armor" name="Core Silk Gloves">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="gloves" />
+        <set name="material" val="LEATHER" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="pDef" val="232" />
+            <set stat="maxCp" val="40" />
+        </for>
+    </item>
+    <!-- 9869	Core Sandals	Robe	May be worn by a Baron or a higher level Aristocrat.	-1					0	0	0	 -->
+    <item id="9869" type="Armor" name="Core Sandals">
+        <set name="default_action" val="equip" />
+        <set name="armor_type" val="MAGIC" />
+        <set name="bodypart" val="feet" />
+        <set name="material" val="LEATHER" />
+        <set name="weight" val="1500" />
+        <set name="is_tradable" val="false" />
+        <set name="is_dropable" val="false" />
+        <set name="is_destroyable" val="false" />
+        <set name="is_sellable" val="false" />
+        <set name="is_depositable" val="false" />
+        <set name="price" val="0" />
+        <set name="crystal_type" val="S" />
+        <set name="crystal_count" val="7860" />
+        <for>
+            <set stat="pDef" val="232" />
+            <set stat="maxCp" val="40" />
+        </for>
+    </item>
+</list>
