@@ -59,8 +59,8 @@
 	<armorset name="Draconic v2 part Robe set" chest="40001" legs="0" head="0" gloves="40004" feet="40003" skillId="7112" shield="0" shieldSkillId="0" enchant6Skill="7112"/>
 	<armorset name="Stealth Assassin set" chest="10087" legs="10088" head="0" gloves="10089" feet="10090" skillId="7119" shield="0" shieldSkillId="0" enchant6Skill="7119"/>
 	<armorset name="Core Heavy set" chest="9861" legs="0" head="9860" gloves="9862" feet="9863" skillId="7254" shield="0" shieldSkillId="0" enchant6Skill="7254"/>
-	<armorset name="Core Light set" chest="9864" legs="0" head="9865" gloves="9866" feet="0" skillId="7255" shield="0" shieldSkillId="0" enchant6Skill="7255"/>
-	<armorset name="Core Robe set" chest="9867" legs="0" head="9868" gloves="9869" feet="0" skillId="7256" shield="0" shieldSkillId="0" enchant6Skill="7256"/>
+	<armorset name="Core Light set" chest="9864" legs="0" head="9860" gloves="9865" feet="9866" skillId="7255" shield="0" shieldSkillId="0" enchant6Skill="7255"/>
+	<armorset name="Core Robe set" chest="9867" legs="0" head="9860" gloves="9868" feet="9869" skillId="7256" shield="0" shieldSkillId="0" enchant6Skill="7256"/>
 	<armorset name="Draco Core Heavy Set" chest="9740" legs="9741" head="9752" gloves="9742" feet="9743" skillId="7107" shield="9728" shieldSkillId="0" enchant6Skill="7107"/>
 	<armorset name="Draco Core Light Set" chest="9744" legs="9745" head="9753" gloves="9746" feet="9747" skillId="7108" shield="9728" shieldSkillId="0" enchant6Skill="7108"/>
 	<armorset name="Draco Core Robe Set" chest="9748" legs="9749" head="9754" gloves="9750" feet="9751" skillId="7109" shield="9728" shieldSkillId="0" enchant6Skill="7109"/>

@@ -3,7 +3,6 @@
     <!-- 9860	Core Helm		May be worn by a Baron or a higher level Aristocrat.	-1					0	0	0	 -->
     <item id="9860" type="Armor" name="Core Helm">
         <set name="default_action" val="equip" />
-        <set name="armor_type" val="HEAVY" />
         <set name="bodypart" val="head" />
         <set name="material" val="FINE_STEEL" />
         <set name="weight" val="1500" />
@@ -83,7 +82,7 @@
     <!-- 9864	Core Brigandine		May be worn by a Baron or a higher level Aristocrat. Full body armor used by clan members.	-1	7864,7860,7865,7866	Produces the following effects: Maximum CP +195 and +40% CP recovery speed. When under attack from an opposing PC, debuff can be cast at an 80% success rate.			0	0	6	When all set items are enchanted by 6 or higher, M. Def. and Evasion will increase. -->
     <item id="9864" type="Armor" name="Core Brigandine">
         <set name="default_action" val="equip" />
-        <set name="armor_type" val="HEAVY" />
+        <set name="armor_type" val="LIGHT" />
         <set name="bodypart" val="fullarmor" />
         <set name="material" val="FINE_STEEL" />
         <set name="weight" val="1500" />
@@ -142,7 +141,7 @@
     <!-- 9867	Core Doublet		May be worn by a Baron or a higher level Aristocrat. Full body armor used by clan members.	-1	7867,7860,7868,7869	Produces the following effects: Maximum CP +177 and +40% CP recovery speed. When under attack from an opposing PC, debuff can be cast at an 80% success rate.			0	0	6	When all set items are enchanted by 6 or higher, P. Def. and Weight Gauge will increase. -->
     <item id="9867" type="Armor" name="Core Doublet">
         <set name="default_action" val="equip" />
-        <set name="armor_type" val="HEAVY" />
+        <set name="armor_type" val="MAGIC" />
         <set name="bodypart" val="fullarmor" />
         <set name="material" val="FINE_STEEL" />
         <set name="weight" val="1500" />
