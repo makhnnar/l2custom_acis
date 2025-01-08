@@ -200,6 +200,11 @@
         </for>
     </item>
     <item id='10010' type="Weapon" name="Dark monster shield Shield">
+        <set name="default_action" val="equip" />
+        <set name="bodypart" val="lhand" />
+        <set name="material" val="BRONZE" />
+        <set name="weight" val="8920" />
+        <set name="price" val="49200000" />
         <for>
             <sub val='6' order='0x10' stat='rEvas'/>
             <set val='510' order='0x08' stat='sDef'/>

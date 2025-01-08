@@ -253,7 +253,7 @@
             <enchant val="0" order="0x0C" stat="mAtk" />
         </for>
     </item>
-    <item id='9740' type="Armor" name="Top (Fire) - Heavy	[Level 3]">
+    <item id='9740' type="Armor" name="Draco Core Top (Fire) - Heavy	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="HEAVY" />
         <set name="bodypart" val="chest" />
@@ -265,7 +265,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9741' type="Armor" name="Bottom (Fire) - Heavy	[Level 3]">
+    <item id='9741' type="Armor" name="Draco Core Bottom (Fire) - Heavy	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="HEAVY" />
         <set name="bodypart" val="legs" />
@@ -277,7 +277,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9742' type="Armor" name="Gloves (Fire) - Heavy	[Level 3]">
+    <item id='9742' type="Armor" name="Draco Core Gloves (Fire) - Heavy	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="HEAVY" />
         <set name="bodypart" val="gloves" />
@@ -289,7 +289,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9743' type="Armor" name="Boots (Fire) - Heavy	[Level 3]">
+    <item id='9743' type="Armor" name="Draco Core Boots (Fire) - Heavy	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="HEAVY" />
         <set name="bodypart" val="feet" />
@@ -301,7 +301,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9744' type="Armor" name="Top (Fire) - Light 	[Level 3]">
+    <item id='9744' type="Armor" name="Draco Core Top (Fire) - Light 	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="LIGHT" />
         <set name="bodypart" val="chest" />
@@ -313,7 +313,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9745' type="Armor" name="Bottom (Fire) - Light	[Level 3]">
+    <item id='9745' type="Armor" name="Draco Core Bottom (Fire) - Light	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="LIGHT" />
         <set name="bodypart" val="legs" />
@@ -325,7 +325,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9746' type="Armor" name="Gloves (Fire) - Light	[Level 3]">
+    <item id='9746' type="Armor" name="Draco Core Gloves (Fire) - Light	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="LIGHT" />
         <set name="bodypart" val="gloves" />
@@ -337,7 +337,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9747' type="Armor" name="Boots (Fire) - Light	[Level 3]">
+    <item id='9747' type="Armor" name="Draco Core Boots (Fire) - Light	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="LIGHT" />
         <set name="bodypart" val="feet" />
@@ -349,7 +349,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9748' type="Armor" name="Top (Fire) - Robe 	[Level 3]">
+    <item id='9748' type="Armor" name="Draco Core Top (Fire) - Robe 	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="MAGIC" />
         <set name="bodypart" val="chest" />
@@ -361,7 +361,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9749' type="Armor" name="Bottom (Fire) - Robe	[Level 3]">
+    <item id='9749' type="Armor" name="Draco Core Bottom (Fire) - Robe	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="MAGIC" />
         <set name="bodypart" val="legs" />
@@ -373,7 +373,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9750' type="Armor" name="Gloves (Fire) - Robe	[Level 3]">
+    <item id='9750' type="Armor" name="Draco Core Gloves (Fire) - Robe	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="MAGIC" />
         <set name="bodypart" val="gloves" />
@@ -385,7 +385,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9751' type="Armor" name="Boots (Fire) - Robe	[Level 3]">
+    <item id='9751' type="Armor" name="Draco Core Boots (Fire) - Robe	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="LIGHT" />
         <set name="bodypart" val="feet" />
@@ -397,7 +397,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9752' type="Armor" name="Helmet (Fire) - Heavy	[Level 3]">
+    <item id='9752' type="Armor" name="Draco Core Helmet (Fire) - Heavy	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="HEAVY" />
         <set name="bodypart" val="head" />
@@ -411,7 +411,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9753' type="Armor" name="Helmet (Fire) - Light	[Level 3]">
+    <item id='9753' type="Armor" name="Draco Core Helmet (Fire) - Light	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="LIGHT" />
         <set name="bodypart" val="head" />
@@ -425,7 +425,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
-    <item id='9754' type="Armor" name="Helmet (Fire) - Robe	[Level 3]">
+    <item id='9754' type="Armor" name="Draco Core Helmet (Fire) - Robe	[Level 3]">
         <set name="default_action" val="equip" />
         <set name="armor_type" val="MAGIC" />
         <set name="bodypart" val="head" />
@@ -439,4 +439,7 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
+    <!-- this is an armor set definition
+    <armorset name="Sacrifice Heavy set" chest="9221" legs="0" head="9220" gloves="9222" feet="9223" skillId="7250" shield="0" shieldSkillId="0" enchant6Skill="7250"/>
+    if the skill ids for heavy, light and robe are 7107, 7108 and 7109 respectively, then create the armor set definitions for each Draco Core set Heavy, Light and Robe -->
 </list>

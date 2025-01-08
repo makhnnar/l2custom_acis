@@ -19812,6 +19812,17 @@
 		<product id="9229"/>
 		<product id="9230"/>
 		<product id="9231"/>
+		<!-- core armor -->
+		<product id="9860"/>
+		<product id="9861"/>
+		<product id="9862"/>
+		<product id="9863"/>
+		<product id="9864"/>
+		<product id="9865"/>
+		<product id="9866"/>
+		<product id="9867"/>
+		<product id="9868"/>
+		<product id="9869"/>
 	</buyList>
 	<!-- custom jewels -->
 	<buyList id="355577" npcId="-1">
@@ -19873,5 +19884,50 @@
 		<product id="14648"/>
 		<product id="14649"/>
 		<product id="14650"/>
+		<!-- Amaranthine weapons -->
+		<product id="9500"/>
+		<product id="9501"/>
+		<product id="9502"/>
+		<product id="9503"/>
+		<product id="9504"/>
+		<product id="9505"/>
+		<product id="9506"/>
+		<product id="9507"/>
+		<product id="9508"/>
+		<product id="9509"/>
+		<product id="9510"/>
+		<product id="9511"/>
+		<product id="9512"/>
+		<product id="9513"/>
+		<product id="9514"/>
+		<product id="9515"/>
+		<product id="9516"/>
+		<product id="9517"/>
+		<product id="9518"/>
+		<product id="9519"/>
+		<product id="9520"/>
+		<product id="9521"/>
+		<product id="9522"/>
+		<product id="9523"/>
+		<product id="9524"/>
+		<product id="9525"/>
+		<product id="9526"/>
+		<product id="9527"/>
+		<product id="9528"/>
+		<product id="9529"/>
+		<product id="9530"/>
+		<product id="9531"/>
+		<product id="9532"/>
+		<product id="9533"/>
+		<product id="9534"/>
+		<product id="9535"/>
+		<product id="9536"/>
+		<product id="9537"/>
+		<product id="9538"/>
+		<product id="9539"/>
+		<product id="9540"/>
+		<product id="9541"/>
+		<product id="9542"/>
+		<product id="9550"/>
 	</buyList>
 </list>

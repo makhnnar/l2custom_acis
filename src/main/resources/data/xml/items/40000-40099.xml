@@ -7,6 +7,7 @@
         <set name="material" val="BRONZE" />
         <set name="weight" val="8920" />
         <set name="price" val="49200000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -19,6 +20,7 @@
         <set name="material" val="BRONZE" />
         <set name="weight" val="8920" />
         <set name="price" val="49200000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -31,6 +33,7 @@
         <set name="material" val="LEATHER" />
         <set name="weight" val="650" />
         <set name="price" val="6770000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -43,6 +46,7 @@
         <set name="material" val="LEATHER" />
         <set name="weight" val="1320" />
         <set name="price" val="37000000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='105'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -55,6 +59,7 @@
         <set name="material" val="BRONZE" />
         <set name="weight" val="8920" />
         <set name="price" val="49200000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -71,6 +76,7 @@
         <set name="material" val="BRONZE" />
         <set name="weight" val="8920" />
         <set name="price" val="49200000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -87,6 +93,7 @@
         <set name="material" val="BRONZE" />
         <set name="weight" val="8920" />
         <set name="price" val="49200000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -103,6 +110,7 @@
         <set name="material" val="BRONZE" />
         <set name="weight" val="8920" />
         <set name="price" val="49200000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -119,6 +127,7 @@
         <set name="material" val="BRONZE" />
         <set name="weight" val="8920" />
         <set name="price" val="49200000" />
+        <set name="crystal_type" val="S" />
         <for>
             <add val='265'  stat='pDef'/>
             <enchant val='0'  stat='pDef'/>
@@ -128,4 +137,8 @@
             <enchant val='0'  stat='pDef'/>
         </for>
     </item>
+    <!-- this is an armor set definition
+    <armorset name="Sacrifice Heavy set" chest="9221" legs="0" head="9220" gloves="9222" feet="9223" skillId="7250" shield="0" shieldSkillId="0" enchant6Skill="7250"/>
+    if the skill ids for heavy, light and robe are 7253, 7254 and 7255 respectively, then create the armor set definitions for each Draconic v2 part set Heavy, Light and Robe -->
+
 </list>
