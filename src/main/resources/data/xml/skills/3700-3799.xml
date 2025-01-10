@@ -168,6 +168,8 @@
         <set name="castRange" val="900"/>
         <set name="effectRange" val="1400"/>
         <set name="absorbPart" val="1" />
+        <set name="magicLvl" val="77"/>
+        <set name="ignoreResists" val="true"/>
         <for>
             <effect count="5" name="ManaDamOverTime" time="2" val="40" stackOrder="1" stackType="multi_debuff" effectPower="80" effectType="MDOT">
                 <subDiv stat="darkRes" val="30" />
@@ -191,6 +193,7 @@
         <set name="castRange" val="600"/>
         <set name="effectRange" val="1100"/>
         <set name="killByDOT" val="true" />
+        <set name="ignoreResists" val="true"/>
         <for>
             <!--
                 the value time will affect the count value. Then, if time is define together with
@@ -212,11 +215,10 @@
         <table name="#enchantMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 82 83 83 83 84 84 85 85 85 </table>
         <table name="#ench2HpConsume"> 80 79 78 77 76 75 74 72 71 70 69 68 66 65 64 63 62 61 65 59 58 56 55 54 53 52 50 49 48 47 </table>
         <table name="#hpConsume"> 48 58 71 74 80 82 87 88 97 98 </table>
-        <table name="#magicLvl"> 38 46 54 59 63 64 68 71 73 74 </table>
         <table name="#power"> 49 58 68 78 84 89 94 99 105 108 </table>
         <table name="#ench1Power"> 109 109 110 111 111 112 113 113 114 115 115 116 116 117 118 118 119 120 120 121 122 122 123 124 124 125 125 126 127 127 </table>
         <set name="hpConsume" val="#hpConsume"/>
-        <set name="magicLvl" val="#magicLvl"/>
+        <set name="magicLvl" val="77"/>
         <set name="power" val="#power"/>
         <set name="target" val="ONE"/>
         <set name="element" val="DARK"/>
@@ -235,15 +237,14 @@
     </skill>
     <skill id="3711" levels="10" name="Rupture"><!--it is like hammer crush id 260-->
         <table name="#mpConsume"> 48 58 71 74 80 82 87 88 97 98 </table>
-        <table name="#magicLvl"> 38 46 54 59 63 64 68 71 73 74 </table>
         <table name="#power"> 86 172 258 344 430 516 602 688 774 860 </table>
         <set name="baseCritRate" val="15" />
         <set name="mpInitialConsume" val="14"/>
         <set name="mpConsume" val="#mpConsume"/>
-        <set name="magicLvl" val="#magicLvl"/>
+        <set name="magicLvl" val="77"/>
         <set name="power" val="#power"/>
         <set name="target" val="ONE"/>
-        <set name="reuseDelay" val="30000"/>
+        <set name="reuseDelay" val="300000"/>
         <set name="hitTime" val="4000"/>
         <set name="skillType" val="PDAM" />
         <set name="ignoreShld" val="true"/>
@@ -276,12 +277,10 @@
         </for>
     </skill>
     <skill id="3713" levels="9" name="Hammer of God">
-        <table name="#magicLvl"> 40 44 48 52 56 60 64 68 72 </table>
         <set name="mpConsume" val="120"/>
         <set name="isDebuff" val="true" />
         <set name="isMagic" val="true" />
-        <set name="lvlDepend" val="1" />
-        <set name="magicLvl" val="#magicLvl" />
+        <set name="magicLvl" val="77" />
         <set name="operateType" val="ACTIVE" />
         <set name="power" val="80" />
         <set name="skillType" val="STUN" />

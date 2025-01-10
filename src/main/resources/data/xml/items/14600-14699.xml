@@ -11,6 +11,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -32,6 +34,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -53,6 +57,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -74,6 +80,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -95,6 +103,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1881' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -118,6 +128,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -139,6 +151,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -160,6 +174,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1147' order='0x08' stat='pAtk'/>
             <set val='1382' order='0x08' stat='mAtk'/>
@@ -183,6 +199,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -205,6 +223,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1397' order='0x08' stat='pAtk'/>
             <set val='1145' order='0x08' stat='mAtk'/>
@@ -227,6 +247,8 @@
         <set name="material" val="BONE" />
         <set name="weight" val="1300" />
         <set name="crystal_type" val="S" />
+        <set name="soulshots" val="1" />
+        <set name="spiritshots" val="1" />
         <for>
             <set val='1238' order='0x08' stat='pAtk'/>
             <set val='1382' order='0x08' stat='mAtk'/>

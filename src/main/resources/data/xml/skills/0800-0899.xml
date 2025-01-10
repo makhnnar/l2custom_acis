@@ -12,7 +12,7 @@
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<for>
-			<effect name="Buff" time="14400" val="0" stackOrder="1"
+			<effect name="Buff" time="3600" val="0" stackOrder="1"
 				stackType="ws_weapon">
 				<mul  stat="pAtk" val="1.05">
 					<using kind="SWORD,BIGSWORD,DUAL,DAGGER,POLE,DUALFIST" />
@@ -35,7 +35,7 @@
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<for>
-			<effect name="Buff" time="14400" val="0" stackOrder="1"
+			<effect name="Buff" time="3600" val="0" stackOrder="1"
 				stackType="ws_weapon">
 				<mul  stat="pAtk" val="1.05">
 					<using kind="BLUNT,BIGBLUNT" />
@@ -55,12 +55,12 @@
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<for>
-			<effect name="Buff" time="14400" val="0" stackOrder="1"
+			<effect name="Buff" time="3600" val="0" stackOrder="1"
 				stackType="ws_weapon">
-				<mul  stat="pAtk" val="1.05">
+				<mul stat="pAtk" val="1.05">
 					<using kind="BOW" />
 				</mul>
-				<add  stat="pAtkRange" val="100">
+				<add stat="pAtkRange" val="100">
 					<using kind="BOW" />
 				</add>
 			</effect>
@@ -78,7 +78,7 @@
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<for>
-			<effect name="Buff" time="14400" val="0" stackOrder="1"
+			<effect name="Buff" time="3600" val="0" stackOrder="1"
 				stackType="ws_armor">
 				<mul  stat="pDef" val="1.1">
 					<and>
@@ -103,7 +103,7 @@
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<for>
-			<effect name="Buff" time="14400" val="0" stackOrder="1"
+			<effect name="Buff" time="3600" val="0" stackOrder="1"
 				stackType="ws_armor">
 				<mul  stat="pDef" val="1.05">
 					<and>
@@ -136,7 +136,7 @@
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<for>
-			<effect name="Buff" time="14400" val="0" stackOrder="1"
+			<effect name="Buff" time="3600" val="0" stackOrder="1"
 				stackType="ws_armor">
 				<mul  stat="pDef" val="1.05">
 					<and>
@@ -171,16 +171,15 @@
 	</skill>
 
 	<skill id="833" levels="10" name="Nature Arrest" >
-		<table name="#MagicLvl">40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
 		<table name="#power">80 81 82 82 83 84 84 85 86 86 90</table>
 		<table name="#chance">80 82 84 86 88 90 92 93 96 98 100</table>
 		<table name="#mpConsume">105 107 108 109 110 111 112 113 114 124 130</table>
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="power" val="#power"/>
 		<set name="chance" val="#chance"/>
-		<set name="magicLvl" val="#MagicLvl"/>
+		<set name="magicLvl" val="77"/>
 		<set name="saveVs" val="MEN"/>
-		<set name="lvlDepend" val="2"/>
+		<set name="ignoreResists" val="true"/>
 		<set name="target" val="ONE"/>
 		<set name="reuseDelay" val="490000"/>
 		<set name="hitTime" val="2000"/>
@@ -190,7 +189,7 @@
 		<set name="effectRange" val="650"/>
 		<set name="isDebuff" val="true"/>
 		<for>
-			<effect count="1" name="Root" time="10" val="0" stackOrder="1" stackType="Root"/>
+			<effect count="1" name="Root" time="10" val="0" stackOrder="1" stackType="Root" noicon="1"/>
 			<effect count="1" name="DamOverTime" val="#power" time="10"/>
 		</for>
 	</skill>
@@ -235,7 +234,7 @@
 		<set name="nextDanceCost" val="30"/>
 		<set name="target" val="PARTY"/>
 		<set name="skillRadius" val="1000"/>
-		<set name="reuseDelay" val="100000"/>
+		<set name="reuseDelay" val="300000"/>
 		<set name="hitTime" val="2500"/>
 		<set name="skillType" val="BUFF"/>
 		<set name="isDance" val="true"/>
@@ -244,7 +243,7 @@
 		<set name="effectRange" val="-1"/>
 		<set name="aggroPoints" val="549"/>
 		<for>
-			<effect name="Buff" time="600" count="1" val="0">
+			<effect name="Buff" time="300" count="1" val="0">
 				<mul  stat="pAtk" val="1.25"/>
 				<mul  stat="pAtkSpd" val="1.18"/>
 				<mul  stat="runSpd" val="1.18"/>
@@ -257,7 +256,7 @@
 		<set name="nextDanceCost" val="30"/>
 		<set name="target" val="PARTY"/>
 		<set name="skillRadius" val="1000"/>
-		<set name="reuseDelay" val="100000"/>
+		<set name="reuseDelay" val="300000"/>
 		<set name="hitTime" val="2500"/>
 		<set name="skillType" val="BUFF"/>
 		<set name="isDance" val="true"/>
@@ -269,7 +268,7 @@
 		<enchant2 name="aggroPoints" val="655"/>
 		<enchant2 name="mpConsume" val="#ench2MpConsume"/>
 		<for>
-			<effect name="Buff" time="600" count="1" val="0">
+			<effect name="Buff" time="300" count="1" val="0">
 				<mul  stat="mAtk" val="1.25"/>
 				<mul  stat="mAtkSpd" val="1.18"/>
 				<mul  stat="runSpd" val="1.08"/>
@@ -282,7 +281,7 @@
 		<set name="nextDanceCost" val="30"/>
 		<set name="target" val="PARTY"/>
 		<set name="skillRadius" val="1000"/>
-		<set name="reuseDelay" val="100000"/>
+		<set name="reuseDelay" val="600000"/>
 		<set name="hitTime" val="2500"/>
 		<set name="skillType" val="BUFF"/>
 		<set name="isDance" val="true"/>
@@ -291,7 +290,7 @@
 		<set name="effectRange" val="-1"/>
 		<set name="aggroPoints" val="549"/>
 		<for>
-			<effect name="Buff" time="600" count="1" val="0">
+			<effect name="Buff" time="300" count="1" val="0">
 				<mul  stat="mDef" val="1.28"/>
 				<mul  stat="pDef" val="1.28"/>
 				<mul  stat="sDef" val="1.28"/>
@@ -312,7 +311,7 @@
 		<set name="nextDanceCost" val="30"/>
 		<set name="target" val="PARTY"/>
 		<set name="skillRadius" val="1000"/>
-		<set name="reuseDelay" val="100000"/>
+		<set name="reuseDelay" val="600000"/>
 		<set name="hitTime" val="2500"/>
 		<set name="skillType" val="BUFF"/>
 		<set name="isDance" val="true"/>
@@ -321,7 +320,7 @@
 		<set name="effectRange" val="-1"/>
 		<set name="aggroPoints" val="549"/>
 		<for>
-			<effect name="Buff" time="600" count="1" val="0">
+			<effect name="Buff" time="300" count="1" val="0">
 				<mul  stat="maxMp" val="1.48"/>
 				<mul  stat="maxHp" val="1.48"/>
 				<mul  stat="regMp" val="1.8"/>
@@ -338,7 +337,7 @@
 		<set name="nextDanceCost" val="30"/>
 		<set name="target" val="PARTY"/>
 		<set name="skillRadius" val="1000"/>
-		<set name="reuseDelay" val="490000"/>
+		<set name="reuseDelay" val="900000"/>
 		<set name="hitTime" val="2500"/>
 		<set name="skillType" val="BUFF"/>
 		<set name="isDance" val="true"/>
@@ -367,7 +366,7 @@
 		<set name="nextDanceCost" val="30"/>
 		<set name="target" val="PARTY"/>
 		<set name="skillRadius" val="1000"/>
-		<set name="reuseDelay" val="490000"/>
+		<set name="reuseDelay" val="900000"/>
 		<set name="hitTime" val="2500"/>
 		<set name="skillType" val="BUFF"/>
 		<set name="isDance" val="true"/>
@@ -406,7 +405,7 @@
 		<set name="magicLvl" val="76" />
 		<set name="overHit" val="true" />
 		<set name="operateType" val="ACTIVE" />
-		<set name="reuseDelay" val="490000" />
+		<set name="reuseDelay" val="900000" />
 		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<for>
@@ -421,12 +420,11 @@
 
 	<skill id="843" levels="1" name="Nocker Shield">
 		<set name="weaponsAllowed" val="SHIELD" />
-		<set name="magicLvl" val="85"/>
+		<set name="magicLvl" val="77"/>
 		<set name="mpConsume" val="84"/>
 		<set name="nextActionAttack" val="true"/>
 		<set name="saveVs" val="CON"/>
 		<set name="power" val="800"/>
-		<set name="lvlDepend" val="2"/>
 		<set name="target" val="ONE"/>
 		<set name="reuseDelay" val="490000"/>
 		<set name="hitTime" val="1200"/>
@@ -464,7 +462,7 @@
 				<using kind="Shield"/>
 			</effect>
 			<effect self="1" count="1" name="Buff" time="3" val="0">
-				<mul  stat="runSpd" val="4"/>
+				<mul stat="runSpd" val="4"/>
 				<using kind="Shield"/>
 			</effect>
 		</for>
@@ -515,10 +513,10 @@
 		<set name="skillType" val="BUFF"/>
 		<set name="operateType" val="PASSIVE"/>
 		<for>
-			<mul  stat="pDef" val="13">
+			<mul stat="pDef" val="13">
 				<player resting="true"/>
 			</mul>
-			<mul  stat="mDef" val="7.5">
+			<mul stat="mDef" val="7.5">
 				<player resting="true"/>
 			</mul>
 		</for>
@@ -569,16 +567,16 @@
 				<mul  stat="pAtk" val="1.1">
 					<using kind="BOW"/>
 				</mul>
-				<mul  stat="pAtkSpd" val="1.1">
+				<mul stat="pAtkSpd" val="1.1">
 					<using kind="BOW"/>
 				</mul>
-				<mul  stat="rCrit" val="2">
+				<mul stat="rCrit" val="2">
 					<using kind="BOW"/>
 				</mul>
-				<mul  stat="mReuse" val="0.2">
+				<mul stat="mReuse" val="0.2">
 					<using kind="BOW"/>
 				</mul>
-				<mul  stat="PhysicalMpConsumeRate" val="0.1">
+				<mul stat="PhysicalMpConsumeRate" val="0.1">
 					<using kind="BOW"/>
 				</mul>
 			</effect>

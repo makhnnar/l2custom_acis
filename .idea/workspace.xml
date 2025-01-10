@@ -6,7 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/14000-14099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/14000-14099.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/armorSets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/armorSets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/10000-10099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/10000-10099.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/12000-12099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/12000-12099.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/14600-14699.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/14600-14699.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9500-9599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9500-9599.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9700-9799.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9700-9799.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/items/9800-9899.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/items/9800-9899.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0000-0099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0000-0099.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0100-0199.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0100-0199.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0200-0299.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0200-0299.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0300-0399.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0300-0399.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0400-0499.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0400-0499.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0800-0899.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0800-0899.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/2200-2299.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/2200-2299.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3100-3199.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3100-3199.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3200-3299.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3200-3299.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3700-3799.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3700-3799.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/4400-4499.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/4400-4499.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/5100-5199.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/5100-5199.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/5200-5299.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/5200-5299.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/7100-7199.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/7100-7199.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/7200-7299.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/7200-7299.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

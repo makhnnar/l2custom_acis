@@ -13,6 +13,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -34,6 +35,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="496" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -56,6 +58,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="496" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -78,6 +81,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -100,6 +104,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -122,6 +127,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -144,6 +150,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -167,6 +174,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -190,6 +198,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="924" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -212,6 +221,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="924" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -234,6 +244,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="924" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -257,6 +268,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="924" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -279,6 +291,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="546" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -301,6 +314,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="546" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -323,6 +337,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="546" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -345,6 +360,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="546" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -367,6 +383,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="517" />
             <set order="0x08" stat="mAtk" val="534" />
@@ -388,6 +405,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="517" />
             <set order="0x08" stat="mAtk" val="534" />
@@ -409,6 +427,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="517" />
             <set order="0x08" stat="mAtk" val="534" />
@@ -430,6 +449,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="517" />
             <set order="0x08" stat="mAtk" val="534" />
@@ -451,6 +471,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -472,6 +493,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -493,6 +515,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -514,6 +537,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -535,6 +559,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -557,6 +582,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -579,6 +605,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -601,6 +628,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="596" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -623,6 +651,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="517" />
             <set order="0x08" stat="mAtk" val="534" />
@@ -645,6 +674,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="517" />
             <set order="0x08" stat="mAtk" val="534" />
@@ -667,6 +697,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="517" />
             <set order="0x08" stat="mAtk" val="534" />
@@ -689,6 +720,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="517" />
             <set order="0x08" stat="mAtk" val="534" />
@@ -711,6 +743,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -733,6 +766,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -755,6 +789,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -777,6 +812,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -799,6 +835,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -821,6 +858,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -843,6 +881,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -865,6 +904,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -887,6 +927,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -908,6 +949,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />
@@ -929,6 +971,7 @@
         <set name="price" val="768" />
         <set name="soulshots" val="1" />
         <set name="spiritshots" val="1" />
+        <set name="crystal_type" val="S" />
         <for>
             <set order="0x08" stat="pAtk" val="682" />
             <set order="0x08" stat="mAtk" val="476" />

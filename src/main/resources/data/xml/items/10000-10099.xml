@@ -4,7 +4,7 @@
         <set name="default_action" val="equip" />
         <set name="armor_type" val="NONE" />
         <set name="bodypart" val="underwear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="422" />
         <set name="material" val="DYESTUFF" />
         <set name="weight" val="800" />
@@ -23,7 +23,7 @@
         <set name="default_action" val="equip" />
         <set name="armor_type" val="NONE" />
         <set name="bodypart" val="underwear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="422" />
         <set name="material" val="DYESTUFF" />
         <set name="weight" val="800" />
@@ -44,7 +44,7 @@
         <set name="default_action" val="equip" />
         <set name="armor_type" val="NONE" />
         <set name="bodypart" val="underwear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="422" />
         <set name="material" val="DYESTUFF" />
         <set name="weight" val="800" />
@@ -65,7 +65,7 @@
         <set name="default_action" val="equip" />
         <set name="armor_type" val="NONE" />
         <set name="bodypart" val="underwear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="422" />
         <set name="material" val="DYESTUFF" />
         <set name="weight" val="800" />
@@ -89,7 +89,7 @@
         <set name="default_action" val="equip" />
         <set name="armor_type" val="NONE" />
         <set name="bodypart" val="underwear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="422" />
         <set name="material" val="DYESTUFF" />
         <set name="weight" val="800" />
@@ -109,7 +109,7 @@
         <set name="default_action" val="equip" />
         <set name="armor_type" val="NONE" />
         <set name="bodypart" val="underwear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="422" />
         <set name="material" val="DYESTUFF" />
         <set name="weight" val="800" />
@@ -131,7 +131,7 @@
         <set name="default_action" val="equip" />
         <set name="armor_type" val="NONE" />
         <set name="bodypart" val="underwear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="422" />
         <set name="material" val="DYESTUFF" />
         <set name="weight" val="800" />
@@ -154,7 +154,7 @@
         <set name="default_action" val="equip" />
         <set name="armor_type" val="NONE" />
         <set name="bodypart" val="underwear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="422" />
         <set name="material" val="DYESTUFF" />
         <set name="weight" val="800" />

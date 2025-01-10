@@ -1171,7 +1171,7 @@
 		<set name="effectRange" val="900" />
 		<set name="aggroPoints" val="#aggro" />
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="#stackOrder" stackType="attack_time_down">
+			<effect name="Buff" time="300" val="0" stackOrder="#stackOrder" stackType="attack_time_down">
 				<mul stat="pAtkSpd" val="#pAtkSpd" />
 			</effect>
 		</for>
@@ -1196,7 +1196,7 @@
 		<set name="effectRange" val="900" />
 		<set name="aggroPoints" val="#aggro" />
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="#stackOrder" stackType="vampiric_attack">
+			<effect name="Buff" time="300" val="0" stackOrder="#stackOrder" stackType="vampiric_attack">
 				<add stat="absorbDam" val="#absorbDam" />
 			</effect>
 		</for>
@@ -1221,7 +1221,7 @@
 		<set name="effectRange" val="900" />
 		<set name="aggroPoints" val="#aggro" />
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="#stackOrder" stackType="hp_regen_up">
+			<effect name="Buff" time="300" val="0" stackOrder="#stackOrder" stackType="hp_regen_up">
 				<mul stat="regHp" val="#rate" />
 			</effect>
 		</for>
@@ -1294,7 +1294,7 @@
 		<set name="castRange" val="400" />
 		<set name="effectRange" val="900" />
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="#stackOrder" stackType="hit_up">
+			<effect name="Buff" time="300" val="0" stackOrder="#stackOrder" stackType="hit_up">
 				<add stat="accCombat" val="#accCombat" />
 			</effect>
 		</for>
@@ -1319,7 +1319,7 @@
 		<set name="effectRange" val="900" />
 		<set name="aggroPoints" val="#aggro" />
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="#stackOrder" stackType="speed_up">
+			<effect name="Buff" time="300" val="0" stackOrder="#stackOrder" stackType="speed_up">
 				<add stat="runSpd" val="#runSpd" />
 			</effect>
 		</for>
@@ -1344,7 +1344,7 @@
 		<set name="effectRange" val="900" />
 		<set name="aggroPoints" val="#aggro" />
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="#stackOrder" stackType="casting_time_down">
+			<effect name="Buff" time="300" val="0" stackOrder="#stackOrder" stackType="casting_time_down">
 				<mul stat="mAtkSpd" val="#mAtkSpd" />
 			</effect>
 		</for>
@@ -1369,7 +1369,7 @@
 		<set name="effectRange" val="900" />
 		<set name="aggroPoints" val="#aggro" />
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="#stackOrder" stackType="ma_up">
+			<effect name="Buff" time="300" val="0" stackOrder="#stackOrder" stackType="ma_up">
 				<mul stat="mAtk" val="#mAtk" />
 			</effect>
 		</for>

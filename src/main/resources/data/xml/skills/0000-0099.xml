@@ -1167,7 +1167,7 @@
 		<set name="aggroPoints" val="268" />
 		<!--<set name="weaponsAllowed" val="DUALFIST" /-->
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="1" stackType="possession">
+			<effect name="Buff" time="300" val="0" stackOrder="1" stackType="possession">
 				<mul stat="runSpd" val="0.7"/> 
 				<mul stat="pAtk" val="1.2"/> 
 				<mul stat="cAtk" val="1.2"/>
@@ -1290,7 +1290,7 @@
 		<set name="aggroPoints" val="204"/>
 		<!--<set name="weaponsAllowed" val="DUALFIST" /-->
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="1" stackType="possession">
+			<effect name="Buff" time="300" val="0" stackOrder="1" stackType="possession">
 				<mul stat="runSpd" val="1.2"/>
 				<add stat="accCombat" val="3"/>
 			</effect>

@@ -1159,7 +1159,7 @@
 		<set name="isDebuff" val="true" />
 		<set name="mpConsume" val="#mpConsume" />
 		<for>
-			<effect name="Buff" time="120" val="0" effectPower="40" effectType="DEBUFF" stackOrder="1" stackType="holy_attack">
+			<effect name="Buff" time="300" val="0" effectPower="40" effectType="DEBUFF" stackOrder="1" stackType="holy_attack">
 				<add stat="holyPower" val="1" />
 			</effect>
 		</for>

@@ -3,7 +3,7 @@
     <item id='12000' type="Armor" name="Titanium Earring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rear;lear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="207" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -23,7 +23,7 @@
     <item id='12001' type="Armor" name="Titanium Ring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rfinger;lfinger" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="138" />
         <set name="material" val="GOLD" />
         <set name="weight" val="150" />
@@ -43,7 +43,7 @@
     <item id='12002' type="Armor" name="Titanium Necklace">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="neck" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="276" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -78,7 +78,7 @@
     <item id='12003' type="Armor" name="Titanium Earring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rear;lear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="207" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -98,7 +98,7 @@
     <item id='12004' type="Armor" name="Titanium Ring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rfinger;lfinger" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="138" />
         <set name="material" val="GOLD" />
         <set name="weight" val="150" />
@@ -118,7 +118,7 @@
     <item id='12005' type="Armor" name="Titanium Necklace">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="neck" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="276" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -147,7 +147,7 @@
     <item id='12006' type="Armor" name="Titanium Earring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rear;lear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="207" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -167,7 +167,7 @@
     <item id='12007' type="Armor" name="Titanium Ring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rfinger;lfinger" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="138" />
         <set name="material" val="GOLD" />
         <set name="weight" val="150" />
@@ -187,7 +187,7 @@
     <item id='12008' type="Armor" name="Titanium Necklace">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="neck" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="276" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -214,7 +214,7 @@
     <item id='12009' type="Armor" name="Titanium Earring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rear;lear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="207" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -234,7 +234,7 @@
     <item id='12010' type="Armor" name="Titanium Ring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rfinger;lfinger" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="138" />
         <set name="material" val="GOLD" />
         <set name="weight" val="150" />
@@ -254,7 +254,7 @@
     <item id='12011' type="Armor" name="Titanium Necklace">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="neck" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="276" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -283,7 +283,7 @@
     <item id='12012' type="Armor" name="Titanium Earring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rear;lear" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="207" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />
@@ -303,7 +303,7 @@
     <item id='12013' type="Armor" name="Titanium Ring">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="rfinger;lfinger" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="138" />
         <set name="material" val="GOLD" />
         <set name="weight" val="150" />
@@ -323,7 +323,7 @@
     <item id='12014' type="Armor" name="Titanium Necklace">
         <set name="default_action" val="equip" />
         <set name="bodypart" val="neck" />
-        <set name="crystal_type" val="A" />
+        <set name="crystal_type" val="S" />
         <set name="crystal_count" val="276" />
         <set name="material" val="SILVER" />
         <set name="weight" val="150" />

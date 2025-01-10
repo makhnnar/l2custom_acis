@@ -695,7 +695,7 @@
 			<player flying="False" />
 		</cond>
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="2.9" stackType="pa_up">
+			<effect name="Buff" time="300" val="0" stackOrder="2.9" stackType="pa_up">
 				<mul stat="pAtk" val="1.15" />
 			</effect>
 		</for>
@@ -712,7 +712,7 @@
 			<player flying="False" />
 		</cond>
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="2.9" stackType="ma_up">
+			<effect name="Buff" time="300" val="0" stackOrder="2.9" stackType="ma_up">
 				<mul stat="mAtk" val="1.75" />
 			</effect>
 		</for>
@@ -1260,7 +1260,7 @@
 			<player flying="False" />
 		</cond>
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="2.9" stackType="pa_up">
+			<effect name="Buff" time="300" val="0" stackOrder="2.9" stackType="pa_up">
 				<mul stat="pAtk" val="1.15" />
 			</effect>
 		</for>
@@ -1277,7 +1277,7 @@
 			<player flying="False" />
 		</cond>
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="2.9" stackType="ma_up">
+			<effect name="Buff" time="300" val="0" stackOrder="2.9" stackType="ma_up">
 				<mul stat="mAtk" val="1.75" />
 			</effect>
 		</for>
@@ -1294,7 +1294,7 @@
 			<player flying="False" />
 		</cond>
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="1.9" stackType="attack_time_down">
+			<effect name="Buff" time="300" val="0" stackOrder="1.9" stackType="attack_time_down">
 				<mul stat="pAtkSpd" val="1.33" />
 			</effect>
 		</for>
@@ -1311,7 +1311,7 @@
 			<player flying="False" />
 		</cond>
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="2.9" stackType="casting_time_down">
+			<effect name="Buff" time="300" val="0" stackOrder="2.9" stackType="casting_time_down">
 				<mul stat="mAtkSpd" val="1.3" />
 			</effect>
 		</for>
@@ -1328,7 +1328,7 @@
 			<player flying="False" />
 		</cond>
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="2.9" stackType="critical_prob_up">
+			<effect name="Buff" time="300" val="0" stackOrder="2.9" stackType="critical_prob_up">
 				<basemul stat="rCrit" val="0.3" />
 			</effect>
 		</for>
@@ -1345,7 +1345,7 @@
 			<player flying="False" />
 		</cond>
 		<for>
-			<effect name="Buff" time="120" val="0" stackOrder="1.9" stackType="speed_up">
+			<effect name="Buff" time="300" val="0" stackOrder="1.9" stackType="speed_up">
 				<add stat="runSpd" val="33" />
 			</effect>
 		</for>
