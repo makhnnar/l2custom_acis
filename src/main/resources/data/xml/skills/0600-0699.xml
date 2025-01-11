@@ -297,7 +297,7 @@
         <table name="#aggro">204 408</table>
         <set name="mpConsume" val="#mpConsume"/>
         <set name="target" val="SELF"/>
-        <set name="reuseDelay" val="480000"/>
+        <set name="reuseDelay" val="1200000"/>
         <set name="hitTime" val="1500"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="ACTIVE"/>
@@ -306,7 +306,7 @@
         <set name="aggroPoints" val="#aggro"/>
         <set name="nextActionAttack" val="True"/>
         <for>
-            <effect count="1" name="Buff" val="0" stackOrder="#uprate" stackType="pAtks" time="6">
+            <effect count="1" name="Buff" val="0" stackOrder="#uprate" stackType="pAtks" time="25">
                 <mul stat="pAtk" val="#pAtk"/>
                 <mul stat="pDef" val="0.6"/>
             </effect>
@@ -377,11 +377,11 @@
     </skill>
 
     <skill id="609" levels="2" name="Divine Rage"><!--id 94-->
-        <table name="#swordblunt">1.45 1.55</table>
-        <table name="#twohands">1.65 1.84</table>
-        <table name="#other">1.15 1.25</table>
+        <table name="#swordblunt">1.40 1.55</table>
+        <table name="#twohands">1.60 1.84</table>
+        <table name="#other">1.10 1.25</table>
         <table name="#accCombat">2 4</table>
-        <table name="#pDef">0.8 0.8</table>
+        <table name="#pDef">0.6 0.8</table>
         <table name="#mpConsume">11 25</table>
         <table name="#uprate">1 2</table>
         <table name="#aggro">235 523</table>
@@ -395,12 +395,13 @@
         <set name="effectRange" val="-1"/>
         <set name="aggroPoints" val="#aggro"/>
         <for>
-            <effect count="1" name="Buff" val="0" stackOrder="#uprate" stackType="pAtks" time="25">
+            <effect count="1" name="Buff" val="0" stackOrder="#uprate" stackType="pAtks" time="60">
                 <mul stat="pDef" val="#pDef"/>
                 <sub stat="rEvas" val="4"/>
+                <add stat="runSpd" val="80"/>
                 <add stat="accCombat" val="#accCombat">
                     <and>
-                        <using kind="POLE"/>
+                        <using kind="POLE,BIGSWORD,BIGBLUNT"/>
                     </and>
                 </add>
                 <mul stat="pAtk" val="#swordblunt">
@@ -410,12 +411,12 @@
                 </mul>
                 <mul stat="pAtk" val="#twohands">
                     <and>
-                        <using kind="POLE"/>
+                        <using kind="POLE,BIGSWORD,BIGBLUNT"/>
                     </and>
                 </mul>
                 <mul stat="pAtk" val="#other">
                     <and>
-                        <using kind="DUALFIST,DUAL,FIST,ETC,BIGSWORD,BIGBLUNT,BOW,DAGGER"/>
+                        <using kind="DUALFIST,DUAL,FIST,ETC,BOW,DAGGER"/>
                     </and>
                 </mul>
             </effect>

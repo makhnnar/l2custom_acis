@@ -104,161 +104,170 @@
 	</item>
 	<item id='9220' type="Armor" name="Sacrifice Helm">
 		<set name="default_action" val="equip" />
+		<set name="armor_type" val="HEAVY" />
 		<set name="bodypart" val="head" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="139" />
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="570" />
 		<set name="price" val="1740000" />
 		<for>
-			<add val='65' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='65' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9221' type="Armor" name="Sacrifice Plate Armor">
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="bodypart" val="fullarmor" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="406" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="5400" />
 		<set name="price" val="5080000" />
 		<for>
-			<add val='255' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='255' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9222' type="Armor" name="Sacrifice Gauntlet">
 		<set name="default_action" val="equip" />
+		<set name="armor_type" val="HEAVY" />
 		<set name="bodypart" val="gloves" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="92" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="580" />
 		<set name="price" val="1160000" />
 		<for>
-			<add val='50' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='50' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9223' type="Armor" name="Sacrifice Solleret">
+		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="feet" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="92" />
 		<set name="material" val="BLOOD_STEEL" />
 		<set name="weight" val="1130" />
 		<set name="price" val="1160000" />
 		<for>
-			<add val='50' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='50' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9224' type="Armor" name="Sacrifice Helmet">
+		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="equip" />
 		<set name="bodypart" val="head" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="139" />
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="570" />
 		<set name="price" val="1740000" />
 		<for>
-			<add val='65' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='65' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9225' type="Armor" name="Sacrifice Brigandine">
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="bodypart" val="fullarmor" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="406" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="5400" />
 		<set name="price" val="5080000" />
 		<for>
-			<add val='283' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='283' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9226' type="Armor" name="Sacrifice Leather Gloves">
 		<set name="default_action" val="equip" />
+		<set name="armor_type" val="LIGHT" />
 		<set name="bodypart" val="gloves" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="92" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="580" />
 		<set name="price" val="1160000" />
 		<for>
-			<add val='30' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='30' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9227' type="Armor" name="Sacrifice Boots">
 		<set name="default_action" val="equip" />
+		<set name="armor_type" val="LIGHT" />
 		<set name="bodypart" val="feet" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="92" />
 		<set name="material" val="BLOOD_STEEL" />
 		<set name="weight" val="1130" />
 		<set name="price" val="1160000" />
 		<for>
-			<add val='80' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='80' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9228' type="Armor" name="Sacrifice Hat">
 		<set name="default_action" val="equip" />
+		<set name="armor_type" val="MAGIC" />
 		<set name="bodypart" val="head" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="139" />
 		<set name="material" val="CLOTH" />
 		<set name="weight" val="570" />
 		<set name="price" val="1740000" />
 		<for>
-			<add val='65' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='65' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 	<item id='9229' type="Armor" name="Sacrifice Doublet">
 		<set name="default_action" val="equip" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="bodypart" val="fullarmor" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="406" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="5400" />
 		<set name="price" val="5080000" />
 		<for>
-			<add val='233' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='233'  stat='pDef'/>
+			<enchant val='0'  stat='pDef'/>
 		</for>
 	</item>
 	<item id='9230' type="Armor" name="Sacrifice Silk Gloves">
 		<set name="default_action" val="equip" />
+		<set name="armor_type" val="MAGIC" />
 		<set name="bodypart" val="gloves" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="92" />
 		<set name="material" val="LEATHER" />
 		<set name="weight" val="580" />
 		<set name="price" val="1160000" />
 		<for>
-			<add val='60' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='60' stat='pDef'/>
+			<enchant val='0'  stat='pDef'/>
 		</for>
 	</item>
 	<item id='9231' type="Armor" name="Sacrifice Sandals">
 		<set name="default_action" val="equip" />
+		<set name="armor_type" val="MAGIC" />
 		<set name="bodypart" val="feet" />
-		<set name="crystal_type" val="A" />
+		<set name="crystal_type" val="S" />
 		<set name="crystal_count" val="92" />
 		<set name="material" val="BLOOD_STEEL" />
 		<set name="weight" val="1130" />
 		<set name="price" val="1160000" />
 		<for>
-			<add val='30' order='0x10' stat='pDef'/>
-			<enchant val='0' order='0x0C' stat='pDef'/>
+			<add val='30' stat='pDef'/>
+			<enchant val='0' stat='pDef'/>
 		</for>
 	</item>
 </list>
