@@ -6,8 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/conditions/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/conditions/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/npcs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/npcs.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/players.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/players.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkFighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkFighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkMystic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkMystic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/dwarfFighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/dwarfFighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/elvenFighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/elvenFighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/elvenMystic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/elvenMystic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/humanFighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/humanFighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/humanMystic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/humanMystic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/orcFighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/orcFighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/orcMystic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/orcMystic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0000-0099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0000-0099.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0600-0699.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0600-0699.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0800-0899.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0800-0899.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3700-3799.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/3700-3799.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/7100-7199.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/7100-7199.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

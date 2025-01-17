@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <list>
+    <!-- not used in the game -->
     <skill id="600" levels="9" name="Breaker Force"><!--id 17-->
         <table name="#mpConsume"> 59 61 63 65 67 69 71 73 75 </table>
         <table name="#power"> 3816 3931 4145 4260 4375 4489 4504 4619 4733 </table>
@@ -24,7 +25,7 @@
         <!-- charge values -->
         <!-- Force Focus is the charger -->
     </skill>
-
+    <!-- not used in the game -->
     <!-- create a reduce lvl version for the burn wind skill with only 10 lvls -->
     <!-- Burn Wind skill: hits the enemy with a powerful wind, inflicting continuous damage while the reg Hp and Cp is decreased -->
     <skill id="601" name="Burn Wind" levels="10">
@@ -56,7 +57,7 @@
             </effect>
         </for>
     </skill>
-
+    <!-- not used in the game -->
     <skill id="602" levels="9" name="Hit of Hate"><!--id 36-->
         <table name="#mpConsume">75 77 78 79 80 81 82 83 84</table>
         <table name="#power">1844 1907 1970 2033 2096 2158 2221 2283 2561</table>
@@ -88,7 +89,7 @@
     <skill id="603" levels="9" name="Thunder Weakness"><!--id 48-->
         <table name="#mpConsume">100 101 103 105 106 108 109 111 112</table>
         <table name="#power">2854 2902 3049 3197 3245 3393 3441 3588 3635</table>
-        <set name="weaponsAllowed" val="POLE"/>
+        <set name="weaponsAllowed" val="DUAL"/>
         <set name="mpConsume" val="#mpConsume"/>
         <set name="saveVs" val="CON"/>
         <set name="power" val="#power"/>
@@ -106,11 +107,11 @@
         <set name="nextActionAttack" val="true"/>
         <for>
             <effect count="1" name="Stun" time="5" val="0" stackOrder="1" stackType="Stun" effectPower="70" effectType="STUN">
-                <mul  stat="pDef" val="0.8"/>
+                <mul stat="pDef" val="0.8"/>
             </effect>
         </for>
     </skill>
-
+    <!-- not used in the game -->
     <skill id="604" levels="10" name="Glorious Heal"><!--id 45-->
         <table name="#mpConsume">74 75 77 78 79 80 81 82 83 85</table>
         <table name="#power">4713 4734 4755 4775 4796 4816 5837 5857 5878 5899</table>
@@ -135,7 +136,7 @@
             <effect self="1" count="5" name="HealOverTime" time="1" val="#power"/>
         </for>
     </skill>
-
+    <!-- not used in the game -->
     <skill id="605" levels="10" name="Miracle Sacrifice"><!--id 69-->
         <table name="#hpConsume">1088 1115 1142 1169 1196 1223 1250 1276 1303 1329</table>
         <table name="#power">2910 2960 3000 3044 3088 3130 3264 3306 3446 3586</table>
@@ -155,7 +156,7 @@
         <enchant1 name="power" val="#ench1Power"/>
         <enchant2 name="hpConsume" val="#ench2HpConsume"/>
     </skill>
-
+    <!-- not used in the game -->
     <skill id="606" levels="2" name="War Tear">
         <table name="#pAtk">2.2 3.55</table>
         <table name="#mpConsume">320 490</table>
@@ -178,7 +179,7 @@
             </effect>
         </for>
     </skill>
-
+    <!-- not used in the game -->
     <skill id="607" levels="3" name="Reflect Hit"><!--id 86-->
         <table name="#mpConsume_Init">4 5 5</table>
         <table name="#mpConsume">14 17 19</table>
@@ -202,7 +203,7 @@
             </effect>
         </for>
     </skill>
-
+    <!-- not used in the game -->
     <skill id="608" levels="1" name="Detect Enemy Weakness"><!--id 88-->
         <set name="mpConsume" val="27"/>
         <set name="target" val="SELF"/>
@@ -220,7 +221,7 @@
             </effect>
         </for>
     </skill>
-
+    <!-- not used in the game -->
     <skill id="609" levels="2" name="Divine Rage"><!--id 94-->
         <table name="#swordblunt">1.40 1.55</table>
         <table name="#twohands">1.60 1.84</table>

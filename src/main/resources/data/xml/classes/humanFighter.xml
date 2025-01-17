@@ -2887,6 +2887,8 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="3" cost="-1" minLvl="76"/>
 			<skill id="1405" lvl="4" cost="-1" minLvl="76"/>
+			<!-- Fury of madness -->
+			<skill id="3712" lvl="1" cost="150000000" minLvl="76"/>
 		</skills>
 	</class>
 	<class><!-- Phoenix Knight -->

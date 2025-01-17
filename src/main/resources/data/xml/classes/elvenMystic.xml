@@ -1298,6 +1298,38 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Mana Drain -->
+			<skill id="3710" lvl="1" cost="105000" minLvl="56"/>
+			<skill id="3710" lvl="2" cost="129000" minLvl="58"/>
+			<skill id="3710" lvl="3" cost="188000" minLvl="60"/>
+			<skill id="3710" lvl="4" cost="250000" minLvl="62"/>
+			<skill id="3710" lvl="5" cost="340000" minLvl="64"/>
+			<skill id="3710" lvl="6" cost="440000" minLvl="66"/>
+			<skill id="3710" lvl="7" cost="550000" minLvl="68"/>
+			<skill id="3710" lvl="8" cost="550000" minLvl="70"/>
+			<skill id="3710" lvl="9" cost="1070000" minLvl="72"/>
+			<skill id="3710" lvl="10" cost="1350000" minLvl="74"/>
+			<!-- Solar Flare -->
+			<skill id="1265" lvl="1" cost="27000" minLvl="40"/>
+			<skill id="1265" lvl="2" cost="35000" minLvl="44"/>
+			<skill id="1265" lvl="3" cost="57000" minLvl="48"/>
+			<skill id="1265" lvl="4" cost="90000" minLvl="52"/>
+			<skill id="1265" lvl="5" cost="91000" minLvl="56"/>
+			<skill id="1265" lvl="6" cost="110000" minLvl="58"/>
+			<skill id="1265" lvl="7" cost="143000" minLvl="60"/>
+			<skill id="1265" lvl="8" cost="190000" minLvl="62"/>
+			<skill id="1265" lvl="9" cost="240000" minLvl="64"/>
+			<skill id="1265" lvl="10" cost="320000" minLvl="66"/>
+			<skill id="1265" lvl="11" cost="370000" minLvl="68"/>
+			<skill id="1265" lvl="12" cost="430000" minLvl="70"/>
+			<skill id="1265" lvl="13" cost="750000" minLvl="72"/>
+			<skill id="1265" lvl="14" cost="1000000" minLvl="74"/>
+			<!-- Aura Flash -->
+			<skill id="1417" lvl="1" cost="129000" minLvl="58"/>
+			<skill id="1417" lvl="2" cost="220000" minLvl="62"/>
+			<skill id="1417" lvl="3" cost="370000" minLvl="66"/>
+			<skill id="1417" lvl="4" cost="520000" minLvl="70"/>
+			<skill id="1417" lvl="5" cost="1150000" minLvl="74"/>
 		</skills>
 	</class>
 	<class><!-- Elven Elder -->
@@ -1776,6 +1808,16 @@
 			<skill id="1430" lvl="3" cost="230000" minLvl="64"/>
 			<skill id="1430" lvl="4" cost="390000" minLvl="68"/>
 			<skill id="1430" lvl="5" cost="710000" minLvl="72"/>
+			<!-- Hammer of God -->
+			<skill id="3713" lvl="1" cost="28000" minLvl="44"/>
+			<skill id="3713" lvl="2" cost="40000" minLvl="48"/>
+			<skill id="3713" lvl="3" cost="64000" minLvl="52"/>
+			<skill id="3713" lvl="4" cost="67000" minLvl="56"/>
+			<skill id="3713" lvl="5" cost="100000" minLvl="58"/>
+			<skill id="3713" lvl="6" cost="130000" minLvl="60"/>
+			<skill id="3713" lvl="7" cost="180000" minLvl="62"/>
+			<skill id="3713" lvl="8" cost="200000" minLvl="64"/>
+			<skill id="3713" lvl="9" cost="290000" minLvl="66"/>
 		</skills>
 	</class>
 	<class><!-- Mystic Muse -->

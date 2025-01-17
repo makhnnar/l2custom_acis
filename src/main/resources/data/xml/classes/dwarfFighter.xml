@@ -186,6 +186,36 @@
 			<skill id="245" lvl="15" cost="11000" minLvl="36"/>
 			<!-- Crystallize -->
 			<skill id="248" lvl="1" cost="3700" minLvl="20"/>
+			<!-- Aggression -->
+			<skill id="28" lvl="1" cost="3300" minLvl="24"/>
+			<skill id="28" lvl="2" cost="3300" minLvl="24"/>
+			<skill id="28" lvl="3" cost="3300" minLvl="24"/>
+			<skill id="28" lvl="4" cost="4000" minLvl="28"/>
+			<skill id="28" lvl="5" cost="4000" minLvl="28"/>
+			<skill id="28" lvl="6" cost="4000" minLvl="28"/>
+			<skill id="28" lvl="7" cost="8300" minLvl="32"/>
+			<skill id="28" lvl="8" cost="8300" minLvl="32"/>
+			<skill id="28" lvl="9" cost="8300" minLvl="32"/>
+			<skill id="28" lvl="10" cost="13000" minLvl="36"/>
+			<skill id="28" lvl="11" cost="13000" minLvl="36"/>
+			<skill id="28" lvl="12" cost="13000" minLvl="36"/>
+			<!-- Divine Heal -->
+			<skill id="45" lvl="1" cost="4000" minLvl="28"/>
+			<skill id="45" lvl="2" cost="4000" minLvl="28"/>
+			<skill id="45" lvl="3" cost="4000" minLvl="28"/>
+			<skill id="45" lvl="4" cost="8300" minLvl="32"/>
+			<skill id="45" lvl="5" cost="8300" minLvl="32"/>
+			<skill id="45" lvl="6" cost="8300" minLvl="32"/>
+			<skill id="45" lvl="7" cost="13000" minLvl="36"/>
+			<skill id="45" lvl="8" cost="13000" minLvl="36"/>
+			<skill id="45" lvl="9" cost="13000" minLvl="36"/>
+			<!-- Ultimate Defense -->
+			<skill id="110" lvl="1" cost="4700" minLvl="20"/>
+			<!-- Shield Mastery -->
+			<skill id="153" lvl="1" cost="4700" minLvl="20"/>
+			<skill id="153" lvl="2" cost="12000" minLvl="28"/>
+			<!-- Focus Mind -->
+			<skill id="191" lvl="1" cost="39000" minLvl="36"/>
 		</skills>
 	</class>
 	<class><!-- Scavenger -->
@@ -301,6 +331,42 @@
 			<!-- Spoil Festival -->
 			<skill id="302" lvl="1" cost="13000" minLvl="28"/>
 			<skill id="302" lvl="2" cost="35000" minLvl="36"/>
+			<!-- Dagger Mastery -->
+			<skill id="209" lvl="1" cost="3400" minLvl="20"/>
+			<skill id="209" lvl="2" cost="5900" minLvl="24"/>
+			<skill id="209" lvl="3" cost="5500" minLvl="28"/>
+			<skill id="209" lvl="4" cost="5500" minLvl="28"/>
+			<skill id="209" lvl="5" cost="9100" minLvl="32"/>
+			<skill id="209" lvl="6" cost="9100" minLvl="32"/>
+			<skill id="209" lvl="7" cost="16000" minLvl="36"/>
+			<skill id="209" lvl="8" cost="16000" minLvl="36"/>
+			<!-- Mortal Blow -->
+			<skill id="16" lvl="10" cost="1400" minLvl="20"/>
+			<skill id="16" lvl="11" cost="1400" minLvl="20"/>
+			<skill id="16" lvl="12" cost="1400" minLvl="20"/>
+			<skill id="16" lvl="13" cost="1900" minLvl="24"/>
+			<skill id="16" lvl="14" cost="1900" minLvl="24"/>
+			<skill id="16" lvl="15" cost="1900" minLvl="24"/>
+			<skill id="16" lvl="16" cost="3600" minLvl="28"/>
+			<skill id="16" lvl="17" cost="3600" minLvl="28"/>
+			<skill id="16" lvl="18" cost="3600" minLvl="28"/>
+			<skill id="16" lvl="19" cost="6100" minLvl="32"/>
+			<skill id="16" lvl="20" cost="6100" minLvl="32"/>
+			<skill id="16" lvl="21" cost="6100" minLvl="32"/>
+			<skill id="16" lvl="22" cost="10000" minLvl="36"/>
+			<skill id="16" lvl="23" cost="10000" minLvl="36"/>
+			<skill id="16" lvl="24" cost="10000" minLvl="36"/>
+			<!-- Unlock -->
+			<skill id="27" lvl="1" cost="3400" minLvl="20"/>
+			<skill id="27" lvl="2" cost="5900" minLvl="24"/>
+			<skill id="27" lvl="3" cost="11000" minLvl="28"/>
+			<skill id="27" lvl="4" cost="18000" minLvl="32"/>
+			<skill id="27" lvl="5" cost="31000" minLvl="36"/>
+			<!-- Bleed -->
+			<skill id="96" lvl="1" cost="5900" minLvl="24"/>
+			<skill id="96" lvl="2" cost="18000" minLvl="32"/>
+			<!-- Critical Chance -->
+			<skill id="137" lvl="1" cost="11000" minLvl="28"/>
 		</skills>
 	</class>
 	<class><!-- Warsmith -->
@@ -637,6 +703,165 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Aggression -->
+			<skill id="28" lvl="13" cost="12000" minLvl="40"/>
+			<skill id="28" lvl="14" cost="12000" minLvl="40"/>
+			<skill id="28" lvl="15" cost="12000" minLvl="40"/>
+			<skill id="28" lvl="16" cost="13000" minLvl="43"/>
+			<skill id="28" lvl="17" cost="13000" minLvl="43"/>
+			<skill id="28" lvl="18" cost="13000" minLvl="43"/>
+			<skill id="28" lvl="19" cost="18000" minLvl="46"/>
+			<skill id="28" lvl="20" cost="18000" minLvl="46"/>
+			<skill id="28" lvl="21" cost="18000" minLvl="46"/>
+			<skill id="28" lvl="22" cost="27000" minLvl="49"/>
+			<skill id="28" lvl="23" cost="27000" minLvl="49"/>
+			<skill id="28" lvl="24" cost="27000" minLvl="49"/>
+			<skill id="28" lvl="25" cost="42000" minLvl="52"/>
+			<skill id="28" lvl="26" cost="42000" minLvl="52"/>
+			<skill id="28" lvl="27" cost="42000" minLvl="52"/>
+			<skill id="28" lvl="28" cost="46000" minLvl="55"/>
+			<skill id="28" lvl="29" cost="46000" minLvl="55"/>
+			<skill id="28" lvl="30" cost="46000" minLvl="55"/>
+			<skill id="28" lvl="31" cost="67000" minLvl="58"/>
+			<skill id="28" lvl="32" cost="67000" minLvl="58"/>
+			<skill id="28" lvl="33" cost="67000" minLvl="58"/>
+			<skill id="28" lvl="34" cost="104000" minLvl="60"/>
+			<skill id="28" lvl="35" cost="104000" minLvl="60"/>
+			<skill id="28" lvl="36" cost="130000" minLvl="62"/>
+			<skill id="28" lvl="37" cost="130000" minLvl="62"/>
+			<skill id="28" lvl="38" cost="150000" minLvl="64"/>
+			<skill id="28" lvl="39" cost="150000" minLvl="64"/>
+			<skill id="28" lvl="40" cost="210000" minLvl="66"/>
+			<skill id="28" lvl="41" cost="210000" minLvl="66"/>
+			<skill id="28" lvl="42" cost="260000" minLvl="68"/>
+			<skill id="28" lvl="43" cost="260000" minLvl="68"/>
+			<skill id="28" lvl="44" cost="290000" minLvl="70"/>
+			<skill id="28" lvl="45" cost="290000" minLvl="70"/>
+			<skill id="28" lvl="46" cost="380000" minLvl="72"/>
+			<skill id="28" lvl="47" cost="380000" minLvl="72"/>
+			<skill id="28" lvl="48" cost="760000" minLvl="74"/>
+			<skill id="28" lvl="49" cost="760000" minLvl="74"/>
+			<!-- Sacrifice -->
+			<skill id="69" lvl="1" cost="42000" minLvl="52"/>
+			<skill id="69" lvl="2" cost="42000" minLvl="52"/>
+			<skill id="69" lvl="3" cost="42000" minLvl="52"/>
+			<skill id="69" lvl="4" cost="46000" minLvl="55"/>
+			<skill id="69" lvl="5" cost="46000" minLvl="55"/>
+			<skill id="69" lvl="6" cost="46000" minLvl="55"/>
+			<skill id="69" lvl="7" cost="67000" minLvl="58"/>
+			<skill id="69" lvl="8" cost="67000" minLvl="58"/>
+			<skill id="69" lvl="9" cost="67000" minLvl="58"/>
+			<skill id="69" lvl="10" cost="104000" minLvl="60"/>
+			<skill id="69" lvl="11" cost="104000" minLvl="60"/>
+			<skill id="69" lvl="12" cost="130000" minLvl="62"/>
+			<skill id="69" lvl="13" cost="130000" minLvl="62"/>
+			<skill id="69" lvl="14" cost="150000" minLvl="64"/>
+			<skill id="69" lvl="15" cost="150000" minLvl="64"/>
+			<skill id="69" lvl="16" cost="210000" minLvl="66"/>
+			<skill id="69" lvl="17" cost="210000" minLvl="66"/>
+			<skill id="69" lvl="18" cost="260000" minLvl="68"/>
+			<skill id="69" lvl="19" cost="260000" minLvl="68"/>
+			<skill id="69" lvl="20" cost="290000" minLvl="70"/>
+			<skill id="69" lvl="21" cost="290000" minLvl="70"/>
+			<skill id="69" lvl="22" cost="380000" minLvl="72"/>
+			<skill id="69" lvl="23" cost="380000" minLvl="72"/>
+			<skill id="69" lvl="24" cost="760000" minLvl="74"/>
+			<skill id="69" lvl="25" cost="760000" minLvl="74"/>
+			<!-- Ultimate Defense -->
+			<skill id="110" lvl="2" cost="55000" minLvl="46"/>
+			<!-- Sanctuary -->
+			<skill id="97" lvl="1" cost="125000" minLvl="52"/>
+			<skill id="97" lvl="2" cost="138000" minLvl="55"/>
+			<skill id="97" lvl="3" cost="141000" minLvl="58"/>
+			<skill id="97" lvl="4" cost="207000" minLvl="60"/>
+			<skill id="97" lvl="5" cost="250000" minLvl="62"/>
+			<skill id="97" lvl="6" cost="300000" minLvl="64"/>
+			<skill id="97" lvl="7" cost="410000" minLvl="66"/>
+			<skill id="97" lvl="8" cost="520000" minLvl="68"/>
+			<skill id="97" lvl="9" cost="580000" minLvl="70"/>
+			<skill id="97" lvl="10" cost="750000" minLvl="72"/>
+			<skill id="97" lvl="11" cost="1530000" minLvl="74"/>
+			<!-- Shield Mastery -->
+			<skill id="153" lvl="3" cost="35000" minLvl="40"/>
+			<skill id="153" lvl="4" cost="125000" minLvl="52"/>
+			<!-- Focus Mind -->
+			<skill id="191" lvl="2" cost="38000" minLvl="43"/>
+			<skill id="191" lvl="3" cost="82000" minLvl="49"/>
+			<skill id="191" lvl="4" cost="138000" minLvl="55"/>
+			<skill id="191" lvl="5" cost="300000" minLvl="64"/>
+			<skill id="191" lvl="6" cost="750000" minLvl="72"/>
+			<!-- Holy Blessing -->
+			<skill id="262" lvl="1" cost="12000" minLvl="40"/>
+			<skill id="262" lvl="2" cost="12000" minLvl="40"/>
+			<skill id="262" lvl="3" cost="12000" minLvl="40"/>
+			<skill id="262" lvl="4" cost="13000" minLvl="43"/>
+			<skill id="262" lvl="5" cost="13000" minLvl="43"/>
+			<skill id="262" lvl="6" cost="13000" minLvl="43"/>
+			<skill id="262" lvl="7" cost="18000" minLvl="46"/>
+			<skill id="262" lvl="8" cost="18000" minLvl="46"/>
+			<skill id="262" lvl="9" cost="18000" minLvl="46"/>
+			<skill id="262" lvl="10" cost="27000" minLvl="49"/>
+			<skill id="262" lvl="11" cost="27000" minLvl="49"/>
+			<skill id="262" lvl="12" cost="27000" minLvl="49"/>
+			<skill id="262" lvl="13" cost="42000" minLvl="52"/>
+			<skill id="262" lvl="14" cost="42000" minLvl="52"/>
+			<skill id="262" lvl="15" cost="42000" minLvl="52"/>
+			<skill id="262" lvl="16" cost="46000" minLvl="55"/>
+			<skill id="262" lvl="17" cost="46000" minLvl="55"/>
+			<skill id="262" lvl="18" cost="46000" minLvl="55"/>
+			<skill id="262" lvl="19" cost="67000" minLvl="58"/>
+			<skill id="262" lvl="20" cost="67000" minLvl="58"/>
+			<skill id="262" lvl="21" cost="67000" minLvl="58"/>
+			<skill id="262" lvl="22" cost="104000" minLvl="60"/>
+			<skill id="262" lvl="23" cost="104000" minLvl="60"/>
+			<skill id="262" lvl="24" cost="130000" minLvl="62"/>
+			<skill id="262" lvl="25" cost="130000" minLvl="62"/>
+			<skill id="262" lvl="26" cost="150000" minLvl="64"/>
+			<skill id="262" lvl="27" cost="150000" minLvl="64"/>
+			<skill id="262" lvl="28" cost="210000" minLvl="66"/>
+			<skill id="262" lvl="29" cost="210000" minLvl="66"/>
+			<skill id="262" lvl="30" cost="260000" minLvl="68"/>
+			<skill id="262" lvl="31" cost="260000" minLvl="68"/>
+			<skill id="262" lvl="32" cost="290000" minLvl="70"/>
+			<skill id="262" lvl="33" cost="290000" minLvl="70"/>
+			<skill id="262" lvl="34" cost="380000" minLvl="72"/>
+			<skill id="262" lvl="35" cost="380000" minLvl="72"/>
+			<skill id="262" lvl="36" cost="760000" minLvl="74"/>
+			<skill id="262" lvl="37" cost="760000" minLvl="74"/>
+			<!-- Final Fortress -->
+			<skill id="291" lvl="1" cost="125000" minLvl="52"/>
+			<skill id="291" lvl="2" cost="138000" minLvl="55"/>
+			<skill id="291" lvl="3" cost="141000" minLvl="58"/>
+			<skill id="291" lvl="4" cost="207000" minLvl="60"/>
+			<skill id="291" lvl="5" cost="250000" minLvl="62"/>
+			<skill id="291" lvl="6" cost="300000" minLvl="64"/>
+			<skill id="291" lvl="7" cost="410000" minLvl="66"/>
+			<skill id="291" lvl="8" cost="520000" minLvl="68"/>
+			<skill id="291" lvl="9" cost="580000" minLvl="70"/>
+			<skill id="291" lvl="10" cost="750000" minLvl="72"/>
+			<skill id="291" lvl="11" cost="1530000" minLvl="74"/>
+			<!-- Tribunal -->
+			<skill id="400" lvl="1" cost="138000" minLvl="55"/>
+			<skill id="400" lvl="2" cost="141000" minLvl="58"/>
+			<skill id="400" lvl="3" cost="207000" minLvl="60"/>
+			<skill id="400" lvl="4" cost="250000" minLvl="62"/>
+			<skill id="400" lvl="5" cost="300000" minLvl="64"/>
+			<skill id="400" lvl="6" cost="410000" minLvl="66"/>
+			<skill id="400" lvl="7" cost="520000" minLvl="68"/>
+			<skill id="400" lvl="8" cost="580000" minLvl="70"/>
+			<skill id="400" lvl="9" cost="750000" minLvl="72"/>
+			<skill id="400" lvl="10" cost="1530000" minLvl="74"/>
+			<!-- Shackle -->
+			<skill id="403" lvl="1" cost="138000" minLvl="55"/>
+			<skill id="403" lvl="2" cost="141000" minLvl="58"/>
+			<skill id="403" lvl="3" cost="207000" minLvl="60"/>
+			<skill id="403" lvl="4" cost="250000" minLvl="62"/>
+			<skill id="403" lvl="5" cost="300000" minLvl="64"/>
+			<skill id="403" lvl="6" cost="410000" minLvl="66"/>
+			<skill id="403" lvl="7" cost="520000" minLvl="68"/>
+			<skill id="403" lvl="8" cost="580000" minLvl="70"/>
+			<skill id="403" lvl="9" cost="750000" minLvl="72"/>
+			<skill id="403" lvl="10" cost="1530000" minLvl="74"/>
 		</skills>
 	</class>
 	<class><!-- Bounty Hunter -->
@@ -948,6 +1173,139 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Dagger Mastery -->
+			<skill id="209" lvl="9" cost="12000" minLvl="40"/>
+			<skill id="209" lvl="10" cost="12000" minLvl="40"/>
+			<skill id="209" lvl="11" cost="12000" minLvl="40"/>
+			<skill id="209" lvl="12" cost="14000" minLvl="43"/>
+			<skill id="209" lvl="13" cost="14000" minLvl="43"/>
+			<skill id="209" lvl="14" cost="14000" minLvl="43"/>
+			<skill id="209" lvl="15" cost="14000" minLvl="46"/>
+			<skill id="209" lvl="16" cost="14000" minLvl="46"/>
+			<skill id="209" lvl="17" cost="14000" minLvl="46"/>
+			<skill id="209" lvl="18" cost="30000" minLvl="49"/>
+			<skill id="209" lvl="19" cost="30000" minLvl="49"/>
+			<skill id="209" lvl="20" cost="30000" minLvl="49"/>
+			<skill id="209" lvl="21" cost="38000" minLvl="52"/>
+			<skill id="209" lvl="22" cost="38000" minLvl="52"/>
+			<skill id="209" lvl="23" cost="38000" minLvl="52"/>
+			<skill id="209" lvl="24" cost="49000" minLvl="55"/>
+			<skill id="209" lvl="25" cost="49000" minLvl="55"/>
+			<skill id="209" lvl="26" cost="49000" minLvl="55"/>
+			<skill id="209" lvl="27" cost="50000" minLvl="58"/>
+			<skill id="209" lvl="28" cost="50000" minLvl="58"/>
+			<skill id="209" lvl="29" cost="50000" minLvl="58"/>
+			<skill id="209" lvl="30" cost="121000" minLvl="60"/>
+			<skill id="209" lvl="31" cost="121000" minLvl="60"/>
+			<skill id="209" lvl="32" cost="180000" minLvl="62"/>
+			<skill id="209" lvl="33" cost="180000" minLvl="62"/>
+			<skill id="209" lvl="34" cost="180000" minLvl="64"/>
+			<skill id="209" lvl="35" cost="180000" minLvl="64"/>
+			<skill id="209" lvl="36" cost="270000" minLvl="66"/>
+			<skill id="209" lvl="37" cost="270000" minLvl="66"/>
+			<skill id="209" lvl="38" cost="330000" minLvl="68"/>
+			<skill id="209" lvl="39" cost="330000" minLvl="68"/>
+			<skill id="209" lvl="40" cost="420000" minLvl="70"/>
+			<skill id="209" lvl="41" cost="420000" minLvl="70"/>
+			<skill id="209" lvl="42" cost="460000" minLvl="72"/>
+			<skill id="209" lvl="43" cost="460000" minLvl="72"/>
+			<skill id="209" lvl="44" cost="1000000" minLvl="74"/>
+			<skill id="209" lvl="45" cost="1000000" minLvl="74"/>
+			<!-- Deadly Blow -->
+			<skill id="263" lvl="1" cost="12000" minLvl="40"/>
+			<skill id="263" lvl="2" cost="12000" minLvl="40"/>
+			<skill id="263" lvl="3" cost="12000" minLvl="40"/>
+			<skill id="263" lvl="4" cost="14000" minLvl="43"/>
+			<skill id="263" lvl="5" cost="14000" minLvl="43"/>
+			<skill id="263" lvl="6" cost="14000" minLvl="43"/>
+			<skill id="263" lvl="7" cost="14000" minLvl="46"/>
+			<skill id="263" lvl="8" cost="14000" minLvl="46"/>
+			<skill id="263" lvl="9" cost="14000" minLvl="46"/>
+			<skill id="263" lvl="10" cost="30000" minLvl="49"/>
+			<skill id="263" lvl="11" cost="30000" minLvl="49"/>
+			<skill id="263" lvl="12" cost="30000" minLvl="49"/>
+			<skill id="263" lvl="13" cost="38000" minLvl="52"/>
+			<skill id="263" lvl="14" cost="38000" minLvl="52"/>
+			<skill id="263" lvl="15" cost="38000" minLvl="52"/>
+			<skill id="263" lvl="16" cost="49000" minLvl="55"/>
+			<skill id="263" lvl="17" cost="49000" minLvl="55"/>
+			<skill id="263" lvl="18" cost="49000" minLvl="55"/>
+			<skill id="263" lvl="19" cost="50000" minLvl="58"/>
+			<skill id="263" lvl="20" cost="50000" minLvl="58"/>
+			<skill id="263" lvl="21" cost="50000" minLvl="58"/>
+			<skill id="263" lvl="22" cost="121000" minLvl="60"/>
+			<skill id="263" lvl="23" cost="121000" minLvl="60"/>
+			<skill id="263" lvl="24" cost="180000" minLvl="62"/>
+			<skill id="263" lvl="25" cost="180000" minLvl="62"/>
+			<skill id="263" lvl="26" cost="180000" minLvl="64"/>
+			<skill id="263" lvl="27" cost="180000" minLvl="64"/>
+			<skill id="263" lvl="28" cost="270000" minLvl="66"/>
+			<skill id="263" lvl="29" cost="270000" minLvl="66"/>
+			<skill id="263" lvl="30" cost="330000" minLvl="68"/>
+			<skill id="263" lvl="31" cost="330000" minLvl="68"/>
+			<skill id="263" lvl="32" cost="420000" minLvl="70"/>
+			<skill id="263" lvl="33" cost="420000" minLvl="70"/>
+			<skill id="263" lvl="34" cost="460000" minLvl="72"/>
+			<skill id="263" lvl="35" cost="460000" minLvl="72"/>
+			<skill id="263" lvl="36" cost="1000000" minLvl="74"/>
+			<skill id="263" lvl="37" cost="1000000" minLvl="74"/>
+			<!-- Critical Blow -->
+			<skill id="409" lvl="1" cost="147000" minLvl="55"/>
+			<skill id="409" lvl="2" cost="150000" minLvl="58"/>
+			<skill id="409" lvl="3" cost="242000" minLvl="60"/>
+			<skill id="409" lvl="4" cost="360000" minLvl="62"/>
+			<skill id="409" lvl="5" cost="370000" minLvl="64"/>
+			<skill id="409" lvl="6" cost="540000" minLvl="66"/>
+			<skill id="409" lvl="7" cost="650000" minLvl="68"/>
+			<skill id="409" lvl="8" cost="850000" minLvl="70"/>
+			<skill id="409" lvl="9" cost="920000" minLvl="72"/>
+			<skill id="409" lvl="10" cost="2000000" minLvl="74"/>
+			<!-- Critical Chance -->
+			<skill id="137" lvl="2" cost="35000" minLvl="40"/>
+			<skill id="137" lvl="3" cost="89000" minLvl="49"/>
+			<!-- Bleed -->
+			<skill id="96" lvl="3" cost="89000" minLvl="49"/>
+			<skill id="96" lvl="4" cost="150000" minLvl="58"/>
+			<skill id="96" lvl="5" cost="540000" minLvl="66"/>
+			<skill id="96" lvl="6" cost="850000" minLvl="70"/>
+			<!-- Unlock -->
+			<skill id="27" lvl="6" cost="35000" minLvl="40"/>
+			<skill id="27" lvl="7" cost="42000" minLvl="43"/>
+			<skill id="27" lvl="8" cost="43000" minLvl="46"/>
+			<skill id="27" lvl="9" cost="115000" minLvl="52"/>
+			<skill id="27" lvl="10" cost="147000" minLvl="55"/>
+			<skill id="27" lvl="11" cost="242000" minLvl="60"/>
+			<skill id="27" lvl="12" cost="370000" minLvl="64"/>
+			<skill id="27" lvl="13" cost="650000" minLvl="68"/>
+			<skill id="27" lvl="14" cost="920000" minLvl="72"/>
+			<!-- Trick -->
+			<skill id="11" lvl="1" cost="89000" minLvl="49"/>
+			<skill id="11" lvl="2" cost="115000" minLvl="52"/>
+			<skill id="11" lvl="3" cost="147000" minLvl="55"/>
+			<skill id="11" lvl="4" cost="150000" minLvl="58"/>
+			<skill id="11" lvl="5" cost="242000" minLvl="60"/>
+			<skill id="11" lvl="6" cost="360000" minLvl="62"/>
+			<skill id="11" lvl="7" cost="370000" minLvl="64"/>
+			<skill id="11" lvl="8" cost="540000" minLvl="66"/>
+			<skill id="11" lvl="9" cost="650000" minLvl="68"/>
+			<skill id="11" lvl="10" cost="850000" minLvl="70"/>
+			<skill id="11" lvl="11" cost="920000" minLvl="72"/>
+			<skill id="11" lvl="12" cost="2000000" minLvl="74"/>
+			<!-- Sand Bomb -->
+			<skill id="412" lvl="1" cost="147000" minLvl="55"/>
+			<skill id="412" lvl="2" cost="150000" minLvl="58"/>
+			<skill id="412" lvl="3" cost="242000" minLvl="60"/>
+			<skill id="412" lvl="4" cost="360000" minLvl="62"/>
+			<skill id="412" lvl="5" cost="370000" minLvl="64"/>
+			<skill id="412" lvl="6" cost="540000" minLvl="66"/>
+			<skill id="412" lvl="7" cost="650000" minLvl="68"/>
+			<skill id="412" lvl="8" cost="850000" minLvl="70"/>
+			<skill id="412" lvl="9" cost="920000" minLvl="72"/>
+			<skill id="412" lvl="10" cost="2000000" minLvl="74"/>
+			<!-- Escape Shackle -->
+			<skill id="453" lvl="1" cost="242000" minLvl="60"/>
+			<!-- Chameleon Rest -->
+			<skill id="296" lvl="1" cost="40000" minLvl="46"/>
 		</skills>
 	</class>
 	<class><!-- Maestro -->
@@ -989,6 +1347,14 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="3" cost="-1" minLvl="76"/>
 			<skill id="1405" lvl="4" cost="-1" minLvl="76"/>
+			<!-- Touch of Life -->
+			<skill id="341" lvl="1" cost="21340000" minLvl="78"/>
+			<!-- Physical Mirror -->
+			<skill id="350" lvl="1" cost="21340000" minLvl="78"/>
+			<!-- Knighthood -->
+			<skill id="429" lvl="1" cost="21340000" minLvl="78"/>
+			<!-- Soul of the Phoenix -->
+			<skill id="438" lvl="1" cost="80000000" minLvl="79"/>
 		</skills>
 	</class>
 	<class><!-- Fortune Seeker -->
@@ -1032,6 +1398,14 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="3" cost="-1" minLvl="76"/>
 			<skill id="1405" lvl="4" cost="-1" minLvl="76"/>
+			<!-- Lethal Blow -->
+			<skill id="344" lvl="1" cost="12500000" minLvl="76"/>
+			<!-- Assassination -->
+			<skill id="432" lvl="1" cost="16000000" minLvl="78"/>
+			<!-- Mirage -->
+			<skill id="445" lvl="1" cost="80000000" minLvl="79"/>
+			<!-- Focus Skill Mastery -->
+			<skill id="334" lvl="1" cost="16000000" minLvl="78"/>
 		</skills>
 	</class>
 </list>

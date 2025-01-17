@@ -1,6 +1,7 @@
 package net.sf.l2j.gameserver.skills.conditions;
 
 import net.sf.l2j.gameserver.model.actor.Creature;
+import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.kind.Item;
 import net.sf.l2j.gameserver.skills.L2Skill;
 
@@ -120,6 +121,7 @@ public abstract class Condition implements ConditionListener
 		if (_listener != null && res != _result)
 		{
 			_result = res;
+			((Player)target).updateAndBroadcastStatus(1);
 			notifyChanged();
 		}
 		return res;

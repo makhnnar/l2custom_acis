@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
+    <!-- not used in the game -->
     <skill id="7100" levels="1" name="Touch of God">
         <set name="mpConsume" val="13"/>
         <set name="target" val="PARTY"/>
@@ -36,6 +37,7 @@
         </for>
     </skill>
 
+    <!-- not used in the game -->
     <skill id="7101" levels="1" name="Dragon Spirit Totem">
         <set name="mpConsume" val="13"/>
         <set name="target" val="PARTY"/>
@@ -557,6 +559,7 @@
         </for>
     </skill>
 
+    <!-- not used in the game -->
     <skill id="7113" levels="14" name="Burning Chop">
         <table name="#power">267 310 361 419 484 519 555 592 631 670 710 751 791 831</table>
         <table name="#dot">53 54 55 63 64 65 71 72 73 74 75 86 87 88</table>

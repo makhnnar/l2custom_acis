@@ -736,6 +736,17 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Rupture -->
+			<skill id="3711" lvl="1" cost="89000" minLvl="49"/>
+			<skill id="3711" lvl="2" cost="115000" minLvl="52"/>
+			<skill id="3711" lvl="3" cost="147000" minLvl="55"/>
+			<skill id="3711" lvl="4" cost="150000" minLvl="58"/>
+			<skill id="3711" lvl="5" cost="242000" minLvl="60"/>
+			<skill id="3711" lvl="6" cost="360000" minLvl="62"/>
+			<skill id="3711" lvl="7" cost="370000" minLvl="64"/>
+			<skill id="3711" lvl="8" cost="540000" minLvl="66"/>
+			<skill id="3711" lvl="9" cost="650000" minLvl="68"/>
+			<skill id="3711" lvl="10" cost="850000" minLvl="70"/>
 		</skills>
 	</class>
 	<class><!-- Tyrant -->
@@ -1146,6 +1157,8 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="3" cost="-1" minLvl="76"/>
 			<skill id="1405" lvl="4" cost="-1" minLvl="76"/>
+			<!-- Fury of madness -->
+			<skill id="3712" lvl="1" cost="150000000" minLvl="76"/>
 		</skills>
 	</class>
 	<class><!-- Grand Khavatari -->

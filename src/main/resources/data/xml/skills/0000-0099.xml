@@ -259,7 +259,7 @@
 	<skill id="11" levels="12" name="Trick">
 		<table name="#mpConsume"> 22 24 25 27 28 29 30 31 32 33 34 34 </table>
 		<table name="#magicLvl"> 49 52 55 58 60 62 64 66 68 70 72 74 </table>
-		<set name="weaponsAllowed" val="DAGGER"/>
+		<set name="weaponsAllowed" val="DAGGER,SWORD,BLUNT"/>
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="magicLvl" val="#magicLvl"/>
 		<set name="power" val="50"/>

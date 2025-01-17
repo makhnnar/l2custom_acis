@@ -169,7 +169,7 @@
 			</mul>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="833" levels="10" name="Nature Arrest" >
 		<table name="#power">80 81 82 82 83 84 84 85 86 86 90</table>
 		<table name="#chance">80 82 84 86 88 90 92 93 96 98 100</table>
@@ -205,7 +205,7 @@
 		<table name="#stunvuln">1.22 1.38 1.54 1.70</table>
 		<set name="baseCritRate" val="15" />
 		<set name="power" val="#power" />
-		<set name="weaponsAllowed" val="BLUNT,BIGBLUNT" /> <!-- Blunt/Big Blunt -->
+		<set name="weaponsAllowed" val="DUAL" /> <!-- Blunt/Big Blunt -->
 		<set name="mpConsume" val="#mpConsume" />
 		<set name="nextActionAttack" val="true" />
 		<set name="target" val="ONE" />
@@ -229,6 +229,7 @@
 		</for>
 	</skill>
 
+	<!-- not used in the game -->
 	<skill id="836" levels="1" name="Dance of Angry" >
 		<set name="mpConsume" val="60"/>
 		<set name="nextDanceCost" val="30"/>
@@ -250,7 +251,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="837" levels="1" name="Dance of Decition">
 		<set name="mpConsume" val="60"/>
 		<set name="nextDanceCost" val="30"/>
@@ -275,7 +276,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="838" levels="1" name="Dance of God's Shield">
 		<set name="mpConsume" val="120"/>
 		<set name="nextDanceCost" val="30"/>
@@ -305,7 +306,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="839" levels="1" name="Dance of God's Soul">
 		<set name="mpConsume" val="120"/>
 		<set name="nextDanceCost" val="30"/>
@@ -331,7 +332,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="840" levels="1" name="Dance of Elevation">
 		<set name="mpConsume" val="220"/>
 		<set name="nextDanceCost" val="30"/>
@@ -360,7 +361,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="841" levels="1" name="Dance of Salvation">
 		<set name="mpConsume" val="10"/>
 		<set name="nextDanceCost" val="30"/>
@@ -389,7 +390,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="842" levels="1" name="View Weakness Points">
 		<set name="baseCritRate" val="15" />
 		<set name="power" val="931" />
@@ -416,7 +417,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="843" levels="1" name="Nocker Shield">
 		<set name="weaponsAllowed" val="SHIELD" />
 		<set name="magicLvl" val="77"/>
@@ -439,7 +440,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="844" levels="1" name="Embestida">
 		<set name="weaponsAllowed" val="SHIELD" />
 		<set name="magicLvl" val="85"/>
@@ -466,7 +467,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="845" levels="1" name="Raining Stunning Shot">
 		<set name="weaponsAllowed" val="BOW"/>
 		<set name="mpConsume" val="317"/>
@@ -490,7 +491,7 @@
 			<effect count="1" name="RemoveTarget" noicon="1" time="1" val="0" effectPower="50" effectType="DEBUFF"/>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="846" levels="1" name="Inmutation">
 		<set name="target" val="SELF"/>
 		<set name="skillType" val="BUFF"/>
@@ -504,7 +505,7 @@
 			</mul>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="847" levels="1" name="Angry Wind"><!--for dark elven-->
 		<set name="mpConsume" val="200"/>
 		<set name="target" val="SELF"/>
@@ -533,7 +534,7 @@
 			</effect>
 		</for>
 	</skill>
-
+	<!-- not used in the game -->
 	<skill id="848" levels="1" name="Pirate Eye"><!--for humans-->
 		<set name="mpConsume" val="200"/>
 		<set name="target" val="SELF"/>

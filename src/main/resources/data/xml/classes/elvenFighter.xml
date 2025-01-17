@@ -1059,6 +1059,68 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Guts -->
+			<skill id="139" lvl="1" cost="17000" minLvl="40"/>
+			<skill id="139" lvl="2" cost="38000" minLvl="60"/>
+			<skill id="139" lvl="3" cost="125000" minLvl="74"/>
+			<!-- Rage -->
+			<skill id="94" lvl="1" cost="5300" minLvl="40"/>
+			<skill id="94" lvl="2" cost="142000" minLvl="55"/>
+			<!-- Fatal Strike -->
+			<skill id="190" lvl="1" cost="11000" minLvl="40"/>
+			<skill id="190" lvl="2" cost="11000" minLvl="40"/>
+			<skill id="190" lvl="3" cost="11000" minLvl="40"/>
+			<skill id="190" lvl="4" cost="13000" minLvl="43"/>
+			<skill id="190" lvl="5" cost="13000" minLvl="43"/>
+			<skill id="190" lvl="6" cost="13000" minLvl="43"/>
+			<skill id="190" lvl="7" cost="17000" minLvl="46"/>
+			<skill id="190" lvl="8" cost="17000" minLvl="46"/>
+			<skill id="190" lvl="9" cost="17000" minLvl="46"/>
+			<skill id="190" lvl="10" cost="27000" minLvl="49"/>
+			<skill id="190" lvl="11" cost="27000" minLvl="49"/>
+			<skill id="190" lvl="12" cost="27000" minLvl="49"/>
+			<skill id="190" lvl="13" cost="42000" minLvl="52"/>
+			<skill id="190" lvl="14" cost="42000" minLvl="52"/>
+			<skill id="190" lvl="15" cost="42000" minLvl="52"/>
+			<skill id="190" lvl="16" cost="47000" minLvl="55"/>
+			<skill id="190" lvl="17" cost="47000" minLvl="55"/>
+			<skill id="190" lvl="18" cost="47000" minLvl="55"/>
+			<skill id="190" lvl="19" cost="60000" minLvl="58"/>
+			<skill id="190" lvl="20" cost="60000" minLvl="58"/>
+			<skill id="190" lvl="21" cost="60000" minLvl="58"/>
+			<skill id="190" lvl="22" cost="145000" minLvl="60"/>
+			<skill id="190" lvl="23" cost="145000" minLvl="60"/>
+			<skill id="190" lvl="24" cost="150000" minLvl="62"/>
+			<skill id="190" lvl="25" cost="150000" minLvl="62"/>
+			<skill id="190" lvl="26" cost="200000" minLvl="64"/>
+			<skill id="190" lvl="27" cost="200000" minLvl="64"/>
+			<skill id="190" lvl="28" cost="220000" minLvl="66"/>
+			<skill id="190" lvl="29" cost="220000" minLvl="66"/>
+			<skill id="190" lvl="30" cost="330000" minLvl="68"/>
+			<skill id="190" lvl="31" cost="330000" minLvl="68"/>
+			<skill id="190" lvl="32" cost="360000" minLvl="70"/>
+			<skill id="190" lvl="33" cost="360000" minLvl="70"/>
+			<skill id="190" lvl="34" cost="500000" minLvl="72"/>
+			<skill id="190" lvl="35" cost="500000" minLvl="72"/>
+			<skill id="190" lvl="36" cost="760000" minLvl="74"/>
+			<skill id="190" lvl="37" cost="760000" minLvl="74"/>
+			<!-- Crush of Doom -->
+			<skill id="315" lvl="1" cost="145000" minLvl="60"/>
+			<skill id="315" lvl="2" cost="145000" minLvl="60"/>
+			<skill id="315" lvl="3" cost="150000" minLvl="62"/>
+			<skill id="315" lvl="4" cost="150000" minLvl="62"/>
+			<skill id="315" lvl="5" cost="200000" minLvl="64"/>
+			<skill id="315" lvl="6" cost="200000" minLvl="64"/>
+			<skill id="315" lvl="7" cost="220000" minLvl="66"/>
+			<skill id="315" lvl="8" cost="220000" minLvl="66"/>
+			<skill id="315" lvl="9" cost="330000" minLvl="68"/>
+			<skill id="315" lvl="10" cost="330000" minLvl="68"/>
+			<skill id="315" lvl="11" cost="360000" minLvl="70"/>
+			<skill id="315" lvl="12" cost="360000" minLvl="70"/>
+			<skill id="315" lvl="13" cost="500000" minLvl="72"/>
+			<skill id="315" lvl="14" cost="500000" minLvl="72"/>
+			<skill id="315" lvl="15" cost="760000" minLvl="74"/>
+			<skill id="315" lvl="16" cost="760000" minLvl="74"/>
 		</skills>
 	</class>
 	<class><!-- Plains Walker -->

@@ -881,6 +881,68 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Hammer Crush -->
+			<skill id="260" lvl="1" cost="11000" minLvl="40"/>
+			<skill id="260" lvl="2" cost="11000" minLvl="40"/>
+			<skill id="260" lvl="3" cost="11000" minLvl="40"/>
+			<skill id="260" lvl="4" cost="13000" minLvl="43"/>
+			<skill id="260" lvl="5" cost="13000" minLvl="43"/>
+			<skill id="260" lvl="6" cost="13000" minLvl="43"/>
+			<skill id="260" lvl="7" cost="15000" minLvl="46"/>
+			<skill id="260" lvl="8" cost="15000" minLvl="46"/>
+			<skill id="260" lvl="9" cost="15000" minLvl="46"/>
+			<skill id="260" lvl="10" cost="20000" minLvl="49"/>
+			<skill id="260" lvl="11" cost="20000" minLvl="49"/>
+			<skill id="260" lvl="12" cost="20000" minLvl="49"/>
+			<skill id="260" lvl="13" cost="42000" minLvl="52"/>
+			<skill id="260" lvl="14" cost="42000" minLvl="52"/>
+			<skill id="260" lvl="15" cost="42000" minLvl="52"/>
+			<skill id="260" lvl="16" cost="57000" minLvl="55"/>
+			<skill id="260" lvl="17" cost="57000" minLvl="55"/>
+			<skill id="260" lvl="18" cost="57000" minLvl="55"/>
+			<skill id="260" lvl="19" cost="61000" minLvl="58"/>
+			<skill id="260" lvl="20" cost="61000" minLvl="58"/>
+			<skill id="260" lvl="21" cost="61000" minLvl="58"/>
+			<skill id="260" lvl="22" cost="161000" minLvl="60"/>
+			<skill id="260" lvl="23" cost="161000" minLvl="60"/>
+			<skill id="260" lvl="24" cost="180000" minLvl="62"/>
+			<skill id="260" lvl="25" cost="180000" minLvl="62"/>
+			<skill id="260" lvl="26" cost="270000" minLvl="64"/>
+			<skill id="260" lvl="27" cost="270000" minLvl="64"/>
+			<skill id="260" lvl="28" cost="290000" minLvl="66"/>
+			<skill id="260" lvl="29" cost="290000" minLvl="66"/>
+			<skill id="260" lvl="30" cost="350000" minLvl="68"/>
+			<skill id="260" lvl="31" cost="350000" minLvl="68"/>
+			<skill id="260" lvl="32" cost="390000" minLvl="70"/>
+			<skill id="260" lvl="33" cost="390000" minLvl="70"/>
+			<skill id="260" lvl="34" cost="600000" minLvl="72"/>
+			<skill id="260" lvl="35" cost="600000" minLvl="72"/>
+			<skill id="260" lvl="36" cost="1000000" minLvl="74"/>
+			<skill id="260" lvl="37" cost="1000000" minLvl="74"/>
+			<!-- Trick -->
+			<skill id="11" lvl="1" cost="89000" minLvl="49"/>
+			<skill id="11" lvl="2" cost="115000" minLvl="52"/>
+			<skill id="11" lvl="3" cost="147000" minLvl="55"/>
+			<skill id="11" lvl="4" cost="150000" minLvl="58"/>
+			<skill id="11" lvl="5" cost="242000" minLvl="60"/>
+			<skill id="11" lvl="6" cost="360000" minLvl="62"/>
+			<skill id="11" lvl="7" cost="370000" minLvl="64"/>
+			<skill id="11" lvl="8" cost="540000" minLvl="66"/>
+			<skill id="11" lvl="9" cost="650000" minLvl="68"/>
+			<skill id="11" lvl="10" cost="850000" minLvl="70"/>
+			<skill id="11" lvl="11" cost="920000" minLvl="72"/>
+			<skill id="11" lvl="12" cost="2000000" minLvl="74"/>
+			<!-- Rupture -->
+			<skill id="3711" lvl="1" cost="89000" minLvl="49"/>
+			<skill id="3711" lvl="2" cost="115000" minLvl="52"/>
+			<skill id="3711" lvl="3" cost="147000" minLvl="55"/>
+			<skill id="3711" lvl="4" cost="150000" minLvl="58"/>
+			<skill id="3711" lvl="5" cost="242000" minLvl="60"/>
+			<skill id="3711" lvl="6" cost="360000" minLvl="62"/>
+			<skill id="3711" lvl="7" cost="370000" minLvl="64"/>
+			<skill id="3711" lvl="8" cost="540000" minLvl="66"/>
+			<skill id="3711" lvl="9" cost="650000" minLvl="68"/>
+			<skill id="3711" lvl="10" cost="850000" minLvl="70"/>
 		</skills>
 	</class>
 	<class><!-- Bladedancer -->
@@ -1182,6 +1244,73 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Triple Slash -->
+			<skill id="1" lvl="1" cost="11000" minLvl="40"/>
+			<skill id="1" lvl="2" cost="11000" minLvl="40"/>
+			<skill id="1" lvl="3" cost="11000" minLvl="40"/>
+			<skill id="1" lvl="4" cost="12000" minLvl="43"/>
+			<skill id="1" lvl="5" cost="12000" minLvl="43"/>
+			<skill id="1" lvl="6" cost="12000" minLvl="43"/>
+			<skill id="1" lvl="7" cost="14000" minLvl="46"/>
+			<skill id="1" lvl="8" cost="14000" minLvl="46"/>
+			<skill id="1" lvl="9" cost="14000" minLvl="46"/>
+			<skill id="1" lvl="10" cost="22000" minLvl="49"/>
+			<skill id="1" lvl="11" cost="22000" minLvl="49"/>
+			<skill id="1" lvl="12" cost="22000" minLvl="49"/>
+			<skill id="1" lvl="13" cost="33000" minLvl="52"/>
+			<skill id="1" lvl="14" cost="33000" minLvl="52"/>
+			<skill id="1" lvl="15" cost="33000" minLvl="52"/>
+			<skill id="1" lvl="16" cost="44000" minLvl="55"/>
+			<skill id="1" lvl="17" cost="44000" minLvl="55"/>
+			<skill id="1" lvl="18" cost="44000" minLvl="55"/>
+			<skill id="1" lvl="19" cost="51000" minLvl="58"/>
+			<skill id="1" lvl="20" cost="51000" minLvl="58"/>
+			<skill id="1" lvl="21" cost="51000" minLvl="58"/>
+			<skill id="1" lvl="22" cost="97000" minLvl="60"/>
+			<skill id="1" lvl="23" cost="97000" minLvl="60"/>
+			<skill id="1" lvl="24" cost="130000" minLvl="62"/>
+			<skill id="1" lvl="25" cost="130000" minLvl="62"/>
+			<skill id="1" lvl="26" cost="160000" minLvl="64"/>
+			<skill id="1" lvl="27" cost="160000" minLvl="64"/>
+			<skill id="1" lvl="28" cost="220000" minLvl="66"/>
+			<skill id="1" lvl="29" cost="220000" minLvl="66"/>
+			<skill id="1" lvl="30" cost="240000" minLvl="68"/>
+			<skill id="1" lvl="31" cost="240000" minLvl="68"/>
+			<skill id="1" lvl="32" cost="310000" minLvl="70"/>
+			<skill id="1" lvl="33" cost="310000" minLvl="70"/>
+			<skill id="1" lvl="34" cost="400000" minLvl="72"/>
+			<skill id="1" lvl="35" cost="400000" minLvl="72"/>
+			<skill id="1" lvl="36" cost="810000" minLvl="74"/>
+			<skill id="1" lvl="37" cost="810000" minLvl="74"/>
+			<!-- Final Frenzy -->
+			<skill id="290" lvl="1" cost="35000" minLvl="43"/>
+			<skill id="290" lvl="2" cost="43000" minLvl="46"/>
+			<skill id="290" lvl="3" cost="65000" minLvl="49"/>
+			<skill id="290" lvl="4" cost="100000" minLvl="52"/>
+			<skill id="290" lvl="5" cost="133000" minLvl="55"/>
+			<skill id="290" lvl="6" cost="153000" minLvl="58"/>
+			<skill id="290" lvl="7" cost="190000" minLvl="60"/>
+			<skill id="290" lvl="8" cost="250000" minLvl="62"/>
+			<skill id="290" lvl="9" cost="320000" minLvl="64"/>
+			<skill id="290" lvl="10" cost="440000" minLvl="66"/>
+			<skill id="290" lvl="11" cost="490000" minLvl="68"/>
+			<skill id="290" lvl="12" cost="620000" minLvl="70"/>
+			<skill id="290" lvl="13" cost="800000" minLvl="72"/>
+			<skill id="290" lvl="14" cost="1630000" minLvl="74"/>
+			<!-- Duelist Spirit -->
+			<skill id="297" lvl="1" cost="320000" minLvl="64"/>
+			<skill id="297" lvl="2" cost="800000" minLvl="72"/>
+			<!-- War Frenzy -->
+			<skill id="424" lvl="1" cost="153000" minLvl="58"/>
+			<skill id="424" lvl="2" cost="440000" minLvl="66"/>
+			<skill id="424" lvl="3" cost="1630000" minLvl="74"/>
+			<!-- Dash -->
+			<skill id="4" lvl="1" cost="3400" minLvl="40"/>
+			<skill id="4" lvl="2" cost="43000" minLvl="60"/>
+			<!-- Frenzy -->
+			<skill id="176" lvl="1" skillName="Frenzy" cost="17000" minLvl="40"/>
+			<skill id="176" lvl="2" cost="50000" minLvl="60"/>
+			<skill id="176" lvl="3" cost="142000" minLvl="74"/>
 		</skills>
 	</class>
 	<class><!-- Abyss Walker -->
@@ -2096,8 +2225,12 @@
 			<skill id="426" lvl="1" cost="14670000" minLvl="77"/>
 			<!-- Inner Rhythm -->
 			<skill id="428" lvl="1" cost="32000000" minLvl="78"/>
+			<!-- Braveheart -->
+			<skill id="440" lvl="1" cost="12800000" minLvl="78"/>
 			<!-- Symbol of Noise -->
 			<skill id="455" lvl="1" cost="150000000" minLvl="80"/>
+			<!-- Master of Combat -->
+			<skill id="430" lvl="1" cost="16000000" minLvl="78"/>
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="3" cost="-1" minLvl="76"/>
 			<skill id="1405" lvl="4" cost="-1" minLvl="76"/>

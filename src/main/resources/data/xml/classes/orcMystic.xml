@@ -778,6 +778,16 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Hammer of God -->
+			<skill id="3713" lvl="1" cost="28000" minLvl="44"/>
+			<skill id="3713" lvl="2" cost="40000" minLvl="48"/>
+			<skill id="3713" lvl="3" cost="64000" minLvl="52"/>
+			<skill id="3713" lvl="4" cost="67000" minLvl="56"/>
+			<skill id="3713" lvl="5" cost="100000" minLvl="58"/>
+			<skill id="3713" lvl="6" cost="130000" minLvl="60"/>
+			<skill id="3713" lvl="7" cost="180000" minLvl="62"/>
+			<skill id="3713" lvl="8" cost="200000" minLvl="64"/>
+			<skill id="3713" lvl="9" cost="290000" minLvl="66"/>
 		</skills>
 	</class>
 	<class><!-- Warcryer -->
@@ -1223,6 +1233,8 @@
 			<skill id="1416" lvl="1" cost="80000000" minLvl="79"/>
 			<!-- Flames of Invincibility -->
 			<skill id="1427" lvl="1" cost="150000000" minLvl="80"/>
+			<!-- Dark Magic -->
+			<skill id="3714" lvl="1" cost="150000000" minLvl="76"/>
 		</skills>
 	</class>
 	<class><!-- Doomcryer -->
