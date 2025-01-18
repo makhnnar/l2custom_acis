@@ -1727,6 +1727,26 @@
 			<skill id="3713" lvl="7" cost="180000" minLvl="62"/>
 			<skill id="3713" lvl="8" cost="200000" minLvl="64"/>
 			<skill id="3713" lvl="9" cost="290000" minLvl="66"/>
+			<!-- Might of Heaven -->
+			<skill id="1028" lvl="1" cost="17000" minLvl="40"/>
+			<skill id="1028" lvl="2" cost="17000" minLvl="40"/>
+			<skill id="1028" lvl="3" cost="19000" minLvl="44"/>
+			<skill id="1028" lvl="4" cost="19000" minLvl="44"/>
+			<skill id="1028" lvl="5" cost="21000" minLvl="48"/>
+			<skill id="1028" lvl="6" cost="21000" minLvl="48"/>
+			<skill id="1028" lvl="7" cost="38000" minLvl="52"/>
+			<skill id="1028" lvl="8" cost="38000" minLvl="52"/>
+			<skill id="1028" lvl="9" cost="47000" minLvl="56"/>
+			<skill id="1028" lvl="10" cost="47000" minLvl="56"/>
+			<skill id="1028" lvl="11" cost="100000" minLvl="58"/>
+			<skill id="1028" lvl="12" cost="140000" minLvl="60"/>
+			<skill id="1028" lvl="13" cost="210000" minLvl="62"/>
+			<skill id="1028" lvl="14" cost="230000" minLvl="64"/>
+			<skill id="1028" lvl="15" cost="320000" minLvl="66"/>
+			<skill id="1028" lvl="16" cost="390000" minLvl="68"/>
+			<skill id="1028" lvl="17" cost="490000" minLvl="70"/>
+			<skill id="1028" lvl="18" cost="710000" minLvl="72"/>
+			<skill id="1028" lvl="19" cost="1050000" minLvl="74"/>
 		</skills>
 	</class>
 	<class><!-- Storm Screamer -->

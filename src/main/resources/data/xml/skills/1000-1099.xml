@@ -520,7 +520,7 @@
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="magicLvl" val="#magicLvl"/>
 		<set name="power" val="#power"/>
-		<set name="target" val="UNDEAD"/>
+		<set name="target" val="ONE"/>
 		<set name="element" val="HOLY"/>
 		<set name="reuseDelay" val="4000"/>
 		<set name="hitTime" val="2500"/>
@@ -534,6 +534,20 @@
 		<enchant2 name="magicLvl" val="#enchantMagicLvl"/>		
 		<enchant2 name="mpConsume" val="#ench2MpConsume"/>
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume"/>
+		<for>
+			<effect name="Debuff" time="10" val="0" effectPower="80" effectType="DEBUFF" stackOrder="2" stackType="speed_down">
+				<mul stat="mDef" val="0.5">
+					<and>
+						<target race_id="1" /> <!-- undead monsters -->
+					</and>
+				</mul>
+				<mul stat="runSpd" val="0.1">
+					<and>
+						<target race_id="1" /> <!-- undead monsters -->
+					</and>
+				</mul>
+			</effect>
+		</for>
 	</skill>
 	<skill id="1031" levels="8" name="Disrupt Undead">
 		<table name="#mpInitialConsume"> 4 4 5 5 5 6 6 6 </table>
@@ -544,7 +558,7 @@
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="magicLvl" val="#magicLvl"/>
 		<set name="power" val="#power"/>
-		<set name="target" val="UNDEAD"/>
+		<set name="target" val="ONE"/>
 		<set name="element" val="HOLY"/>
 		<set name="reuseDelay" val="4000"/>
 		<set name="hitTime" val="2500"/>
@@ -553,6 +567,20 @@
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="400"/>
 		<set name="effectRange" val="900"/>
+		<for>
+			<effect name="Debuff" time="10" val="0" effectPower="80" effectType="DEBUFF" stackOrder="2" stackType="speed_down">
+				<mul stat="mDef" val="0.8">
+					<and>
+						<target race_id="1" /> <!-- undead monsters -->
+					</and>
+				</mul>
+				<mul stat="runSpd" val="0.5">
+					<and>
+						<target race_id="1" /> <!-- undead monsters -->
+					</and>
+				</mul>
+			</effect>
+		</for>
 	</skill>
 	<skill id="1032" levels="3" name="Invigor" enchantLevels1="30" enchantLevels2="30" >
 		<table name="#enchantMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 82 83 83 83 84 84 85 85 85 </table>

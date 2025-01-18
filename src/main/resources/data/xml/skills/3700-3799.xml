@@ -278,9 +278,9 @@
         <set name="mpConsume" val="120"/>
         <set name="isDebuff" val="true" />
         <set name="isMagic" val="true" />
-        <set name="magicLvl" val="77" />
+        <set name="magicLvl" val="80" />
         <set name="operateType" val="ACTIVE" />
-        <set name="power" val="80" />
+        <set name="power" val="180" />
         <set name="skillType" val="STUN" />
         <set name="target" val="ONE" />
         <set name="hitTime" val="12000"/>
