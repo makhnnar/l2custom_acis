@@ -26,6 +26,20 @@ import net.sf.l2j.gameserver.model.holder.IntIntHolder;
 public final class Config
 {
 	public static final CLogger LOGGER = new CLogger(Config.class.getName());
+
+	public static void logCallerInfo() {
+		try{
+			StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+			String callingClassName = stackTraceElements[2].getClassName();
+			String callingMethodName = stackTraceElements[2].getMethodName();
+			LOGGER.info("Called from class: " + callingClassName + ", method: " + callingMethodName);
+		}catch (Exception e){
+			LOGGER.info("logCallerInfo: " + e.getMessage(),e);
+		}
+	}
+
+
+
 	
 	public static final String CLANS_FILE = "./config/clans.properties";
 	public static final String EVENTS_FILE = "./config/events.properties";

@@ -1,6 +1,8 @@
 package net.sf.l2j.gameserver.model.actor.cast;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.enums.skills.SkillType;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Playable;
 import net.sf.l2j.gameserver.model.actor.Player;
@@ -57,7 +59,6 @@ public class PlayableCast<T extends Playable> extends CreatureCast<T>
 			// Set item timestamp.
 			_actor.addItemSkillTimeStamp(skill, itemInstance);
 		}
-		
 		super.doCast(skill, target, null);
 	}
 	

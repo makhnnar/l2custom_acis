@@ -3,6 +3,7 @@ package net.sf.l2j.gameserver.network.clientpackets;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.enums.skills.SkillType;
 import net.sf.l2j.gameserver.model.WorldObject;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
@@ -69,6 +70,19 @@ public final class RequestMagicSkillUse extends L2GameClientPacket
 		Creature finalTarget = null;
 		if (target instanceof Creature)
 			finalTarget = (Creature) target;
+		if(target instanceof Attackable) {
+			Config.LOGGER.info("RequestMagicSkillUse (runImpl): It is an attackable instance");
+			finalTarget = (Attackable) target;
+			try{
+				if(finalTarget != null){
+					Config.LOGGER.info("RequestMagicSkillUse (runImpl): finalTarget name?: "+(finalTarget.getName()));
+					Config.LOGGER.info("RequestMagicSkillUse (runImpl): finalTarget is dead?: "+(finalTarget.isDead()));
+					Config.LOGGER.info("RequestMagicSkillUse (runImpl): finalTarget race id?: "+(((Attackable)finalTarget).getTemplate().getRace().ordinal()));
+				}
+			}catch (Exception e) {
+				Config.LOGGER.info("RequestMagicSkillUse (runImpl): the race info is not available" + e.getMessage(),e);
+			}
+		}
 		
 		player.getAI().tryToCast(finalTarget, skill, _ctrlPressed, _shiftPressed, 0);
 	}

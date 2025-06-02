@@ -13,6 +13,7 @@ import net.sf.l2j.gameserver.enums.skills.AbnormalEffect;
 import net.sf.l2j.gameserver.enums.skills.EffectFlag;
 import net.sf.l2j.gameserver.enums.skills.EffectState;
 import net.sf.l2j.gameserver.enums.skills.EffectType;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.Summon;
@@ -25,6 +26,8 @@ import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 import net.sf.l2j.gameserver.skills.basefuncs.Func;
 import net.sf.l2j.gameserver.skills.basefuncs.FuncTemplate;
 import net.sf.l2j.gameserver.skills.effects.EffectTemplate;
+
+import static net.sf.l2j.Config.logCallerInfo;
 
 public abstract class AbstractEffect
 {
@@ -199,10 +202,11 @@ public abstract class AbstractEffect
 		
 		if (_state == EffectState.ACTING)
 		{
-			if (isSelfEffectType())
+			if (isSelfEffectType()) {
 				_effector.addEffect(this);
-			else
+			} else {
 				_effected.addEffect(this);
+			}
 		}
 	}
 	
@@ -272,9 +276,6 @@ public abstract class AbstractEffect
 	
 	public final void scheduleEffect()
 	{
-		if(getEffected() instanceof Player) {
-			Config.LOGGER.info("scheduleEffect. skillName="+_skill.getName()+"_state="+_state+" _count="+_count);
-		}
 		switch (_state)
 		{
 			case CREATED:
@@ -335,8 +336,9 @@ public abstract class AbstractEffect
 		for (FuncTemplate template : _template.getFuncTemplates())
 		{
 			final Func func = template.getFunc(getEffector(), getEffected(), _skill, this);
-			if (func != null)
+			if (func != null) {
 				funcs.add(func);
+			}
 		}
 		return funcs;
 	}

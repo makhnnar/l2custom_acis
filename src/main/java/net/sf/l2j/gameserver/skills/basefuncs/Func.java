@@ -81,4 +81,15 @@ public abstract class Func
 	{
 		return _condition;
 	}
+
+	@Override
+	public String toString() {
+		return "Func{" +
+				"_owner=" + _owner +
+				", _stat=" + _stat +
+				", _order=" + _order +
+				", _value=" + _value +
+				", _condition=" + _condition +
+				'}';
+	}
 }

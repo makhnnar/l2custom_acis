@@ -1,5 +1,6 @@
 package net.sf.l2j.gameserver.model.actor.cast;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.pool.ThreadPool;
 
 import net.sf.l2j.gameserver.data.manager.CastleManager;
@@ -17,6 +18,7 @@ import net.sf.l2j.gameserver.handler.SkillHandler;
 import net.sf.l2j.gameserver.handler.skillhandlers.StriderSiegeAssault;
 import net.sf.l2j.gameserver.handler.skillhandlers.SummonFriend;
 import net.sf.l2j.gameserver.handler.skillhandlers.TakeCastle;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.actor.instance.Monster;
@@ -130,10 +132,9 @@ public class PlayerCast extends PlayableCast<Player>
 		setCastTask(skill, target, 0, 0, 0);
 		
 		_actor.broadcastPacket(new MagicSkillUse(_actor, _actor, _skill.getId(), _skill.getLevel(), 0, 0));
-		
 		_targets = new Creature[]
 		{
-			_target
+			_target //probablemente este sea el problema reemplazar con el parametro target
 		};
 		
 		// If the toggle is already active, we don't need to do anything else besides stopping it.
@@ -167,7 +168,6 @@ public class PlayerCast extends PlayableCast<Player>
 				
 				_actor.getStatus().reduceHp(hpConsume, _actor, true);
 			}
-			
 			final ISkillHandler handler = SkillHandler.getInstance().getHandler(_skill.getSkillType());
 			if (handler != null)
 				handler.useSkill(_actor, _skill, _targets);
@@ -179,8 +179,7 @@ public class PlayerCast extends PlayableCast<Player>
 	}
 	
 	@Override
-	public void doCast(L2Skill skill, Creature target, ItemInstance itemInstance)
-	{
+	public void doCast(L2Skill skill, Creature target, ItemInstance itemInstance) {
 		super.doCast(skill, target, itemInstance);
 		
 		if (skill.getItemConsumeId() > 0)

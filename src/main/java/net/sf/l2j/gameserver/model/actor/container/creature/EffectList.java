@@ -603,6 +603,7 @@ public class EffectList
 	
 	protected void addEffectFromQueue(AbstractEffect newEffect)
 	{
+		//check from here what is happening with the effect and the condition
 		if (newEffect == null)
 			return;
 		
@@ -617,8 +618,7 @@ public class EffectList
 			return;
 		}
 		
-		if (newSkill.isDebuff())
-		{
+		if (newSkill.isDebuff()) {
 			if (_debuffs == null)
 				_debuffs = new CopyOnWriteArrayList<>();
 			
@@ -796,7 +796,11 @@ public class EffectList
 			
 			if (effectToAdd != null && effectToAdd.setInUse(true))
 			{
-				_owner.addStatFuncs(effectToAdd.getStatFuncs());
+				try{
+					_owner.addStatFuncs(effectToAdd.getStatFuncs());
+				}catch (Exception e){
+					Config.LOGGER.info("EffectList (addEffectFromQueue): error: "+e.getMessage());
+				}
 				
 				if (_owner instanceof Player && effectToAdd.getTemplate().showIcon())
 					_owner.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.YOU_FEEL_S1_EFFECT).addSkillName(effectToAdd.getSkill()));

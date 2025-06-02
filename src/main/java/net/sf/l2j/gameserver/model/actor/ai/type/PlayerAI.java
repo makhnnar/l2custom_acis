@@ -1,5 +1,6 @@
 package net.sf.l2j.gameserver.model.actor.ai.type;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.pool.ThreadPool;
 
 import net.sf.l2j.gameserver.data.manager.CursedWeaponManager;
@@ -15,11 +16,7 @@ import net.sf.l2j.gameserver.handler.IItemHandler;
 import net.sf.l2j.gameserver.handler.ItemHandler;
 import net.sf.l2j.gameserver.model.World;
 import net.sf.l2j.gameserver.model.WorldObject;
-import net.sf.l2j.gameserver.model.actor.Boat;
-import net.sf.l2j.gameserver.model.actor.Creature;
-import net.sf.l2j.gameserver.model.actor.Npc;
-import net.sf.l2j.gameserver.model.actor.Player;
-import net.sf.l2j.gameserver.model.actor.Summon;
+import net.sf.l2j.gameserver.model.actor.*;
 import net.sf.l2j.gameserver.model.actor.instance.StaticObject;
 import net.sf.l2j.gameserver.model.actor.instance.Walker;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
@@ -283,26 +280,25 @@ public class PlayerAI extends PlayableAI
 			getActor().getMove().stop();
 			getActor().getCast().doToggleCast(skill, target);
 		}
-		else
-		{
+		else {
 			final boolean isCtrlPressed = _currentIntention.isCtrlPressed();
 			final int itemObjectId = _currentIntention.getItemObjectId();
-			
-			if (!getActor().getCast().canDoCast(target, skill, isCtrlPressed, itemObjectId))
-			{
+
+			if (!getActor().getCast().canDoCast(target, skill, isCtrlPressed, itemObjectId)) {
 				if (skill.nextActionIsAttack() && target.isAttackableWithoutForceBy(getActor()))
 					doAttackIntention(target, isCtrlPressed, isShiftPressed);
-				
+
 				return;
 			}
-			
+
 			if (skill.getHitTime() > 50)
 				getActor().getMove().stop();
-			
-			if (skill.getSkillType() == SkillType.FUSION || skill.getSkillType() == SkillType.SIGNET_CASTTIME)
+
+			if (skill.getSkillType() == SkillType.FUSION || skill.getSkillType() == SkillType.SIGNET_CASTTIME){
 				getActor().getCast().doFusionCast(skill, target);
-			else
+			}else{
 				getActor().getCast().doCast(skill, target, _actor.getInventory().getItemByObjectId(itemObjectId));
+			}
 		}
 	}
 	

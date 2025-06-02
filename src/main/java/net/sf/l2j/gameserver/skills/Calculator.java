@@ -3,10 +3,17 @@ package net.sf.l2j.gameserver.skills;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.enums.skills.Stats;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
+import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.skills.basefuncs.Func;
+import net.sf.l2j.gameserver.skills.basefuncs.FuncMul;
 import net.sf.l2j.gameserver.skills.basefuncs.FuncSet;
+import net.sf.l2j.gameserver.skills.conditions.ConditionTargetRaceId;
+
+import static net.sf.l2j.Config.logCallerInfo;
 
 /**
  * A {@link Calculator} is created to manage and dynamically calculate the effect of a property. It is a table of {@link Func}s in which each {@link Func} represents a mathematic function.<br>
@@ -44,6 +51,10 @@ public final class Calculator
 	{
 		Func[] funcs = _functions;
 		Func[] tmp = new Func[funcs.length + 1];
+
+		if(function instanceof FuncMul && function.getStat() == Stats.RUN_SPEED && function.getValue()==0.1){
+			Config.LOGGER.info("Calculator (addFunc) f: " + function.toString());
+		}
 		
 		final int order = function.getOrder();
 		int i;
@@ -113,13 +124,10 @@ public final class Calculator
 	 * @param base : The base value for calculation.
 	 * @return The calculated value affected by both {@link Creature}s and {@link L2Skill}.
 	 */
-	public double calc(Creature caster, Creature target, L2Skill skill, double base)
-	{
+	public double calc(Creature caster, Creature target, L2Skill skill, double base) {
 		double value = base;
-		for (Func func : _functions)
-		{
+		for (Func func : _functions) {
 			value = func.calc(caster, target, skill, base, value);
-			
 			// FuncSet is overriding the base value, other functions just update the value.
 			if (func instanceof FuncSet)
 				base = value;

@@ -1,11 +1,13 @@
 package net.sf.l2j.gameserver.model.actor.ai.type;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.data.SkillTable;
 import net.sf.l2j.gameserver.enums.AiEventType;
 import net.sf.l2j.gameserver.enums.IntentionType;
 import net.sf.l2j.gameserver.enums.skills.SkillType;
 import net.sf.l2j.gameserver.model.World;
 import net.sf.l2j.gameserver.model.WorldObject;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Boat;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Player;
@@ -389,7 +391,6 @@ abstract class AbstractAI
 			clientActionFailed();
 			return;
 		}
-		
 		doCastIntention(target, skill, isCtrlPressed, isShiftPressed, itemObjectId);
 	}
 	

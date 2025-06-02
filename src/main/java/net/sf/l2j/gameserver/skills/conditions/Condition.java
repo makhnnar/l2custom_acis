@@ -1,5 +1,7 @@
 package net.sf.l2j.gameserver.skills.conditions;
 
+import net.sf.l2j.Config;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.model.item.kind.Item;
@@ -97,8 +99,7 @@ public abstract class Condition implements ConditionListener
 		return _listener;
 	}
 	
-	public final boolean test(Creature caster, Creature target, L2Skill skill)
-	{
+	public final boolean test(Creature caster, Creature target, L2Skill skill) {
 		return test(caster, target, skill, null);
 	}
 	
@@ -115,14 +116,18 @@ public abstract class Condition implements ConditionListener
 	 * @param item : The Item, if any.
 	 * @return true if all conditions were met.
 	 */
-	public final boolean test(Creature caster, Creature target, L2Skill skill, Item item)
-	{
+	public final boolean test(Creature caster, Creature target, L2Skill skill, Item item) {
 		boolean res = testImpl(caster, target, skill, item);
-		if (_listener != null && res != _result)
-		{
+		if (_listener != null && res != _result) {
 			_result = res;
-			((Player)target).updateAndBroadcastStatus(1);
 			notifyChanged();
+			try{
+				if(target instanceof Player){
+					((Player)target).updateAndBroadcastStatus(1);
+				}
+			}catch (Exception e) {
+				Config.LOGGER.info("Condition (updateAndBroadcastStatus): " + e.getMessage(),e);
+			}
 		}
 		return res;
 	}
@@ -133,4 +138,16 @@ public abstract class Condition implements ConditionListener
 		if (_listener != null)
 			_listener.notifyChanged();
 	}
+
+	@Override
+	public String toString() {
+		return "Condition{" +
+				"_listener=" + _listener +
+				", _msg='" + _msg + '\'' +
+				", _msgId=" + _msgId +
+				", _addName=" + _addName +
+				", _result=" + _result +
+				'}';
+	}
+
 }

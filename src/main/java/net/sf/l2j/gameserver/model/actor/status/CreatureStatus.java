@@ -12,12 +12,15 @@ import net.sf.l2j.gameserver.enums.StatusType;
 import net.sf.l2j.gameserver.enums.skills.EffectType;
 import net.sf.l2j.gameserver.enums.skills.ElementType;
 import net.sf.l2j.gameserver.enums.skills.Stats;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Player;
 import net.sf.l2j.gameserver.network.serverpackets.StatusUpdate;
 import net.sf.l2j.gameserver.skills.Calculator;
 import net.sf.l2j.gameserver.skills.Formulas;
 import net.sf.l2j.gameserver.skills.L2Skill;
+
+import static net.sf.l2j.Config.logCallerInfo;
 
 /**
  * This class groups all data related to HP/MP tracking of a {@link Creature}, aswell as {@link Stats} calculation.<br>

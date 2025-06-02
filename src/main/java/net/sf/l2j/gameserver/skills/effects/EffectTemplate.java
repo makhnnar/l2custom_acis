@@ -10,6 +10,7 @@ import net.sf.l2j.commons.logging.CLogger;
 
 import net.sf.l2j.gameserver.enums.skills.AbnormalEffect;
 import net.sf.l2j.gameserver.enums.skills.SkillType;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.skills.AbstractEffect;
 import net.sf.l2j.gameserver.skills.ChanceCondition;
@@ -89,21 +90,15 @@ public class EffectTemplate
 		_triggeredLevel = triggeredLevel;
 		_chanceCondition = chanceCondition;
 		
-		try
-		{
+		try {
 			_func = Class.forName("net.sf.l2j.gameserver.skills.effects.Effect" + funcName);
-		}
-		catch (ClassNotFoundException e)
-		{
+		} catch (ClassNotFoundException e) {
 			throw new RuntimeException(e);
 		}
 		
-		try
-		{
+		try {
 			_constructor = _func.getConstructor(EffectTemplate.class, L2Skill.class, Creature.class, Creature.class);
-		}
-		catch (NoSuchMethodException e)
-		{
+		} catch (NoSuchMethodException e) {
 			throw new RuntimeException(e);
 		}
 	}
@@ -175,25 +170,22 @@ public class EffectTemplate
 	
 	public AbstractEffect getEffect(Creature caster, Creature target, L2Skill skill)
 	{
-		if (_attachCond != null && !_attachCond.test(caster, target, skill))
+		if (_attachCond != null && !_attachCond.test(caster, target, skill)){
 			return null;
+		}
 		
-		try
-		{
+		try {
+			//apparently on this constructor the target is change by the caster
 			return (AbstractEffect) _constructor.newInstance(this, skill, target, caster);
-		}
-		catch (IllegalAccessException e)
-		{
+		} catch (IllegalAccessException e) {
 			LOGGER.error("", e);
 			return null;
 		}
-		catch (InstantiationException e)
-		{
+		catch (InstantiationException e) {
 			LOGGER.error("", e);
 			return null;
 		}
-		catch (InvocationTargetException e)
-		{
+		catch (InvocationTargetException e) {
 			LOGGER.error("Error creating new instance of {}.", e, _func);
 			return null;
 		}

@@ -1,7 +1,9 @@
 package net.sf.l2j.gameserver.model.actor.ai;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.enums.IntentionType;
 import net.sf.l2j.gameserver.model.WorldObject;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Boat;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.location.Location;
@@ -100,7 +102,6 @@ public class Intention
 		
 		_target = target;
 		_finalTarget = finalTarget;
-		
 		_skill = skill;
 		_loc = (loc == null) ? null : loc.clone();
 		_boat = boat;
@@ -123,7 +124,8 @@ public class Intention
 	
 	public synchronized void updateAsCast(Creature caster, Creature target, L2Skill skill, boolean isCtrlPressed, boolean isShiftPressed, int itemObjectId)
 	{
-		set(IntentionType.CAST, null, skill.getFinalTarget(caster, target), skill, null, null, isCtrlPressed, isShiftPressed, itemObjectId);
+		//set(IntentionType.CAST, null, skill.getFinalTarget(caster, target), skill, null, null, isCtrlPressed, isShiftPressed, itemObjectId);
+		set(IntentionType.CAST, target, skill.getFinalTarget(caster, target), skill, null, null, isCtrlPressed, isShiftPressed, itemObjectId);
 	}
 	
 	public synchronized void updateAsFakeDeath(boolean startFakeDeath)

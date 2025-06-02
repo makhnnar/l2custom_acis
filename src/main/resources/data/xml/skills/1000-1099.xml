@@ -520,12 +520,13 @@
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="magicLvl" val="#magicLvl"/>
 		<set name="power" val="#power"/>
-		<set name="target" val="ONE"/>
+		<set name="target" val="UNDEAD"/>
 		<set name="element" val="HOLY"/>
 		<set name="reuseDelay" val="4000"/>
 		<set name="hitTime" val="2500"/>
 		<set name="skillType" val="MDAM"/>
 		<set name="isMagic" val="true"/>
+		<set name="isDebuff" val="true" />
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="400"/>
 		<set name="effectRange" val="900"/>
@@ -535,17 +536,13 @@
 		<enchant2 name="mpConsume" val="#ench2MpConsume"/>
 		<enchant2 name="mpInitialConsume" val="#ench2mpInitialConsume"/>
 		<for>
-			<effect name="Debuff" time="10" val="0" effectPower="80" effectType="DEBUFF" stackOrder="2" stackType="speed_down">
+			<effect name="Debuff" time="10" val="0.4" effectPower="80" effectType="DEBUFF" stackOrder="2" stackType="speed_down_undead" count="10">
 				<mul stat="mDef" val="0.5">
-					<and>
-						<target race_id="1" /> <!-- undead monsters -->
-					</and>
+					<target race_id="1" />
 				</mul>
-				<mul stat="runSpd" val="0.1">
-					<and>
-						<target race_id="1" /> <!-- undead monsters -->
-					</and>
-				</mul>
+				<!-- <mul stat="runSpd" val="0.5">
+					<target race_id="1" /> undead monsters
+				</mul> -->
 			</effect>
 		</for>
 	</skill>
@@ -558,27 +555,24 @@
 		<set name="mpConsume" val="#mpConsume"/>
 		<set name="magicLvl" val="#magicLvl"/>
 		<set name="power" val="#power"/>
-		<set name="target" val="ONE"/>
+		<set name="target" val="UNDEAD"/>
 		<set name="element" val="HOLY"/>
 		<set name="reuseDelay" val="4000"/>
 		<set name="hitTime" val="2500"/>
 		<set name="skillType" val="MDAM"/>
+		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="true"/>
 		<set name="operateType" val="ACTIVE"/>
 		<set name="castRange" val="400"/>
 		<set name="effectRange" val="900"/>
 		<for>
-			<effect name="Debuff" time="10" val="0" effectPower="80" effectType="DEBUFF" stackOrder="2" stackType="speed_down">
+			<effect name="Debuff" time="10" val="0.7" effectPower="80" effectType="DEBUFF" stackOrder="2" stackType="sspeed_down_undead" count="10">
 				<mul stat="mDef" val="0.8">
-					<and>
-						<target race_id="1" /> <!-- undead monsters -->
-					</and>
+					<target race_id="1" />
 				</mul>
-				<mul stat="runSpd" val="0.5">
-					<and>
-						<target race_id="1" /> <!-- undead monsters -->
-					</and>
-				</mul>
+				<!-- <mul stat="runSpd" val="0.5">
+					<target race_id="1" /> undead monsters
+				</mul> -->
 			</effect>
 		</for>
 	</skill>

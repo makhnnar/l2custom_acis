@@ -2,9 +2,11 @@ package net.sf.l2j.gameserver.skills.basefuncs;
 
 import java.lang.reflect.Constructor;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.logging.CLogger;
 
 import net.sf.l2j.gameserver.enums.skills.Stats;
+import net.sf.l2j.gameserver.model.actor.Attackable;
 import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
 import net.sf.l2j.gameserver.skills.L2Skill;
@@ -46,8 +48,7 @@ public final class FuncTemplate
 	 * @param owner the owner
 	 * @return the function if conditions are met, {@code null} otherwise
 	 */
-	public Func getFunc(Creature caster, Creature target, L2Skill skill, Object owner)
-	{
+	public Func getFunc(Creature caster, Creature target, L2Skill skill, Object owner) {
 		return getFunc(caster, target, skill, null, owner);
 	}
 	
@@ -73,13 +74,11 @@ public final class FuncTemplate
 	 * @param owner the owner
 	 * @return the function if conditions are met, {@code null} otherwise
 	 */
-	private Func getFunc(Creature caster, Creature target, L2Skill skill, ItemInstance item, Object owner)
-	{
-		if (_attachCond != null && !_attachCond.test(caster, target, skill))
+	private Func getFunc(Creature caster, Creature target, L2Skill skill, ItemInstance item, Object owner) {
+		if (_attachCond != null && !_attachCond.test(caster, target, skill)) {
 			return null;
-		
-		try
-		{
+		}
+		try {
 			return (Func) _constructor.newInstance(owner, _stat, _value, _applyCond);
 		}
 		catch (Exception e)
@@ -87,5 +86,16 @@ public final class FuncTemplate
 			LOGGER.error("An error occured during getFunc.", e);
 		}
 		return null;
+	}
+
+	@Override
+	public String toString() {
+		return "FuncTemplate{" +
+				"_attachCond=" + _attachCond +
+				", _applyCond=" + _applyCond +
+				", _constructor=" + _constructor +
+				", _stat=" + _stat +
+				", _value=" + _value +
+				'}';
 	}
 }

@@ -123,8 +123,9 @@ public class Continuous implements ISkillHandler
 						if (buff != null)
 							DuelManager.getInstance().onBuff(((Player) target), buff);
 				}
-				else
+				else{
 					skill.getEffects(activeChar, target, sDef, bsps);
+				}
 				
 				if (skill.getSkillType() == SkillType.AGGDEBUFF)
 				{

@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.data.StatSet;
 import net.sf.l2j.commons.logging.CLogger;
 import net.sf.l2j.commons.math.MathUtil;
@@ -1176,12 +1177,10 @@ public abstract class L2Skill implements IChanceSkillTrigger
 			
 			if (template.getEffectPower() > -1)
 				success = Formulas.calcEffectSuccess(effector, effected, template, this, isBlessedSpiritShot);
-			
-			if (success)
-			{
+
+			if (success) {
 				final AbstractEffect effect = template.getEffect(effector, effected, this);
-				if (effect != null)
-				{
+				if (effect != null) {
 					effect.scheduleEffect();
 					effects.add(effect);
 				}

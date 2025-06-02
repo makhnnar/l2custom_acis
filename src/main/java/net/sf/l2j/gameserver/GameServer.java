@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.InetAddress;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.LogManager;
 
 import net.sf.l2j.commons.lang.StringUtil;
@@ -87,6 +89,19 @@ public class GameServer
 	private final SelectorThread<GameClient> _selectorThread;
 	
 	private static GameServer _gameServer;
+
+
+	private static final Map<String, Map<String, String>> CONFIG_FILES = new HashMap<>();
+
+	static {
+		Map<String, String> localRoutes = new HashMap<>();
+		localRoutes.put("logging", "src/main/resources/config/logging.properties");
+		localRoutes.put("geodata", "src/main/resources/data/geodata");
+		Map<String, String> prodRoutes = new HashMap<>();
+		prodRoutes.put("logging", "config/logging.properties");
+		CONFIG_FILES.put("development", localRoutes);
+		CONFIG_FILES.put("production", prodRoutes);
+	}
 	
 	public static void main(String[] args) throws Exception
 	{

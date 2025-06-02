@@ -30,8 +30,7 @@ public class Mdam implements ISkillHandler
 		final boolean sps = activeChar.isChargedShot(ShotType.SPIRITSHOT);
 		final boolean bsps = activeChar.isChargedShot(ShotType.BLESSED_SPIRITSHOT);
 		
-		for (WorldObject obj : targets)
-		{
+		for (WorldObject obj : targets) {
 			if (!(obj instanceof Creature))
 				continue;
 			
@@ -60,26 +59,23 @@ public class Mdam implements ISkillHandler
 				
 				if (skill.hasEffects() && target.getFirstEffect(EffectType.BLOCK_DEBUFF) == null)
 				{
-					if ((reflect & Formulas.SKILL_REFLECT_SUCCEED) != 0) // reflect skill effects
-					{
+					if ((reflect & Formulas.SKILL_REFLECT_SUCCEED) != 0) { // reflect skill effects
 						activeChar.stopSkillEffects(skill.getId());
 						skill.getEffects(target, activeChar);
-					}
-					else
-					{
+					} else {
 						// activate attacked effects, if any
 						target.stopSkillEffects(skill.getId());
-						if (Formulas.calcSkillSuccess(activeChar, target, skill, sDef, bsps))
+						if (Formulas.calcSkillSuccess(activeChar, target, skill, sDef, bsps)){
 							skill.getEffects(activeChar, target, sDef, bsps);
-						else
+						}else {
 							activeChar.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.S1_RESISTED_YOUR_S2).addCharName(target).addSkillName(skill.getId()));
+						}
 					}
 				}
 			}
 		}
 		
-		if (skill.hasSelfEffects())
-		{
+		if (skill.hasSelfEffects()) {
 			final AbstractEffect effect = activeChar.getFirstEffect(skill.getId());
 			if (effect != null && effect.isSelfEffect())
 				effect.exit();

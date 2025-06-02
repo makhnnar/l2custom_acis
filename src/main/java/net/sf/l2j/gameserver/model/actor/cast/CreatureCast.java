@@ -2,6 +2,7 @@ package net.sf.l2j.gameserver.model.actor.cast;
 
 import java.util.concurrent.ScheduledFuture;
 
+import net.sf.l2j.Config;
 import net.sf.l2j.commons.logging.CLogger;
 import net.sf.l2j.commons.math.MathUtil;
 import net.sf.l2j.commons.pool.ThreadPool;
@@ -99,8 +100,7 @@ public class CreatureCast<T extends Creature>
 	 * @param target : The {@link Creature} effected target.
 	 * @param itemInstance : The potential {@link ItemInstance} used to cast.
 	 */
-	public void doCast(L2Skill skill, Creature target, ItemInstance itemInstance)
-	{
+	public void doCast(L2Skill skill, Creature target, ItemInstance itemInstance) {
 		int hitTime = skill.getHitTime();
 		int coolTime = skill.getCoolTime();
 		if (!skill.isStaticHitTime())
@@ -231,7 +231,7 @@ public class CreatureCast<T extends Creature>
 				}
 			}
 		}
-		
+
 		_targets = _skill.getTargetList(_actor, _target);
 		
 		_actor.broadcastPacket(new MagicSkillLaunched(_actor, _skill, _targets));
@@ -287,7 +287,7 @@ public class CreatureCast<T extends Creature>
 			if (target instanceof Summon && _actor instanceof Player)
 				((Summon) target).updateAndBroadcastStatus(1);
 		}
-		
+
 		callSkill(_skill, _targets);
 		
 		_castTask = ThreadPool.schedule(this::onMagicFinalizer, (_hitTime == 0 || _coolTime == 0) ? 0 : _coolTime);
@@ -447,13 +447,13 @@ public class CreatureCast<T extends Creature>
 						target.getChanceSkills().onSkillHit(_actor, true, skill.isMagic(), skill.isOffensive());
 			}
 		}
-		
+
 		final ISkillHandler handler = SkillHandler.getInstance().getHandler(skill.getSkillType());
-		if (handler != null)
+		if (handler != null) {
 			handler.useSkill(_actor, skill, targets);
-		else
+		}else {
 			skill.useSkill(_actor, targets);
-		
+		}
 		final Player player = _actor.getActingPlayer();
 		if (player != null)
 		{
@@ -534,8 +534,7 @@ public class CreatureCast<T extends Creature>
 		_isCastingNow = false;
 	}
 	
-	protected void setCastTask(L2Skill skill, Creature target, int hitTime, int coolTime, long castInterruptTime)
-	{
+	protected void setCastTask(L2Skill skill, Creature target, int hitTime, int coolTime, long castInterruptTime) {
 		_skill = skill;
 		_target = target;
 		_hitTime = hitTime;

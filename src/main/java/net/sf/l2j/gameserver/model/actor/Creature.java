@@ -1,9 +1,6 @@
 package net.sf.l2j.gameserver.model.actor;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 import net.sf.l2j.commons.lang.StringUtil;
@@ -58,6 +55,8 @@ import net.sf.l2j.gameserver.skills.Calculator;
 import net.sf.l2j.gameserver.skills.IChanceSkillTrigger;
 import net.sf.l2j.gameserver.skills.L2Skill;
 import net.sf.l2j.gameserver.skills.basefuncs.Func;
+import net.sf.l2j.gameserver.skills.basefuncs.FuncMul;
+import net.sf.l2j.gameserver.skills.conditions.ConditionTargetRaceId;
 import net.sf.l2j.gameserver.skills.effects.EffectChanceSkillTrigger;
 import net.sf.l2j.gameserver.skills.funcs.FuncAtkAccuracy;
 import net.sf.l2j.gameserver.skills.funcs.FuncAtkCritical;
@@ -1009,8 +1008,7 @@ public abstract class Creature extends WorldObject
 	 * Queue an {@link AbstractEffect} to this {@link Creature}.
 	 * @param effect : The {@link AbstractEffect} to add.
 	 */
-	public void addEffect(AbstractEffect effect)
-	{
+	public void addEffect(AbstractEffect effect) {
 		_effects.queueEffect(effect, false);
 	}
 	
@@ -1149,7 +1147,7 @@ public abstract class Creature extends WorldObject
 	{
 		if (function == null)
 			return;
-		
+
 		// Select the Calculator of the affected state in the Calculator set
 		final int stat = function.getStat().ordinal();
 		
@@ -1171,10 +1169,10 @@ public abstract class Creature extends WorldObject
 	{
 		final List<Stats> modifiedStats = new ArrayList<>();
 		
-		for (Func f : funcs)
-		{
+		for (Func f : funcs) {
 			modifiedStats.add(f.getStat());
 			addStatFunc(f);
+			//f.calc(this, this, null, null);
 		}
 		broadcastModifiedStats(modifiedStats);
 	}
@@ -1252,8 +1250,9 @@ public abstract class Creature extends WorldObject
 					
 					su.addAttribute(StatusType.MAX_HP, _status.getMaxHp());
 				}
-				else if (stat == Stats.RUN_SPEED)
+				else if (stat == Stats.RUN_SPEED) {
 					broadcastFull = true;
+				}
 			}
 		}
 		
@@ -1268,23 +1267,23 @@ public abstract class Creature extends WorldObject
 					broadcastPacket(su);
 			}
 		}
-		else if (this instanceof Npc)
-		{
-			if (broadcastFull)
-			{
-				for (final Player player : getKnownType(Player.class))
-				{
-					if (_status.getMoveSpeed() == 0)
+		else if (this instanceof Npc) {
+			if (broadcastFull) {
+				for (final Player player : getKnownType(Player.class)) {
+					if (_status.getMoveSpeed() == 0) {
 						player.sendPacket(new ServerObjectInfo((Npc) this, player));
-					else
+					}else {
 						player.sendPacket(new NpcInfo((Npc) this, player));
+					}
 				}
 			}
-			else if (su != null)
+			else if (su != null){
 				broadcastPacket(su);
+			}
 		}
-		else if (su != null)
+		else if (su != null) {
 			broadcastPacket(su);
+		}
 	}
 	
 	/**
