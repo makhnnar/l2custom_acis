@@ -5,36 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mchange_c3p0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mchange_c3p0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/skillhandlers/Continuous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/skillhandlers/Continuous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/skillhandlers/Mdam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/skillhandlers/Mdam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/targethandlers/TargetUndead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/targethandlers/TargetUndead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/Intention.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/Intention.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/type/AbstractAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/type/AbstractAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/type/PlayerAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/type/PlayerAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/cast/CreatureCast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/cast/CreatureCast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/cast/PlayableCast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/cast/PlayableCast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/cast/PlayerCast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/cast/PlayerCast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/container/creature/EffectList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/container/creature/EffectList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/CreatureStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/CreatureStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/network/clientpackets/RequestMagicSkillUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/network/clientpackets/RequestMagicSkillUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/AbstractEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/AbstractEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/L2Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/L2Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/basefuncs/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/basefuncs/Func.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/basefuncs/FuncMul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/basefuncs/FuncMul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/basefuncs/FuncTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/basefuncs/FuncTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/conditions/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/conditions/Condition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/conditions/ConditionTargetRaceId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/conditions/ConditionTargetRaceId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/EffectDebuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/EffectDebuff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/EffectTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/EffectTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/1000-1099.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/1000-1099.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkMystic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkMystic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/orcFighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/orcFighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/orcMystic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/orcMystic.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +114,7 @@
   &quot;keyToString&quot;: {
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Gradle.l2custom_acis [:net.sf.l2j.gameserver.GameServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.l2custom_acis [assemble].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.l2custom_acis [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.l2custom_acis [copyDependenciesToLibFolder].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.l2custom_acis [copyDocsFiles].executor&quot;: &quot;Run&quot;,
@@ -300,8 +275,8 @@
         <item itemvalue="Gradle.l2custom_acis [copyDocsFiles]" />
         <item itemvalue="Gradle.l2custom_acis [copyDependenciesToLibFolder]" />
         <item itemvalue="Gradle.l2custom_acis [build]" />
-        <item itemvalue="Application.GameServer" />
         <item itemvalue="Gradle.l2custom_acis [assemble]" />
+        <item itemvalue="Application.GameServer" />
       </list>
     </recent_temporary>
   </component>

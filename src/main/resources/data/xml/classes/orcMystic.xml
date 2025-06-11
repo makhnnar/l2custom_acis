@@ -1186,6 +1186,93 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
+			<!-- Ultimate Defense -->
+			<skill id="110" lvl="1" cost="4700" minLvl="40"/>
+			<skill id="110" lvl="2" cost="40000" minLvl="56"/>
+			<!-- Shield Mastery -->
+			<skill id="153" lvl="1" cost="4700" minLvl="40"/>
+			<skill id="153" lvl="2" cost="13000" minLvl="48"/>
+			<skill id="153" lvl="3" cost="26000" minLvl="50"/>
+			<skill id="153" lvl="4" cost="94000" minLvl="58"/>
+			<!-- Sword/Blunt Weapon Mastery -->
+			<skill id="217" lvl="1" cost="4700" minLvl="41"/>
+			<skill id="217" lvl="2" cost="8800" minLvl="41"/>
+			<skill id="217" lvl="3" cost="6700" minLvl="41"/>
+			<skill id="217" lvl="4" cost="6700" minLvl="42"/>
+			<skill id="217" lvl="5" cost="11000" minLvl="42"/>
+			<skill id="217" lvl="6" cost="11000" minLvl="42"/>
+			<skill id="217" lvl="7" cost="14000" minLvl="43"/>
+			<skill id="217" lvl="8" cost="14000" minLvl="43"/>
+			<skill id="217" lvl="9" cost="9000" minLvl="44"/>
+			<skill id="217" lvl="10" cost="9000" minLvl="44"/>
+			<skill id="217" lvl="11" cost="9000" minLvl="44"/>
+			<skill id="217" lvl="12" cost="9000" minLvl="45"/>
+			<skill id="217" lvl="13" cost="9000" minLvl="45"/>
+			<skill id="217" lvl="14" cost="9000" minLvl="45"/>
+			<skill id="217" lvl="15" cost="13000" minLvl="46"/>
+			<skill id="217" lvl="16" cost="13000" minLvl="46"/>
+			<skill id="217" lvl="17" cost="13000" minLvl="46"/>
+			<skill id="217" lvl="18" cost="19000" minLvl="49"/>
+			<skill id="217" lvl="19" cost="19000" minLvl="49"/>
+			<skill id="217" lvl="20" cost="19000" minLvl="49"/>
+			<skill id="217" lvl="21" cost="31000" minLvl="52"/>
+			<skill id="217" lvl="22" cost="31000" minLvl="52"/>
+			<skill id="217" lvl="23" cost="31000" minLvl="52"/>
+			<skill id="217" lvl="24" cost="37000" minLvl="55"/>
+			<skill id="217" lvl="25" cost="37000" minLvl="55"/>
+			<skill id="217" lvl="26" cost="37000" minLvl="55"/>
+			<skill id="217" lvl="27" cost="40000" minLvl="58"/>
+			<skill id="217" lvl="28" cost="40000" minLvl="58"/>
+			<skill id="217" lvl="29" cost="40000" minLvl="58"/>
+			<skill id="217" lvl="30" cost="76000" minLvl="60"/>
+			<skill id="217" lvl="31" cost="76000" minLvl="60"/>
+			<skill id="217" lvl="32" cost="100000" minLvl="62"/>
+			<skill id="217" lvl="33" cost="100000" minLvl="62"/>
+			<skill id="217" lvl="34" cost="120000" minLvl="64"/>
+			<skill id="217" lvl="35" cost="120000" minLvl="64"/>
+			<skill id="217" lvl="36" cost="180000" minLvl="66"/>
+			<skill id="217" lvl="37" cost="180000" minLvl="66"/>
+			<skill id="217" lvl="38" cost="210000" minLvl="68"/>
+			<skill id="217" lvl="39" cost="210000" minLvl="68"/>
+			<skill id="217" lvl="40" cost="230000" minLvl="70"/>
+			<skill id="217" lvl="41" cost="230000" minLvl="70"/>
+			<skill id="217" lvl="42" cost="300000" minLvl="72"/>
+			<skill id="217" lvl="43" cost="300000" minLvl="72"/>
+			<skill id="217" lvl="44" cost="650000" minLvl="74"/>
+			<skill id="217" lvl="45" cost="650000" minLvl="74"/>
+			<!-- Final Fortress -->
+			<skill id="291" lvl="1" cost="94000" minLvl="52"/>
+			<skill id="291" lvl="2" cost="110000" minLvl="55"/>
+			<skill id="291" lvl="3" cost="120000" minLvl="58"/>
+			<skill id="291" lvl="4" cost="153000" minLvl="60"/>
+			<skill id="291" lvl="5" cost="200000" minLvl="62"/>
+			<skill id="291" lvl="6" cost="240000" minLvl="64"/>
+			<skill id="291" lvl="7" cost="350000" minLvl="66"/>
+			<skill id="291" lvl="8" cost="410000" minLvl="68"/>
+			<skill id="291" lvl="9" cost="470000" minLvl="70"/>
+			<skill id="291" lvl="10" cost="600000" minLvl="72"/>
+			<skill id="291" lvl="11" cost="1300000" minLvl="74"/>
+			<!-- Aegis -->
+			<skill id="316" lvl="1" cost="153000" minLvl="60"/>
+			<!-- Shield Fortress -->
+			<skill id="322" lvl="1" cost="240000" minLvl="64"/>
+			<skill id="322" lvl="2" cost="350000" minLvl="66"/>
+			<skill id="322" lvl="3" cost="410000" minLvl="68"/>
+			<skill id="322" lvl="4" cost="470000" minLvl="70"/>
+			<skill id="322" lvl="5" cost="600000" minLvl="72"/>
+			<skill id="322" lvl="6" cost="1300000" minLvl="74"/>
+			<!-- Judgment -->
+			<skill id="401" lvl="1" cost="110000" minLvl="55"/>
+			<skill id="401" lvl="2" cost="120000" minLvl="58"/>
+			<skill id="401" lvl="3" cost="153000" minLvl="60"/>
+			<skill id="401" lvl="4" cost="200000" minLvl="62"/>
+			<skill id="401" lvl="5" cost="240000" minLvl="64"/>
+			<skill id="401" lvl="6" cost="350000" minLvl="66"/>
+			<skill id="401" lvl="7" cost="410000" minLvl="68"/>
+			<skill id="401" lvl="8" cost="470000" minLvl="70"/>
+			<skill id="401" lvl="9" cost="600000" minLvl="72"/>
+			<skill id="401" lvl="10" cost="1300000" minLvl="74"/>
+
 		</skills>
 	</class>
 	<class><!-- Dominator -->
@@ -1274,6 +1361,16 @@
 			<skill id="1413" lvl="1" skillName="Magnus Chant" cost="80000000" minLvl="79"/>
 			<!-- Gate Chant -->
 			<skill id="1429" lvl="1" skillName="Gate Chant" cost="16000000" minLvl="78"/>
+			<!-- Touch of Death -->
+			<skill id="342" lvl="1" cost="21340000" minLvl="78"/>
+			<!-- Magical Mirror -->
+			<skill id="351" lvl="1" cost="21340000" minLvl="78"/>
+			<!-- Knighthood -->
+			<skill id="429" lvl="1" cost="21340000" minLvl="78"/>
+			<!-- Shield Bash -->
+			<skill id="352" lvl="1" cost="13000000" minLvl="77"/>
+			<!-- Vengeance -->
+			<skill id="368" lvl="1" cost="13000000" minLvl="77"/>
 		</skills>
 	</class>
 </list>

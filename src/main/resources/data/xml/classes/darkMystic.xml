@@ -445,7 +445,8 @@
 			<skill id="1268" lvl="1" skillName="Vampiric Rage" cost="12000" minLvl="30"/>
 		</skills>
 	</class>
-	<class><!-- Spellhowler -->
+	<class
+	><!-- Spellhowler -->
 		<set id="40" baseLvl="40" fists="250"/>
 		<set str="23" con="24" dex="23" int="44" wit="19" men="37"/>
 		<set pAtk="3" pDef="54" mAtk="6" mDef="41" runSpd="122" walkSpd="85" swimSpd="50"/>
