@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <list>
-    <!-- not used in the game -->
-    <skill id="600" levels="9" name="Breaker Force"><!--id 17-->
+    <skill id="600" levels="9" name="Divine Hammer">
         <table name="#mpConsume"> 59 61 63 65 67 69 71 73 75 </table>
-        <table name="#power"> 3816 3931 4145 4260 4375 4489 4504 4619 4733 </table>
+        <table name="#power"> 70 80 90 100 110 120 130 140 160 </table>
         <set name="mpConsume" val="#mpConsume"/>
         <set name="magicLvl" val="80"/>
         <set name="power" val="#power"/>
         <set name="nextActionAttack" val="true"/>
-        <set name="target" val="AREA"/>
-        <set name="weaponsAllowed" val="POLE"/>
-        <set name="skillRadius" val="200"/>
+        <set name="target" val="ONE"/>
+        <set name="weaponsAllowed" val="BIGBLUNT"/>
         <set name="SSBoost" val="2.0"/>
         <set name="reuseDelay" val="240000"/>
         <set name="hitTime" val="780"/>
         <set name="coolTime" val="217"/>
-        <set name="skillType" val="PDAM"/>
+        <set name="skillType" val="MDAM"/>
         <set name="operateType" val="ACTIVE"/>
         <set name="castRange" val="40"/>
         <set name="effectRange" val="400"/>
@@ -25,17 +23,14 @@
         <!-- charge values -->
         <!-- Force Focus is the charger -->
     </skill>
-    <!-- not used in the game -->
-    <!-- create a reduce lvl version for the burn wind skill with only 10 lvls -->
-    <!-- Burn Wind skill: hits the enemy with a powerful wind, inflicting continuous damage while the reg Hp and Cp is decreased -->
-    <skill id="601" name="Burn Wind" levels="10">
+    <skill id="601" name="Hammer Slash" levels="10">
         <table name="#mpConsume">40 41 43 43 44 45 47 48 49 51 52</table>
-        <table name="#power">461 490 521 553 586 620 656 693 732 773</table>
+        <table name="#power"> 35 45 55 65 75 85 95 105 115 125 </table>
         <!-- create a new dot table that starts at 76 and increases by 10 -->
         <table name="#dot">76 86 96 106 116 126 136 146 156 166</table>
         <!-- create a table for each reg hp and cp starting at 0.85 and decreasing by 0.05 each level-->
         <table name="#regPenalty"> 0.85 0.80 0.75 0.70 0.65 0.60 0.55 0.50 0.45 0.40</table>
-        <set name="weaponsAllowed" val="POLE"/>
+        <set name="weaponsAllowed" val="BIGBLUNT"/>
         <set name="mpConsume" val="#mpConsume"/>
         <set name="power" val="#power"/>
         <set name="target" val="AURA"/>
@@ -49,7 +44,7 @@
         <set name="effectRange" val="-1"/>
         <set name="operateType" val="ACTIVE"/>
         <set name="nextActionAttack" val="true"/>
-        <set name="skillType" val="PDAM"/>
+        <set name="skillType" val="MDAM"/>
         <for>
             <effect count="20" name="DamOverTime" val="#dot" time="1">
                 <mul stat="regHp" val="#regPenalty"/>
@@ -57,11 +52,10 @@
             </effect>
         </for>
     </skill>
-    <!-- not used in the game -->
     <skill id="602" levels="9" name="Hit of Hate"><!--id 36-->
         <table name="#mpConsume">75 77 78 79 80 81 82 83 84</table>
-        <table name="#power">1844 1907 1970 2033 2096 2158 2221 2283 2561</table>
-        <set name="weaponsAllowed" val="POLE"/>
+        <table name="#power"> 60 70 80 90 100 110 120 130 150 </table>
+        <set name="weaponsAllowed" val="BIGBLUNT"/>
         <set name="mpConsume" val="#mpConsume"/>
         <set name="magicLvl" val="80"/>
         <set name="power" val="#power"/>
@@ -72,7 +66,7 @@
         <set name="ignoreShld" val="true"/>
         <set name="hitTime" val="1067"/>
         <set name="coolTime" val="733"/>
-        <set name="skillType" val="PDAM"/>
+        <set name="skillType" val="MDAM"/>
         <set name="effectRange" val="-1"/>
         <set name="castRange" val="-1"/>
         <set name="effectRange" val="-1"/>
@@ -81,15 +75,14 @@
         <for>
             <effect count="1" name="TargetMe" time="5" val="0"/>
             <effect self="1" count="1" name="Buff" time="10" val="0">
-                <mul stat="pAtkSpd" val="1.1"/>
+                <mul stat="pAtkSpd" val="1.15"/>
             </effect>
         </for>
     </skill>
-
     <skill id="603" levels="9" name="Thunder Weakness"><!--id 48-->
         <table name="#mpConsume">100 101 103 105 106 108 109 111 112</table>
-        <table name="#power">2854 2902 3049 3197 3245 3393 3441 3588 3635</table>
-        <set name="weaponsAllowed" val="DUAL"/>
+        <table name="#power"> 40 50 60 70 80 90 100 110 120 </table>
+        <set name="weaponsAllowed" val="BIGBLUNT"/>
         <set name="mpConsume" val="#mpConsume"/>
         <set name="saveVs" val="CON"/>
         <set name="power" val="#power"/>
@@ -101,7 +94,7 @@
         <set name="reuseDelay" val="80000"/>
         <set name="hitTime" val="1080"/>
         <set name="coolTime" val="720"/>
-        <set name="skillType" val="PDAM"/>
+        <set name="skillType" val="MDAM"/>
         <set name="operateType" val="ACTIVE"/>
         <set name="ignoreShld" val="true"/>
         <set name="nextActionAttack" val="true"/>
@@ -111,11 +104,10 @@
             </effect>
         </for>
     </skill>
-    <!-- not used in the game -->
     <skill id="604" levels="10" name="Glorious Heal"><!--id 45-->
         <table name="#mpConsume">74 75 77 78 79 80 81 82 83 85</table>
-        <table name="#power">4713 4734 4755 4775 4796 4816 5837 5857 5878 5899</table>
-        <set name="weaponsAllowed" val="POLE"/>
+        <table name="#power">30 40 50 60 70 80 90 100 110 120</table>
+        <set name="weaponsAllowed" val="BIGBLUNT"/>
         <set name="mpConsume" val="#mpConsume"/>
         <set name="magicLvl" val="80"/>
         <set name="power" val="300"/>
@@ -126,7 +118,7 @@
         <set name="ignoreShld" val="true"/>
         <set name="hitTime" val="1067"/>
         <set name="coolTime" val="733"/>
-        <set name="skillType" val="PDAM"/>
+        <set name="skillType" val="MDAM"/>
         <set name="effectRange" val="-1"/>
         <set name="castRange" val="-1"/>
         <set name="effectRange" val="-1"/>

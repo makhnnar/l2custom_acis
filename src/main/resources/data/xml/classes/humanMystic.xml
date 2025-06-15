@@ -2715,16 +2715,58 @@
 			<skill id="832" lvl="3" cost="231000" minLvl="60"/>
 			<!-- Inmutation -->
 			<skill id="846" lvl="1" cost="910000" minLvl="50"/>
+			<!-- Divine Hammer -->
+			<skill id="600" lvl="1" cost="91000" minLvl="40"/>
+			<skill id="600" lvl="2" cost="138000" minLvl="44"/>
+			<skill id="600" lvl="3" cost="231000" minLvl="48"/>
+			<skill id="600" lvl="4" cost="301000" minLvl="52"/>
+			<skill id="600" lvl="5" cost="370000" minLvl="56"/>
+			<skill id="600" lvl="6" cost="440000" minLvl="60"/>
+			<skill id="600" lvl="7" cost="640000" minLvl="64"/>
+			<skill id="600" lvl="8" cost="850000" minLvl="68"/>
+			<skill id="600" lvl="9" cost="1360000" minLvl="72"/>
+			<!-- Hammer Slash -->
+			<skill id="601" lvl="1" cost="91000" minLvl="40"/>
+			<skill id="601" lvl="2" cost="138000" minLvl="44"/>
+			<skill id="601" lvl="3" cost="231000" minLvl="48"/>
+			<skill id="601" lvl="4" cost="301000" minLvl="52"/>
+			<skill id="601" lvl="5" cost="370000" minLvl="56"/>
+			<skill id="601" lvl="6" cost="440000" minLvl="60"/>
+			<skill id="601" lvl="7" cost="640000" minLvl="64"/>
+			<skill id="601" lvl="8" cost="850000" minLvl="68"/>
+			<skill id="601" lvl="9" cost="1360000" minLvl="72"/>
+			<skill id="601" lvl="10" cost="1360000" minLvl="75"/>
+			<!-- Hit of Hate -->
+			<skill id="602" lvl="1" cost="91000" minLvl="40"/>
+			<skill id="602" lvl="2" cost="138000" minLvl="44"/>
+			<skill id="602" lvl="3" cost="231000" minLvl="48"/>
+			<skill id="602" lvl="4" cost="301000" minLvl="52"/>
+			<skill id="602" lvl="5" cost="370000" minLvl="56"/>
+			<skill id="602" lvl="6" cost="440000" minLvl="60"/>
+			<skill id="602" lvl="7" cost="640000" minLvl="64"/>
+			<skill id="602" lvl="8" cost="850000" minLvl="68"/>
+			<skill id="602" lvl="9" cost="1360000" minLvl="72"/>
 			<!-- Thunder Weakness -->
-			<skill id="603" lvl="1" cost="91000" minLvl="56"/>
-			<skill id="603" lvl="2" cost="138000" minLvl="58"/>
-			<skill id="603" lvl="3" cost="231000" minLvl="60"/>
-			<skill id="603" lvl="4" cost="301000" minLvl="62"/>
-			<skill id="603" lvl="5" cost="370000" minLvl="64"/>
-			<skill id="603" lvl="6" cost="440000" minLvl="66"/>
-			<skill id="603" lvl="7" cost="640000" minLvl="68"/>
-			<skill id="603" lvl="8" cost="850000" minLvl="70"/>
+			<skill id="603" lvl="1" cost="91000" minLvl="40"/>
+			<skill id="603" lvl="2" cost="138000" minLvl="44"/>
+			<skill id="603" lvl="3" cost="231000" minLvl="48"/>
+			<skill id="603" lvl="4" cost="301000" minLvl="52"/>
+			<skill id="603" lvl="5" cost="370000" minLvl="56"/>
+			<skill id="603" lvl="6" cost="440000" minLvl="60"/>
+			<skill id="603" lvl="7" cost="640000" minLvl="64"/>
+			<skill id="603" lvl="8" cost="850000" minLvl="68"/>
 			<skill id="603" lvl="9" cost="1360000" minLvl="72"/>
+			<!-- Glorious Heal -->
+			<skill id="604" lvl="1" cost="91000" minLvl="40"/>
+			<skill id="604" lvl="2" cost="138000" minLvl="44"/>
+			<skill id="604" lvl="3" cost="231000" minLvl="48"/>
+			<skill id="604" lvl="4" cost="301000" minLvl="52"/>
+			<skill id="604" lvl="5" cost="370000" minLvl="56"/>
+			<skill id="604" lvl="6" cost="440000" minLvl="60"/>
+			<skill id="604" lvl="7" cost="640000" minLvl="64"/>
+			<skill id="604" lvl="8" cost="850000" minLvl="68"/>
+			<skill id="604" lvl="9" cost="1360000" minLvl="72"/>
+			<skill id="604" lvl="10" cost="1360000" minLvl="75"/>
 		</skills>
 	</class>
 	<class><!-- Archmage -->
