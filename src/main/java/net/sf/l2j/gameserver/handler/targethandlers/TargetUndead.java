@@ -41,7 +41,9 @@ public class TargetUndead implements ITargetHandler
 	@Override
 	public boolean meetCastConditions(Playable caster, Creature target, L2Skill skill, boolean isCtrlPressed)
 	{
-		if ((!(target instanceof Monster) && !(target instanceof Servitor)) || target.isDead())
+		//prevent attack players
+		//f ((!(target instanceof Monster) && !(target instanceof Servitor)) || target.isDead())
+		if (target.isDead())
 		{
 			caster.sendPacket(SystemMessageId.INVALID_TARGET);
 			return false;

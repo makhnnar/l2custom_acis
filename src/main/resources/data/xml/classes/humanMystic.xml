@@ -2327,6 +2327,27 @@
 			<skill id="3713" lvl="7" cost="180000" minLvl="62"/>
 			<skill id="3713" lvl="8" cost="200000" minLvl="64"/>
 			<skill id="3713" lvl="9" cost="290000" minLvl="66"/>
+			<!-- Holy Flare -->
+			<skill id="610" lvl="1" cost="28000" minLvl="44"/>
+			<skill id="610" lvl="2" cost="40000" minLvl="48"/>
+			<skill id="610" lvl="3" cost="64000" minLvl="52"/>
+			<skill id="610" lvl="4" cost="67000" minLvl="56"/>
+			<skill id="610" lvl="5" cost="100000" minLvl="58"/>
+			<skill id="610" lvl="6" cost="130000" minLvl="60"/>
+			<skill id="610" lvl="7" cost="180000" minLvl="62"/>
+			<skill id="610" lvl="8" cost="200000" minLvl="64"/>
+			<skill id="610" lvl="9" cost="290000" minLvl="66"/>
+			<!-- Mass Might of Heaven -->
+			<skill id="611" lvl="1" cost="28000" minLvl="44"/>
+			<skill id="611" lvl="2" cost="40000" minLvl="48"/>
+			<skill id="611" lvl="3" cost="64000" minLvl="52"/>
+			<skill id="611" lvl="4" cost="67000" minLvl="56"/>
+			<skill id="611" lvl="5" cost="100000" minLvl="58"/>
+			<skill id="611" lvl="6" cost="130000" minLvl="60"/>
+			<skill id="611" lvl="7" cost="180000" minLvl="62"/>
+			<skill id="611" lvl="8" cost="200000" minLvl="64"/>
+			<skill id="611" lvl="9" cost="290000" minLvl="66"/>
+			<skill id="611" lvl="10" cost="290000" minLvl="70"/>
 		</skills>
 	</class>
 	<class><!-- Prophet -->
