@@ -1241,6 +1241,11 @@
 			<skill id="408" lvl="8" cost="850000" minLvl="70"/>
 			<skill id="408" lvl="9" cost="1000000" minLvl="72"/>
 			<skill id="408" lvl="10" cost="2170000" minLvl="74"/>
+			<!-- Seal of Soul -->
+			<skill id="835" lvl="1" cost="91000" minLvl="50"/>
+			<skill id="835" lvl="2" cost="138000" minLvl="56"/>
+			<skill id="835" lvl="3" cost="231000" minLvl="62"/>
+			<skill id="835" lvl="4" cost="301000" minLvl="68"/>
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>

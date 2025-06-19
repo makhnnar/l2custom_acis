@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/TargetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/TargetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/targethandlers/TargetAreaUndead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/targethandlers/TargetAreaUndead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/targethandlers/TargetAuraUndead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/handler/targethandlers/TargetAuraUndead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkFighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkFighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/humanMystic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/humanMystic.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0600-0699.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0600-0699.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

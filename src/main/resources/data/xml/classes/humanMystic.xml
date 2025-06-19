@@ -2725,11 +2725,6 @@
 			<!-- Divine Inspiration -->
 			<skill id="1405" lvl="1" cost="-1" minLvl="52"/>
 			<skill id="1405" lvl="2" cost="-1" minLvl="61"/>
-			<!-- Seal of Soul -->
-			<skill id="835" lvl="1" cost="91000" minLvl="40"/>
-			<skill id="835" lvl="2" cost="138000" minLvl="46"/>
-			<skill id="835" lvl="3" cost="231000" minLvl="52"/>
-			<skill id="835" lvl="4" cost="301000" minLvl="58"/>
 			<!-- Boost Atack Fury -->
 			<skill id="832" lvl="1" cost="91000" minLvl="40"/>
 			<skill id="832" lvl="2" cost="138000" minLvl="50"/>
