@@ -284,7 +284,7 @@
         <set name="mpConsume" val="#mpConsume"/>
         <set name="magicLvl" val="#magicLvl"/>
         <set name="power" val="#power"/>
-        <set name="target" val="ONE"/>
+        <set name="target" val="AURA_UNDEAD"/>
         <set name="reuseDelay" val="3000"/>
         <set name="hitTime" val="1500"/>
         <set name="skillType" val="MDAM"/>

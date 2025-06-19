@@ -12,6 +12,7 @@ import net.sf.l2j.gameserver.model.actor.Creature;
 import net.sf.l2j.gameserver.model.actor.Playable;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.skills.L2Skill;
+import net.sf.l2j.gameserver.skills.effects.EffectSlow;
 
 public class TargetAuraUndead implements ITargetHandler
 {
@@ -27,9 +28,20 @@ public class TargetAuraUndead implements ITargetHandler
 		final List<Creature> list = new ArrayList<>();
 		for (Creature creature : caster.getKnownTypeInRadius(Creature.class, skill.getSkillRadius()))
 		{
-			if (creature.isDead() || !creature.isUndead() || !GeoEngine.getInstance().canSeeTarget(caster, creature))
+			if (creature.isDead() || !GeoEngine.getInstance().canSeeTarget(caster, creature))
 				continue;
-			
+
+			if (target.isUndead()) {
+				EffectSlow slow = new EffectSlow(
+						skill.getEffectTemplates().get(0),
+						skill,
+						target,
+						caster
+				);
+				target.addEffect(slow);
+				target.updateAbnormalEffect();
+			}
+
 			if (caster instanceof Playable && (creature instanceof Attackable || creature instanceof Playable))
 			{
 				if (creature.isAttackableWithoutForceBy((Playable) caster))

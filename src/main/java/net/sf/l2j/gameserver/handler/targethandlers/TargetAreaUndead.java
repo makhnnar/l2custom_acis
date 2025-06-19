@@ -32,6 +32,17 @@ public class TargetAreaUndead implements ITargetHandler
             if (creature == caster || creature.isDead() || !GeoEngine.getInstance().canSeeTarget(target, creature))
                 continue;
 
+            if (target.isUndead()) {
+                EffectSlow slow = new EffectSlow(
+                        skill.getEffectTemplates().get(0),
+                        skill,
+                        target,
+                        caster
+                );
+                target.addEffect(slow);
+                target.updateAbnormalEffect();
+            }
+
             if (caster instanceof Playable && (creature instanceof Attackable || creature instanceof Playable))
             {
                 if (creature.isAttackableWithoutForceBy((Playable) caster))
@@ -59,16 +70,6 @@ public class TargetAreaUndead implements ITargetHandler
         if (target.isDead()) {
             caster.sendPacket(SystemMessageId.INVALID_TARGET);
             return false;
-        }
-        if (target.isUndead()) {
-            EffectSlow slow = new EffectSlow(
-                    skill.getEffectTemplates().get(0),
-                    skill,
-                    target,
-                    caster
-            );
-            target.addEffect(slow);
-            target.updateAbnormalEffect();
         }
         return true;
     }
