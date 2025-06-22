@@ -16,7 +16,7 @@ public class CreatureAI extends AbstractAI
 	{
 		super(actor);
 	}
-	
+
 	@Override
 	protected void onEvtFinishedAttack()
 	{
@@ -266,6 +266,7 @@ public class CreatureAI extends AbstractAI
 	@Override
 	protected void onEvtAttacked(Creature attacker)
 	{
+		//check if we can use this event in our favor
 		startAttackStance();
 	}
 	

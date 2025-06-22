@@ -51,7 +51,9 @@ public class CreatureStatus<T extends Creature>
 	private double _hpUpdateIncCheck = .0;
 	private double _hpUpdateDecCheck = .0;
 	private double _hpUpdateInterval = .0;
-	
+
+	private IHpChangeListener _hpChangeListener;
+
 	public CreatureStatus(T actor)
 	{
 		_actor = actor;
@@ -190,24 +192,38 @@ public class CreatureStatus<T extends Creature>
 		setHp(_hp + value);
 		return value;
 	}
-	
+
+	private void sendHpChangeListener(double reducedHp, Creature attacker) {
+		Config.LOGGER.info("sendHpChangeListener: HP reduced: " + reducedHp + " by attacker: " + attacker.getName() + " for actor: " + _actor.getName());
+		if (_hpChangeListener != null && attacker != _actor) {
+			Config.LOGGER.info("sendHpChangeListener: listener non null, calling onHpReduceChanged");
+			_hpChangeListener.onHpReduceChanged(_actor, reducedHp);
+		}
+	}
+
+	public void setHpChangeListener(IHpChangeListener hpChangeListener) {
+		_hpChangeListener = hpChangeListener;
+	}
+
 	/**
 	 * Reduce the current HP of the Creature and launch the doDie Task if necessary.
 	 * @param value : The amount of removed HPs.
 	 * @param attacker : The Creature who attacks.
 	 */
-	public void reduceHp(double value, Creature attacker)
-	{
+	public void reduceHp(double value, Creature attacker) {
+		sendHpChangeListener(value, attacker);
 		reduceHp(value, attacker, true, false, false);
 	}
 	
 	public void reduceHp(double value, Creature attacker, boolean isHpConsumption)
 	{
+		sendHpChangeListener(value, attacker);
 		reduceHp(value, attacker, true, false, isHpConsumption);
 	}
 	
 	public void reduceHp(double value, Creature attacker, boolean awake, boolean isDOT, boolean isHPConsumption)
 	{
+		sendHpChangeListener(value, attacker);
 		if (_actor.isDead())
 			return;
 		

@@ -403,7 +403,7 @@ public final class Formulas
 		
 		if (Config.DEVELOPER)
 		{
-			StringUtil.printSection("Physical attack damage");
+			StringUtil.printSection("Physical attack damage - getHitHolder ");
 			LOGGER.info("crit:{}, ss:{}, shield:{}, isPvp:{}, defence:{}", crit, ss, sDef, isPvP, defence);
 			LOGGER.info("Basic powers: attack: {}, addCrit: {}", attackPower, addCritPower);
 			LOGGER.info("Multipliers: critDam: {}, critPos: {}, pos: {}, rnd: {}, race: {}, pvp: {}, elem: {}, weapon: {}", critDamMul, critDamPosMul, posMul, rndMul, raceMul, pvpMul, elemMul, weaponMul);
@@ -496,7 +496,7 @@ public final class Formulas
 		
 		if (Config.DEVELOPER)
 		{
-			StringUtil.printSection("Physical skill damage");
+			StringUtil.printSection("Physical skill damage - Pdam");
 			LOGGER.info("crit:{}, ss:{}, shield:{}, isPvp:{}, defence:{}", crit, ss, sDef, isPvP, defence);
 			LOGGER.info("Basic powers: attack: {}, skill: {}", attackPower, skillPower);
 			LOGGER.info("Multipliers: ss: {}, rnd: {}, race: {}, pvp: {}, elem: {}, weapon: {}", ssMul, rndMul, raceMul, pvpMul, elemMul, weaponMul);

@@ -52,8 +52,12 @@ public abstract class AbstractEffect
 	private boolean _inUse = false;
 	private boolean _startConditionsCorrect = true;
 	
-	protected AbstractEffect(EffectTemplate template, L2Skill skill, Creature effected, Creature effector)
-	{
+	protected AbstractEffect(
+			EffectTemplate template,
+			L2Skill skill,
+			Creature effected,
+			Creature effector
+	) {
 		_state = EffectState.CREATED;
 		
 		_template = template;

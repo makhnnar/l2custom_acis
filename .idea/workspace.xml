@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d61c13d5-0d41-467e-be3c-5c1c6b757538" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/EffectTriggerSkillByDamage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/TriggerSkillByDamage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/TriggerSkillByDamage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/enums/skills/EffectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/enums/skills/EffectType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/type/AbstractAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/type/AbstractAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/type/CreatureAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/ai/type/CreatureAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/CreatureStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/actor/status/CreatureStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/AbstractEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/AbstractEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/Formulas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/Formulas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/skills/effects/TriggerSkillByDamage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkMystic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/classes/darkMystic.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0600-0699.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/xml/skills/0600-0699.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +100,7 @@
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -128,7 +137,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/blessthebloodsupport&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/phgom/Documents/GitHub/medical_recipe_viewer&quot;,

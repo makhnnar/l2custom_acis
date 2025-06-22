@@ -68,7 +68,9 @@ public enum EffectType
 	WARP,
 	
 	SIGNET_GROUND,
-	SIGNET_EFFECT;
+	SIGNET_EFFECT,
+
+	TRIGGER_SKILL_BY_DAMAGE;
 	
 	public static boolean isntCancellable(EffectType type)
 	{

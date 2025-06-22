@@ -733,8 +733,9 @@ abstract class AbstractAI
 	public void startAttackStance()
 	{
 		// Initial check ; if the actor wasn't yet registered into AttackStanceTaskManager, broadcast AutoAttackStart packet.
-		if (!AttackStanceTaskManager.getInstance().isInAttackStance(_actor))
+		if (!AttackStanceTaskManager.getInstance().isInAttackStance(_actor)) {
 			_actor.broadcastPacket(new AutoAttackStart(_actor.getObjectId()));
+		}
 		
 		// Set out of the initial if check to be able to refresh the time.
 		AttackStanceTaskManager.getInstance().add(_actor);

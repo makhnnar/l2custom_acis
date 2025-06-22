@@ -444,48 +444,29 @@
             </effect>
         </for>
     </skill>
-    <skill id="616" levels="7" name="Bless the Blood" enchantGroup1="1" enchantGroup2="1">
-        <!-- Confirmed CT2.5 -->
-        <table name="#magicLvl"> 40 48 56 60 64 68 72 </table>
-        <table name="#mpConsume2"> 28 35 41 44 48 51 53 </table>
-        <table name="#mpConsume1"> 7 9 11 11 12 13 14 </table>
-        <table name="#triggeredLevel"> 1 2 3 4 5 6 7 </table>
-        <table name="#ench1triggeredLevel"> 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 </table>
-        <table name="#ench2AbnormalTimes"> 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 </table>
-        <table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
-        <set name="abnormalLvl" val="1" />
-        <set name="abnormalTime" val="15" />
-        <set name="abnormalType" val="BLESS_THE_BLOOD" />
-        <set name="castRange" val="600" />
-        <set name="effectPoint" val="1" />
-        <set name="effectRange" val="1100" />
-        <set name="hitTime" val="4000" />
-        <set name="icon" val="icon.skill1218" />
-        <set name="isMagic" val="1" /> <!-- Magic Skill -->
-        <set name="magicLvl" val="#magicLvl" />
-        <set name="mpConsume2" val="#mpConsume2" />
-        <set name="mpConsume1" val="#mpConsume1" />
-        <set name="operateType" val="A2" />
-        <set name="reuseDelay" val="20000" />
-        <set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
-        <set name="reuseDelayLock" val="true" />
-        <set name="targetType" val="PARTY_MEMBER" />
-        <enchant1 name="magicLvl" val="#enchMagicLvl" />
-        <enchant1 name="mpConsume2" val="54" />
-        <enchant2 name="abnormalTime" val="#ench2AbnormalTimes" />
-        <enchant2 name="magicLvl" val="#enchMagicLvl" />
-        <enchant2 name="mpConsume2" val="54" />
-        <effects>
-            <effect name="TriggerSkillByDamage">
-                <param attackerType="L2Character" minAttackerLevel="1" maxAttackerLevel="99" />
-                <param minDamage="60" />
-                <param chance="60" />
-                <param skillId="5698" skillLevel="#triggeredLevel" /> <!-- Bless the Blood -->
-                <param targetType="SELF" />
-            </effect>
-        </effects>
+    <skill id="616" levels="7" name="Bless the Blood">
+        <table name="#rate"> 0.1 0.15 0.2 0.25 0.3 0.35 0.4 </table>
+        <table name="#mpInitialConsume"> 40 42 43 45 56 57 58 </table>
+        <table name="#mpConsume"> 7 9 11 11 12 13 14 </table>
+        <table name="#magicLvl">  40 48 56 60 64 68 72 </table>
+        <table name="#aggro"> 582 597 611 624 635 646 655 </table>
+        <table name="#stackOrder"> 1 2 3 4 5 6 7 </table>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="magicLvl" val="#magicLvl"/>
+        <set name="target" val="PARTY"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="reuseDelay" val="60000"/>
+        <set name="hitTime" val="7000"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="ACTIVE"/>
+        <set name="aggroPoints" val="#aggro"/>
+        <for>
+            <effect name="TriggerSkillByDamage" count="30" val="#rate" stackType="dark_bless"/>
+        </for>
     </skill>
-    <skill id="617" levels="4" name="Stigma of Shilen" enchantGroup1="1">
+    <!--<skill id="617" levels="4" name="Stigma of Shilen" enchantGroup1="1">
         <table name="#abnormalLvls"> 1 2 3 4 </table>
         <table name="#castRange"> 600 700 800 900 </table>
         <table name="#effectRange"> 1100 1200 1300 1400 </table>
@@ -502,7 +483,6 @@
         <set name="effectPoint" val="-1" />
         <set name="effectRange" val="#effectRange" />
         <set name="hitTime" val="1500" />
-        <set name="icon" val="icon.skill1539" />
         <set name="isDebuff" val="true" />
         <set name="magicLvl" val="#magicLvl" />
         <set name="mpConsume2" val="#mpConsume2" />
@@ -513,17 +493,7 @@
         <enchant1 name="abnormalTime" val="#ench1AbnormalTimes" />
         <enchant1 name="magicLvl" val="#enchMagicLvl" />
         <effects>
-            <effect name="DefenceTrait">
-                <param SWORD="#traits" />
-                <param BLUNT="#traits" />
-                <param DAGGER="#traits" />
-                <param DUAL="#traits" />
-                <param DUALFIST="#traits" />
-                <param POLE="#traits" />
-                <param ANCIENTSWORD="#traits" />
-                <param RAPIER="#traits" />
-                <param DUALDAGGER="#traits" />
-            </effect>
+
         </effects>
-    </skill>
+    </skill>-->
 </list>
